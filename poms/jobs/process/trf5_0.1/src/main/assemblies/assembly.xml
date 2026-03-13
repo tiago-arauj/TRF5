@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?><assembly xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+    <id>bin</id>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <formats>
+        <format>zip</format>
+    </formats>
+    <files>
+        <file>
+            <!-- jobInfo.properties -->
+            <source>${basedir}/src/main/templates/jobInfo_template.properties
+			</source>
+            <outputDirectory>.</outputDirectory>
+            <destName>jobInfo.properties</destName>
+            <filtered>true</filtered>
+        </file>
+        <file>
+            <!-- sh -->
+            <source>${basedir}/src/main/templates/Job_run_template.sh</source>
+            <outputDirectory>${talend.job.name}</outputDirectory>
+            <destName>${talend.job.name}_run.sh</destName>
+            <filtered>true</filtered>
+        </file>
+        <file>
+            <!-- bat -->
+            <source>${basedir}/src/main/templates/Job_run_template.bat</source>
+            <outputDirectory>${talend.job.name}</outputDirectory>
+            <destName>${talend.job.name}_run.bat</destName>
+            <filtered>true</filtered>
+        </file>
+        <file>
+            <!-- ps1 -->
+            <source>${basedir}/src/main/templates/Job_run_template.ps1</source>
+            <outputDirectory>${talend.job.name}</outputDirectory>
+            <destName>${talend.job.name}_run.ps1</destName>
+            <filtered>true</filtered>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\dom4j\dom4j\2.1.3\dom4j-2.1.3.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>dom4j-2.1.3.jar</destName>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\talend\components\talend_file_enhanced\1.3.1\talend_file_enhanced-1.3.1.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>talend_file_enhanced-1.3.1.jar</destName>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\apache\logging\log4j\log4j-layout-template-json\2.17.1\log4j-layout-template-json-2.17.1.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>log4j-layout-template-json-2.17.1.jar</destName>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\commons-beanutils\commons-beanutils\1.11.0\commons-beanutils-1.11.0.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>commons-beanutils-1.11.0.jar</destName>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\apache\commons\commons-lang3\3.18.0\commons-lang3-3.18.0.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>commons-lang3-3.18.0.jar</destName>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\jboss\marshalling\jboss-marshalling\2.0.12.Final\jboss-marshalling-2.0.12.Final.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>jboss-marshalling-2.0.12.Final.jar</destName>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.1\log4j-core-2.17.1.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>log4j-core-2.17.1.jar</destName>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.1\log4j-api-2.17.1.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>log4j-api-2.17.1.jar</destName>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\javassist\javassist\3.30.2-GA\javassist-3.30.2-GA.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>javassist-3.30.2-GA.jar</destName>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\talend\metrics\talendCBP\1.1.5\talendCBP-1.1.5.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>talendCBP-1.1.5.jar</destName>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\talend\daikon\crypto-utils\7.1.28\crypto-utils-7.1.28.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>crypto-utils-7.1.28.jar</destName>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\talend\metrics\talendagent\1.0.2\talendagent-1.0.2.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>talendagent-1.0.2.jar</destName>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\apache\commons\commons-text\1.14.0\commons-text-1.14.0.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>commons-text-1.14.0.jar</destName>
+        </file>
+        <file>
+            <source>C:\Program Files (x86)\Talend-Studio\studio\configuration\.m2\repository\org\talend\metrics\talendboot\1.0.9\talendboot-1.0.9.jar</source>
+            <outputDirectory>lib</outputDirectory>
+            <destName>talendboot-1.0.9.jar</destName>
+        </file>
+    </files>
+    <fileSets>
+        <fileSet>
+            <!-- templates -->
+            <directory>${templates.dir}</directory>
+            <outputDirectory>${talend.job.name}/src/main/templates/
+			</outputDirectory>
+            <includes>
+                <include>**</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- log4j resources -->
+            <directory>${log4j.resources.dir}</directory>
+            <outputDirectory>${output.resources.dir}/
+			</outputDirectory>
+            <includes>
+                <include>log4j.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- log4j.xml for running -->
+            <directory>${log4j.running.dir}</directory>
+            <outputDirectory>${talend.job.name}</outputDirectory>
+            <includes>
+                <include>log4j.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- xmlMappings resources -->
+            <directory>${xmlMappings.resources.dir}</directory>
+            <outputDirectory>${output.resources.dir}/xmlMappings/
+			</outputDirectory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- xmlMappings for running -->
+            <directory>${xmlMappings.running.dir}</directory>
+            <outputDirectory>${talend.job.name}/xmlMappings/
+			</outputDirectory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- rules resources -->
+            <directory>${rules.resources.dir}</directory>
+            <outputDirectory>${output.resources.dir}/rules/
+			</outputDirectory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- assembly_*.xml -->
+            <directory>${assemblies.dir}</directory>
+            <outputDirectory>${talend.job.name}/src/main/assemblies/
+			</outputDirectory>
+            <includes>
+                <include>assembly.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- pom_*.xml -->
+            <directory>${poms.dir}</directory>
+            <outputDirectory>${talend.job.name}</outputDirectory>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!--parent pom.xml -->
+            <directory>${parentpom.dir}</directory>
+            <outputDirectory>.</outputDirectory>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!--routines code -->
+            <directory>${routinescode.dir}</directory>
+            <outputDirectory>code/routines/src/main</outputDirectory>
+            <includes>
+                <include>**/**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!--routines pom -->
+            <directory>${routinespom.dir}</directory>
+            <outputDirectory>code/routines/</outputDirectory>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!--pigudf code -->
+            <directory>${pigudfcode.dir}</directory>
+            <outputDirectory>code/pigudf/src/main</outputDirectory>
+            <includes>
+                <include>**/**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!--pifudf pom -->
+            <directory>${pigudfpom.dir}</directory>
+            <outputDirectory>code/pigudf/</outputDirectory>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!--joblet -->
+            <directory>${joblet.dir}</directory>
+            <outputDirectory>jobs/</outputDirectory>
+            <includes>
+                <include>joblets*/**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- add items -->
+            <directory>${items.dir}</directory>
+            <outputDirectory>${talend.job.name}</outputDirectory>
+            <useDefaultExcludes>false</useDefaultExcludes>
+            <includes>
+                <include>**</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- add java source codes -->
+            <directory>${sourcecodes.dir}</directory>
+            <outputDirectory>${talend.job.name}/src/main/java/</outputDirectory>
+            <includes>
+                <include>${talend.job.path}/**</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- add context resources -->
+            <directory>${resources.dir}</directory>
+            <outputDirectory>${output.resources.dir}/
+			</outputDirectory>
+            <includes>
+                <include>${talend.job.path}/**</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- add test source codes -->
+            <directory>${test.sourcecodes.dir}</directory>
+            <outputDirectory>${talend.job.name}/src/test/java/</outputDirectory>
+            <includes>
+                <include>${talend.job.path}/**</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- add test context resources -->
+            <directory>${test.resources.dir}</directory>
+            <outputDirectory>${talend.job.name}/src/test/resources/
+			</outputDirectory>
+            <includes>
+                <include>${talend.job.path}/**</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- junits reports -->
+            <directory>${test.reports.dir}</directory>
+            <outputDirectory>sunfire-reports</outputDirectory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- add all resources for running -->
+            <directory>${contexts.running.dir}</directory>
+            <outputDirectory>${talend.job.name}</outputDirectory>
+            <includes>
+                <include>**/*.*</include>
+            </includes>
+        </fileSet>
+        <!-- If have children jobs, will add here -->
+        <fileSet>
+            <!-- microservice config files -->
+            <directory>${microservice.configs.dir}</directory>
+            <outputDirectory>${talend.job.name}</outputDirectory>
+            <includes>
+                <include>config/**</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <!-- microservice running config files -->
+            <directory>${microservice.running.configs.dir}</directory>
+            <outputDirectory>${talend.job.name}</outputDirectory>
+            <includes>
+                <include>config/**</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+    <dependencySets>
+        <dependencySet>
+            <outputDirectory>lib</outputDirectory>
+            <includes>
+                <include>org.example.demotrf5.code:routines:jar:8.0.1</include>
+                <include>org.talend:system-routines:jar:8.0.1</include>
+            </includes>
+            <outputFileNameMapping>${artifact.artifactId}.${artifact.extension}</outputFileNameMapping>
+            <useProjectArtifact>false</useProjectArtifact>
+        </dependencySet>
+        <dependencySet>
+            <outputDirectory>lib</outputDirectory>
+            <includes>
+                <include>org.talend.components.lib:job-audit:jar:1.6</include>
+                <include>io.netty:netty-handler:jar:4.1.128.Final</include>
+                <include>software.amazon.awssdk:utils-lite:jar:2.35.11</include>
+                <include>software.amazon.awssdk:aws-core:jar:2.35.11</include>
+                <include>org.apache.hadoop.thirdparty:hadoop-shaded-guava:jar:1.3.0</include>
+                <include>org.apache.geronimo.specs:geronimo-annotation_1.3_spec:jar:1.2</include>
+                <include>software.amazon.awssdk:checksums-spi:jar:2.35.11</include>
+                <include>org.apache.xbean:xbean-asm9-shaded:jar:4.20</include>
+                <include>org.jodd:jodd-util:jar:6.0.1</include>
+                <include>org.apache.httpcomponents:httpcore:jar:4.4.13</include>
+                <include>org.codehaus.jackson:jackson-mapper-asl:jar:1.9.16-TALEND</include>
+                <include>net.minidev:json-smart:jar:2.4.11</include>
+                <include>jakarta.xml.soap:jakarta.xml.soap-api:jar:2.0.1</include>
+                <include>commons-collections:commons-collections:jar:3.2.2</include>
+                <include>io.netty:netty-transport-native-unix-common:jar:4.1.128.Final</include>
+                <include>com.sun.activation:jakarta.activation:jar:2.0.1</include>
+                <include>org.talend.sdk.component:component-runtime-impl:jar:1.88.0</include>
+                <include>org.apache.hadoop:hadoop-common:jar:3.4.1</include>
+                <include>software.amazon.awssdk:aws-xml-protocol:jar:2.35.11</include>
+                <include>org.apache.commons:commons-configuration2:jar:2.10.1</include>
+                <include>software.amazon.awssdk.crt:aws-crt:jar:0.36.2</include>
+                <include>org.apache.parquet:parquet-encoding:jar:1.15.2</include>
+                <include>jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.2</include>
+                <include>org.talend.daikon:logging-event-layout:jar:1.16.1</include>
+                <include>org.ow2.asm:asm:jar:9.5</include>
+                <include>software.amazon.encryption.s3:amazon-s3-encryption-client-java:jar:3.3.1</include>
+                <include>org.talend.components.lib:talend-parquet:jar:1.5</include>
+                <include>org.opencypher:expressions-9.0:jar:9.0.20210312</include>
+                <include>io.netty:netty-transport:jar:4.1.128.Final</include>
+                <include>software.amazon.awssdk:http-auth:jar:2.35.11</include>
+                <include>software.amazon.awssdk:s3:jar:2.35.11</include>
+                <include>org.apache.parquet:parquet-column:jar:1.15.2</include>
+                <include>org.reactivestreams:reactive-streams:jar:1.0.4</include>
+                <include>org.apache.geronimo.specs:geronimo-jsonb_1.0_spec:jar:1.2</include>
+                <include>commons-codec:commons-codec:jar:1.19.0</include>
+                <include>org.apache.parquet:parquet-format-structures:jar:1.15.2</include>
+                <include>org.opencypher:ast-9.0:jar:9.0.20210312</include>
+                <include>org.apache.xbean:xbean-finder-shaded:jar:4.20</include>
+                <include>org.apache.logging.log4j:log4j-1.2-api:jar:2.17.1</include>
+                <include>org.xerial.snappy:snappy-java:jar:1.1.10.5</include>
+                <include>com.google.guava:failureaccess:jar:1.0.1</include>
+                <include>software.amazon.awssdk:regions:jar:2.35.11</include>
+                <include>software.amazon.awssdk:json-utils:jar:2.35.11</include>
+                <include>software.amazon.awssdk:sdk-core:jar:2.35.11</include>
+                <include>com.fasterxml.jackson.core:jackson-databind:jar:2.16.0</include>
+                <include>org.postgresql:postgresql:jar:42.6.1</include>
+                <include>org.talend.sdk.component:component-api:jar:1.88.0</include>
+                <include>org.opencypher:util-9.0:jar:9.0.20210312</include>
+                <include>software.amazon.eventstream:eventstream:jar:1.0.1</include>
+                <include>software.amazon.awssdk:apache-client:jar:2.35.11</include>
+                <include>org.talend.sdk.component:component-spi:jar:1.88.0</include>
+                <include>software.amazon.awssdk:http-auth-aws:jar:2.35.11</include>
+                <include>software.amazon.awssdk:sts:jar:2.35.11</include>
+                <include>org.apache.johnzon:johnzon-jsonb:jar:1.2.21</include>
+                <include>org.jvnet.staxex:stax-ex:jar:2.0.1</include>
+                <include>org.scala-lang:scala-library:jar:2.12.6</include>
+                <include>io.netty:netty-common:jar:4.1.128.Final</include>
+                <include>org.apache.parquet:parquet-jackson:jar:1.15.2</include>
+                <include>org.codehaus.jackson:jackson-core-asl:jar:1.9.16-TALEND</include>
+                <include>software.amazon.awssdk:arns:jar:2.35.11</include>
+                <include>io.netty:netty-resolver:jar:4.1.128.Final</include>
+                <include>software.amazon.awssdk:auth:jar:2.35.11</include>
+                <include>org.slf4j:slf4j-api:jar:2.0.16</include>
+                <include>software.amazon.awssdk:s3-transfer-manager:jar:2.35.11</include>
+                <include>software.amazon.awssdk:checksums:jar:2.35.11</include>
+                <include>org.apache.hadoop:hadoop-mapreduce-client-core:jar:3.4.1</include>
+                <include>org.talend.components:aws-s3:jar:1.2601.1</include>
+                <include>software.amazon.awssdk:protocol-core:jar:2.35.11</include>
+                <include>org.talend.daikon:audit-common:jar:1.16.1</include>
+                <include>org.parboiled:parboiled-core:jar:1.2.0</include>
+                <include>org.opencypher:parser-9.0:jar:9.0.20210312</include>
+                <include>org.talend.components:aws-common-v2:jar:1.2601.1</include>
+                <include>software.amazon.awssdk:aws-json-protocol:jar:2.35.11</include>
+                <include>org.apache.parquet:parquet-common:jar:1.15.2</include>
+                <include>software.amazon.awssdk:profiles:jar:2.35.11</include>
+                <include>software.amazon.awssdk:http-auth-aws-eventstream:jar:2.35.11</include>
+                <include>software.amazon.awssdk:endpoints-spi:jar:2.35.11</include>
+                <include>io.netty:netty-codec-http2:jar:4.1.128.Final</include>
+                <include>org.apache.logging.log4j:log4j-slf4j2-impl:jar:2.19.0</include>
+                <include>org.parboiled:parboiled-scala_2.12:jar:1.2.0</include>
+                <include>io.netty:netty-codec:jar:4.1.128.Final</include>
+                <include>software.amazon.awssdk:annotations:jar:2.35.11</include>
+                <include>com.github.jsqlparser:jsqlparser:jar:5.1</include>
+                <include>software.amazon.awssdk:crt-core:jar:2.35.11</include>
+                <include>jakarta.activation:jakarta.activation-api:jar:2.1.3</include>
+                <include>org.apache.hadoop:hadoop-client:jar:3.4.1</include>
+                <include>org.talend.studio:local-lineage-producer:jar:0.1.87</include>
+                <include>software.amazon.awssdk:identity-spi:jar:2.35.11</include>
+                <include>com.fasterxml.woodstox:woodstox-core:jar:6.4.0</include>
+                <include>org.apache.httpcomponents:httpclient:jar:4.5.13</include>
+                <include>software.amazon.awssdk:http-client-spi:jar:2.35.11</include>
+                <include>org.apache.parquet:parquet-hadoop:jar:1.15.2</include>
+                <include>org.apache.geronimo.specs:geronimo-json_1.1_spec:jar:1.3</include>
+                <include>io.netty:netty-codec-http:jar:4.1.128.Final</include>
+                <include>software.amazon.awssdk:utils:jar:2.35.11</include>
+                <include>com.sun.xml.messaging.saaj:saaj-impl:jar:2.0.1</include>
+                <include>software.amazon.awssdk:retries:jar:2.35.11</include>
+                <include>com.fasterxml.jackson.core:jackson-annotations:jar:2.16.0</include>
+                <include>software.amazon.awssdk:kms:jar:2.35.11</include>
+                <include>commons-io:commons-io:jar:2.20.0</include>
+                <include>com.fasterxml.jackson.core:jackson-core:jar:2.16.0</include>
+                <include>software.amazon.awssdk:metrics-spi:jar:2.35.11</include>
+                <include>commons-logging:commons-logging:jar:1.2</include>
+                <include>software.amazon.awssdk:http-auth-spi:jar:2.35.11</include>
+                <include>org.mozilla:rhino:jar:1.7.14</include>
+                <include>com.google.guava:guava:jar:32.1.2-jre</include>
+                <include>org.talend.daikon:audit-log4j2:jar:1.16.1</include>
+                <include>software.amazon.awssdk:retries-spi:jar:2.35.11</include>
+                <include>org.talend.sdk.component:container-core:jar:1.88.0</include>
+                <include>io.netty:netty-buffer:jar:4.1.128.Final</include>
+                <include>software.amazon.awssdk:aws-query-protocol:jar:2.35.11</include>
+                <include>org.talend.sdk.component:component-runtime-design-extension:jar:1.88.0</include>
+                <include>software.amazon.awssdk:third-party-jackson-core:jar:2.35.11</include>
+                <include>net.minidev:accessors-smart:jar:2.4.11</include>
+                <include>org.apache.johnzon:johnzon-mapper:jar:1.2.21</include>
+                <include>software.amazon.awssdk:netty-nio-client:jar:2.35.11</include>
+                <include>org.apache.avro:avro:jar:1.11.4</include>
+                <include>org.apache.hadoop:hadoop-auth:jar:3.4.1</include>
+                <include>org.codehaus.woodstox:stax2-api:jar:4.2.1</include>
+                <include>org.apache.commons:commons-compress:jar:1.28.0</include>
+                <include>org.talend.sdk.component:component-runtime-di:jar:1.88.0</include>
+                <include>io.netty:netty-transport-classes-epoll:jar:4.1.128.Final</include>
+                <include>org.apache.johnzon:johnzon-core:jar:1.2.21</include>
+                <include>org.talend.sdk.component:component-runtime-manager:jar:1.88.0</include>
+                <include>org.apache.xbean:xbean-reflect:jar:4.20</include>
+            </includes>
+            <useProjectArtifact>false</useProjectArtifact>
+        </dependencySet>
+        <dependencySet>
+            <outputDirectory>${talend.job.name}</outputDirectory>
+            <includes>
+                <include>org.example.demotrf5.job:TRF5:jar:0.1.0</include>
+            </includes>
+            <outputFileNameMapping>${artifact.build.finalName}.${artifact.extension}</outputFileNameMapping>
+            <useProjectArtifact>true</useProjectArtifact>
+        </dependencySet>
+    </dependencySets>
+</assembly>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:DatabaseConnection xmi:id="_h9UuEB5TEfGmnOAGqGGqnw" name="qlik_demo" id="_8DROIB5REfGmnOAGqGGqnw" label="qlik_demo" dataPackage="_XNmfMB5XEfGmnOAGqGGqnw" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com:5432/qlik_demo?processos_judiciais" dbVersionString="V9_X" Port="5432" Username="peta_qlik" Password="enc:system.encryption.key.v1:d0RrxswjoSkeJCqc22qy86J74bBRb314R+gciClFGCMi2FQnJw==" ServerName="peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com" DatasourceName="" FileFieldName="" SID="qlik_demo" SqlSynthax="" StringQuote="" NullChar="" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="processos_judiciais" StandardSQL="true" SQLMode="false" UiSchema="public" supportNLS="false">
+    <taggedValue xmi:id="_h9VVIB5TEfGmnOAGqGGqnw" tag="Is Conn Need Reload" value="true"/>
+    <taggedValue xmi:id="_h9r6cB5TEfGmnOAGqGGqnw" tag="package filter" value=""/>
+    <taggedValue xmi:id="_h90dUB5TEfGmnOAGqGGqnw" tag="Status" value=""/>
+    <taggedValue xmi:id="_h90dUR5TEfGmnOAGqGGqnw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_h90dUh5TEfGmnOAGqGGqnw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_h90dUx5TEfGmnOAGqGGqnw" tag="Description" value=""/>
+    <taggedValue xmi:id="_h90dVB5TEfGmnOAGqGGqnw" tag="Author" value=""/>
+    <taggedValue xmi:id="_h90dVR5TEfGmnOAGqGGqnw" tag="otherParameter"/>
+    <taggedValue xmi:id="_iLMK8B5TEfGmnOAGqGGqnw" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_iLMK8R5TEfGmnOAGqGGqnw" tag="DB ProductVersion" value="17.4"/>
+    <taggedValue xmi:id="_iLMK8h5TEfGmnOAGqGGqnw" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <queries xmi:id="_4aIVgB5XEfGmnOAGqGGqnw">
+      <query xmi:id="_4aIVgh5XEfGmnOAGqGGqnw" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_4aIVgR5XEfGmnOAGqGGqnw" label="processos_judiciais" value="SELECT id_processo, num_processo, data_abertura, classe, tribunal&#xD;&#xA;FROM public.processos_judiciais;"/>
+    </queries>
+    <parameters xmi:id="_h9VVIR5TEfGmnOAGqGGqnw" key="CONN_PARA_KEY_USERNAME" value="peta_qlik"/>
+    <parameters xmi:id="_RmRqUB5XEfGmnOAGqGGqnw" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_XNmfMB5XEfGmnOAGqGGqnw" name="qlik_demo" dataManager="_h9UuEB5TEfGmnOAGqGGqnw">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_XNmfMR5XEfGmnOAGqGGqnw" name="public">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_jSu9oB5aEfGmnOAGqGGqnw" name="processos_judiciais" id="_jStvgB5aEfGmnOAGqGGqnw" label="processos_judiciais" tableType="TABLE">
+        <feature xsi:type="relational:TdColumn" xmi:id="_jSu9oR5aEfGmnOAGqGGqnw" name="id_processo" label="id_processo" length="10" sourceType="SERIAL" talendType="id_Integer" key="true" nullable="false">
+          <taggedValue xmi:id="_jSu9oh5aEfGmnOAGqGGqnw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_jSu9ox5aEfGmnOAGqGGqnw" body="nextval('processos_judiciais_id_processo_seq'::regclass)" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_jSu9pB5aEfGmnOAGqGGqnw" name="SERIAL" numericPrecisionRadix="10" javaDataType="4"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_jSu9pR5aEfGmnOAGqGGqnw" name="num_processo" label="num_processo" length="25" sourceType="VARCHAR" talendType="id_String" nullable="false">
+          <taggedValue xmi:id="_jSu9ph5aEfGmnOAGqGGqnw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_jSu9px5aEfGmnOAGqGGqnw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_jSu9qB5aEfGmnOAGqGGqnw" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_jSu9qR5aEfGmnOAGqGGqnw" name="data_abertura" label="data_abertura" length="13" sourceType="DATE" talendType="id_Date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;">
+          <taggedValue xmi:id="_jSu9qh5aEfGmnOAGqGGqnw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_jSu9qx5aEfGmnOAGqGGqnw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_jSu9rB5aEfGmnOAGqGGqnw" name="DATE" numericPrecisionRadix="10" javaDataType="91"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_jSu9rR5aEfGmnOAGqGGqnw" name="classe" label="classe" length="100" sourceType="VARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_jSu9rh5aEfGmnOAGqGGqnw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_jSu9rx5aEfGmnOAGqGGqnw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_jSu9sB5aEfGmnOAGqGGqnw" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_jSu9sR5aEfGmnOAGqGGqnw" name="tribunal" label="tribunal" length="10" sourceType="VARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_jSu9sh5aEfGmnOAGqGGqnw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_jSu9sx5aEfGmnOAGqGGqnw" body="'TRF5'::character varying'" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_jSu9tB5aEfGmnOAGqGGqnw" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+        </feature>
+      </ownedElement>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
