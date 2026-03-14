@@ -1215,7 +1215,7 @@ public class TRF5 implements TalendJob {
 
 		final boolean execStat = this.execStat;
 
-		mdc("Processos_Ingestao_Bronze_1_tDBInput_1", "nqtCcz_");
+		mdc("Processos_Ingestao_Bronze_1_tDBInput_1", "lFZIp1_");
 
 		String iterateId = "";
 
@@ -1435,7 +1435,7 @@ public class TRF5 implements TalendJob {
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append(" | ");
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append("PASS" + " = "
 									+ String.valueOf(
-											"enc:routine.encryption.key.v1:QXKSSrNjQBBg1gWqFDuZViyUkOHslutGXCkKOU+dCwcWxJsX/Q==")
+											"enc:routine.encryption.key.v1:vh09PWOgWJlzrooyvwDS/o4FoU3ycTwRjn76LuqEMU/IqwPMTg==")
 											.substring(0, 4)
 									+ "...");
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append(" | ");
@@ -1551,7 +1551,7 @@ public class TRF5 implements TalendJob {
 
 				final String decryptedPassword_Processos_Ingestao_Bronze_1_tDBInput_1 = java.util.Optional
 						.ofNullable(routines.system.PasswordEncryptUtil.decryptPassword(
-								"enc:routine.encryption.key.v1:rcSOTOOsKHIm/aAYkxKUKEo3u6nqJ9ILheOzoOH08pGvlJ2VPg=="))
+								"enc:routine.encryption.key.v1:6riOn0pPTQdyf6FZ/fg9vdqEC2aKM7XlcEKTm9sLQ4QUR0dKJw=="))
 						.orElse("");
 
 				String dbPwd_Processos_Ingestao_Bronze_1_tDBInput_1 = decryptedPassword_Processos_Ingestao_Bronze_1_tDBInput_1;
@@ -2024,286 +2024,234 @@ public class TRF5 implements TalendJob {
 			implements routines.system.IPersistableRow<Processos_Ingestao_Bronze_1_row2Struct> {
 		final static byte[] commonByteArrayLock_DEMOTRF5_TRF5 = new byte[0];
 		static byte[] commonByteArray_DEMOTRF5_TRF5 = new byte[0];
-		protected static final int DEFAULT_HASHCODE = 1;
-		protected static final int PRIME = 31;
-		protected int hashCode = DEFAULT_HASHCODE;
-		public boolean hashCodeDirty = true;
 
-		public String loopKey;
+		public int id_tribunal;
 
-		public int id_processo;
-
-		public int getId_processo() {
-			return this.id_processo;
+		public int getId_tribunal() {
+			return this.id_tribunal;
 		}
 
-		public Boolean id_processoIsNullable() {
+		public Boolean id_tribunalIsNullable() {
 			return false;
 		}
 
-		public Boolean id_processoIsKey() {
-			return true;
+		public Boolean id_tribunalIsKey() {
+			return false;
 		}
 
-		public Integer id_processoLength() {
+		public Integer id_tribunalLength() {
 			return 10;
 		}
 
-		public Integer id_processoPrecision() {
+		public Integer id_tribunalPrecision() {
 			return 0;
 		}
 
-		public String id_processoDefault() {
-
-			return "nextval('processos_judiciais_id_processo_seq'::regclass)";
-
-		}
-
-		public String id_processoComment() {
+		public String id_tribunalDefault() {
 
 			return "";
 
 		}
 
-		public String id_processoPattern() {
+		public String id_tribunalComment() {
 
 			return "";
 
 		}
 
-		public String id_processoOriginalDbColumnName() {
+		public String id_tribunalPattern() {
 
-			return "id_processo";
+			return "";
 
 		}
 
-		public String num_processo;
+		public String id_tribunalOriginalDbColumnName() {
 
-		public String getNum_processo() {
-			return this.num_processo;
+			return "id_tribunal";
+
 		}
 
-		public Boolean num_processoIsNullable() {
+		public String nome_tribunal;
+
+		public String getNome_tribunal() {
+			return this.nome_tribunal;
+		}
+
+		public Boolean nome_tribunalIsNullable() {
+			return true;
+		}
+
+		public Boolean nome_tribunalIsKey() {
 			return false;
 		}
 
-		public Boolean num_processoIsKey() {
-			return false;
+		public Integer nome_tribunalLength() {
+			return 255;
 		}
 
-		public Integer num_processoLength() {
-			return 25;
-		}
-
-		public Integer num_processoPrecision() {
+		public Integer nome_tribunalPrecision() {
 			return 0;
 		}
 
-		public String num_processoDefault() {
+		public String nome_tribunalDefault() {
 
 			return null;
 
 		}
 
-		public String num_processoComment() {
+		public String nome_tribunalComment() {
 
 			return "";
 
 		}
 
-		public String num_processoPattern() {
+		public String nome_tribunalPattern() {
 
 			return "";
 
 		}
 
-		public String num_processoOriginalDbColumnName() {
+		public String nome_tribunalOriginalDbColumnName() {
 
-			return "num_processo";
+			return "nome_tribunal";
 
 		}
 
-		public java.util.Date data_abertura;
+		public String sigla;
 
-		public java.util.Date getData_abertura() {
-			return this.data_abertura;
+		public String getSigla() {
+			return this.sigla;
 		}
 
-		public Boolean data_aberturaIsNullable() {
+		public Boolean siglaIsNullable() {
+			return true;
+		}
+
+		public Boolean siglaIsKey() {
 			return false;
 		}
 
-		public Boolean data_aberturaIsKey() {
-			return false;
+		public Integer siglaLength() {
+			return 20;
 		}
 
-		public Integer data_aberturaLength() {
-			return 13;
-		}
-
-		public Integer data_aberturaPrecision() {
+		public Integer siglaPrecision() {
 			return 0;
 		}
 
-		public String data_aberturaDefault() {
+		public String siglaDefault() {
 
 			return null;
 
 		}
 
-		public String data_aberturaComment() {
+		public String siglaComment() {
 
 			return "";
 
 		}
 
-		public String data_aberturaPattern() {
+		public String siglaPattern() {
 
-			return "dd-MM-yyyy";
-
-		}
-
-		public String data_aberturaOriginalDbColumnName() {
-
-			return "data_abertura";
+			return "";
 
 		}
 
-		public String classe;
+		public String siglaOriginalDbColumnName() {
 
-		public String getClasse() {
-			return this.classe;
+			return "sigla";
+
 		}
 
-		public Boolean classeIsNullable() {
+		public String regiao;
+
+		public String getRegiao() {
+			return this.regiao;
+		}
+
+		public Boolean regiaoIsNullable() {
 			return true;
 		}
 
-		public Boolean classeIsKey() {
+		public Boolean regiaoIsKey() {
 			return false;
 		}
 
-		public Integer classeLength() {
-			return 100;
+		public Integer regiaoLength() {
+			return 50;
 		}
 
-		public Integer classePrecision() {
+		public Integer regiaoPrecision() {
 			return 0;
 		}
 
-		public String classeDefault() {
+		public String regiaoDefault() {
 
 			return null;
 
 		}
 
-		public String classeComment() {
+		public String regiaoComment() {
 
 			return "";
 
 		}
 
-		public String classePattern() {
+		public String regiaoPattern() {
 
 			return "";
 
 		}
 
-		public String classeOriginalDbColumnName() {
+		public String regiaoOriginalDbColumnName() {
 
-			return "classe";
+			return "regiao";
 
 		}
 
-		public String tribunal;
+		public String porte_tribunal;
 
-		public String getTribunal() {
-			return this.tribunal;
+		public String getPorte_tribunal() {
+			return this.porte_tribunal;
 		}
 
-		public Boolean tribunalIsNullable() {
+		public Boolean porte_tribunalIsNullable() {
 			return true;
 		}
 
-		public Boolean tribunalIsKey() {
+		public Boolean porte_tribunalIsKey() {
 			return false;
 		}
 
-		public Integer tribunalLength() {
-			return 10;
+		public Integer porte_tribunalLength() {
+			return 50;
 		}
 
-		public Integer tribunalPrecision() {
+		public Integer porte_tribunalPrecision() {
 			return 0;
 		}
 
-		public String tribunalDefault() {
+		public String porte_tribunalDefault() {
 
-			return "'TRF5'::character varying'";
+			return null;
 
 		}
 
-		public String tribunalComment() {
+		public String porte_tribunalComment() {
 
 			return "";
 
 		}
 
-		public String tribunalPattern() {
+		public String porte_tribunalPattern() {
 
 			return "";
 
 		}
 
-		public String tribunalOriginalDbColumnName() {
+		public String porte_tribunalOriginalDbColumnName() {
 
-			return "tribunal";
-
-		}
-
-		@Override
-		public int hashCode() {
-			if (this.hashCodeDirty) {
-				final int prime = PRIME;
-				int result = DEFAULT_HASHCODE;
-
-				result = prime * result + (int) this.id_processo;
-
-				this.hashCode = result;
-				this.hashCodeDirty = false;
-			}
-			return this.hashCode;
-		}
-
-		@Override
-		public boolean equals(Object obj) {
-			if (this == obj)
-				return true;
-			if (obj == null)
-				return false;
-			if (getClass() != obj.getClass())
-				return false;
-			final Processos_Ingestao_Bronze_1_row2Struct other = (Processos_Ingestao_Bronze_1_row2Struct) obj;
-
-			if (this.id_processo != other.id_processo)
-				return false;
-
-			return true;
-		}
-
-		public void copyDataTo(Processos_Ingestao_Bronze_1_row2Struct other) {
-
-			other.id_processo = this.id_processo;
-			other.num_processo = this.num_processo;
-			other.data_abertura = this.data_abertura;
-			other.classe = this.classe;
-			other.tribunal = this.tribunal;
-
-		}
-
-		public void copyKeysDataTo(Processos_Ingestao_Bronze_1_row2Struct other) {
-
-			other.id_processo = this.id_processo;
+			return "porte_tribunal";
 
 		}
 
@@ -2367,48 +2315,6 @@ public class TRF5 implements TalendJob {
 			}
 		}
 
-		private java.util.Date readDate(ObjectInputStream dis) throws IOException {
-			java.util.Date dateReturn = null;
-			int length = 0;
-			length = dis.readByte();
-			if (length == -1) {
-				dateReturn = null;
-			} else {
-				dateReturn = new Date(dis.readLong());
-			}
-			return dateReturn;
-		}
-
-		private java.util.Date readDate(org.jboss.marshalling.Unmarshaller unmarshaller) throws IOException {
-			java.util.Date dateReturn = null;
-			int length = 0;
-			length = unmarshaller.readByte();
-			if (length == -1) {
-				dateReturn = null;
-			} else {
-				dateReturn = new Date(unmarshaller.readLong());
-			}
-			return dateReturn;
-		}
-
-		private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException {
-			if (date1 == null) {
-				dos.writeByte(-1);
-			} else {
-				dos.writeByte(0);
-				dos.writeLong(date1.getTime());
-			}
-		}
-
-		private void writeDate(java.util.Date date1, org.jboss.marshalling.Marshaller marshaller) throws IOException {
-			if (date1 == null) {
-				marshaller.writeByte(-1);
-			} else {
-				marshaller.writeByte(0);
-				marshaller.writeLong(date1.getTime());
-			}
-		}
-
 		public void readData(ObjectInputStream dis) {
 
 			synchronized (commonByteArrayLock_DEMOTRF5_TRF5) {
@@ -2417,15 +2323,15 @@ public class TRF5 implements TalendJob {
 
 					int length = 0;
 
-					this.id_processo = dis.readInt();
+					this.id_tribunal = dis.readInt();
 
-					this.num_processo = readString(dis);
+					this.nome_tribunal = readString(dis);
 
-					this.data_abertura = readDate(dis);
+					this.sigla = readString(dis);
 
-					this.classe = readString(dis);
+					this.regiao = readString(dis);
 
-					this.tribunal = readString(dis);
+					this.porte_tribunal = readString(dis);
 
 				} catch (IOException e) {
 					throw new RuntimeException(e);
@@ -2444,15 +2350,15 @@ public class TRF5 implements TalendJob {
 
 					int length = 0;
 
-					this.id_processo = dis.readInt();
+					this.id_tribunal = dis.readInt();
 
-					this.num_processo = readString(dis);
+					this.nome_tribunal = readString(dis);
 
-					this.data_abertura = readDate(dis);
+					this.sigla = readString(dis);
 
-					this.classe = readString(dis);
+					this.regiao = readString(dis);
 
-					this.tribunal = readString(dis);
+					this.porte_tribunal = readString(dis);
 
 				} catch (IOException e) {
 					throw new RuntimeException(e);
@@ -2468,23 +2374,23 @@ public class TRF5 implements TalendJob {
 
 				// int
 
-				dos.writeInt(this.id_processo);
+				dos.writeInt(this.id_tribunal);
 
 				// String
 
-				writeString(this.num_processo, dos);
-
-				// java.util.Date
-
-				writeDate(this.data_abertura, dos);
+				writeString(this.nome_tribunal, dos);
 
 				// String
 
-				writeString(this.classe, dos);
+				writeString(this.sigla, dos);
 
 				// String
 
-				writeString(this.tribunal, dos);
+				writeString(this.regiao, dos);
+
+				// String
+
+				writeString(this.porte_tribunal, dos);
 
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -2497,23 +2403,23 @@ public class TRF5 implements TalendJob {
 
 				// int
 
-				dos.writeInt(this.id_processo);
+				dos.writeInt(this.id_tribunal);
 
 				// String
 
-				writeString(this.num_processo, dos);
-
-				// java.util.Date
-
-				writeDate(this.data_abertura, dos);
+				writeString(this.nome_tribunal, dos);
 
 				// String
 
-				writeString(this.classe, dos);
+				writeString(this.sigla, dos);
 
 				// String
 
-				writeString(this.tribunal, dos);
+				writeString(this.regiao, dos);
+
+				// String
+
+				writeString(this.porte_tribunal, dos);
 
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -2526,11 +2432,11 @@ public class TRF5 implements TalendJob {
 			StringBuilder sb = new StringBuilder();
 			sb.append(super.toString());
 			sb.append("[");
-			sb.append("id_processo=" + String.valueOf(id_processo));
-			sb.append(",num_processo=" + num_processo);
-			sb.append(",data_abertura=" + String.valueOf(data_abertura));
-			sb.append(",classe=" + classe);
-			sb.append(",tribunal=" + tribunal);
+			sb.append("id_tribunal=" + String.valueOf(id_tribunal));
+			sb.append(",nome_tribunal=" + nome_tribunal);
+			sb.append(",sigla=" + sigla);
+			sb.append(",regiao=" + regiao);
+			sb.append(",porte_tribunal=" + porte_tribunal);
 			sb.append("]");
 
 			return sb.toString();
@@ -2539,38 +2445,38 @@ public class TRF5 implements TalendJob {
 		public String toLogString() {
 			StringBuilder sb = new StringBuilder();
 
-			sb.append(id_processo);
+			sb.append(id_tribunal);
 
 			sb.append("|");
 
-			if (num_processo == null) {
+			if (nome_tribunal == null) {
 				sb.append("<null>");
 			} else {
-				sb.append(num_processo);
+				sb.append(nome_tribunal);
 			}
 
 			sb.append("|");
 
-			if (data_abertura == null) {
+			if (sigla == null) {
 				sb.append("<null>");
 			} else {
-				sb.append(data_abertura);
+				sb.append(sigla);
 			}
 
 			sb.append("|");
 
-			if (classe == null) {
+			if (regiao == null) {
 				sb.append("<null>");
 			} else {
-				sb.append(classe);
+				sb.append(regiao);
 			}
 
 			sb.append("|");
 
-			if (tribunal == null) {
+			if (porte_tribunal == null) {
 				sb.append("<null>");
 			} else {
-				sb.append(tribunal);
+				sb.append(porte_tribunal);
 			}
 
 			sb.append("|");
@@ -2584,11 +2490,6 @@ public class TRF5 implements TalendJob {
 		public int compareTo(Processos_Ingestao_Bronze_1_row2Struct other) {
 
 			int returnValue = -1;
-
-			returnValue = checkNullsAndCompare(this.id_processo, other.id_processo);
-			if (returnValue != 0) {
-				return returnValue;
-			}
 
 			return returnValue;
 		}
@@ -2622,7 +2523,7 @@ public class TRF5 implements TalendJob {
 
 		final boolean execStat = this.execStat;
 
-		mdc("Processos_Ingestao_Bronze_1_tDBInput_2", "U3kMcR_");
+		mdc("Processos_Ingestao_Bronze_1_tDBInput_2", "NZjc31_");
 
 		String iterateId = "";
 
@@ -2763,20 +2664,20 @@ public class TRF5 implements TalendJob {
 				int pageSize_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = 1048576;
 				java.util.Map<String, org.talend.parquet.data.simple.SimpleGroupFactory> cachedFactory_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = new java.util.HashMap<>();
 				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("id_processo", false,
+						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("id_tribunal", false,
 								"INT32", "INT_32"));
 				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("num_processo", false,
+						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("nome_tribunal", true,
 								"BINARY", "UTF8"));
 				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("data_abertura",
-								false, "INT64", "TIMESTAMP_MILLIS"));
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("classe", true,
+						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("sigla", true,
 								"BINARY", "UTF8"));
 				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("tribunal", true,
+						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("regiao", true,
 								"BINARY", "UTF8"));
+				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
+						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("porte_tribunal",
+								true, "BINARY", "UTF8"));
 				messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
 						.named("Schema");
 
@@ -2842,7 +2743,7 @@ public class TRF5 implements TalendJob {
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append(" | ");
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append("PASS" + " = "
 									+ String.valueOf(
-											"enc:routine.encryption.key.v1:Mkmh10UhtqsvZy4bqHBZ1/0vkC0SS5sedFr+rrgkAifqECCLYw==")
+											"enc:routine.encryption.key.v1:GiWeduENE0/wvU21TAfzYSib6NYAed8HTst3UG5mMhVse5+llQ==")
 											.substring(0, 4)
 									+ "...");
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append(" | ");
@@ -2863,12 +2764,12 @@ public class TRF5 implements TalendJob {
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2
 									.append("TRIM_ALL_COLUMN" + " = " + "false");
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append(
-									"TRIM_COLUMN" + " = " + "[{TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("id_processo")
-											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("num_processo")
-											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("data_abertura")
-											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("classe") + "}, {TRIM="
-											+ ("false") + ", SCHEMA_COLUMN=" + ("tribunal") + "}]");
+							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2
+									.append("TRIM_COLUMN" + " = " + "[{TRIM=" + ("false") + ", SCHEMA_COLUMN="
+											+ ("id_tribunal") + "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN="
+											+ ("nome_tribunal") + "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN="
+											+ ("sigla") + "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("regiao")
+											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("porte_tribunal") + "}]");
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append(" | ");
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2
 									.append("UNIFIED_COMPONENTS" + " = " + "tPostgresqlInput");
@@ -2917,12 +2818,12 @@ public class TRF5 implements TalendJob {
 								component_parameters.put("TRIM_ALL_COLUMN", String.valueOf("false"));
 								component_parameters.put("TRIM_COLUMN",
 										String.valueOf(new StringBuilder().append("[{TRIM=").append("false")
-												.append(", SCHEMA_COLUMN=").append("id_processo").append("}, {TRIM=")
-												.append("false").append(", SCHEMA_COLUMN=").append("num_processo")
+												.append(", SCHEMA_COLUMN=").append("id_tribunal").append("}, {TRIM=")
+												.append("false").append(", SCHEMA_COLUMN=").append("nome_tribunal")
 												.append("}, {TRIM=").append("false").append(", SCHEMA_COLUMN=")
-												.append("data_abertura").append("}, {TRIM=").append("false")
-												.append(", SCHEMA_COLUMN=").append("classe").append("}, {TRIM=")
-												.append("false").append(", SCHEMA_COLUMN=").append("tribunal")
+												.append("sigla").append("}, {TRIM=").append("false")
+												.append(", SCHEMA_COLUMN=").append("regiao").append("}, {TRIM=")
+												.append("false").append(", SCHEMA_COLUMN=").append("porte_tribunal")
 												.append("}]").toString()));
 								component_parameters.put("UNIFIED_COMPONENTS", String.valueOf("tPostgresqlInput"));
 
@@ -2957,7 +2858,7 @@ public class TRF5 implements TalendJob {
 
 				final String decryptedPassword_Processos_Ingestao_Bronze_1_tDBInput_2 = java.util.Optional
 						.ofNullable(routines.system.PasswordEncryptUtil.decryptPassword(
-								"enc:routine.encryption.key.v1:0QE/9aVBcvpzbC63wRkI0qknzZI0e4eJUX7OrFVhKLeVlzEGDw=="))
+								"enc:routine.encryption.key.v1:jpZvDIZzFmMndcwLHiU6HGT2q7qkBWEo86+ua5Zpg35oJr6Hgw=="))
 						.orElse("");
 
 				String dbPwd_Processos_Ingestao_Bronze_1_tDBInput_2 = decryptedPassword_Processos_Ingestao_Bronze_1_tDBInput_2;
@@ -3019,41 +2920,41 @@ public class TRF5 implements TalendJob {
 						nb_line_Processos_Ingestao_Bronze_1_tDBInput_2++;
 
 						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_2 < 1) {
-							Processos_Ingestao_Bronze_1_row2.id_processo = 0;
+							Processos_Ingestao_Bronze_1_row2.id_tribunal = 0;
 						} else {
 
-							Processos_Ingestao_Bronze_1_row2.id_processo = rs_Processos_Ingestao_Bronze_1_tDBInput_2
+							Processos_Ingestao_Bronze_1_row2.id_tribunal = rs_Processos_Ingestao_Bronze_1_tDBInput_2
 									.getInt(1);
 							if (rs_Processos_Ingestao_Bronze_1_tDBInput_2.wasNull()) {
 								throw new RuntimeException("Null value in non-Nullable column");
 							}
 						}
 						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_2 < 2) {
-							Processos_Ingestao_Bronze_1_row2.num_processo = null;
+							Processos_Ingestao_Bronze_1_row2.nome_tribunal = null;
 						} else {
 
-							Processos_Ingestao_Bronze_1_row2.num_processo = routines.system.JDBCUtil
+							Processos_Ingestao_Bronze_1_row2.nome_tribunal = routines.system.JDBCUtil
 									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_2, 2, false);
 						}
 						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_2 < 3) {
-							Processos_Ingestao_Bronze_1_row2.data_abertura = null;
+							Processos_Ingestao_Bronze_1_row2.sigla = null;
 						} else {
 
-							Processos_Ingestao_Bronze_1_row2.data_abertura = routines.system.JDBCUtil
-									.getDate(rs_Processos_Ingestao_Bronze_1_tDBInput_2, 3);
+							Processos_Ingestao_Bronze_1_row2.sigla = routines.system.JDBCUtil
+									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_2, 3, false);
 						}
 						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_2 < 4) {
-							Processos_Ingestao_Bronze_1_row2.classe = null;
+							Processos_Ingestao_Bronze_1_row2.regiao = null;
 						} else {
 
-							Processos_Ingestao_Bronze_1_row2.classe = routines.system.JDBCUtil
+							Processos_Ingestao_Bronze_1_row2.regiao = routines.system.JDBCUtil
 									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_2, 4, false);
 						}
 						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_2 < 5) {
-							Processos_Ingestao_Bronze_1_row2.tribunal = null;
+							Processos_Ingestao_Bronze_1_row2.porte_tribunal = null;
 						} else {
 
-							Processos_Ingestao_Bronze_1_row2.tribunal = routines.system.JDBCUtil
+							Processos_Ingestao_Bronze_1_row2.porte_tribunal = routines.system.JDBCUtil
 									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_2, 5, false);
 						}
 
@@ -3094,15 +2995,14 @@ public class TRF5 implements TalendJob {
 									if (Processos_Ingestao_Bronze_1_row2 == null) {
 										return s;
 									}
-									a(s, "id_processo", "id_processo", "true", "id_Integer", "SERIAL", "false", "",
+									a(s, "id_tribunal", "id_tribunal", "false", "id_Integer", "SERIAL", "false", "",
 											"10", "0");
-									a(s, "num_processo", "num_processo", "false", "id_String", "VARCHAR", "false", "",
-											"25", "0");
-									a(s, "data_abertura", "data_abertura", "false", "id_Date", "DATE", "false",
-											"dd-MM-yyyy", "13", "0");
-									a(s, "classe", "classe", "false", "id_String", "VARCHAR", "true", "", "100", "0");
-									a(s, "tribunal", "tribunal", "false", "id_String", "VARCHAR", "true", "", "10",
-											"0");
+									a(s, "nome_tribunal", "nome_tribunal", "false", "id_String", "VARCHAR", "true", "",
+											"255", "0");
+									a(s, "sigla", "sigla", "false", "id_String", "VARCHAR", "true", "", "20", "0");
+									a(s, "regiao", "regiao", "false", "id_String", "VARCHAR", "true", "", "50", "0");
+									a(s, "porte_tribunal", "porte_tribunal", "false", "id_String", "VARCHAR", "true",
+											"", "50", "0");
 									return s;
 								}
 
@@ -3162,39 +3062,30 @@ public class TRF5 implements TalendJob {
 						org.talend.parquet.data.Group group_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = factory_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
 								.newGroup();
 
-						group_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.append("id_processo",
-								Processos_Ingestao_Bronze_1_row2.id_processo);
-						if (Processos_Ingestao_Bronze_1_row2.num_processo != null) {
+						group_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.append("id_tribunal",
+								Processos_Ingestao_Bronze_1_row2.id_tribunal);
+						if (Processos_Ingestao_Bronze_1_row2.nome_tribunal != null) {
 
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.append("num_processo",
-									String.valueOf(Processos_Ingestao_Bronze_1_row2.num_processo));
+							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.append("nome_tribunal",
+									String.valueOf(Processos_Ingestao_Bronze_1_row2.nome_tribunal));
 						}
 
-						if (Processos_Ingestao_Bronze_1_row2.data_abertura != null) {
+						if (Processos_Ingestao_Bronze_1_row2.sigla != null) {
 
-							if (messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.getType("data_abertura")
-									.isPrimitive()
-									&& org.apache.parquet.schema.PrimitiveType.PrimitiveTypeName.INT64 == messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
-											.getType("data_abertura").asPrimitiveType().getPrimitiveTypeName()) {
-								group_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.append("data_abertura",
-										Processos_Ingestao_Bronze_1_row2.data_abertura.getTime());
-							} else {
-								group_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.append("data_abertura",
-										FormatterUtils.format_Date(Processos_Ingestao_Bronze_1_row2.data_abertura,
-												"dd-MM-yyyy"));
-							}
+							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.append("sigla",
+									String.valueOf(Processos_Ingestao_Bronze_1_row2.sigla));
 						}
 
-						if (Processos_Ingestao_Bronze_1_row2.classe != null) {
+						if (Processos_Ingestao_Bronze_1_row2.regiao != null) {
 
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.append("classe",
-									String.valueOf(Processos_Ingestao_Bronze_1_row2.classe));
+							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.append("regiao",
+									String.valueOf(Processos_Ingestao_Bronze_1_row2.regiao));
 						}
 
-						if (Processos_Ingestao_Bronze_1_row2.tribunal != null) {
+						if (Processos_Ingestao_Bronze_1_row2.porte_tribunal != null) {
 
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.append("tribunal",
-									String.valueOf(Processos_Ingestao_Bronze_1_row2.tribunal));
+							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.append("porte_tribunal",
+									String.valueOf(Processos_Ingestao_Bronze_1_row2.porte_tribunal));
 						}
 
 						writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
@@ -3395,7 +3286,7 @@ public class TRF5 implements TalendJob {
 
 		final boolean execStat = this.execStat;
 
-		mdc("Processos_Ingestao_Bronze_1_tFileList_1", "5xzCql_");
+		mdc("Processos_Ingestao_Bronze_1_tFileList_1", "1UL0Cm_");
 
 		String iterateId = "";
 
@@ -4117,286 +4008,188 @@ public class TRF5 implements TalendJob {
 			implements routines.system.IPersistableRow<Processos_Ingestao_Bronze_1_row3Struct> {
 		final static byte[] commonByteArrayLock_DEMOTRF5_TRF5 = new byte[0];
 		static byte[] commonByteArray_DEMOTRF5_TRF5 = new byte[0];
-		protected static final int DEFAULT_HASHCODE = 1;
-		protected static final int PRIME = 31;
-		protected int hashCode = DEFAULT_HASHCODE;
-		public boolean hashCodeDirty = true;
 
-		public String loopKey;
+		public int id_classe;
 
-		public int id_processo;
-
-		public int getId_processo() {
-			return this.id_processo;
+		public int getId_classe() {
+			return this.id_classe;
 		}
 
-		public Boolean id_processoIsNullable() {
+		public Boolean id_classeIsNullable() {
 			return false;
 		}
 
-		public Boolean id_processoIsKey() {
-			return true;
+		public Boolean id_classeIsKey() {
+			return false;
 		}
 
-		public Integer id_processoLength() {
+		public Integer id_classeLength() {
 			return 10;
 		}
 
-		public Integer id_processoPrecision() {
+		public Integer id_classePrecision() {
 			return 0;
 		}
 
-		public String id_processoDefault() {
-
-			return "nextval('processos_judiciais_id_processo_seq'::regclass)";
-
-		}
-
-		public String id_processoComment() {
+		public String id_classeDefault() {
 
 			return "";
 
 		}
 
-		public String id_processoPattern() {
+		public String id_classeComment() {
 
 			return "";
 
 		}
 
-		public String id_processoOriginalDbColumnName() {
+		public String id_classePattern() {
 
-			return "id_processo";
+			return "";
 
 		}
 
-		public String num_processo;
+		public String id_classeOriginalDbColumnName() {
 
-		public String getNum_processo() {
-			return this.num_processo;
+			return "id_classe";
+
 		}
 
-		public Boolean num_processoIsNullable() {
+		public String cod_cnj;
+
+		public String getCod_cnj() {
+			return this.cod_cnj;
+		}
+
+		public Boolean cod_cnjIsNullable() {
+			return true;
+		}
+
+		public Boolean cod_cnjIsKey() {
 			return false;
 		}
 
-		public Boolean num_processoIsKey() {
-			return false;
+		public Integer cod_cnjLength() {
+			return 20;
 		}
 
-		public Integer num_processoLength() {
-			return 25;
-		}
-
-		public Integer num_processoPrecision() {
+		public Integer cod_cnjPrecision() {
 			return 0;
 		}
 
-		public String num_processoDefault() {
+		public String cod_cnjDefault() {
 
 			return null;
 
 		}
 
-		public String num_processoComment() {
+		public String cod_cnjComment() {
 
 			return "";
 
 		}
 
-		public String num_processoPattern() {
+		public String cod_cnjPattern() {
 
 			return "";
 
 		}
 
-		public String num_processoOriginalDbColumnName() {
+		public String cod_cnjOriginalDbColumnName() {
 
-			return "num_processo";
+			return "cod_cnj";
 
 		}
 
-		public java.util.Date data_abertura;
+		public String nome_classe;
 
-		public java.util.Date getData_abertura() {
-			return this.data_abertura;
+		public String getNome_classe() {
+			return this.nome_classe;
 		}
 
-		public Boolean data_aberturaIsNullable() {
+		public Boolean nome_classeIsNullable() {
+			return true;
+		}
+
+		public Boolean nome_classeIsKey() {
 			return false;
 		}
 
-		public Boolean data_aberturaIsKey() {
-			return false;
+		public Integer nome_classeLength() {
+			return 255;
 		}
 
-		public Integer data_aberturaLength() {
-			return 13;
-		}
-
-		public Integer data_aberturaPrecision() {
+		public Integer nome_classePrecision() {
 			return 0;
 		}
 
-		public String data_aberturaDefault() {
+		public String nome_classeDefault() {
 
 			return null;
 
 		}
 
-		public String data_aberturaComment() {
+		public String nome_classeComment() {
 
 			return "";
 
 		}
 
-		public String data_aberturaPattern() {
+		public String nome_classePattern() {
 
-			return "dd-MM-yyyy";
-
-		}
-
-		public String data_aberturaOriginalDbColumnName() {
-
-			return "data_abertura";
+			return "";
 
 		}
 
-		public String classe;
+		public String nome_classeOriginalDbColumnName() {
 
-		public String getClasse() {
-			return this.classe;
+			return "nome_classe";
+
 		}
 
-		public Boolean classeIsNullable() {
+		public String tipo_procedimento;
+
+		public String getTipo_procedimento() {
+			return this.tipo_procedimento;
+		}
+
+		public Boolean tipo_procedimentoIsNullable() {
 			return true;
 		}
 
-		public Boolean classeIsKey() {
+		public Boolean tipo_procedimentoIsKey() {
 			return false;
 		}
 
-		public Integer classeLength() {
-			return 100;
+		public Integer tipo_procedimentoLength() {
+			return 50;
 		}
 
-		public Integer classePrecision() {
+		public Integer tipo_procedimentoPrecision() {
 			return 0;
 		}
 
-		public String classeDefault() {
+		public String tipo_procedimentoDefault() {
 
 			return null;
 
 		}
 
-		public String classeComment() {
+		public String tipo_procedimentoComment() {
 
 			return "";
 
 		}
 
-		public String classePattern() {
+		public String tipo_procedimentoPattern() {
 
 			return "";
 
 		}
 
-		public String classeOriginalDbColumnName() {
+		public String tipo_procedimentoOriginalDbColumnName() {
 
-			return "classe";
-
-		}
-
-		public String tribunal;
-
-		public String getTribunal() {
-			return this.tribunal;
-		}
-
-		public Boolean tribunalIsNullable() {
-			return true;
-		}
-
-		public Boolean tribunalIsKey() {
-			return false;
-		}
-
-		public Integer tribunalLength() {
-			return 10;
-		}
-
-		public Integer tribunalPrecision() {
-			return 0;
-		}
-
-		public String tribunalDefault() {
-
-			return "'TRF5'::character varying'";
-
-		}
-
-		public String tribunalComment() {
-
-			return "";
-
-		}
-
-		public String tribunalPattern() {
-
-			return "";
-
-		}
-
-		public String tribunalOriginalDbColumnName() {
-
-			return "tribunal";
-
-		}
-
-		@Override
-		public int hashCode() {
-			if (this.hashCodeDirty) {
-				final int prime = PRIME;
-				int result = DEFAULT_HASHCODE;
-
-				result = prime * result + (int) this.id_processo;
-
-				this.hashCode = result;
-				this.hashCodeDirty = false;
-			}
-			return this.hashCode;
-		}
-
-		@Override
-		public boolean equals(Object obj) {
-			if (this == obj)
-				return true;
-			if (obj == null)
-				return false;
-			if (getClass() != obj.getClass())
-				return false;
-			final Processos_Ingestao_Bronze_1_row3Struct other = (Processos_Ingestao_Bronze_1_row3Struct) obj;
-
-			if (this.id_processo != other.id_processo)
-				return false;
-
-			return true;
-		}
-
-		public void copyDataTo(Processos_Ingestao_Bronze_1_row3Struct other) {
-
-			other.id_processo = this.id_processo;
-			other.num_processo = this.num_processo;
-			other.data_abertura = this.data_abertura;
-			other.classe = this.classe;
-			other.tribunal = this.tribunal;
-
-		}
-
-		public void copyKeysDataTo(Processos_Ingestao_Bronze_1_row3Struct other) {
-
-			other.id_processo = this.id_processo;
+			return "tipo_procedimento";
 
 		}
 
@@ -4460,48 +4253,6 @@ public class TRF5 implements TalendJob {
 			}
 		}
 
-		private java.util.Date readDate(ObjectInputStream dis) throws IOException {
-			java.util.Date dateReturn = null;
-			int length = 0;
-			length = dis.readByte();
-			if (length == -1) {
-				dateReturn = null;
-			} else {
-				dateReturn = new Date(dis.readLong());
-			}
-			return dateReturn;
-		}
-
-		private java.util.Date readDate(org.jboss.marshalling.Unmarshaller unmarshaller) throws IOException {
-			java.util.Date dateReturn = null;
-			int length = 0;
-			length = unmarshaller.readByte();
-			if (length == -1) {
-				dateReturn = null;
-			} else {
-				dateReturn = new Date(unmarshaller.readLong());
-			}
-			return dateReturn;
-		}
-
-		private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException {
-			if (date1 == null) {
-				dos.writeByte(-1);
-			} else {
-				dos.writeByte(0);
-				dos.writeLong(date1.getTime());
-			}
-		}
-
-		private void writeDate(java.util.Date date1, org.jboss.marshalling.Marshaller marshaller) throws IOException {
-			if (date1 == null) {
-				marshaller.writeByte(-1);
-			} else {
-				marshaller.writeByte(0);
-				marshaller.writeLong(date1.getTime());
-			}
-		}
-
 		public void readData(ObjectInputStream dis) {
 
 			synchronized (commonByteArrayLock_DEMOTRF5_TRF5) {
@@ -4510,15 +4261,13 @@ public class TRF5 implements TalendJob {
 
 					int length = 0;
 
-					this.id_processo = dis.readInt();
+					this.id_classe = dis.readInt();
 
-					this.num_processo = readString(dis);
+					this.cod_cnj = readString(dis);
 
-					this.data_abertura = readDate(dis);
+					this.nome_classe = readString(dis);
 
-					this.classe = readString(dis);
-
-					this.tribunal = readString(dis);
+					this.tipo_procedimento = readString(dis);
 
 				} catch (IOException e) {
 					throw new RuntimeException(e);
@@ -4537,15 +4286,13 @@ public class TRF5 implements TalendJob {
 
 					int length = 0;
 
-					this.id_processo = dis.readInt();
+					this.id_classe = dis.readInt();
 
-					this.num_processo = readString(dis);
+					this.cod_cnj = readString(dis);
 
-					this.data_abertura = readDate(dis);
+					this.nome_classe = readString(dis);
 
-					this.classe = readString(dis);
-
-					this.tribunal = readString(dis);
+					this.tipo_procedimento = readString(dis);
 
 				} catch (IOException e) {
 					throw new RuntimeException(e);
@@ -4561,23 +4308,19 @@ public class TRF5 implements TalendJob {
 
 				// int
 
-				dos.writeInt(this.id_processo);
+				dos.writeInt(this.id_classe);
 
 				// String
 
-				writeString(this.num_processo, dos);
-
-				// java.util.Date
-
-				writeDate(this.data_abertura, dos);
+				writeString(this.cod_cnj, dos);
 
 				// String
 
-				writeString(this.classe, dos);
+				writeString(this.nome_classe, dos);
 
 				// String
 
-				writeString(this.tribunal, dos);
+				writeString(this.tipo_procedimento, dos);
 
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -4590,23 +4333,19 @@ public class TRF5 implements TalendJob {
 
 				// int
 
-				dos.writeInt(this.id_processo);
+				dos.writeInt(this.id_classe);
 
 				// String
 
-				writeString(this.num_processo, dos);
-
-				// java.util.Date
-
-				writeDate(this.data_abertura, dos);
+				writeString(this.cod_cnj, dos);
 
 				// String
 
-				writeString(this.classe, dos);
+				writeString(this.nome_classe, dos);
 
 				// String
 
-				writeString(this.tribunal, dos);
+				writeString(this.tipo_procedimento, dos);
 
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -4619,11 +4358,10 @@ public class TRF5 implements TalendJob {
 			StringBuilder sb = new StringBuilder();
 			sb.append(super.toString());
 			sb.append("[");
-			sb.append("id_processo=" + String.valueOf(id_processo));
-			sb.append(",num_processo=" + num_processo);
-			sb.append(",data_abertura=" + String.valueOf(data_abertura));
-			sb.append(",classe=" + classe);
-			sb.append(",tribunal=" + tribunal);
+			sb.append("id_classe=" + String.valueOf(id_classe));
+			sb.append(",cod_cnj=" + cod_cnj);
+			sb.append(",nome_classe=" + nome_classe);
+			sb.append(",tipo_procedimento=" + tipo_procedimento);
 			sb.append("]");
 
 			return sb.toString();
@@ -4632,38 +4370,30 @@ public class TRF5 implements TalendJob {
 		public String toLogString() {
 			StringBuilder sb = new StringBuilder();
 
-			sb.append(id_processo);
+			sb.append(id_classe);
 
 			sb.append("|");
 
-			if (num_processo == null) {
+			if (cod_cnj == null) {
 				sb.append("<null>");
 			} else {
-				sb.append(num_processo);
+				sb.append(cod_cnj);
 			}
 
 			sb.append("|");
 
-			if (data_abertura == null) {
+			if (nome_classe == null) {
 				sb.append("<null>");
 			} else {
-				sb.append(data_abertura);
+				sb.append(nome_classe);
 			}
 
 			sb.append("|");
 
-			if (classe == null) {
+			if (tipo_procedimento == null) {
 				sb.append("<null>");
 			} else {
-				sb.append(classe);
-			}
-
-			sb.append("|");
-
-			if (tribunal == null) {
-				sb.append("<null>");
-			} else {
-				sb.append(tribunal);
+				sb.append(tipo_procedimento);
 			}
 
 			sb.append("|");
@@ -4677,11 +4407,6 @@ public class TRF5 implements TalendJob {
 		public int compareTo(Processos_Ingestao_Bronze_1_row3Struct other) {
 
 			int returnValue = -1;
-
-			returnValue = checkNullsAndCompare(this.id_processo, other.id_processo);
-			if (returnValue != 0) {
-				return returnValue;
-			}
 
 			return returnValue;
 		}
@@ -4715,7 +4440,7 @@ public class TRF5 implements TalendJob {
 
 		final boolean execStat = this.execStat;
 
-		mdc("Processos_Ingestao_Bronze_1_tDBInput_3", "XbYsHt_");
+		mdc("Processos_Ingestao_Bronze_1_tDBInput_3", "RkGc8b_");
 
 		String iterateId = "";
 
@@ -4856,20 +4581,17 @@ public class TRF5 implements TalendJob {
 				int pageSize_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = 1048576;
 				java.util.Map<String, org.talend.parquet.data.simple.SimpleGroupFactory> cachedFactory_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = new java.util.HashMap<>();
 				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("id_processo", false,
+						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("id_classe", false,
 								"INT32", "INT_32"));
 				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("num_processo", false,
+						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("cod_cnj", true,
 								"BINARY", "UTF8"));
 				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("data_abertura",
-								false, "INT64", "TIMESTAMP_MILLIS"));
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("classe", true,
+						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("nome_classe", true,
 								"BINARY", "UTF8"));
 				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("tribunal", true,
-								"BINARY", "UTF8"));
+						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("tipo_procedimento",
+								true, "BINARY", "UTF8"));
 				messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
 						.named("Schema");
 
@@ -4935,7 +4657,7 @@ public class TRF5 implements TalendJob {
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append(" | ");
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append("PASS" + " = "
 									+ String.valueOf(
-											"enc:routine.encryption.key.v1:xDzq//6JpfSoMztTZnlN1/ne0OTnWDmk7sWlv/ys/ul2qr79SQ==")
+											"enc:routine.encryption.key.v1:S/NjyrclVg9DRKCC2dg8uVfOhehGpE6kpb7+Ek+G2DFUqqBkpA==")
 											.substring(0, 4)
 									+ "...");
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append(" | ");
@@ -4957,11 +4679,10 @@ public class TRF5 implements TalendJob {
 									.append("TRIM_ALL_COLUMN" + " = " + "false");
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append(" | ");
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append(
-									"TRIM_COLUMN" + " = " + "[{TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("id_processo")
-											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("num_processo")
-											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("data_abertura")
-											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("classe") + "}, {TRIM="
-											+ ("false") + ", SCHEMA_COLUMN=" + ("tribunal") + "}]");
+									"TRIM_COLUMN" + " = " + "[{TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("id_classe")
+											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("cod_cnj") + "}, {TRIM="
+											+ ("false") + ", SCHEMA_COLUMN=" + ("nome_classe") + "}, {TRIM=" + ("false")
+											+ ", SCHEMA_COLUMN=" + ("tipo_procedimento") + "}]");
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append(" | ");
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3
 									.append("UNIFIED_COMPONENTS" + " = " + "tPostgresqlInput");
@@ -5010,13 +4731,12 @@ public class TRF5 implements TalendJob {
 								component_parameters.put("TRIM_ALL_COLUMN", String.valueOf("false"));
 								component_parameters.put("TRIM_COLUMN",
 										String.valueOf(new StringBuilder().append("[{TRIM=").append("false")
-												.append(", SCHEMA_COLUMN=").append("id_processo").append("}, {TRIM=")
-												.append("false").append(", SCHEMA_COLUMN=").append("num_processo")
+												.append(", SCHEMA_COLUMN=").append("id_classe").append("}, {TRIM=")
+												.append("false").append(", SCHEMA_COLUMN=").append("cod_cnj")
 												.append("}, {TRIM=").append("false").append(", SCHEMA_COLUMN=")
-												.append("data_abertura").append("}, {TRIM=").append("false")
-												.append(", SCHEMA_COLUMN=").append("classe").append("}, {TRIM=")
-												.append("false").append(", SCHEMA_COLUMN=").append("tribunal")
-												.append("}]").toString()));
+												.append("nome_classe").append("}, {TRIM=").append("false")
+												.append(", SCHEMA_COLUMN=").append("tipo_procedimento").append("}]")
+												.toString()));
 								component_parameters.put("UNIFIED_COMPONENTS", String.valueOf("tPostgresqlInput"));
 
 							} catch (java.lang.Exception e_Processos_Ingestao_Bronze_1_tDBInput_3) {
@@ -5050,7 +4770,7 @@ public class TRF5 implements TalendJob {
 
 				final String decryptedPassword_Processos_Ingestao_Bronze_1_tDBInput_3 = java.util.Optional
 						.ofNullable(routines.system.PasswordEncryptUtil.decryptPassword(
-								"enc:routine.encryption.key.v1:MkTshZ2jWXx4PNVBQQN0qWQZaNz2WwngUi6tv9pdV0Fy2r92Ow=="))
+								"enc:routine.encryption.key.v1:xU/EYPX34w/ex2MPqefnxLtfXUjOGDNapcELfkZ1XDL94BKaLw=="))
 						.orElse("");
 
 				String dbPwd_Processos_Ingestao_Bronze_1_tDBInput_3 = decryptedPassword_Processos_Ingestao_Bronze_1_tDBInput_3;
@@ -5112,42 +4832,35 @@ public class TRF5 implements TalendJob {
 						nb_line_Processos_Ingestao_Bronze_1_tDBInput_3++;
 
 						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_3 < 1) {
-							Processos_Ingestao_Bronze_1_row3.id_processo = 0;
+							Processos_Ingestao_Bronze_1_row3.id_classe = 0;
 						} else {
 
-							Processos_Ingestao_Bronze_1_row3.id_processo = rs_Processos_Ingestao_Bronze_1_tDBInput_3
+							Processos_Ingestao_Bronze_1_row3.id_classe = rs_Processos_Ingestao_Bronze_1_tDBInput_3
 									.getInt(1);
 							if (rs_Processos_Ingestao_Bronze_1_tDBInput_3.wasNull()) {
 								throw new RuntimeException("Null value in non-Nullable column");
 							}
 						}
 						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_3 < 2) {
-							Processos_Ingestao_Bronze_1_row3.num_processo = null;
+							Processos_Ingestao_Bronze_1_row3.cod_cnj = null;
 						} else {
 
-							Processos_Ingestao_Bronze_1_row3.num_processo = routines.system.JDBCUtil
+							Processos_Ingestao_Bronze_1_row3.cod_cnj = routines.system.JDBCUtil
 									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_3, 2, false);
 						}
 						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_3 < 3) {
-							Processos_Ingestao_Bronze_1_row3.data_abertura = null;
+							Processos_Ingestao_Bronze_1_row3.nome_classe = null;
 						} else {
 
-							Processos_Ingestao_Bronze_1_row3.data_abertura = routines.system.JDBCUtil
-									.getDate(rs_Processos_Ingestao_Bronze_1_tDBInput_3, 3);
+							Processos_Ingestao_Bronze_1_row3.nome_classe = routines.system.JDBCUtil
+									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_3, 3, false);
 						}
 						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_3 < 4) {
-							Processos_Ingestao_Bronze_1_row3.classe = null;
+							Processos_Ingestao_Bronze_1_row3.tipo_procedimento = null;
 						} else {
 
-							Processos_Ingestao_Bronze_1_row3.classe = routines.system.JDBCUtil
+							Processos_Ingestao_Bronze_1_row3.tipo_procedimento = routines.system.JDBCUtil
 									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_3, 4, false);
-						}
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_3 < 5) {
-							Processos_Ingestao_Bronze_1_row3.tribunal = null;
-						} else {
-
-							Processos_Ingestao_Bronze_1_row3.tribunal = routines.system.JDBCUtil
-									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_3, 5, false);
 						}
 
 						log.debug("Processos_Ingestao_Bronze_1_tDBInput_3 - Retrieving the record "
@@ -5187,15 +4900,13 @@ public class TRF5 implements TalendJob {
 									if (Processos_Ingestao_Bronze_1_row3 == null) {
 										return s;
 									}
-									a(s, "id_processo", "id_processo", "true", "id_Integer", "SERIAL", "false", "",
-											"10", "0");
-									a(s, "num_processo", "num_processo", "false", "id_String", "VARCHAR", "false", "",
-											"25", "0");
-									a(s, "data_abertura", "data_abertura", "false", "id_Date", "DATE", "false",
-											"dd-MM-yyyy", "13", "0");
-									a(s, "classe", "classe", "false", "id_String", "VARCHAR", "true", "", "100", "0");
-									a(s, "tribunal", "tribunal", "false", "id_String", "VARCHAR", "true", "", "10",
+									a(s, "id_classe", "id_classe", "false", "id_Integer", "SERIAL", "false", "", "10",
 											"0");
+									a(s, "cod_cnj", "cod_cnj", "false", "id_String", "VARCHAR", "true", "", "20", "0");
+									a(s, "nome_classe", "nome_classe", "false", "id_String", "VARCHAR", "true", "",
+											"255", "0");
+									a(s, "tipo_procedimento", "tipo_procedimento", "false", "id_String", "VARCHAR",
+											"true", "", "50", "0");
 									return s;
 								}
 
@@ -5255,39 +4966,24 @@ public class TRF5 implements TalendJob {
 						org.talend.parquet.data.Group group_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = factory_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
 								.newGroup();
 
-						group_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.append("id_processo",
-								Processos_Ingestao_Bronze_1_row3.id_processo);
-						if (Processos_Ingestao_Bronze_1_row3.num_processo != null) {
+						group_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.append("id_classe",
+								Processos_Ingestao_Bronze_1_row3.id_classe);
+						if (Processos_Ingestao_Bronze_1_row3.cod_cnj != null) {
 
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.append("num_processo",
-									String.valueOf(Processos_Ingestao_Bronze_1_row3.num_processo));
+							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.append("cod_cnj",
+									String.valueOf(Processos_Ingestao_Bronze_1_row3.cod_cnj));
 						}
 
-						if (Processos_Ingestao_Bronze_1_row3.data_abertura != null) {
+						if (Processos_Ingestao_Bronze_1_row3.nome_classe != null) {
 
-							if (messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.getType("data_abertura")
-									.isPrimitive()
-									&& org.apache.parquet.schema.PrimitiveType.PrimitiveTypeName.INT64 == messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
-											.getType("data_abertura").asPrimitiveType().getPrimitiveTypeName()) {
-								group_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.append("data_abertura",
-										Processos_Ingestao_Bronze_1_row3.data_abertura.getTime());
-							} else {
-								group_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.append("data_abertura",
-										FormatterUtils.format_Date(Processos_Ingestao_Bronze_1_row3.data_abertura,
-												"dd-MM-yyyy"));
-							}
+							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.append("nome_classe",
+									String.valueOf(Processos_Ingestao_Bronze_1_row3.nome_classe));
 						}
 
-						if (Processos_Ingestao_Bronze_1_row3.classe != null) {
+						if (Processos_Ingestao_Bronze_1_row3.tipo_procedimento != null) {
 
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.append("classe",
-									String.valueOf(Processos_Ingestao_Bronze_1_row3.classe));
-						}
-
-						if (Processos_Ingestao_Bronze_1_row3.tribunal != null) {
-
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.append("tribunal",
-									String.valueOf(Processos_Ingestao_Bronze_1_row3.tribunal));
+							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.append("tipo_procedimento",
+									String.valueOf(Processos_Ingestao_Bronze_1_row3.tipo_procedimento));
 						}
 
 						writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
@@ -5474,286 +5170,188 @@ public class TRF5 implements TalendJob {
 			implements routines.system.IPersistableRow<Processos_Ingestao_Bronze_1_row4Struct> {
 		final static byte[] commonByteArrayLock_DEMOTRF5_TRF5 = new byte[0];
 		static byte[] commonByteArray_DEMOTRF5_TRF5 = new byte[0];
-		protected static final int DEFAULT_HASHCODE = 1;
-		protected static final int PRIME = 31;
-		protected int hashCode = DEFAULT_HASHCODE;
-		public boolean hashCodeDirty = true;
 
-		public String loopKey;
+		public int id_assunto;
 
-		public int id_processo;
-
-		public int getId_processo() {
-			return this.id_processo;
+		public int getId_assunto() {
+			return this.id_assunto;
 		}
 
-		public Boolean id_processoIsNullable() {
+		public Boolean id_assuntoIsNullable() {
 			return false;
 		}
 
-		public Boolean id_processoIsKey() {
-			return true;
+		public Boolean id_assuntoIsKey() {
+			return false;
 		}
 
-		public Integer id_processoLength() {
+		public Integer id_assuntoLength() {
 			return 10;
 		}
 
-		public Integer id_processoPrecision() {
+		public Integer id_assuntoPrecision() {
 			return 0;
 		}
 
-		public String id_processoDefault() {
-
-			return "nextval('processos_judiciais_id_processo_seq'::regclass)";
-
-		}
-
-		public String id_processoComment() {
+		public String id_assuntoDefault() {
 
 			return "";
 
 		}
 
-		public String id_processoPattern() {
+		public String id_assuntoComment() {
 
 			return "";
 
 		}
 
-		public String id_processoOriginalDbColumnName() {
-
-			return "id_processo";
-
-		}
-
-		public String num_processo;
-
-		public String getNum_processo() {
-			return this.num_processo;
-		}
-
-		public Boolean num_processoIsNullable() {
-			return false;
-		}
-
-		public Boolean num_processoIsKey() {
-			return false;
-		}
-
-		public Integer num_processoLength() {
-			return 25;
-		}
-
-		public Integer num_processoPrecision() {
-			return 0;
-		}
-
-		public String num_processoDefault() {
-
-			return null;
-
-		}
-
-		public String num_processoComment() {
+		public String id_assuntoPattern() {
 
 			return "";
 
 		}
 
-		public String num_processoPattern() {
+		public String id_assuntoOriginalDbColumnName() {
 
-			return "";
-
-		}
-
-		public String num_processoOriginalDbColumnName() {
-
-			return "num_processo";
+			return "id_assunto";
 
 		}
 
-		public java.util.Date data_abertura;
+		public String cod_assunto_cnj;
 
-		public java.util.Date getData_abertura() {
-			return this.data_abertura;
+		public String getCod_assunto_cnj() {
+			return this.cod_assunto_cnj;
 		}
 
-		public Boolean data_aberturaIsNullable() {
-			return false;
-		}
-
-		public Boolean data_aberturaIsKey() {
-			return false;
-		}
-
-		public Integer data_aberturaLength() {
-			return 13;
-		}
-
-		public Integer data_aberturaPrecision() {
-			return 0;
-		}
-
-		public String data_aberturaDefault() {
-
-			return null;
-
-		}
-
-		public String data_aberturaComment() {
-
-			return "";
-
-		}
-
-		public String data_aberturaPattern() {
-
-			return "dd-MM-yyyy";
-
-		}
-
-		public String data_aberturaOriginalDbColumnName() {
-
-			return "data_abertura";
-
-		}
-
-		public String classe;
-
-		public String getClasse() {
-			return this.classe;
-		}
-
-		public Boolean classeIsNullable() {
+		public Boolean cod_assunto_cnjIsNullable() {
 			return true;
 		}
 
-		public Boolean classeIsKey() {
+		public Boolean cod_assunto_cnjIsKey() {
 			return false;
 		}
 
-		public Integer classeLength() {
+		public Integer cod_assunto_cnjLength() {
+			return 20;
+		}
+
+		public Integer cod_assunto_cnjPrecision() {
+			return 0;
+		}
+
+		public String cod_assunto_cnjDefault() {
+
+			return null;
+
+		}
+
+		public String cod_assunto_cnjComment() {
+
+			return "";
+
+		}
+
+		public String cod_assunto_cnjPattern() {
+
+			return "";
+
+		}
+
+		public String cod_assunto_cnjOriginalDbColumnName() {
+
+			return "cod_assunto_cnj";
+
+		}
+
+		public String descricao_assunto;
+
+		public String getDescricao_assunto() {
+			return this.descricao_assunto;
+		}
+
+		public Boolean descricao_assuntoIsNullable() {
+			return true;
+		}
+
+		public Boolean descricao_assuntoIsKey() {
+			return false;
+		}
+
+		public Integer descricao_assuntoLength() {
+			return 2147483647;
+		}
+
+		public Integer descricao_assuntoPrecision() {
+			return 0;
+		}
+
+		public String descricao_assuntoDefault() {
+
+			return null;
+
+		}
+
+		public String descricao_assuntoComment() {
+
+			return "";
+
+		}
+
+		public String descricao_assuntoPattern() {
+
+			return "";
+
+		}
+
+		public String descricao_assuntoOriginalDbColumnName() {
+
+			return "descricao_assunto";
+
+		}
+
+		public String ramo_direito;
+
+		public String getRamo_direito() {
+			return this.ramo_direito;
+		}
+
+		public Boolean ramo_direitoIsNullable() {
+			return true;
+		}
+
+		public Boolean ramo_direitoIsKey() {
+			return false;
+		}
+
+		public Integer ramo_direitoLength() {
 			return 100;
 		}
 
-		public Integer classePrecision() {
+		public Integer ramo_direitoPrecision() {
 			return 0;
 		}
 
-		public String classeDefault() {
+		public String ramo_direitoDefault() {
 
 			return null;
 
 		}
 
-		public String classeComment() {
+		public String ramo_direitoComment() {
 
 			return "";
 
 		}
 
-		public String classePattern() {
+		public String ramo_direitoPattern() {
 
 			return "";
 
 		}
 
-		public String classeOriginalDbColumnName() {
+		public String ramo_direitoOriginalDbColumnName() {
 
-			return "classe";
-
-		}
-
-		public String tribunal;
-
-		public String getTribunal() {
-			return this.tribunal;
-		}
-
-		public Boolean tribunalIsNullable() {
-			return true;
-		}
-
-		public Boolean tribunalIsKey() {
-			return false;
-		}
-
-		public Integer tribunalLength() {
-			return 10;
-		}
-
-		public Integer tribunalPrecision() {
-			return 0;
-		}
-
-		public String tribunalDefault() {
-
-			return "'TRF5'::character varying'";
-
-		}
-
-		public String tribunalComment() {
-
-			return "";
-
-		}
-
-		public String tribunalPattern() {
-
-			return "";
-
-		}
-
-		public String tribunalOriginalDbColumnName() {
-
-			return "tribunal";
-
-		}
-
-		@Override
-		public int hashCode() {
-			if (this.hashCodeDirty) {
-				final int prime = PRIME;
-				int result = DEFAULT_HASHCODE;
-
-				result = prime * result + (int) this.id_processo;
-
-				this.hashCode = result;
-				this.hashCodeDirty = false;
-			}
-			return this.hashCode;
-		}
-
-		@Override
-		public boolean equals(Object obj) {
-			if (this == obj)
-				return true;
-			if (obj == null)
-				return false;
-			if (getClass() != obj.getClass())
-				return false;
-			final Processos_Ingestao_Bronze_1_row4Struct other = (Processos_Ingestao_Bronze_1_row4Struct) obj;
-
-			if (this.id_processo != other.id_processo)
-				return false;
-
-			return true;
-		}
-
-		public void copyDataTo(Processos_Ingestao_Bronze_1_row4Struct other) {
-
-			other.id_processo = this.id_processo;
-			other.num_processo = this.num_processo;
-			other.data_abertura = this.data_abertura;
-			other.classe = this.classe;
-			other.tribunal = this.tribunal;
-
-		}
-
-		public void copyKeysDataTo(Processos_Ingestao_Bronze_1_row4Struct other) {
-
-			other.id_processo = this.id_processo;
+			return "ramo_direito";
 
 		}
 
@@ -5817,48 +5415,6 @@ public class TRF5 implements TalendJob {
 			}
 		}
 
-		private java.util.Date readDate(ObjectInputStream dis) throws IOException {
-			java.util.Date dateReturn = null;
-			int length = 0;
-			length = dis.readByte();
-			if (length == -1) {
-				dateReturn = null;
-			} else {
-				dateReturn = new Date(dis.readLong());
-			}
-			return dateReturn;
-		}
-
-		private java.util.Date readDate(org.jboss.marshalling.Unmarshaller unmarshaller) throws IOException {
-			java.util.Date dateReturn = null;
-			int length = 0;
-			length = unmarshaller.readByte();
-			if (length == -1) {
-				dateReturn = null;
-			} else {
-				dateReturn = new Date(unmarshaller.readLong());
-			}
-			return dateReturn;
-		}
-
-		private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException {
-			if (date1 == null) {
-				dos.writeByte(-1);
-			} else {
-				dos.writeByte(0);
-				dos.writeLong(date1.getTime());
-			}
-		}
-
-		private void writeDate(java.util.Date date1, org.jboss.marshalling.Marshaller marshaller) throws IOException {
-			if (date1 == null) {
-				marshaller.writeByte(-1);
-			} else {
-				marshaller.writeByte(0);
-				marshaller.writeLong(date1.getTime());
-			}
-		}
-
 		public void readData(ObjectInputStream dis) {
 
 			synchronized (commonByteArrayLock_DEMOTRF5_TRF5) {
@@ -5867,15 +5423,13 @@ public class TRF5 implements TalendJob {
 
 					int length = 0;
 
-					this.id_processo = dis.readInt();
+					this.id_assunto = dis.readInt();
 
-					this.num_processo = readString(dis);
+					this.cod_assunto_cnj = readString(dis);
 
-					this.data_abertura = readDate(dis);
+					this.descricao_assunto = readString(dis);
 
-					this.classe = readString(dis);
-
-					this.tribunal = readString(dis);
+					this.ramo_direito = readString(dis);
 
 				} catch (IOException e) {
 					throw new RuntimeException(e);
@@ -5894,15 +5448,13 @@ public class TRF5 implements TalendJob {
 
 					int length = 0;
 
-					this.id_processo = dis.readInt();
+					this.id_assunto = dis.readInt();
 
-					this.num_processo = readString(dis);
+					this.cod_assunto_cnj = readString(dis);
 
-					this.data_abertura = readDate(dis);
+					this.descricao_assunto = readString(dis);
 
-					this.classe = readString(dis);
-
-					this.tribunal = readString(dis);
+					this.ramo_direito = readString(dis);
 
 				} catch (IOException e) {
 					throw new RuntimeException(e);
@@ -5918,23 +5470,19 @@ public class TRF5 implements TalendJob {
 
 				// int
 
-				dos.writeInt(this.id_processo);
+				dos.writeInt(this.id_assunto);
 
 				// String
 
-				writeString(this.num_processo, dos);
-
-				// java.util.Date
-
-				writeDate(this.data_abertura, dos);
+				writeString(this.cod_assunto_cnj, dos);
 
 				// String
 
-				writeString(this.classe, dos);
+				writeString(this.descricao_assunto, dos);
 
 				// String
 
-				writeString(this.tribunal, dos);
+				writeString(this.ramo_direito, dos);
 
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -5947,23 +5495,19 @@ public class TRF5 implements TalendJob {
 
 				// int
 
-				dos.writeInt(this.id_processo);
+				dos.writeInt(this.id_assunto);
 
 				// String
 
-				writeString(this.num_processo, dos);
-
-				// java.util.Date
-
-				writeDate(this.data_abertura, dos);
+				writeString(this.cod_assunto_cnj, dos);
 
 				// String
 
-				writeString(this.classe, dos);
+				writeString(this.descricao_assunto, dos);
 
 				// String
 
-				writeString(this.tribunal, dos);
+				writeString(this.ramo_direito, dos);
 
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -5976,11 +5520,10 @@ public class TRF5 implements TalendJob {
 			StringBuilder sb = new StringBuilder();
 			sb.append(super.toString());
 			sb.append("[");
-			sb.append("id_processo=" + String.valueOf(id_processo));
-			sb.append(",num_processo=" + num_processo);
-			sb.append(",data_abertura=" + String.valueOf(data_abertura));
-			sb.append(",classe=" + classe);
-			sb.append(",tribunal=" + tribunal);
+			sb.append("id_assunto=" + String.valueOf(id_assunto));
+			sb.append(",cod_assunto_cnj=" + cod_assunto_cnj);
+			sb.append(",descricao_assunto=" + descricao_assunto);
+			sb.append(",ramo_direito=" + ramo_direito);
 			sb.append("]");
 
 			return sb.toString();
@@ -5989,38 +5532,30 @@ public class TRF5 implements TalendJob {
 		public String toLogString() {
 			StringBuilder sb = new StringBuilder();
 
-			sb.append(id_processo);
+			sb.append(id_assunto);
 
 			sb.append("|");
 
-			if (num_processo == null) {
+			if (cod_assunto_cnj == null) {
 				sb.append("<null>");
 			} else {
-				sb.append(num_processo);
+				sb.append(cod_assunto_cnj);
 			}
 
 			sb.append("|");
 
-			if (data_abertura == null) {
+			if (descricao_assunto == null) {
 				sb.append("<null>");
 			} else {
-				sb.append(data_abertura);
+				sb.append(descricao_assunto);
 			}
 
 			sb.append("|");
 
-			if (classe == null) {
+			if (ramo_direito == null) {
 				sb.append("<null>");
 			} else {
-				sb.append(classe);
-			}
-
-			sb.append("|");
-
-			if (tribunal == null) {
-				sb.append("<null>");
-			} else {
-				sb.append(tribunal);
+				sb.append(ramo_direito);
 			}
 
 			sb.append("|");
@@ -6034,11 +5569,6 @@ public class TRF5 implements TalendJob {
 		public int compareTo(Processos_Ingestao_Bronze_1_row4Struct other) {
 
 			int returnValue = -1;
-
-			returnValue = checkNullsAndCompare(this.id_processo, other.id_processo);
-			if (returnValue != 0) {
-				return returnValue;
-			}
 
 			return returnValue;
 		}
@@ -6072,7 +5602,7 @@ public class TRF5 implements TalendJob {
 
 		final boolean execStat = this.execStat;
 
-		mdc("Processos_Ingestao_Bronze_1_tDBInput_4", "2jZgGn_");
+		mdc("Processos_Ingestao_Bronze_1_tDBInput_4", "D00z26_");
 
 		String iterateId = "";
 
@@ -6213,19 +5743,16 @@ public class TRF5 implements TalendJob {
 				int pageSize_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = 1048576;
 				java.util.Map<String, org.talend.parquet.data.simple.SimpleGroupFactory> cachedFactory_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = new java.util.HashMap<>();
 				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("id_processo", false,
+						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("id_assunto", false,
 								"INT32", "INT_32"));
 				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("num_processo", false,
-								"BINARY", "UTF8"));
+						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("cod_assunto_cnj",
+								true, "BINARY", "UTF8"));
 				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("data_abertura",
-								false, "INT64", "TIMESTAMP_MILLIS"));
+						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("descricao_assunto",
+								true, "BINARY", "UTF8"));
 				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("classe", true,
-								"BINARY", "UTF8"));
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("tribunal", true,
+						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("ramo_direito", true,
 								"BINARY", "UTF8"));
 				messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
 						.named("Schema");
@@ -6292,7 +5819,7 @@ public class TRF5 implements TalendJob {
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append(" | ");
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append("PASS" + " = "
 									+ String.valueOf(
-											"enc:routine.encryption.key.v1:oxyJNJCqL4VFeQRgRq+eSE/EPv7gJTol07METhi6QhMJNuoMhQ==")
+											"enc:routine.encryption.key.v1:dFI0nVm5q+h0al7ItkKNBqCvDUprFV2+x7wtGlGRJz5MC2IsVA==")
 											.substring(0, 4)
 									+ "...");
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append(" | ");
@@ -6314,11 +5841,10 @@ public class TRF5 implements TalendJob {
 									.append("TRIM_ALL_COLUMN" + " = " + "false");
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append(" | ");
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append(
-									"TRIM_COLUMN" + " = " + "[{TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("id_processo")
-											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("num_processo")
-											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("data_abertura")
-											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("classe") + "}, {TRIM="
-											+ ("false") + ", SCHEMA_COLUMN=" + ("tribunal") + "}]");
+									"TRIM_COLUMN" + " = " + "[{TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("id_assunto")
+											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("cod_assunto_cnj")
+											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("descricao_assunto")
+											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("ramo_direito") + "}]");
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append(" | ");
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4
 									.append("UNIFIED_COMPONENTS" + " = " + "tPostgresqlInput");
@@ -6366,13 +5892,12 @@ public class TRF5 implements TalendJob {
 								component_parameters.put("TRIM_ALL_COLUMN", String.valueOf("false"));
 								component_parameters.put("TRIM_COLUMN",
 										String.valueOf(new StringBuilder().append("[{TRIM=").append("false")
-												.append(", SCHEMA_COLUMN=").append("id_processo").append("}, {TRIM=")
-												.append("false").append(", SCHEMA_COLUMN=").append("num_processo")
+												.append(", SCHEMA_COLUMN=").append("id_assunto").append("}, {TRIM=")
+												.append("false").append(", SCHEMA_COLUMN=").append("cod_assunto_cnj")
 												.append("}, {TRIM=").append("false").append(", SCHEMA_COLUMN=")
-												.append("data_abertura").append("}, {TRIM=").append("false")
-												.append(", SCHEMA_COLUMN=").append("classe").append("}, {TRIM=")
-												.append("false").append(", SCHEMA_COLUMN=").append("tribunal")
-												.append("}]").toString()));
+												.append("descricao_assunto").append("}, {TRIM=").append("false")
+												.append(", SCHEMA_COLUMN=").append("ramo_direito").append("}]")
+												.toString()));
 								component_parameters.put("UNIFIED_COMPONENTS", String.valueOf("tPostgresqlInput"));
 
 							} catch (java.lang.Exception e_Processos_Ingestao_Bronze_1_tDBInput_4) {
@@ -6406,7 +5931,7 @@ public class TRF5 implements TalendJob {
 
 				final String decryptedPassword_Processos_Ingestao_Bronze_1_tDBInput_4 = java.util.Optional
 						.ofNullable(routines.system.PasswordEncryptUtil.decryptPassword(
-								"enc:routine.encryption.key.v1:BaX2mlvblfHR3MXzeGAaVI4/rwmmWCEs4nCj5Xtzv/7XvtTyyQ=="))
+								"enc:routine.encryption.key.v1:atUUayx52/vo6QytBSsJ08U/KYyaeGMkM3W/ztGizzIdBxat9w=="))
 						.orElse("");
 
 				String dbPwd_Processos_Ingestao_Bronze_1_tDBInput_4 = decryptedPassword_Processos_Ingestao_Bronze_1_tDBInput_4;
@@ -6467,42 +5992,35 @@ public class TRF5 implements TalendJob {
 						nb_line_Processos_Ingestao_Bronze_1_tDBInput_4++;
 
 						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_4 < 1) {
-							Processos_Ingestao_Bronze_1_row4.id_processo = 0;
+							Processos_Ingestao_Bronze_1_row4.id_assunto = 0;
 						} else {
 
-							Processos_Ingestao_Bronze_1_row4.id_processo = rs_Processos_Ingestao_Bronze_1_tDBInput_4
+							Processos_Ingestao_Bronze_1_row4.id_assunto = rs_Processos_Ingestao_Bronze_1_tDBInput_4
 									.getInt(1);
 							if (rs_Processos_Ingestao_Bronze_1_tDBInput_4.wasNull()) {
 								throw new RuntimeException("Null value in non-Nullable column");
 							}
 						}
 						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_4 < 2) {
-							Processos_Ingestao_Bronze_1_row4.num_processo = null;
+							Processos_Ingestao_Bronze_1_row4.cod_assunto_cnj = null;
 						} else {
 
-							Processos_Ingestao_Bronze_1_row4.num_processo = routines.system.JDBCUtil
+							Processos_Ingestao_Bronze_1_row4.cod_assunto_cnj = routines.system.JDBCUtil
 									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_4, 2, false);
 						}
 						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_4 < 3) {
-							Processos_Ingestao_Bronze_1_row4.data_abertura = null;
+							Processos_Ingestao_Bronze_1_row4.descricao_assunto = null;
 						} else {
 
-							Processos_Ingestao_Bronze_1_row4.data_abertura = routines.system.JDBCUtil
-									.getDate(rs_Processos_Ingestao_Bronze_1_tDBInput_4, 3);
+							Processos_Ingestao_Bronze_1_row4.descricao_assunto = routines.system.JDBCUtil
+									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_4, 3, false);
 						}
 						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_4 < 4) {
-							Processos_Ingestao_Bronze_1_row4.classe = null;
+							Processos_Ingestao_Bronze_1_row4.ramo_direito = null;
 						} else {
 
-							Processos_Ingestao_Bronze_1_row4.classe = routines.system.JDBCUtil
+							Processos_Ingestao_Bronze_1_row4.ramo_direito = routines.system.JDBCUtil
 									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_4, 4, false);
-						}
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_4 < 5) {
-							Processos_Ingestao_Bronze_1_row4.tribunal = null;
-						} else {
-
-							Processos_Ingestao_Bronze_1_row4.tribunal = routines.system.JDBCUtil
-									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_4, 5, false);
 						}
 
 						log.debug("Processos_Ingestao_Bronze_1_tDBInput_4 - Retrieving the record "
@@ -6542,15 +6060,14 @@ public class TRF5 implements TalendJob {
 									if (Processos_Ingestao_Bronze_1_row4 == null) {
 										return s;
 									}
-									a(s, "id_processo", "id_processo", "true", "id_Integer", "SERIAL", "false", "",
-											"10", "0");
-									a(s, "num_processo", "num_processo", "false", "id_String", "VARCHAR", "false", "",
-											"25", "0");
-									a(s, "data_abertura", "data_abertura", "false", "id_Date", "DATE", "false",
-											"dd-MM-yyyy", "13", "0");
-									a(s, "classe", "classe", "false", "id_String", "VARCHAR", "true", "", "100", "0");
-									a(s, "tribunal", "tribunal", "false", "id_String", "VARCHAR", "true", "", "10",
+									a(s, "id_assunto", "id_assunto", "false", "id_Integer", "SERIAL", "false", "", "10",
 											"0");
+									a(s, "cod_assunto_cnj", "cod_assunto_cnj", "false", "id_String", "VARCHAR", "true",
+											"", "20", "0");
+									a(s, "descricao_assunto", "descricao_assunto", "false", "id_String", "TEXT", "true",
+											"", "2147483647", "0");
+									a(s, "ramo_direito", "ramo_direito", "false", "id_String", "VARCHAR", "true", "",
+											"100", "0");
 									return s;
 								}
 
@@ -6610,39 +6127,24 @@ public class TRF5 implements TalendJob {
 						org.talend.parquet.data.Group group_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = factory_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
 								.newGroup();
 
-						group_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.append("id_processo",
-								Processos_Ingestao_Bronze_1_row4.id_processo);
-						if (Processos_Ingestao_Bronze_1_row4.num_processo != null) {
+						group_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.append("id_assunto",
+								Processos_Ingestao_Bronze_1_row4.id_assunto);
+						if (Processos_Ingestao_Bronze_1_row4.cod_assunto_cnj != null) {
 
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.append("num_processo",
-									String.valueOf(Processos_Ingestao_Bronze_1_row4.num_processo));
+							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.append("cod_assunto_cnj",
+									String.valueOf(Processos_Ingestao_Bronze_1_row4.cod_assunto_cnj));
 						}
 
-						if (Processos_Ingestao_Bronze_1_row4.data_abertura != null) {
+						if (Processos_Ingestao_Bronze_1_row4.descricao_assunto != null) {
 
-							if (messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.getType("data_abertura")
-									.isPrimitive()
-									&& org.apache.parquet.schema.PrimitiveType.PrimitiveTypeName.INT64 == messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
-											.getType("data_abertura").asPrimitiveType().getPrimitiveTypeName()) {
-								group_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.append("data_abertura",
-										Processos_Ingestao_Bronze_1_row4.data_abertura.getTime());
-							} else {
-								group_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.append("data_abertura",
-										FormatterUtils.format_Date(Processos_Ingestao_Bronze_1_row4.data_abertura,
-												"dd-MM-yyyy"));
-							}
+							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.append("descricao_assunto",
+									String.valueOf(Processos_Ingestao_Bronze_1_row4.descricao_assunto));
 						}
 
-						if (Processos_Ingestao_Bronze_1_row4.classe != null) {
+						if (Processos_Ingestao_Bronze_1_row4.ramo_direito != null) {
 
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.append("classe",
-									String.valueOf(Processos_Ingestao_Bronze_1_row4.classe));
-						}
-
-						if (Processos_Ingestao_Bronze_1_row4.tribunal != null) {
-
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.append("tribunal",
-									String.valueOf(Processos_Ingestao_Bronze_1_row4.tribunal));
+							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.append("ramo_direito",
+									String.valueOf(Processos_Ingestao_Bronze_1_row4.ramo_direito));
 						}
 
 						writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
@@ -6829,286 +6331,234 @@ public class TRF5 implements TalendJob {
 			implements routines.system.IPersistableRow<Processos_Ingestao_Bronze_1_row5Struct> {
 		final static byte[] commonByteArrayLock_DEMOTRF5_TRF5 = new byte[0];
 		static byte[] commonByteArray_DEMOTRF5_TRF5 = new byte[0];
-		protected static final int DEFAULT_HASHCODE = 1;
-		protected static final int PRIME = 31;
-		protected int hashCode = DEFAULT_HASHCODE;
-		public boolean hashCodeDirty = true;
 
-		public String loopKey;
+		public int id_magistrado;
 
-		public int id_processo;
-
-		public int getId_processo() {
-			return this.id_processo;
+		public int getId_magistrado() {
+			return this.id_magistrado;
 		}
 
-		public Boolean id_processoIsNullable() {
+		public Boolean id_magistradoIsNullable() {
 			return false;
 		}
 
-		public Boolean id_processoIsKey() {
-			return true;
+		public Boolean id_magistradoIsKey() {
+			return false;
 		}
 
-		public Integer id_processoLength() {
+		public Integer id_magistradoLength() {
 			return 10;
 		}
 
-		public Integer id_processoPrecision() {
+		public Integer id_magistradoPrecision() {
 			return 0;
 		}
 
-		public String id_processoDefault() {
-
-			return "nextval('processos_judiciais_id_processo_seq'::regclass)";
-
-		}
-
-		public String id_processoComment() {
+		public String id_magistradoDefault() {
 
 			return "";
 
 		}
 
-		public String id_processoPattern() {
+		public String id_magistradoComment() {
 
 			return "";
 
 		}
 
-		public String id_processoOriginalDbColumnName() {
-
-			return "id_processo";
-
-		}
-
-		public String num_processo;
-
-		public String getNum_processo() {
-			return this.num_processo;
-		}
-
-		public Boolean num_processoIsNullable() {
-			return false;
-		}
-
-		public Boolean num_processoIsKey() {
-			return false;
-		}
-
-		public Integer num_processoLength() {
-			return 25;
-		}
-
-		public Integer num_processoPrecision() {
-			return 0;
-		}
-
-		public String num_processoDefault() {
-
-			return null;
-
-		}
-
-		public String num_processoComment() {
+		public String id_magistradoPattern() {
 
 			return "";
 
 		}
 
-		public String num_processoPattern() {
+		public String id_magistradoOriginalDbColumnName() {
 
-			return "";
-
-		}
-
-		public String num_processoOriginalDbColumnName() {
-
-			return "num_processo";
+			return "id_magistrado";
 
 		}
 
-		public java.util.Date data_abertura;
+		public String nome_completo;
 
-		public java.util.Date getData_abertura() {
-			return this.data_abertura;
+		public String getNome_completo() {
+			return this.nome_completo;
 		}
 
-		public Boolean data_aberturaIsNullable() {
-			return false;
-		}
-
-		public Boolean data_aberturaIsKey() {
-			return false;
-		}
-
-		public Integer data_aberturaLength() {
-			return 13;
-		}
-
-		public Integer data_aberturaPrecision() {
-			return 0;
-		}
-
-		public String data_aberturaDefault() {
-
-			return null;
-
-		}
-
-		public String data_aberturaComment() {
-
-			return "";
-
-		}
-
-		public String data_aberturaPattern() {
-
-			return "dd-MM-yyyy";
-
-		}
-
-		public String data_aberturaOriginalDbColumnName() {
-
-			return "data_abertura";
-
-		}
-
-		public String classe;
-
-		public String getClasse() {
-			return this.classe;
-		}
-
-		public Boolean classeIsNullable() {
+		public Boolean nome_completoIsNullable() {
 			return true;
 		}
 
-		public Boolean classeIsKey() {
+		public Boolean nome_completoIsKey() {
 			return false;
 		}
 
-		public Integer classeLength() {
+		public Integer nome_completoLength() {
+			return 255;
+		}
+
+		public Integer nome_completoPrecision() {
+			return 0;
+		}
+
+		public String nome_completoDefault() {
+
+			return null;
+
+		}
+
+		public String nome_completoComment() {
+
+			return "";
+
+		}
+
+		public String nome_completoPattern() {
+
+			return "";
+
+		}
+
+		public String nome_completoOriginalDbColumnName() {
+
+			return "nome_completo";
+
+		}
+
+		public String cargo;
+
+		public String getCargo() {
+			return this.cargo;
+		}
+
+		public Boolean cargoIsNullable() {
+			return true;
+		}
+
+		public Boolean cargoIsKey() {
+			return false;
+		}
+
+		public Integer cargoLength() {
 			return 100;
 		}
 
-		public Integer classePrecision() {
+		public Integer cargoPrecision() {
 			return 0;
 		}
 
-		public String classeDefault() {
+		public String cargoDefault() {
 
 			return null;
 
 		}
 
-		public String classeComment() {
+		public String cargoComment() {
 
 			return "";
 
 		}
 
-		public String classePattern() {
+		public String cargoPattern() {
 
 			return "";
 
 		}
 
-		public String classeOriginalDbColumnName() {
+		public String cargoOriginalDbColumnName() {
 
-			return "classe";
+			return "cargo";
 
 		}
 
-		public String tribunal;
+		public String data_posse;
 
-		public String getTribunal() {
-			return this.tribunal;
+		public String getData_posse() {
+			return this.data_posse;
 		}
 
-		public Boolean tribunalIsNullable() {
+		public Boolean data_posseIsNullable() {
 			return true;
 		}
 
-		public Boolean tribunalIsKey() {
+		public Boolean data_posseIsKey() {
 			return false;
 		}
 
-		public Integer tribunalLength() {
-			return 10;
+		public Integer data_posseLength() {
+			return 50;
 		}
 
-		public Integer tribunalPrecision() {
+		public Integer data_possePrecision() {
 			return 0;
 		}
 
-		public String tribunalDefault() {
+		public String data_posseDefault() {
 
-			return "'TRF5'::character varying'";
+			return null;
 
 		}
 
-		public String tribunalComment() {
+		public String data_posseComment() {
 
 			return "";
 
 		}
 
-		public String tribunalPattern() {
+		public String data_possePattern() {
 
 			return "";
 
 		}
 
-		public String tribunalOriginalDbColumnName() {
+		public String data_posseOriginalDbColumnName() {
 
-			return "tribunal";
+			return "data_posse";
 
 		}
 
-		@Override
-		public int hashCode() {
-			if (this.hashCodeDirty) {
-				final int prime = PRIME;
-				int result = DEFAULT_HASHCODE;
+		public String situacao;
 
-				result = prime * result + (int) this.id_processo;
-
-				this.hashCode = result;
-				this.hashCodeDirty = false;
-			}
-			return this.hashCode;
+		public String getSituacao() {
+			return this.situacao;
 		}
 
-		@Override
-		public boolean equals(Object obj) {
-			if (this == obj)
-				return true;
-			if (obj == null)
-				return false;
-			if (getClass() != obj.getClass())
-				return false;
-			final Processos_Ingestao_Bronze_1_row5Struct other = (Processos_Ingestao_Bronze_1_row5Struct) obj;
-
-			if (this.id_processo != other.id_processo)
-				return false;
-
+		public Boolean situacaoIsNullable() {
 			return true;
 		}
 
-		public void copyDataTo(Processos_Ingestao_Bronze_1_row5Struct other) {
+		public Boolean situacaoIsKey() {
+			return false;
+		}
 
-			other.id_processo = this.id_processo;
-			other.num_processo = this.num_processo;
-			other.data_abertura = this.data_abertura;
-			other.classe = this.classe;
-			other.tribunal = this.tribunal;
+		public Integer situacaoLength() {
+			return 20;
+		}
+
+		public Integer situacaoPrecision() {
+			return 0;
+		}
+
+		public String situacaoDefault() {
+
+			return null;
 
 		}
 
-		public void copyKeysDataTo(Processos_Ingestao_Bronze_1_row5Struct other) {
+		public String situacaoComment() {
 
-			other.id_processo = this.id_processo;
+			return "";
+
+		}
+
+		public String situacaoPattern() {
+
+			return "";
+
+		}
+
+		public String situacaoOriginalDbColumnName() {
+
+			return "situacao";
 
 		}
 
@@ -7172,48 +6622,6 @@ public class TRF5 implements TalendJob {
 			}
 		}
 
-		private java.util.Date readDate(ObjectInputStream dis) throws IOException {
-			java.util.Date dateReturn = null;
-			int length = 0;
-			length = dis.readByte();
-			if (length == -1) {
-				dateReturn = null;
-			} else {
-				dateReturn = new Date(dis.readLong());
-			}
-			return dateReturn;
-		}
-
-		private java.util.Date readDate(org.jboss.marshalling.Unmarshaller unmarshaller) throws IOException {
-			java.util.Date dateReturn = null;
-			int length = 0;
-			length = unmarshaller.readByte();
-			if (length == -1) {
-				dateReturn = null;
-			} else {
-				dateReturn = new Date(unmarshaller.readLong());
-			}
-			return dateReturn;
-		}
-
-		private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException {
-			if (date1 == null) {
-				dos.writeByte(-1);
-			} else {
-				dos.writeByte(0);
-				dos.writeLong(date1.getTime());
-			}
-		}
-
-		private void writeDate(java.util.Date date1, org.jboss.marshalling.Marshaller marshaller) throws IOException {
-			if (date1 == null) {
-				marshaller.writeByte(-1);
-			} else {
-				marshaller.writeByte(0);
-				marshaller.writeLong(date1.getTime());
-			}
-		}
-
 		public void readData(ObjectInputStream dis) {
 
 			synchronized (commonByteArrayLock_DEMOTRF5_TRF5) {
@@ -7222,15 +6630,15 @@ public class TRF5 implements TalendJob {
 
 					int length = 0;
 
-					this.id_processo = dis.readInt();
+					this.id_magistrado = dis.readInt();
 
-					this.num_processo = readString(dis);
+					this.nome_completo = readString(dis);
 
-					this.data_abertura = readDate(dis);
+					this.cargo = readString(dis);
 
-					this.classe = readString(dis);
+					this.data_posse = readString(dis);
 
-					this.tribunal = readString(dis);
+					this.situacao = readString(dis);
 
 				} catch (IOException e) {
 					throw new RuntimeException(e);
@@ -7249,15 +6657,15 @@ public class TRF5 implements TalendJob {
 
 					int length = 0;
 
-					this.id_processo = dis.readInt();
+					this.id_magistrado = dis.readInt();
 
-					this.num_processo = readString(dis);
+					this.nome_completo = readString(dis);
 
-					this.data_abertura = readDate(dis);
+					this.cargo = readString(dis);
 
-					this.classe = readString(dis);
+					this.data_posse = readString(dis);
 
-					this.tribunal = readString(dis);
+					this.situacao = readString(dis);
 
 				} catch (IOException e) {
 					throw new RuntimeException(e);
@@ -7273,23 +6681,23 @@ public class TRF5 implements TalendJob {
 
 				// int
 
-				dos.writeInt(this.id_processo);
+				dos.writeInt(this.id_magistrado);
 
 				// String
 
-				writeString(this.num_processo, dos);
-
-				// java.util.Date
-
-				writeDate(this.data_abertura, dos);
+				writeString(this.nome_completo, dos);
 
 				// String
 
-				writeString(this.classe, dos);
+				writeString(this.cargo, dos);
 
 				// String
 
-				writeString(this.tribunal, dos);
+				writeString(this.data_posse, dos);
+
+				// String
+
+				writeString(this.situacao, dos);
 
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -7302,23 +6710,23 @@ public class TRF5 implements TalendJob {
 
 				// int
 
-				dos.writeInt(this.id_processo);
+				dos.writeInt(this.id_magistrado);
 
 				// String
 
-				writeString(this.num_processo, dos);
-
-				// java.util.Date
-
-				writeDate(this.data_abertura, dos);
+				writeString(this.nome_completo, dos);
 
 				// String
 
-				writeString(this.classe, dos);
+				writeString(this.cargo, dos);
 
 				// String
 
-				writeString(this.tribunal, dos);
+				writeString(this.data_posse, dos);
+
+				// String
+
+				writeString(this.situacao, dos);
 
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -7331,11 +6739,11 @@ public class TRF5 implements TalendJob {
 			StringBuilder sb = new StringBuilder();
 			sb.append(super.toString());
 			sb.append("[");
-			sb.append("id_processo=" + String.valueOf(id_processo));
-			sb.append(",num_processo=" + num_processo);
-			sb.append(",data_abertura=" + String.valueOf(data_abertura));
-			sb.append(",classe=" + classe);
-			sb.append(",tribunal=" + tribunal);
+			sb.append("id_magistrado=" + String.valueOf(id_magistrado));
+			sb.append(",nome_completo=" + nome_completo);
+			sb.append(",cargo=" + cargo);
+			sb.append(",data_posse=" + data_posse);
+			sb.append(",situacao=" + situacao);
 			sb.append("]");
 
 			return sb.toString();
@@ -7344,38 +6752,38 @@ public class TRF5 implements TalendJob {
 		public String toLogString() {
 			StringBuilder sb = new StringBuilder();
 
-			sb.append(id_processo);
+			sb.append(id_magistrado);
 
 			sb.append("|");
 
-			if (num_processo == null) {
+			if (nome_completo == null) {
 				sb.append("<null>");
 			} else {
-				sb.append(num_processo);
+				sb.append(nome_completo);
 			}
 
 			sb.append("|");
 
-			if (data_abertura == null) {
+			if (cargo == null) {
 				sb.append("<null>");
 			} else {
-				sb.append(data_abertura);
+				sb.append(cargo);
 			}
 
 			sb.append("|");
 
-			if (classe == null) {
+			if (data_posse == null) {
 				sb.append("<null>");
 			} else {
-				sb.append(classe);
+				sb.append(data_posse);
 			}
 
 			sb.append("|");
 
-			if (tribunal == null) {
+			if (situacao == null) {
 				sb.append("<null>");
 			} else {
-				sb.append(tribunal);
+				sb.append(situacao);
 			}
 
 			sb.append("|");
@@ -7389,11 +6797,6 @@ public class TRF5 implements TalendJob {
 		public int compareTo(Processos_Ingestao_Bronze_1_row5Struct other) {
 
 			int returnValue = -1;
-
-			returnValue = checkNullsAndCompare(this.id_processo, other.id_processo);
-			if (returnValue != 0) {
-				return returnValue;
-			}
 
 			return returnValue;
 		}
@@ -7427,7 +6830,7 @@ public class TRF5 implements TalendJob {
 
 		final boolean execStat = this.execStat;
 
-		mdc("Processos_Ingestao_Bronze_1_tDBInput_5", "Zseb2S_");
+		mdc("Processos_Ingestao_Bronze_1_tDBInput_5", "cD68mr_");
 
 		String iterateId = "";
 
@@ -7568,19 +6971,19 @@ public class TRF5 implements TalendJob {
 				int pageSize_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = 1048576;
 				java.util.Map<String, org.talend.parquet.data.simple.SimpleGroupFactory> cachedFactory_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = new java.util.HashMap<>();
 				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("id_processo", false,
-								"INT32", "INT_32"));
+						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("id_magistrado",
+								false, "INT32", "INT_32"));
 				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("num_processo", false,
+						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("nome_completo", true,
 								"BINARY", "UTF8"));
 				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("data_abertura",
-								false, "INT64", "TIMESTAMP_MILLIS"));
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("classe", true,
+						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("cargo", true,
 								"BINARY", "UTF8"));
 				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("tribunal", true,
+						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("data_posse", true,
+								"BINARY", "UTF8"));
+				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
+						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("situacao", true,
 								"BINARY", "UTF8"));
 				messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
 						.named("Schema");
@@ -7647,7 +7050,7 @@ public class TRF5 implements TalendJob {
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append(" | ");
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append("PASS" + " = "
 									+ String.valueOf(
-											"enc:routine.encryption.key.v1:6sLD7I/lyGSUcGDj8p1PQXe6wbJJ5cHxzbI8iGriVrfuFTNt2w==")
+											"enc:routine.encryption.key.v1:+rU5o3Z8toKEWB6wKAQk0qmqa/NAr1P1JCm78pnOKc96Itu65g==")
 											.substring(0, 4)
 									+ "...");
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append(" | ");
@@ -7668,12 +7071,12 @@ public class TRF5 implements TalendJob {
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5
 									.append("TRIM_ALL_COLUMN" + " = " + "false");
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append(
-									"TRIM_COLUMN" + " = " + "[{TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("id_processo")
-											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("num_processo")
-											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("data_abertura")
-											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("classe") + "}, {TRIM="
-											+ ("false") + ", SCHEMA_COLUMN=" + ("tribunal") + "}]");
+							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5
+									.append("TRIM_COLUMN" + " = " + "[{TRIM=" + ("false") + ", SCHEMA_COLUMN="
+											+ ("id_magistrado") + "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN="
+											+ ("nome_completo") + "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN="
+											+ ("cargo") + "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("data_posse")
+											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("situacao") + "}]");
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append(" | ");
 							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5
 									.append("UNIFIED_COMPONENTS" + " = " + "tPostgresqlInput");
@@ -7722,12 +7125,12 @@ public class TRF5 implements TalendJob {
 								component_parameters.put("TRIM_ALL_COLUMN", String.valueOf("false"));
 								component_parameters.put("TRIM_COLUMN",
 										String.valueOf(new StringBuilder().append("[{TRIM=").append("false")
-												.append(", SCHEMA_COLUMN=").append("id_processo").append("}, {TRIM=")
-												.append("false").append(", SCHEMA_COLUMN=").append("num_processo")
+												.append(", SCHEMA_COLUMN=").append("id_magistrado").append("}, {TRIM=")
+												.append("false").append(", SCHEMA_COLUMN=").append("nome_completo")
 												.append("}, {TRIM=").append("false").append(", SCHEMA_COLUMN=")
-												.append("data_abertura").append("}, {TRIM=").append("false")
-												.append(", SCHEMA_COLUMN=").append("classe").append("}, {TRIM=")
-												.append("false").append(", SCHEMA_COLUMN=").append("tribunal")
+												.append("cargo").append("}, {TRIM=").append("false")
+												.append(", SCHEMA_COLUMN=").append("data_posse").append("}, {TRIM=")
+												.append("false").append(", SCHEMA_COLUMN=").append("situacao")
 												.append("}]").toString()));
 								component_parameters.put("UNIFIED_COMPONENTS", String.valueOf("tPostgresqlInput"));
 
@@ -7762,7 +7165,7 @@ public class TRF5 implements TalendJob {
 
 				final String decryptedPassword_Processos_Ingestao_Bronze_1_tDBInput_5 = java.util.Optional
 						.ofNullable(routines.system.PasswordEncryptUtil.decryptPassword(
-								"enc:routine.encryption.key.v1:1bypJk3qRlK7DdejiMqBWOkwNNpsC76ENoDb+lc6Fz8oEkcXKA=="))
+								"enc:routine.encryption.key.v1:M1qKEvhf35UJJV5YLxdJKK8DHC0La+DdNM8edP3wY7SABYr6Qw=="))
 						.orElse("");
 
 				String dbPwd_Processos_Ingestao_Bronze_1_tDBInput_5 = decryptedPassword_Processos_Ingestao_Bronze_1_tDBInput_5;
@@ -7824,41 +7227,41 @@ public class TRF5 implements TalendJob {
 						nb_line_Processos_Ingestao_Bronze_1_tDBInput_5++;
 
 						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_5 < 1) {
-							Processos_Ingestao_Bronze_1_row5.id_processo = 0;
+							Processos_Ingestao_Bronze_1_row5.id_magistrado = 0;
 						} else {
 
-							Processos_Ingestao_Bronze_1_row5.id_processo = rs_Processos_Ingestao_Bronze_1_tDBInput_5
+							Processos_Ingestao_Bronze_1_row5.id_magistrado = rs_Processos_Ingestao_Bronze_1_tDBInput_5
 									.getInt(1);
 							if (rs_Processos_Ingestao_Bronze_1_tDBInput_5.wasNull()) {
 								throw new RuntimeException("Null value in non-Nullable column");
 							}
 						}
 						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_5 < 2) {
-							Processos_Ingestao_Bronze_1_row5.num_processo = null;
+							Processos_Ingestao_Bronze_1_row5.nome_completo = null;
 						} else {
 
-							Processos_Ingestao_Bronze_1_row5.num_processo = routines.system.JDBCUtil
+							Processos_Ingestao_Bronze_1_row5.nome_completo = routines.system.JDBCUtil
 									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_5, 2, false);
 						}
 						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_5 < 3) {
-							Processos_Ingestao_Bronze_1_row5.data_abertura = null;
+							Processos_Ingestao_Bronze_1_row5.cargo = null;
 						} else {
 
-							Processos_Ingestao_Bronze_1_row5.data_abertura = routines.system.JDBCUtil
-									.getDate(rs_Processos_Ingestao_Bronze_1_tDBInput_5, 3);
+							Processos_Ingestao_Bronze_1_row5.cargo = routines.system.JDBCUtil
+									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_5, 3, false);
 						}
 						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_5 < 4) {
-							Processos_Ingestao_Bronze_1_row5.classe = null;
+							Processos_Ingestao_Bronze_1_row5.data_posse = null;
 						} else {
 
-							Processos_Ingestao_Bronze_1_row5.classe = routines.system.JDBCUtil
+							Processos_Ingestao_Bronze_1_row5.data_posse = routines.system.JDBCUtil
 									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_5, 4, false);
 						}
 						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_5 < 5) {
-							Processos_Ingestao_Bronze_1_row5.tribunal = null;
+							Processos_Ingestao_Bronze_1_row5.situacao = null;
 						} else {
 
-							Processos_Ingestao_Bronze_1_row5.tribunal = routines.system.JDBCUtil
+							Processos_Ingestao_Bronze_1_row5.situacao = routines.system.JDBCUtil
 									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_5, 5, false);
 						}
 
@@ -7899,14 +7302,14 @@ public class TRF5 implements TalendJob {
 									if (Processos_Ingestao_Bronze_1_row5 == null) {
 										return s;
 									}
-									a(s, "id_processo", "id_processo", "true", "id_Integer", "SERIAL", "false", "",
+									a(s, "id_magistrado", "id_magistrado", "false", "id_Integer", "SERIAL", "false", "",
 											"10", "0");
-									a(s, "num_processo", "num_processo", "false", "id_String", "VARCHAR", "false", "",
-											"25", "0");
-									a(s, "data_abertura", "data_abertura", "false", "id_Date", "DATE", "false",
-											"dd-MM-yyyy", "13", "0");
-									a(s, "classe", "classe", "false", "id_String", "VARCHAR", "true", "", "100", "0");
-									a(s, "tribunal", "tribunal", "false", "id_String", "VARCHAR", "true", "", "10",
+									a(s, "nome_completo", "nome_completo", "false", "id_String", "VARCHAR", "true", "",
+											"255", "0");
+									a(s, "cargo", "cargo", "false", "id_String", "VARCHAR", "true", "", "100", "0");
+									a(s, "data_posse", "data_posse", "false", "id_String", "VARCHAR", "true", "", "50",
+											"0");
+									a(s, "situacao", "situacao", "false", "id_String", "VARCHAR", "true", "", "20",
 											"0");
 									return s;
 								}
@@ -7967,39 +7370,30 @@ public class TRF5 implements TalendJob {
 						org.talend.parquet.data.Group group_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = factory_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
 								.newGroup();
 
-						group_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.append("id_processo",
-								Processos_Ingestao_Bronze_1_row5.id_processo);
-						if (Processos_Ingestao_Bronze_1_row5.num_processo != null) {
+						group_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.append("id_magistrado",
+								Processos_Ingestao_Bronze_1_row5.id_magistrado);
+						if (Processos_Ingestao_Bronze_1_row5.nome_completo != null) {
 
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.append("num_processo",
-									String.valueOf(Processos_Ingestao_Bronze_1_row5.num_processo));
+							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.append("nome_completo",
+									String.valueOf(Processos_Ingestao_Bronze_1_row5.nome_completo));
 						}
 
-						if (Processos_Ingestao_Bronze_1_row5.data_abertura != null) {
+						if (Processos_Ingestao_Bronze_1_row5.cargo != null) {
 
-							if (messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.getType("data_abertura")
-									.isPrimitive()
-									&& org.apache.parquet.schema.PrimitiveType.PrimitiveTypeName.INT64 == messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
-											.getType("data_abertura").asPrimitiveType().getPrimitiveTypeName()) {
-								group_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.append("data_abertura",
-										Processos_Ingestao_Bronze_1_row5.data_abertura.getTime());
-							} else {
-								group_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.append("data_abertura",
-										FormatterUtils.format_Date(Processos_Ingestao_Bronze_1_row5.data_abertura,
-												"dd-MM-yyyy"));
-							}
+							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.append("cargo",
+									String.valueOf(Processos_Ingestao_Bronze_1_row5.cargo));
 						}
 
-						if (Processos_Ingestao_Bronze_1_row5.classe != null) {
+						if (Processos_Ingestao_Bronze_1_row5.data_posse != null) {
 
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.append("classe",
-									String.valueOf(Processos_Ingestao_Bronze_1_row5.classe));
+							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.append("data_posse",
+									String.valueOf(Processos_Ingestao_Bronze_1_row5.data_posse));
 						}
 
-						if (Processos_Ingestao_Bronze_1_row5.tribunal != null) {
+						if (Processos_Ingestao_Bronze_1_row5.situacao != null) {
 
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.append("tribunal",
-									String.valueOf(Processos_Ingestao_Bronze_1_row5.tribunal));
+							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.append("situacao",
+									String.valueOf(Processos_Ingestao_Bronze_1_row5.situacao));
 						}
 
 						writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
@@ -8188,7 +7582,7 @@ public class TRF5 implements TalendJob {
 
 		final boolean execStat = this.execStat;
 
-		mdc("Processos_Ingestao_Bronze_1_tS3Connection_2", "vU47t5_");
+		mdc("Processos_Ingestao_Bronze_1_tS3Connection_2", "O1qG6a_");
 
 		String iterateId = "";
 
@@ -8233,7 +7627,7 @@ public class TRF5 implements TalendJob {
 							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2.append(" | ");
 							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2.append(
 									"configuration.staticCredentialConfiguration.secretKey" + " = " + String.valueOf(
-											"enc:routine.encryption.key.v1:d1rRxZ8T7T0oE2aesPCc5d/HK2beXJEzw+tU0YtWUERWzUZdDyOH0cftqMGDyrx8TcPn9m3kdKlNXAA3n/JSMRBsbgk=")
+											"enc:routine.encryption.key.v1:hb5Z/lFE4Go00Q6CDF37O8CtchW34+6DB7aFxBa6gKCnfh3GHXTUDYcdbpD8E5oqIrMzTh3IYi4g605gOLlNk65IL0M=")
 											.substring(0, 4) + "...");
 							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2.append(" | ");
 							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2
@@ -8367,7 +7761,7 @@ public class TRF5 implements TalendJob {
 				s_Processos_Ingestao_Bronze_1_tS3Connection_2.put(
 						"configuration.staticCredentialConfiguration.secretKey",
 						routines.system.PasswordEncryptUtil.decryptPassword(
-								"enc:routine.encryption.key.v1:SLaRl2v1ngEj6aSLrHM46ZxGfxKhuJhnod4Ic2LDYVpF8knf+EMOPbKPWxBp++RE2t3/VydUIbVTFwyP3fjQP4aFOQI="));
+								"enc:routine.encryption.key.v1:tkL/uhj4T0JJpuJ5N0ZkwxxBtQcBjS5Qc0HCrjQ87/wou+fo+dkDRtOy8/tw/4gkl7s80e/o1GI8Yk7TXXwZn2vt4Ko="));
 
 				s_Processos_Ingestao_Bronze_1_tS3Connection_2.put("configuration.assumeRole", "false");
 
@@ -8945,7 +8339,7 @@ public class TRF5 implements TalendJob {
 		org.slf4j.MDC.put("_startTimestamp", java.time.ZonedDateTime.now(java.time.ZoneOffset.UTC)
 				.format(java.time.format.DateTimeFormatter.ISO_INSTANT));
 		org.slf4j.MDC.put("_jobRepositoryId", "_mceAMB7SEfG99Y5mkdgJFg");
-		org.slf4j.MDC.put("_compiledAtTimestamp", "2026-03-14T02:44:01.575656200Z");
+		org.slf4j.MDC.put("_compiledAtTimestamp", "2026-03-14T03:05:56.391166500Z");
 
 		java.lang.management.RuntimeMXBean mx = java.lang.management.ManagementFactory.getRuntimeMXBean();
 		String[] mxNameTable = mx.getName().split("@"); //$NON-NLS-1$
@@ -9483,6 +8877,6 @@ public class TRF5 implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 376928 characters generated by Qlik Talend Cloud Enterprise Edition on the 13
- * de março de 2026 23:44:01 BRT
+ * 359041 characters generated by Qlik Talend Cloud Enterprise Edition on the 14
+ * de março de 2026 00:05:56 BRT
  ************************************************************************************************/

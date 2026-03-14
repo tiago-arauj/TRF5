@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_YIBbAR9SEfGAXP2ge6Ya0g" name="repository.metadataGenericSchema" dataPackage="_YIBbAh9SEfGAXP2ge6Ya0g"/>
+  <TalendMetadata:GenericPackage xmi:id="_YIBbAh9SEfGAXP2ge6Ya0g" name="repository.metadataGenericSchema" dataManager="_YIBbAR9SEfGAXP2ge6Ya0g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_YIBbAx9SEfGAXP2ge6Ya0g" id="_WYzgIB9SEfGAXP2ge6Ya0g" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YIBbBB9SEfGAXP2ge6Ya0g" name="id_assunto" label="id_assunto" length="10" sourceType="SERIAL" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_YIBbBR9SEfGAXP2ge6Ya0g" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YIBbBh9SEfGAXP2ge6Ya0g" name="cod_assunto_cnj" label="cod_assunto_cnj" length="20" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_YIBbBx9SEfGAXP2ge6Ya0g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YIBbCB9SEfGAXP2ge6Ya0g" name="descricao_assunto" label="descricao_assunto" length="2147483647" sourceType="TEXT" talendType="id_String">
+        <initialValue xmi:id="_YIBbCR9SEfGAXP2ge6Ya0g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YIBbCh9SEfGAXP2ge6Ya0g" name="ramo_direito" label="ramo_direito" length="100" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_YIBbCx9SEfGAXP2ge6Ya0g"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

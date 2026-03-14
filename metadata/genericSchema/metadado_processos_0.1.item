@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_NhunMB9REfGAXP2ge6Ya0g" name="repository.metadataGenericSchema" dataPackage="_NhunMR9REfGAXP2ge6Ya0g"/>
+  <TalendMetadata:GenericPackage xmi:id="_NhunMR9REfGAXP2ge6Ya0g" name="repository.metadataGenericSchema" dataManager="_NhunMB9REfGAXP2ge6Ya0g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_NhunMh9REfGAXP2ge6Ya0g" id="_LbiWwB9REfGAXP2ge6Ya0g" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NhunMx9REfGAXP2ge6Ya0g" name="id_processo" label="id_processo" length="10" sourceType="SERIAL" talendType="id_Integer" key="true" nullable="false">
+        <initialValue xmi:id="_NhunNB9REfGAXP2ge6Ya0g" body="nextval('processos_judiciais_id_processo_seq'::regclass)"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NhunNR9REfGAXP2ge6Ya0g" name="num_processo" label="num_processo" length="25" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_NhunNh9REfGAXP2ge6Ya0g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NhunNx9REfGAXP2ge6Ya0g" name="data_abertura" label="data_abertura" length="13" sourceType="DATE" talendType="id_Date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_NhunOB9REfGAXP2ge6Ya0g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NhunOR9REfGAXP2ge6Ya0g" name="classe" label="classe" length="100" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_NhunOh9REfGAXP2ge6Ya0g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NhunOx9REfGAXP2ge6Ya0g" name="tribunal" label="tribunal" length="10" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_NhunPB9REfGAXP2ge6Ya0g" body="'TRF5'::character varying'"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
