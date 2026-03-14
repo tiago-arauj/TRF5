@@ -1175,6 +1175,17 @@
     </dependency>
     <dependency>
       <groupId>org.talend.components.lib</groupId>
+      <artifactId>talend-common-utils</artifactId>
+      <version>1.0</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.components.lib</groupId>
       <artifactId>talend-parquet</artifactId>
       <version>1.5</version>
       <exclusions>

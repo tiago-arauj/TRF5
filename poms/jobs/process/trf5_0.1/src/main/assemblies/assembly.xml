@@ -365,6 +365,7 @@
                 <include>software.amazon.eventstream:eventstream:jar:1.0.1</include>
                 <include>software.amazon.awssdk:apache-client:jar:2.35.11</include>
                 <include>org.talend.sdk.component:component-spi:jar:1.88.0</include>
+                <include>org.talend.components.lib:talend-common-utils:jar:1.0</include>
                 <include>software.amazon.awssdk:http-auth-aws:jar:2.35.11</include>
                 <include>software.amazon.awssdk:sts:jar:2.35.11</include>
                 <include>org.apache.johnzon:johnzon-jsonb:jar:1.2.21</include>
