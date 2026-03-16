@@ -38,6 +38,17 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_45ZuMB7VEfGQePxmHFRamg",
+    "version" : "0.1",
+    "type" : "joblet"
+  },
+  "relatedItems" : [ {
+    "id" : "_YIBbAB9SEfGAXP2ge6Ya0g - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_N8TIYB5WEfGmnOAGqGGqnw",
     "version" : "0.1",
     "type" : "joblet"

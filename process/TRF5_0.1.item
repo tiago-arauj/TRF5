@@ -99,7 +99,7 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
-  <node componentName="Processos_Ingestao_Bronze" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="200" posY="200">
+  <node componentName="Processos_Ingestao_Bronze" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="160" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Processos_Ingestao_Bronze_1"/>
     <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
