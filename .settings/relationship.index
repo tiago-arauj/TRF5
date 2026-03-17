@@ -32,13 +32,35 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "_45ZuMB7VEfGQePxmHFRamg",
+    "version" : "Latest",
+    "type" : "joblet"
+  }, {
     "id" : "_N8TIYB5WEfGmnOAGqGGqnw",
     "version" : "Latest",
     "type" : "joblet"
   } ]
 }, {
   "baseItem" : {
+    "id" : "_2CBOwCGxEfGQe9Q9f_GH_g",
+    "version" : "0.1",
+    "type" : "joblet"
+  },
+  "relatedItems" : [ {
+    "id" : "_YIBbAB9SEfGAXP2ge6Ya0g - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_45ZuMB7VEfGQePxmHFRamg",
+    "version" : "0.1",
+    "type" : "joblet"
+  },
+  "relatedItems" : [ ]
+}, {
+  "baseItem" : {
+    "id" : "_86d-MCG6EfGbvJIvEoa5zA",
     "version" : "0.1",
     "type" : "joblet"
   },
@@ -59,6 +81,35 @@
     "type" : "property"
   }, {
     "id" : "_8DROIB5REfGmnOAGqGGqnw - processos_judiciais",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_WxikgCGoEfGSmLGYVh4-BQ",
+    "version" : "0.1",
+    "type" : "joblet"
+  },
+  "relatedItems" : [ ]
+}, {
+  "baseItem" : {
+    "id" : "_spWOMCG8EfGbvJIvEoa5zA",
+    "version" : "0.1",
+    "type" : "joblet"
+  },
+  "relatedItems" : [ {
+    "id" : "_YIBbAB9SEfGAXP2ge6Ya0g - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_vLrBACG8EfGbvJIvEoa5zA",
+    "version" : "0.1",
+    "type" : "joblet"
+  },
+  "relatedItems" : [ {
+    "id" : "_YIBbAB9SEfGAXP2ge6Ya0g - metadata",
     "version" : "Latest",
     "type" : "schema"
   } ]
