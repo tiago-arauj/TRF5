@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore">
+  <model:JobletProcess defaultContext="Default" jobType="Standard">
+    <context confirmationNeeded="false" hide="false" name="Default"/>
+    <parameters>
+      <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false" show="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000" show="false"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false" show="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace/in.csv&quot;" show="false"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+      <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+      <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+      <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_18" show="false"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:3zi/gG9e6gZntPe35Q+A0XLfrCHy3cxt640r8W5t" show="false"/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" value="true" show="false"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    </parameters>
+    <node componentName="tS3Connection" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="120" posY="160">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3Connection_1" show="false"/>
+      <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="YXdzLXMzI1MzI0xpc3QConnection" show="false"/>
+      <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+      <elementParameter field="CLOSED_LIST" name="configuration.credentialProvider" value="STATIC_CREDENTIALS"/>
+      <elementParameter field="TEXT" name="configuration.staticCredentialConfiguration.accessKey" value="AKIAUWW4VRZLOLIPY4ZH"/>
+      <elementParameter field="PASSWORD" name="configuration.staticCredentialConfiguration.secretKey" value="enc:system.encryption.key.v1:XKdNEIqd0+zziERJ0LdQQl1J2gDf7dkE34nXOjFBOFgd2lJ/8bwFUPJppi6Uf/5aTf5eU2a0zK7MBHySX9fv3RXaF0VZHQ=="/>
+      <elementParameter field="CHECK" name="configuration.assumeRole" value="false"/>
+      <elementParameter field="TEXT" name="configuration.assumeRoleConfiguration.sessionDuration" value="15" show="false"/>
+      <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.region" value="DEFAULT"/>
+      <elementParameter field="CHECK" name="configuration.clientSideEncrypt" value="false"/>
+      <elementParameter field="CLOSED_LIST" name="configuration.keyType" value="KMS_CMK" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="configuration.encoding" value="BASE64" show="false"/>
+      <elementParameter field="CHECK" name="configuration.useRegionEndpoint" value="false"/>
+      <elementParameter field="TEXT" name="configuration.regionEndpoint" value="s3.us-east-1.amazonaws.com" show="false"/>
+      <elementParameter field="CHECK" name="configuration.enablePathStyleAccess" value="false" show="false"/>
+      <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.signingRegion" value="DEFAULT" show="false"/>
+      <elementParameter field="CHECK" name="configuration.assumeRoleConfiguration.specifySTSEndpoint" value="false" show="false"/>
+      <elementParameter field="TABLE" name="configuration.assumeRoleConfiguration.tags" show="false"/>
+      <elementParameter field="TABLE" name="configuration.assumeRoleConfiguration.policyArns" show="false"/>
+      <elementParameter field="CHECK" name="configuration.configClient" value="false"/>
+      <elementParameter field="TABLE" name="configuration.clientConfiguration" show="false"/>
+      <elementParameter field="CHECK" name="configuration.checkAccessibility" value="true"/>
+      <elementParameter field="CLOSED_LIST" name="configuration.checkMethod" value="BY_ACCOUNT_OWNER"/>
+      <elementParameter field="CHECK" name="configuration.enableAccelerate" value="false"/>
+      <elementParameter field="CHECK" name="configuration.showCheckAccessFlag" value="true" show="false"/>
+      <elementParameter field="CHECK" name="configuration.showClientSideEncryptFlag" value="true" show="false"/>
+      <elementParameter field="TECHNICAL" name="configuration.__version" value="-1" show="false"/>
+      <metadata connector="FLOW" name="tS3Connection_1">
+        <column comment="" defaultValue="" key="false" length="-1" name="CURRENT_BUCKET" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="CURRENT_KEY" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="CURRENT_SIZE" nullable="false" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="CURRENT_LASTMODIFIED" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="CURRENT_OWNER" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="CURRENT_OWNER_ID" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="CURRENT_ETAG" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="CURRENT_STORAGECLASS" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+      <metadata connector="LOOKUP" name="LOOKUP"/>
+      <metadata connector="MERGE" name="MERGE"/>
+      <metadata connector="REJECT" name="REJECT"/>
+    </node>
+    <node componentName="tPostgresqlRow" componentVersion="0.102" offsetLabelX="9" offsetLabelY="12" posX="1160" posY="120">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_1" show="false"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+      <elementParameter field="TEXT" name="HOST" value="&quot;peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com&quot;"/>
+      <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+      <elementParameter field="TEXT" name="DBNAME" value="&quot;qlik_demo&quot;"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
+      <elementParameter field="TEXT" name="TYPE" value="PostgreSQL" show="false"/>
+      <elementParameter field="TEXT" name="USER" value="&quot;peta_qlik&quot;"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:15tk+rWNxHV4D98nPYXbcL44ziiAmeKFWu1MRz83Neymt9bWYjE8"/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;silver_classes_processuais&quot;"/>
+      <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;DROP TABLE IF EXISTS silver_classes_processuais;&#xD;&#xA;CREATE TABLE silver_classes_processuais AS&#xD;&#xA;SELECT DISTINCT ON (cod_cnj_limpo)&#xD;&#xA;    id_classe,&#xD;&#xA;    LPAD(cod_cnj, 4, '0') AS cod_cnj_limpo, -- Padroniza 436 para 0436&#xD;&#xA;    INITCAP(nome_classe) AS nome_classe,&#xD;&#xA;    COALESCE(INITCAP(tipo_procedimento), 'Comum') AS tipo_procedimento&#xD;&#xA;FROM stg_classes_processuais&#xD;&#xA;ORDER BY cod_cnj_limpo, id_classe;&quot;"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+      <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+      <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="id_assunto" show="false"/>
+      <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+      <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="metadata" name="tDBRow_1">
+        <column comment="" defaultValue="" key="false" length="10" name="id_assunto" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="cod_assunto_cnj" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="2147483647" name="descricao_assunto" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="ramo_direito" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+      <metadata connector="REJECT" label="metadata" name="REJECT">
+        <column comment="" defaultValue="" key="false" length="10" name="id_assunto" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="cod_assunto_cnj" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="2147483647" name="descricao_assunto" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="ramo_direito" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="S3Get" componentVersion="1" offsetLabelX="9" offsetLabelY="0" posX="320" posY="160">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3Get_1" show="false"/>
+      <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="YXdzLXMzI1MzI0dldA" show="false"/>
+      <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+      <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.credentialProvider" value="STATIC_CREDENTIALS" show="false"/>
+      <elementParameter field="TEXT" name="configuration.dataset.datastore.staticCredentialConfiguration.accessKey" value="AKIAUWW4VRZLOLIPY4ZH" show="false"/>
+      <elementParameter field="PASSWORD" name="configuration.dataset.datastore.staticCredentialConfiguration.secretKey" value="enc:system.encryption.key.v1:QEu1pplhvRX/Kh92mgv2Kvz7opPawFc+vFqiJsywuU2KHT3lVnlmpsn3UQnGh2bkbfOMWvYJUhsjMtoi7k9G4TQWMT+M/Q==" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.assumeRole" value="false" show="false"/>
+      <elementParameter field="TEXT" name="configuration.dataset.datastore.assumeRoleConfiguration.sessionDuration" value="15" show="false"/>
+      <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.datastore.region" value="DEFAULT" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.clientSideEncrypt" value="false" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.keyType" value="KMS_CMK" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.encoding" value="BASE64" show="false"/>
+      <elementParameter field="TEXT" name="configuration.bucket" value="&quot;peta-demo-qlik&quot;"/>
+      <elementParameter field="TEXT" name="configuration.key" value="&quot;bronze/classes_processuais_bronze.parquet&quot;"/>
+      <elementParameter field="FILE" name="configuration.file" value="&quot;C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/classes_processuais_bronze_temp.parquet&quot;"/>
+      <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.useRegionEndpoint" value="false" show="false"/>
+      <elementParameter field="TEXT" name="configuration.dataset.datastore.regionEndpoint" value="s3.us-east-1.amazonaws.com" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.enablePathStyleAccess" value="false" show="false"/>
+      <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.datastore.signingRegion" value="DEFAULT" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.assumeRoleConfiguration.specifySTSEndpoint" value="false" show="false"/>
+      <elementParameter field="TABLE" name="configuration.dataset.datastore.assumeRoleConfiguration.tags" show="false"/>
+      <elementParameter field="TABLE" name="configuration.dataset.datastore.assumeRoleConfiguration.policyArns" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.configClient" value="false" show="false"/>
+      <elementParameter field="TABLE" name="configuration.dataset.datastore.clientConfiguration" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.checkAccessibility" value="false" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.checkMethod" value="BY_ACCOUNT_OWNER" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.enableAccelerate" value="false" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.showCheckAccessFlag" value="false" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.showClientSideEncryptFlag" value="true" show="false"/>
+      <elementParameter field="CHECK" name="configuration.useSelect" value="false"/>
+      <elementParameter field="CLOSED_LIST" name="configuration.fileType" value="CSV" show="false"/>
+      <elementParameter field="TEXT" name="configuration.query" value="select s._1 from S3Object s" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="configuration.compressedType" value="NONE" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="configuration.jsonType" value="LINES" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="configuration.headerType" value="USE" show="false"/>
+      <elementParameter field="TEXT" name="configuration.fieldSeparator" value="," show="false"/>
+      <elementParameter field="CHECK" name="configuration.advanceCsv" value="false" show="false"/>
+      <elementParameter field="TABLE" name="configuration.csvConfiguration" show="false"/>
+      <elementParameter field="CHECK" name="configuration.configOutput" value="false" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="configuration.outputType" value="CSV" show="false"/>
+      <elementParameter field="TABLE" name="configuration.outputCsvConfig" show="false"/>
+      <elementParameter field="TEXT" name="configuration.jsonRecordDelimiter" value="&#xA;" show="false"/>
+      <elementParameter field="CHECK" name="configuration.useTempFilesForParallelDownload" value="false"/>
+      <elementParameter field="CHECK" name="configuration.globalMapInputStream" value="false" show="false"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tS3Connection_1"/>
+      <elementParameter field="TECHNICAL" name="configuration.dataset.__version" value="-1" show="false"/>
+      <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" value="-1" show="false"/>
+      <metadata connector="FLOW" name="tS3Get_1"/>
+      <metadata connector="LOOKUP" name="LOOKUP"/>
+      <metadata connector="MERGE" name="MERGE"/>
+      <metadata connector="REJECT" name="REJECT"/>
+    </node>
+    <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1160" posY="320">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+      <elementParameter field="TEXT" name="HOST" value="&quot;peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com&quot;"/>
+      <elementParameter field="TEXT" name="TYPE" value="PostgreSQL" show="false"/>
+      <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+      <elementParameter field="TEXT" name="DBNAME" value="&quot;qlik_demo&quot;"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
+      <elementParameter field="TEXT" name="USER" value="&quot;peta_qlik&quot;"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:2GDpV2fDdKX7XRHt0uZiaG1WQpLgi9S2lwvaSk0mgaCrqoq4s3hZ"/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;classes_processuais&quot;"/>
+      <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+      <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT *&#xD;&#xA;FROM silver_classes_processuais;&quot;"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+      <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+      <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+      <elementParameter field="TABLE" name="TRIM_COLUMN">
+        <elementValue elementRef="SCHEMA_COLUMN" value="id_assunto" id="0"/>
+        <elementValue elementRef="TRIM" value="false" id="1"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="cod_assunto_cnj" id="2"/>
+        <elementValue elementRef="TRIM" value="false" id="3"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="descricao_assunto" id="4"/>
+        <elementValue elementRef="TRIM" value="false" id="5"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="ramo_direito" id="6"/>
+        <elementValue elementRef="TRIM" value="false" id="7"/>
+      </elementParameter>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="metadata" name="tDBInput_1">
+        <column comment="" defaultValue="" key="false" length="10" name="id_assunto" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="cod_assunto_cnj" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="2147483647" name="descricao_assunto" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="ramo_direito" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tFileOutputParquet" componentVersion="0.101" offsetLabelX="40" offsetLabelY="-2" posX="1160" posY="480">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputParquet_2" show="false"/>
+      <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/classes_processuais_silver.parquet&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="FILE_ACTION" value="OVERWRITE"/>
+      <elementParameter field="OPENED_LIST" name="COMPRESSION" value="&quot;UNCOMPRESSED&quot;"/>
+      <elementParameter field="CHECK" name="USE_EXTERNAL_HADOOP_DEPS" value="false"/>
+      <elementParameter field="TEXT" name="ROW_GROUP_SIZE" value="134217728"/>
+      <elementParameter field="TEXT" name="PAGE_SIZE" value="1048576"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="metadata" name="tFileOutputParquet_2">
+        <column comment="" defaultValue="" key="false" length="10" name="id_assunto" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="cod_assunto_cnj" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="2147483647" name="descricao_assunto" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="ramo_direito" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="S3Put" componentVersion="1" offsetLabelX="48" offsetLabelY="0" posX="720" posY="480">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3Put_1" show="false"/>
+      <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="YXdzLXMzI1MzI1B1dA" show="false"/>
+      <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+      <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.credentialProvider" value="PROFILE_INHERIT_CREDENTIALS" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.assumeRole" value="false" show="false"/>
+      <elementParameter field="TEXT" name="configuration.dataset.datastore.assumeRoleConfiguration.sessionDuration" value="15" show="false"/>
+      <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.datastore.region" value="DEFAULT" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.clientSideEncrypt" value="false" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.keyType" value="KMS_CMK" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.encoding" value="BASE64" show="false"/>
+      <elementParameter field="TEXT" name="configuration.bucket" value="peta-demo-qlik"/>
+      <elementParameter field="TEXT" name="configuration.key" value="&quot;silver/&quot; + ((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))"/>
+      <elementParameter field="FILE" name="configuration.file" value="&quot;C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/classes_processuais_silver.parquet&quot;"/>
+      <elementParameter field="CHECK" name="configuration.enableServerSideEncryption" value="false"/>
+      <elementParameter field="CHECK" name="configuration.enableKms" value="false" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.useRegionEndpoint" value="false" show="false"/>
+      <elementParameter field="TEXT" name="configuration.dataset.datastore.regionEndpoint" value="s3.us-east-1.amazonaws.com" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.enablePathStyleAccess" value="false" show="false"/>
+      <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.datastore.signingRegion" value="DEFAULT" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.assumeRoleConfiguration.specifySTSEndpoint" value="false" show="false"/>
+      <elementParameter field="TABLE" name="configuration.dataset.datastore.assumeRoleConfiguration.tags" show="false"/>
+      <elementParameter field="TABLE" name="configuration.dataset.datastore.assumeRoleConfiguration.policyArns" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.configClient" value="false" show="false"/>
+      <elementParameter field="TABLE" name="configuration.dataset.datastore.clientConfiguration" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.checkAccessibility" value="false" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.checkMethod" value="BY_ACCOUNT_OWNER" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.enableAccelerate" value="false" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.showCheckAccessFlag" value="false" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.showClientSideEncryptFlag" value="true" show="false"/>
+      <elementParameter field="TEXT" name="configuration.multipartThreshold" value="5"/>
+      <elementParameter field="TEXT" name="configuration.partSize" value="5"/>
+      <elementParameter field="CLOSED_LIST" name="configuration.cannedAccessControlList" value="NONE"/>
+      <elementParameter field="CHECK" name="configuration.enableObjectLock" value="false"/>
+      <elementParameter field="CLOSED_LIST" name="configuration.retentionMode" value="GOVERNANCE" show="false"/>
+      <elementParameter field="TEXT" name="configuration.retentionPeriod" value="1" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="configuration.retentionPeriodType" value="DAYS" show="false"/>
+      <elementParameter field="CHECK" name="configuration.setObjectTags" value="false"/>
+      <elementParameter field="TABLE" name="configuration.objectTags" show="false"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tS3Connection_1"/>
+      <elementParameter field="TECHNICAL" name="configuration.dataset.__version" value="-1" show="false"/>
+      <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" value="-1" show="false"/>
+      <metadata connector="FLOW" name="tS3Put_1"/>
+      <metadata connector="LOOKUP" name="LOOKUP"/>
+      <metadata connector="MERGE" name="MERGE"/>
+      <metadata connector="REJECT" name="REJECT"/>
+    </node>
+    <node componentName="tFileInputParquet" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="560" posY="200">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputParquet_2" show="false"/>
+      <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/classes_processuais_bronze_temp.parquet&quot;"/>
+      <elementParameter field="CHECK" name="USE_EXTERNAL_HADOOP_DEPS" value="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="metadata" name="tFileInputParquet_2">
+        <column comment="" defaultValue="" key="false" length="10" name="id_classe" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="cod_cnj" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="2147483647" name="nome_classe" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="tipo_procedimento" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="720" posY="80">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_pPLcsCIlEfGPAtUJlb4O2A-tMap_2-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+      <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+      <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="transformacao">
+        <column comment="" defaultValue="" key="false" length="10" name="id_classe" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="cod_cnj" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="2147483647" name="nome_classe" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="tipo_procedimento" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+      <nodeData xsi:type="TalendMapper:MapperData">
+        <uiProperties/>
+        <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+        <outputTables sizeState="INTERMEDIATE" name="transformacao">
+          <mapperTableEntries name="id_classe" expression="row1.id_classe " type="id_Integer"/>
+          <mapperTableEntries name="cod_cnj" expression="row1.cod_cnj " type="id_String" nullable="true"/>
+          <mapperTableEntries name="nome_classe" expression="row1.nome_classe " type="id_String" nullable="true"/>
+          <mapperTableEntries name="tipo_procedimento" expression="row1.tipo_procedimento " type="id_String" nullable="true"/>
+        </outputTables>
+        <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="id_classe" type="id_Integer"/>
+          <mapperTableEntries name="cod_cnj" type="id_String" nullable="true"/>
+          <mapperTableEntries name="nome_classe" type="id_String" nullable="true"/>
+          <mapperTableEntries name="tipo_procedimento" type="id_String" nullable="true"/>
+        </inputTables>
+      </nodeData>
+    </node>
+    <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="880" posY="200">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+      <elementParameter field="TEXT" name="HOST" value="&quot;peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com&quot;"/>
+      <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+      <elementParameter field="TEXT" name="DBNAME" value="&quot;qlik_demo&quot;"/>
+      <elementParameter field="TEXT" name="TYPE" value="PostgreSQL" show="false"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
+      <elementParameter field="TEXT" name="USER" value="&quot;peta_qlik&quot;"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:HJ6KqDCxWAF7PlLT/Pz3GulKOzhYLqh8B3F42X4lp+rR1cgV2EdU"/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;stg_classes_processuais&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
+      <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+      <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false"/>
+      <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
+      <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+      <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
+      <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+      <elementParameter field="CHECK" name="SAVE_POINT" value="false" show="false"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+      <elementParameter field="TABLE" name="ADD_COLS"/>
+      <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+      <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+        <elementValue elementRef="SCHEMA_COLUMN" value="id_classe" id="0"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="1"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="2"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="3"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="4"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="cod_cnj" id="5"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="6"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="7"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="8"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="9"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="nome_classe" id="10"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="11"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="12"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="13"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="14"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="tipo_procedimento" id="15"/>
+        <elementValue elementRef="UPDATE_KEY" value="false" id="16"/>
+        <elementValue elementRef="DELETE_KEY" value="false" id="17"/>
+        <elementValue elementRef="UPDATABLE" value="true" id="18"/>
+        <elementValue elementRef="INSERTABLE" value="true" id="19"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+      <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+      <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
+      <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+      <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tDBOutput_1">
+        <column comment="" defaultValue="" key="false" length="10" name="id_classe" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="cod_cnj" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="2147483647" name="nome_classe" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="tipo_procedimento" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+      <metadata connector="REJECT" name="REJECT">
+        <column comment="" defaultValue="" key="false" length="10" name="id_classe" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="cod_cnj" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="2147483647" name="nome_classe" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="tipo_procedimento" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="S3List" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="120" posY="360">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3List_1" show="false"/>
+      <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" value="YXdzLXMzI1MzI0xpc3Q" show="false"/>
+      <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+      <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+      <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.credentialProvider" value="STATIC_CREDENTIALS" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.assumeRole" value="false" show="false"/>
+      <elementParameter field="TEXT" name="configuration.dataset.datastore.assumeRoleConfiguration.sessionDuration" value="15" show="false"/>
+      <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.datastore.region" value="DEFAULT" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.clientSideEncrypt" value="false" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.keyType" value="KMS_CMK" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.encoding" value="BASE64" show="false"/>
+      <elementParameter field="CHECK" name="configuration.listAll" value="false"/>
+      <elementParameter field="TEXT" name="configuration.keyPrefix" value="" show="false"/>
+      <elementParameter field="TABLE" name="configuration.buckets">
+        <elementValue elementRef="configuration.buckets[].bucketName" value="&quot;peta-demo-qlik&quot;" id="0"/>
+        <elementValue elementRef="configuration.buckets[].keyPrefix" value="" id="1"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.useRegionEndpoint" value="false" show="false"/>
+      <elementParameter field="TEXT" name="configuration.dataset.datastore.regionEndpoint" value="s3.us-east-1.amazonaws.com" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.enablePathStyleAccess" value="false" show="false"/>
+      <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataset.datastore.signingRegion" value="DEFAULT" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.assumeRoleConfiguration.specifySTSEndpoint" value="false" show="false"/>
+      <elementParameter field="TABLE" name="configuration.dataset.datastore.assumeRoleConfiguration.tags" show="false"/>
+      <elementParameter field="TABLE" name="configuration.dataset.datastore.assumeRoleConfiguration.policyArns" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.configClient" value="false" show="false"/>
+      <elementParameter field="TABLE" name="configuration.dataset.datastore.clientConfiguration" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.checkAccessibility" value="false" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.checkMethod" value="BY_ACCOUNT_OWNER" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.enableAccelerate" value="false" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.showCheckAccessFlag" value="false" show="false"/>
+      <elementParameter field="CHECK" name="configuration.dataset.datastore.showClientSideEncryptFlag" value="false" show="false"/>
+      <elementParameter field="CHECK" name="configuration.getOwner" value="false"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tS3Connection_1"/>
+      <elementParameter field="TECHNICAL" name="configuration.dataset.__version" value="-1" show="false"/>
+      <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" value="-1" show="false"/>
+      <metadata connector="FLOW" name="tS3List_1">
+        <column comment="" key="true" length="-1" name="CURRENT_BUCKET" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="CURRENT_KEY" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="CURRENT_SIZE" nullable="false" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="CURRENT_LASTMODIFIED" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="CURRENT_OWNER" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="CURRENT_OWNER_ID" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="CURRENT_ETAG" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="CURRENT_STORAGECLASS" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+      <metadata connector="LOOKUP" name="LOOKUP"/>
+      <metadata connector="MERGE" name="MERGE"/>
+      <metadata connector="REJECT" name="REJECT"/>
+    </node>
+    <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="520">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+      <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+      <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+      <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+      <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/out&quot;"/>
+      <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+      <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+      <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+      <elementParameter field="CHECK" name="APPEND" value="false"/>
+      <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+      <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+      <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+      <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+      <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+      <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+      <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+      <elementParameter field="CHECK" name="CREATE" value="true"/>
+      <elementParameter field="CHECK" name="SPLIT" value="false"/>
+      <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+      <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+      <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+      <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+      <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true"/>
+      <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tFileOutputDelimited_1">
+        <column comment="" key="true" length="-1" name="CURRENT_BUCKET" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="CURRENT_KEY" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="CURRENT_SIZE" nullable="false" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="CURRENT_LASTMODIFIED" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="CURRENT_OWNER" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="CURRENT_OWNER_ID" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="CURRENT_ETAG" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="CURRENT_STORAGECLASS" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tS3Connection_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tS3Connection_1" target="tS3Get_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tS3Connection_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tS3Connection_1" target="tS3List_1">
+      <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
+    </connection>
+    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBRow_1" offsetLabelX="0" offsetLabelY="0" source="tDBRow_1" target="tDBInput_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tS3Get_1" offsetLabelX="0" offsetLabelY="0" source="tS3Get_1" target="tFileInputParquet_2">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tFileOutputParquet_2">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+    </connection>
+    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputParquet_2" offsetLabelX="0" offsetLabelY="0" source="tFileOutputParquet_2" target="tS3Put_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputParquet_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputParquet_2" target="tMap_2">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="nome_classe" id="0"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+        <elementValue elementRef="TRACE_COLUMN" value="id_classe" id="3"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+        <elementValue elementRef="TRACE_COLUMN" value="cod_cnj" id="6"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="transformacao" lineStyle="0" metaname="transformacao" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tDBOutput_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="transformacao" show="false"/>
+    </connection>
+    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBOutput_1" offsetLabelX="-6" offsetLabelY="-50" source="tDBOutput_1" target="tDBRow_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tS3List_1" offsetLabelX="0" offsetLabelY="0" source="tS3List_1" target="tFileOutputDelimited_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+    </connection>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3Connection_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3Get_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3Put_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputParquet_2" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3List_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    </subjob>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray/>
+</xmi:XMI>

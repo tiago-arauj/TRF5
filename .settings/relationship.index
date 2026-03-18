@@ -31,26 +31,14 @@
     "version" : "0.1",
     "type" : "job"
   },
-  "relatedItems" : [ {
-    "id" : "_45ZuMB7VEfGQePxmHFRamg",
-    "version" : "Latest",
-    "type" : "joblet"
-  }, {
-    "id" : "_N8TIYB5WEfGmnOAGqGGqnw",
-    "version" : "Latest",
-    "type" : "joblet"
-  } ]
+  "relatedItems" : [ ]
 }, {
   "baseItem" : {
     "id" : "_2CBOwCGxEfGQe9Q9f_GH_g",
     "version" : "0.1",
     "type" : "joblet"
   },
-  "relatedItems" : [ {
-    "id" : "_YIBbAB9SEfGAXP2ge6Ya0g - metadata",
-    "version" : "Latest",
-    "type" : "schema"
-  } ]
+  "relatedItems" : [ ]
 }, {
   "baseItem" : {
     "id" : "_45ZuMB7VEfGQePxmHFRamg",
@@ -79,10 +67,6 @@
     "id" : "_8DROIB5REfGmnOAGqGGqnw",
     "version" : "Latest",
     "type" : "property"
-  }, {
-    "id" : "_8DROIB5REfGmnOAGqGGqnw - processos_judiciais",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 }, {
   "baseItem" : {

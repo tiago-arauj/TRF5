@@ -80,14 +80,12 @@
       <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
       <elementParameter field="TEXT" name="USER" value="&quot;peta_qlik&quot;"/>
       <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:CjOLims0fIB65kBSlRsyLZmv2TH+cD4YdzQbuk4nRUCddwhrMGMH"/>
-      <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-      <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_8DROIB5REfGmnOAGqGGqnw - processos_judiciais" show="false"/>
       <elementParameter field="DBTABLE" name="TABLE" value="&quot;processos&quot;"/>
       <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
       <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
       <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
       <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  \&quot;public\&quot;.\&quot;processos\&quot;.\&quot;id_processo\&quot;, &#xA;  \&quot;public\&quot;.\&quot;processos\&quot;.\&quot;numero_processo\&quot;, &#xA;  \&quot;public\&quot;.\&quot;processos\&quot;.\&quot;data_ajuizamento\&quot;, &#xA;  \&quot;public\&quot;.\&quot;processos\&quot;.\&quot;id_classe\&quot;, &#xD;&#xA;  \&quot;public\&quot;.\&quot;processos\&quot;.\&quot;id_assunto\&quot;, &#xD;&#xA;  \&quot;public\&quot;.\&quot;processos\&quot;.\&quot;id_magistrado\&quot;, &#xD;&#xA;  \&quot;public\&quot;.\&quot;processos\&quot;.\&quot;valor_causa\&quot;, &#xD;&#xA; \&quot;public\&quot;.\&quot;processos\&quot;.\&quot;tempo_processo_dias\&quot;, &#xA;  \&quot;public\&quot;.\&quot;processos\&quot;.\&quot;id_tribunal\&quot;&#xA; FROM \&quot;public\&quot;.\&quot;processos\&quot;&quot;"/>
+      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  \&quot;public\&quot;.\&quot;processos\&quot;.\&quot;id_processo\&quot;, &#xA;  \&quot;public\&quot;.\&quot;processos\&quot;.\&quot;numero_processo\&quot;, &#xD;&#xA;  \&quot;public\&quot;.\&quot;processos\&quot;.\&quot;id_tribunal\&quot;,&#xD;&#xA;  \&quot;public\&quot;.\&quot;processos\&quot;.\&quot;id_classe\&quot;, &#xD;&#xA;  \&quot;public\&quot;.\&quot;processos\&quot;.\&quot;id_assunto\&quot;, &#xD;&#xA;  \&quot;public\&quot;.\&quot;processos\&quot;.\&quot;id_magistrado\&quot;, &#xA;  \&quot;public\&quot;.\&quot;processos\&quot;.\&quot;data_ajuizamento\&quot;,&#xD;&#xA;  \&quot;public\&quot;.\&quot;processos\&quot;.\&quot;valor_causa\&quot;,  &#xA;  \&quot;public\&quot;.\&quot;processos\&quot;.\&quot;tempo_processo_dias\&quot; &#xA; FROM \&quot;public\&quot;.\&quot;processos\&quot;&quot;"/>
       <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
       <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
       <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -101,14 +99,22 @@
       <elementParameter field="TABLE" name="TRIM_COLUMN">
         <elementValue elementRef="SCHEMA_COLUMN" value="id_processo" id="0"/>
         <elementValue elementRef="TRIM" value="false" id="1"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="num_processo" id="2"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="numero_processo" id="2"/>
         <elementValue elementRef="TRIM" value="false" id="3"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="data_abertura" id="4"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="id_tribunal" id="4"/>
         <elementValue elementRef="TRIM" value="false" id="5"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="classe" id="6"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="id_classe" id="6"/>
         <elementValue elementRef="TRIM" value="false" id="7"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="tribunal" id="8"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="id_assunto" id="8"/>
         <elementValue elementRef="TRIM" value="false" id="9"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="id_magistrado" id="10"/>
+        <elementValue elementRef="TRIM" value="false" id="11"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="data_ajuizamento" id="12"/>
+        <elementValue elementRef="TRIM" value="false" id="13"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="tempo_processo_dias" id="14"/>
+        <elementValue elementRef="TRIM" value="false" id="15"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="valor_causa" id="16"/>
+        <elementValue elementRef="TRIM" value="false" id="17"/>
       </elementParameter>
       <elementParameter field="TEXT" name="LABEL" value="fato_processos"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -116,23 +122,27 @@
         <column comment="" defaultValue="nextval('processos_judiciais_id_processo_seq'::regclass)" key="true" length="10" name="id_processo" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
-        <column comment="" key="false" length="25" name="num_processo" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <column comment="" key="false" length="25" name="numero_processo" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
-        <column comment="" key="false" length="13" name="data_abertura" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <column comment="" defaultValue="'TRF5'::character varying'" key="false" length="10" name="id_tribunal" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
-        <column comment="" key="false" length="100" name="classe" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <column comment="" key="false" length="100" name="id_classe" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
-        <column comment="" defaultValue="'TRF5'::character varying'" key="false" length="10" name="tribunal" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <column comment="" key="false" length="-1" name="id_assunto" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="id_magistrado" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="13" name="data_ajuizamento" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
+        <column comment="" key="false" length="-1" name="tempo_processo_dias" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="valor_causa" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </node>
     <node componentName="tFileOutputParquet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="560" posY="360">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputParquet_1" show="false"/>
-      <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/processo_bronze&quot;"/>
+      <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/processo_bronze.parquet&quot;"/>
       <elementParameter field="CLOSED_LIST" name="FILE_ACTION" value="OVERWRITE"/>
       <elementParameter field="OPENED_LIST" name="COMPRESSION" value="&quot;UNCOMPRESSED&quot;"/>
       <elementParameter field="CHECK" name="USE_EXTERNAL_HADOOP_DEPS" value="false"/>
@@ -143,18 +153,22 @@
         <column comment="" defaultValue="nextval('processos_judiciais_id_processo_seq'::regclass)" key="true" length="10" name="id_processo" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
-        <column comment="" key="false" length="25" name="num_processo" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <column comment="" key="false" length="25" name="numero_processo" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
-        <column comment="" key="false" length="13" name="data_abertura" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <column comment="" defaultValue="'TRF5'::character varying'" key="false" length="10" name="id_tribunal" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
-        <column comment="" key="false" length="100" name="classe" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <column comment="" key="false" length="100" name="id_classe" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
-        <column comment="" defaultValue="'TRF5'::character varying'" key="false" length="10" name="tribunal" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <column comment="" key="false" length="-1" name="id_assunto" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="id_magistrado" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="13" name="data_ajuizamento" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
+        <column comment="" key="false" length="-1" name="tempo_processo_dias" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="valor_causa" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </node>
     <node componentName="tS3Connection" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="40" posY="120">
@@ -255,7 +269,7 @@
     </node>
     <node componentName="tFileOutputParquet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1400" posY="80">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputParquet_2" show="false"/>
-      <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/tribunal_bronze&quot;"/>
+      <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/tribunal_bronze.parquet&quot;"/>
       <elementParameter field="CLOSED_LIST" name="FILE_ACTION" value="OVERWRITE"/>
       <elementParameter field="OPENED_LIST" name="COMPRESSION" value="&quot;UNCOMPRESSED&quot;"/>
       <elementParameter field="CHECK" name="USE_EXTERNAL_HADOOP_DEPS" value="false"/>
@@ -272,13 +286,15 @@
     </node>
     <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="2240" posY="160">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1" show="false"/>
-      <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace&quot;"/>
+      <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:\\Users\\arauj\\Documents\\NEXUDATA\\08. PetaCorp\\POC's\\Dados\\TRF5\\Data&quot;"/>
       <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
       <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
       <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
       <elementParameter field="CHECK" name="ERROR" value="false"/>
       <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
-      <elementParameter field="TABLE" name="FILES"/>
+      <elementParameter field="TABLE" name="FILES">
+        <elementValue elementRef="FILEMASK" value="&quot;*.parquet&quot;" id="0"/>
+      </elementParameter>
       <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
       <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
       <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
@@ -390,7 +406,7 @@
     </node>
     <node componentName="tFileOutputParquet" componentVersion="0.101" offsetLabelX="-50" offsetLabelY="37" posX="1480" posY="360">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputParquet_3" show="false"/>
-      <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/classes_processuais_bronze&quot;"/>
+      <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/classes_processuais_bronze.parquet&quot;"/>
       <elementParameter field="CLOSED_LIST" name="FILE_ACTION" value="OVERWRITE"/>
       <elementParameter field="OPENED_LIST" name="COMPRESSION" value="&quot;UNCOMPRESSED&quot;"/>
       <elementParameter field="CHECK" name="USE_EXTERNAL_HADOOP_DEPS" value="false"/>
@@ -453,7 +469,7 @@
     </node>
     <node componentName="tFileOutputParquet" componentVersion="0.101" offsetLabelX="-50" offsetLabelY="37" posX="1480" posY="640">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputParquet_4" show="false"/>
-      <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/assunto_bronze&quot;"/>
+      <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/assunto_bronze.parquet&quot;"/>
       <elementParameter field="CLOSED_LIST" name="FILE_ACTION" value="OVERWRITE"/>
       <elementParameter field="OPENED_LIST" name="COMPRESSION" value="&quot;UNCOMPRESSED&quot;"/>
       <elementParameter field="CHECK" name="USE_EXTERNAL_HADOOP_DEPS" value="false"/>
@@ -519,7 +535,7 @@
     </node>
     <node componentName="tFileOutputParquet" componentVersion="0.101" offsetLabelX="-50" offsetLabelY="37" posX="1440" posY="920">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputParquet_5" show="false"/>
-      <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/magistrado_bronze&quot;"/>
+      <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/magistrado_bronze.parquet&quot;"/>
       <elementParameter field="CLOSED_LIST" name="FILE_ACTION" value="OVERWRITE"/>
       <elementParameter field="OPENED_LIST" name="COMPRESSION" value="&quot;UNCOMPRESSED&quot;"/>
       <elementParameter field="CHECK" name="USE_EXTERNAL_HADOOP_DEPS" value="false"/>
@@ -535,6 +551,20 @@
       </metadata>
     </node>
     <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="-16" offsetLabelY="12" source="tDBInput_1" target="tFileOutputParquet_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="id_magistrado" id="0"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+        <elementValue elementRef="TRACE_COLUMN" value="id_assunto" id="3"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+        <elementValue elementRef="TRACE_COLUMN" value="tempo_processo_dias" id="6"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+        <elementValue elementRef="TRACE_COLUMN" value="valor_causa" id="9"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+      </elementParameter>
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
     </connection>

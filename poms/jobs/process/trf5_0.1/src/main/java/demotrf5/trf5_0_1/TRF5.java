@@ -409,164 +409,94 @@ public class TRF5 implements TalendJob {
 		}
 	}
 
-	public void Processo_Silver_1_tS3Connection_1_error(Exception exception, String errorComponent,
+	public void processos_1_tS3Connection_1_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
-		Processo_Silver_1_tS3Connection_1_onSubJobError(exception, errorComponent, globalMap);
+		processos_1_tS3Connection_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void Processo_Silver_1_tS3List_1_error(Exception exception, String errorComponent,
+	public void processos_1_tS3Get_1_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
-		Processo_Silver_1_tS3List_1_onSubJobError(exception, errorComponent, globalMap);
+		processos_1_tS3Get_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void Processo_Silver_1_tS3Get_1_error(Exception exception, String errorComponent,
+	public void processos_1_tFileInputParquet_2_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
-		Processo_Silver_1_tS3List_1_onSubJobError(exception, errorComponent, globalMap);
+		processos_1_tFileInputParquet_2_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void Processos_Ingestao_Bronze_1_tDBInput_1_error(Exception exception, String errorComponent,
+	public void processos_1_tMap_1_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
-		Processos_Ingestao_Bronze_1_tDBInput_1_onSubJobError(exception, errorComponent, globalMap);
+		processos_1_tFileInputParquet_2_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void Processos_Ingestao_Bronze_1_tFileOutputParquet_1_error(Exception exception, String errorComponent,
+	public void processos_1_tDBOutput_1_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
-		Processos_Ingestao_Bronze_1_tDBInput_1_onSubJobError(exception, errorComponent, globalMap);
+		processos_1_tFileInputParquet_2_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void Processos_Ingestao_Bronze_1_tDBInput_2_error(Exception exception, String errorComponent,
+	public void processos_1_tDBRow_1_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
-		Processos_Ingestao_Bronze_1_tDBInput_2_onSubJobError(exception, errorComponent, globalMap);
+		processos_1_tDBRow_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void Processos_Ingestao_Bronze_1_tFileOutputParquet_2_error(Exception exception, String errorComponent,
+	public void processos_1_tDBInput_1_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
-		Processos_Ingestao_Bronze_1_tDBInput_2_onSubJobError(exception, errorComponent, globalMap);
+		processos_1_tDBInput_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void Processos_Ingestao_Bronze_1_tFileList_1_error(Exception exception, String errorComponent,
+	public void processos_1_tFileOutputParquet_2_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
-		Processos_Ingestao_Bronze_1_tFileList_1_onSubJobError(exception, errorComponent, globalMap);
+		processos_1_tDBInput_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void Processos_Ingestao_Bronze_1_tS3Put_1_error(Exception exception, String errorComponent,
+	public void processos_1_tS3Put_1_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		status = "failure";
 
-		Processos_Ingestao_Bronze_1_tFileList_1_onSubJobError(exception, errorComponent, globalMap);
-	}
-
-	public void Processos_Ingestao_Bronze_1_tDBInput_3_error(Exception exception, String errorComponent,
-			final java.util.Map<String, Object> globalMap) throws TalendException {
-
-		end_Hash.put(errorComponent, System.currentTimeMillis());
-
-		status = "failure";
-
-		Processos_Ingestao_Bronze_1_tDBInput_3_onSubJobError(exception, errorComponent, globalMap);
-	}
-
-	public void Processos_Ingestao_Bronze_1_tFileOutputParquet_3_error(Exception exception, String errorComponent,
-			final java.util.Map<String, Object> globalMap) throws TalendException {
-
-		end_Hash.put(errorComponent, System.currentTimeMillis());
-
-		status = "failure";
-
-		Processos_Ingestao_Bronze_1_tDBInput_3_onSubJobError(exception, errorComponent, globalMap);
-	}
-
-	public void Processos_Ingestao_Bronze_1_tDBInput_4_error(Exception exception, String errorComponent,
-			final java.util.Map<String, Object> globalMap) throws TalendException {
-
-		end_Hash.put(errorComponent, System.currentTimeMillis());
-
-		status = "failure";
-
-		Processos_Ingestao_Bronze_1_tDBInput_4_onSubJobError(exception, errorComponent, globalMap);
-	}
-
-	public void Processos_Ingestao_Bronze_1_tFileOutputParquet_4_error(Exception exception, String errorComponent,
-			final java.util.Map<String, Object> globalMap) throws TalendException {
-
-		end_Hash.put(errorComponent, System.currentTimeMillis());
-
-		status = "failure";
-
-		Processos_Ingestao_Bronze_1_tDBInput_4_onSubJobError(exception, errorComponent, globalMap);
-	}
-
-	public void Processos_Ingestao_Bronze_1_tDBInput_5_error(Exception exception, String errorComponent,
-			final java.util.Map<String, Object> globalMap) throws TalendException {
-
-		end_Hash.put(errorComponent, System.currentTimeMillis());
-
-		status = "failure";
-
-		Processos_Ingestao_Bronze_1_tDBInput_5_onSubJobError(exception, errorComponent, globalMap);
-	}
-
-	public void Processos_Ingestao_Bronze_1_tFileOutputParquet_5_error(Exception exception, String errorComponent,
-			final java.util.Map<String, Object> globalMap) throws TalendException {
-
-		end_Hash.put(errorComponent, System.currentTimeMillis());
-
-		status = "failure";
-
-		Processos_Ingestao_Bronze_1_tDBInput_5_onSubJobError(exception, errorComponent, globalMap);
-	}
-
-	public void Processos_Ingestao_Bronze_1_tS3Connection_2_error(Exception exception, String errorComponent,
-			final java.util.Map<String, Object> globalMap) throws TalendException {
-
-		end_Hash.put(errorComponent, System.currentTimeMillis());
-
-		status = "failure";
-
-		Processos_Ingestao_Bronze_1_tS3Connection_2_onSubJobError(exception, errorComponent, globalMap);
+		processos_1_tS3Put_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
 	public void talendJobLog_error(Exception exception, String errorComponent,
@@ -579,7 +509,7 @@ public class TRF5 implements TalendJob {
 		talendJobLog_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void Processo_Silver_1_tS3Connection_1_onSubJobError(Exception exception, String errorComponent,
+	public void processos_1_tS3Connection_1_onSubJobError(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
@@ -587,7 +517,7 @@ public class TRF5 implements TalendJob {
 
 	}
 
-	public void Processo_Silver_1_tS3List_1_onSubJobError(Exception exception, String errorComponent,
+	public void processos_1_tS3Get_1_onSubJobError(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
@@ -595,7 +525,7 @@ public class TRF5 implements TalendJob {
 
 	}
 
-	public void Processos_Ingestao_Bronze_1_tDBInput_1_onSubJobError(Exception exception, String errorComponent,
+	public void processos_1_tFileInputParquet_2_onSubJobError(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
@@ -603,7 +533,7 @@ public class TRF5 implements TalendJob {
 
 	}
 
-	public void Processos_Ingestao_Bronze_1_tDBInput_2_onSubJobError(Exception exception, String errorComponent,
+	public void processos_1_tDBRow_1_onSubJobError(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
@@ -611,7 +541,7 @@ public class TRF5 implements TalendJob {
 
 	}
 
-	public void Processos_Ingestao_Bronze_1_tFileList_1_onSubJobError(Exception exception, String errorComponent,
+	public void processos_1_tDBInput_1_onSubJobError(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
@@ -619,31 +549,7 @@ public class TRF5 implements TalendJob {
 
 	}
 
-	public void Processos_Ingestao_Bronze_1_tDBInput_3_onSubJobError(Exception exception, String errorComponent,
-			final java.util.Map<String, Object> globalMap) throws TalendException {
-
-		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
-				exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception), "");
-
-	}
-
-	public void Processos_Ingestao_Bronze_1_tDBInput_4_onSubJobError(Exception exception, String errorComponent,
-			final java.util.Map<String, Object> globalMap) throws TalendException {
-
-		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
-				exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception), "");
-
-	}
-
-	public void Processos_Ingestao_Bronze_1_tDBInput_5_onSubJobError(Exception exception, String errorComponent,
-			final java.util.Map<String, Object> globalMap) throws TalendException {
-
-		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
-				exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception), "");
-
-	}
-
-	public void Processos_Ingestao_Bronze_1_tS3Connection_2_onSubJobError(Exception exception, String errorComponent,
+	public void processos_1_tS3Put_1_onSubJobError(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
@@ -659,13 +565,13 @@ public class TRF5 implements TalendJob {
 
 	}
 
-	public void Processo_Silver_1_tS3Connection_1Process(final java.util.Map<String, Object> globalMap)
+	public void processos_1_tS3Connection_1Process(final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		globalMap.put("Processo_Silver_1_tS3Connection_1_SUBPROCESS_STATE", 0);
+		globalMap.put("processos_1_tS3Connection_1_SUBPROCESS_STATE", 0);
 
 		final boolean execStat = this.execStat;
 
-		mdc("Processo_Silver_1_tS3Connection_1", "CseGaL_");
+		mdc("processos_1_tS3Connection_1", "thHMQJ_");
 
 		String iterateId = "";
 
@@ -685,68 +591,68 @@ public class TRF5 implements TalendJob {
 				globalResumeTicket = true;
 
 				/**
-				 * [Processo_Silver_1_tS3Connection_1 begin ] start
+				 * [processos_1_tS3Connection_1 begin ] start
 				 */
 
-				sh("Processo_Silver_1_tS3Connection_1");
+				sh("processos_1_tS3Connection_1");
 
-				s(currentComponent = "Processo_Silver_1_tS3Connection_1");
+				s(currentComponent = "processos_1_tS3Connection_1");
 
-				int tos_count_Processo_Silver_1_tS3Connection_1 = 0;
+				int tos_count_processos_1_tS3Connection_1 = 0;
 
 				if (log.isDebugEnabled())
-					log.debug("Processo_Silver_1_tS3Connection_1 - " + ("Start to work."));
+					log.debug("processos_1_tS3Connection_1 - " + ("Start to work."));
 				if (log.isDebugEnabled()) {
-					class BytesLimit65535_Processo_Silver_1_tS3Connection_1 {
+					class BytesLimit65535_processos_1_tS3Connection_1 {
 						public void limitLog4jByte() throws Exception {
-							StringBuilder log4jParamters_Processo_Silver_1_tS3Connection_1 = new StringBuilder();
-							log4jParamters_Processo_Silver_1_tS3Connection_1.append("Parameters:");
-							log4jParamters_Processo_Silver_1_tS3Connection_1
+							StringBuilder log4jParamters_processos_1_tS3Connection_1 = new StringBuilder();
+							log4jParamters_processos_1_tS3Connection_1.append("Parameters:");
+							log4jParamters_processos_1_tS3Connection_1
 									.append("configuration.credentialProvider" + " = " + "STATIC_CREDENTIALS");
-							log4jParamters_Processo_Silver_1_tS3Connection_1.append(" | ");
-							log4jParamters_Processo_Silver_1_tS3Connection_1
+							log4jParamters_processos_1_tS3Connection_1.append(" | ");
+							log4jParamters_processos_1_tS3Connection_1
 									.append("configuration.staticCredentialConfiguration.accessKey" + " = "
 											+ "AKIAUWW4VRZLOLIPY4ZH");
-							log4jParamters_Processo_Silver_1_tS3Connection_1.append(" | ");
-							log4jParamters_Processo_Silver_1_tS3Connection_1.append(
+							log4jParamters_processos_1_tS3Connection_1.append(" | ");
+							log4jParamters_processos_1_tS3Connection_1.append(
 									"configuration.staticCredentialConfiguration.secretKey" + " = " + String.valueOf(
-											"enc:routine.encryption.key.v1:91XmpxGGP7X+vnwNzfLGLT+hFGGRYYU2izSYNnOe/MKvlXYh8jFh3xY2SdARVIR/ECJ61gYlM3D5r8wzotds5qlfK5M=")
+											"enc:routine.encryption.key.v1:+paSmIbv2ZGCkMqybgyCUPVOgua+wRV1+tL5DMJRM6mecJ8+Li06AJyLqp5BSRwbrps6x64/PNe31L1jHFZJOsc0cdE=")
 											.substring(0, 4) + "...");
-							log4jParamters_Processo_Silver_1_tS3Connection_1.append(" | ");
-							log4jParamters_Processo_Silver_1_tS3Connection_1
+							log4jParamters_processos_1_tS3Connection_1.append(" | ");
+							log4jParamters_processos_1_tS3Connection_1
 									.append("configuration.assumeRole" + " = " + "false");
-							log4jParamters_Processo_Silver_1_tS3Connection_1.append(" | ");
-							log4jParamters_Processo_Silver_1_tS3Connection_1
+							log4jParamters_processos_1_tS3Connection_1.append(" | ");
+							log4jParamters_processos_1_tS3Connection_1
 									.append("configuration.region" + " = " + "DEFAULT");
-							log4jParamters_Processo_Silver_1_tS3Connection_1.append(" | ");
-							log4jParamters_Processo_Silver_1_tS3Connection_1
+							log4jParamters_processos_1_tS3Connection_1.append(" | ");
+							log4jParamters_processos_1_tS3Connection_1
 									.append("configuration.clientSideEncrypt" + " = " + "false");
-							log4jParamters_Processo_Silver_1_tS3Connection_1.append(" | ");
-							log4jParamters_Processo_Silver_1_tS3Connection_1
+							log4jParamters_processos_1_tS3Connection_1.append(" | ");
+							log4jParamters_processos_1_tS3Connection_1
 									.append("configuration.useRegionEndpoint" + " = " + "false");
-							log4jParamters_Processo_Silver_1_tS3Connection_1.append(" | ");
-							log4jParamters_Processo_Silver_1_tS3Connection_1
+							log4jParamters_processos_1_tS3Connection_1.append(" | ");
+							log4jParamters_processos_1_tS3Connection_1
 									.append("configuration.configClient" + " = " + "false");
-							log4jParamters_Processo_Silver_1_tS3Connection_1.append(" | ");
-							log4jParamters_Processo_Silver_1_tS3Connection_1
+							log4jParamters_processos_1_tS3Connection_1.append(" | ");
+							log4jParamters_processos_1_tS3Connection_1
 									.append("configuration.checkAccessibility" + " = " + "true");
-							log4jParamters_Processo_Silver_1_tS3Connection_1.append(" | ");
-							log4jParamters_Processo_Silver_1_tS3Connection_1
+							log4jParamters_processos_1_tS3Connection_1.append(" | ");
+							log4jParamters_processos_1_tS3Connection_1
 									.append("configuration.checkMethod" + " = " + "BY_ACCOUNT_OWNER");
-							log4jParamters_Processo_Silver_1_tS3Connection_1.append(" | ");
-							log4jParamters_Processo_Silver_1_tS3Connection_1
+							log4jParamters_processos_1_tS3Connection_1.append(" | ");
+							log4jParamters_processos_1_tS3Connection_1
 									.append("configuration.enableAccelerate" + " = " + "false");
-							log4jParamters_Processo_Silver_1_tS3Connection_1.append(" | ");
+							log4jParamters_processos_1_tS3Connection_1.append(" | ");
 							if (log.isDebugEnabled())
-								log.debug("Processo_Silver_1_tS3Connection_1 - "
-										+ (log4jParamters_Processo_Silver_1_tS3Connection_1));
+								log.debug("processos_1_tS3Connection_1 - "
+										+ (log4jParamters_processos_1_tS3Connection_1));
 						}
 					}
-					new BytesLimit65535_Processo_Silver_1_tS3Connection_1().limitLog4jByte();
+					new BytesLimit65535_processos_1_tS3Connection_1().limitLog4jByte();
 				}
 				// QTUP-3575
 				if (enableLineage) {
-					class ParameterUtil_Processo_Silver_1_tS3Connection_1 {
+					class ParameterUtil_processos_1_tS3Connection_1 {
 
 						private void a(java.util.List<java.util.Map<String, String>> schema, String... values) {
 							java.util.Map<String, String> field = new java.util.HashMap<>();
@@ -781,7 +687,7 @@ public class TRF5 implements TalendJob {
 
 								component_parameters.put("configuration.enableAccelerate", "false");
 
-							} catch (java.lang.Exception e_Processo_Silver_1_tS3Connection_1) {
+							} catch (java.lang.Exception e_processos_1_tS3Connection_1) {
 								// do nothing
 							}
 
@@ -789,30 +695,30 @@ public class TRF5 implements TalendJob {
 						}
 					}
 
-					talendJobLog.addComponentParameterMessage("Processo_Silver_1_tS3Connection_1", "tS3Connection",
-							new ParameterUtil_Processo_Silver_1_tS3Connection_1().getParameter());
+					talendJobLog.addComponentParameterMessage("processos_1_tS3Connection_1", "tS3Connection",
+							new ParameterUtil_processos_1_tS3Connection_1().getParameter());
 					talendJobLogProcess(globalMap);
 					s(currentComponent);
 				}
 				// QTUP-3575
 
 				if (enableLogStash) {
-					talendJobLog.addCM("Processo_Silver_1_tS3Connection_1", "tS3Connection_1", "tS3Connection");
+					talendJobLog.addCM("processos_1_tS3Connection_1", "tS3Connection_1", "tS3Connection");
 					talendJobLogProcess(globalMap);
 					s(currentComponent);
 				}
 
-				final org.talend.sdk.component.runtime.manager.ComponentManager mgr_Processo_Silver_1_tS3Connection_1 = org.talend.sdk.component.runtime.manager.ComponentManager
+				final org.talend.sdk.component.runtime.manager.ComponentManager mgr_processos_1_tS3Connection_1 = org.talend.sdk.component.runtime.manager.ComponentManager
 						.instance();
-				mgr_Processo_Silver_1_tS3Connection_1.autoDiscoverPluginsIfEmpty(false, true);
+				mgr_processos_1_tS3Connection_1.autoDiscoverPluginsIfEmpty(false, true);
 
-				final java.util.Map<String, String> configuration_Processo_Silver_1_tS3Connection_1 = new java.util.HashMap<>();
-				final java.util.Map<String, String> registry_metadata_Processo_Silver_1_tS3Connection_1 = new java.util.HashMap<>();
+				final java.util.Map<String, String> configuration_processos_1_tS3Connection_1 = new java.util.HashMap<>();
+				final java.util.Map<String, String> registry_metadata_processos_1_tS3Connection_1 = new java.util.HashMap<>();
 
-				final class SettingHelper_Processo_Silver_1_tS3Connection_1 {
+				final class SettingHelper_processos_1_tS3Connection_1 {
 					final java.util.Map<String, String> configuration;
 
-					SettingHelper_Processo_Silver_1_tS3Connection_1(final java.util.Map<String, String> configuration) {
+					SettingHelper_processos_1_tS3Connection_1(final java.util.Map<String, String> configuration) {
 						this.configuration = configuration;
 					}
 
@@ -823,42 +729,40 @@ public class TRF5 implements TalendJob {
 					}
 				}
 
-				final SettingHelper_Processo_Silver_1_tS3Connection_1 s_Processo_Silver_1_tS3Connection_1 = new SettingHelper_Processo_Silver_1_tS3Connection_1(
-						configuration_Processo_Silver_1_tS3Connection_1);
-				Object dv_Processo_Silver_1_tS3Connection_1;
-				java.net.URL mappings_url_Processo_Silver_1_tS3Connection_1 = this.getClass()
-						.getResource("/xmlMappings");
-				globalMap.put("Processo_Silver_1_tS3Connection_1_MAPPINGS_URL",
-						mappings_url_Processo_Silver_1_tS3Connection_1);
+				final SettingHelper_processos_1_tS3Connection_1 s_processos_1_tS3Connection_1 = new SettingHelper_processos_1_tS3Connection_1(
+						configuration_processos_1_tS3Connection_1);
+				Object dv_processos_1_tS3Connection_1;
+				java.net.URL mappings_url_processos_1_tS3Connection_1 = this.getClass().getResource("/xmlMappings");
+				globalMap.put("processos_1_tS3Connection_1_MAPPINGS_URL", mappings_url_processos_1_tS3Connection_1);
 				globalMap.putIfAbsent("TALEND_PRODUCT_VERSION", "8.0");
 				globalMap.putIfAbsent("TALEND_AWS_TRACKER", "APN/1.0 Talend/8.0 Studio/8.0 (Qlik Talend Cloud)");
 
-				s_Processo_Silver_1_tS3Connection_1.put("configuration.credentialProvider", "STATIC_CREDENTIALS");
+				s_processos_1_tS3Connection_1.put("configuration.credentialProvider", "STATIC_CREDENTIALS");
 
-				s_Processo_Silver_1_tS3Connection_1.put("configuration.staticCredentialConfiguration.accessKey",
+				s_processos_1_tS3Connection_1.put("configuration.staticCredentialConfiguration.accessKey",
 						"AKIAUWW4VRZLOLIPY4ZH");
-				s_Processo_Silver_1_tS3Connection_1.put("configuration.staticCredentialConfiguration.secretKey",
+				s_processos_1_tS3Connection_1.put("configuration.staticCredentialConfiguration.secretKey",
 						routines.system.PasswordEncryptUtil.decryptPassword(
-								"enc:routine.encryption.key.v1:6eiNt9zzW8QIz30xDNE+wgI/PcBsN09+X53CMdhSbLSinJhC34tT1HPh5FPEDFfMVS2Ewqt0wd1UP8q7v9pLt7WcgsU="));
+								"enc:routine.encryption.key.v1:Fx2UFDVuJwgcksIgocEMwV3lGErmJTTy4QeCDjVXpeg06Xj18gCyATkCV2pD+KGoGBv8RrYJ8jGQEx3kdd079c9sbrc="));
 
-				s_Processo_Silver_1_tS3Connection_1.put("configuration.assumeRole", "false");
+				s_processos_1_tS3Connection_1.put("configuration.assumeRole", "false");
 
-				s_Processo_Silver_1_tS3Connection_1.put("configuration.region", "DEFAULT");
+				s_processos_1_tS3Connection_1.put("configuration.region", "DEFAULT");
 
-				s_Processo_Silver_1_tS3Connection_1.put("configuration.clientSideEncrypt", "false");
+				s_processos_1_tS3Connection_1.put("configuration.clientSideEncrypt", "false");
 
-				s_Processo_Silver_1_tS3Connection_1.put("configuration.useRegionEndpoint", "false");
+				s_processos_1_tS3Connection_1.put("configuration.useRegionEndpoint", "false");
 
-				s_Processo_Silver_1_tS3Connection_1.put("configuration.configClient", "false");
+				s_processos_1_tS3Connection_1.put("configuration.configClient", "false");
 
-				s_Processo_Silver_1_tS3Connection_1.put("configuration.checkAccessibility", "true");
+				s_processos_1_tS3Connection_1.put("configuration.checkAccessibility", "true");
 
-				s_Processo_Silver_1_tS3Connection_1.put("configuration.checkMethod", "BY_ACCOUNT_OWNER");
+				s_processos_1_tS3Connection_1.put("configuration.checkMethod", "BY_ACCOUNT_OWNER");
 
-				s_Processo_Silver_1_tS3Connection_1.put("configuration.enableAccelerate", "false");
+				s_processos_1_tS3Connection_1.put("configuration.enableAccelerate", "false");
 
-				s_Processo_Silver_1_tS3Connection_1.put("configuration.__version", "-1");
-				final class SchemaSettingHelper_Processo_Silver_1_tS3Connection_1_1 {
+				s_processos_1_tS3Connection_1.put("configuration.__version", "-1");
+				final class SchemaSettingHelper_processos_1_tS3Connection_1_1 {
 
 					public void set(final java.util.Map<String, String> configuration) throws java.lang.Exception {
 						set_0(configuration);
@@ -875,103 +779,107 @@ public class TRF5 implements TalendJob {
 						configuration.put("SCHEMA_FLOW[7]", "CURRENT_STORAGECLASS");
 					}
 				}
-				new SchemaSettingHelper_Processo_Silver_1_tS3Connection_1_1()
-						.set(configuration_Processo_Silver_1_tS3Connection_1);
+				new SchemaSettingHelper_processos_1_tS3Connection_1_1().set(configuration_processos_1_tS3Connection_1);
 
-				mgr_Processo_Silver_1_tS3Connection_1.findPlugin("aws-s3")
+				mgr_processos_1_tS3Connection_1.findPlugin("aws-s3")
 						.orElseThrow(() -> new IllegalStateException("Can't find the plugin : aws-s3"))
 						.get(org.talend.sdk.component.runtime.manager.ContainerComponentRegistry.class).getServices()
-						.stream().forEach(serviceMeta_Processo_Silver_1_tS3Connection_1 -> {
-							serviceMeta_Processo_Silver_1_tS3Connection_1.getActions().stream()
-									.filter(actionMeta_Processo_Silver_1_tS3Connection_1 -> "create_connection"
-											.equals(actionMeta_Processo_Silver_1_tS3Connection_1.getType()))
-									.forEach(actionMeta_Processo_Silver_1_tS3Connection_1 -> {
-										synchronized (serviceMeta_Processo_Silver_1_tS3Connection_1.getInstance()) {
+						.stream().forEach(serviceMeta_processos_1_tS3Connection_1 -> {
+							serviceMeta_processos_1_tS3Connection_1.getActions().stream()
+									.filter(actionMeta_processos_1_tS3Connection_1 -> "create_connection"
+											.equals(actionMeta_processos_1_tS3Connection_1.getType()))
+									.forEach(actionMeta_processos_1_tS3Connection_1 -> {
+										synchronized (serviceMeta_processos_1_tS3Connection_1.getInstance()) {
 											org.talend.sdk.component.runtime.di.studio.RuntimeContextInjector
-													.injectService(mgr_Processo_Silver_1_tS3Connection_1, "aws-s3",
+													.injectService(mgr_processos_1_tS3Connection_1, "aws-s3",
 															new org.talend.sdk.component.api.context.RuntimeContextHolder(
-																	"Processo_Silver_1_tS3Connection_1", globalMap));
+																	"processos_1_tS3Connection_1", globalMap));
 
-											Object connnection_Processo_Silver_1_tS3Connection_1 = actionMeta_Processo_Silver_1_tS3Connection_1
-													.getInvoker()
-													.apply(configuration_Processo_Silver_1_tS3Connection_1);
+											Object connnection_processos_1_tS3Connection_1 = actionMeta_processos_1_tS3Connection_1
+													.getInvoker().apply(configuration_processos_1_tS3Connection_1);
 
-											globalMap.put("conn_Processo_Silver_1_tS3Connection_1",
-													connnection_Processo_Silver_1_tS3Connection_1);
+											globalMap.put("conn_processos_1_tS3Connection_1",
+													connnection_processos_1_tS3Connection_1);
 
 											try {
-												configuration_Processo_Silver_1_tS3Connection_1.put(
+												configuration_processos_1_tS3Connection_1.put(
 														"configuration.staticCredentialConfiguration.secretKey",
 														routines.system.PasswordEncryptUtil.encryptPassword(
-																configuration_Processo_Silver_1_tS3Connection_1.get(
+																configuration_processos_1_tS3Connection_1.get(
 																		"configuration.staticCredentialConfiguration.secretKey")));
 											} catch (Exception e) {
 												e.printStackTrace();
 											}
-											globalMap.put("configuration_Processo_Silver_1_tS3Connection_1",
-													configuration_Processo_Silver_1_tS3Connection_1);
+											globalMap.put("configuration_processos_1_tS3Connection_1",
+													configuration_processos_1_tS3Connection_1);
 										}
 									});
 						});
 
 				/**
-				 * [Processo_Silver_1_tS3Connection_1 begin ] stop
+				 * [processos_1_tS3Connection_1 begin ] stop
 				 */
 
 				/**
-				 * [Processo_Silver_1_tS3Connection_1 main ] start
+				 * [processos_1_tS3Connection_1 main ] start
 				 */
 
-				s(currentComponent = "Processo_Silver_1_tS3Connection_1");
+				s(currentComponent = "processos_1_tS3Connection_1");
 
-				tos_count_Processo_Silver_1_tS3Connection_1++;
-
-				/**
-				 * [Processo_Silver_1_tS3Connection_1 main ] stop
-				 */
+				tos_count_processos_1_tS3Connection_1++;
 
 				/**
-				 * [Processo_Silver_1_tS3Connection_1 process_data_begin ] start
-				 */
-
-				s(currentComponent = "Processo_Silver_1_tS3Connection_1");
-
-				/**
-				 * [Processo_Silver_1_tS3Connection_1 process_data_begin ] stop
+				 * [processos_1_tS3Connection_1 main ] stop
 				 */
 
 				/**
-				 * [Processo_Silver_1_tS3Connection_1 process_data_end ] start
+				 * [processos_1_tS3Connection_1 process_data_begin ] start
 				 */
 
-				s(currentComponent = "Processo_Silver_1_tS3Connection_1");
+				s(currentComponent = "processos_1_tS3Connection_1");
 
 				/**
-				 * [Processo_Silver_1_tS3Connection_1 process_data_end ] stop
+				 * [processos_1_tS3Connection_1 process_data_begin ] stop
 				 */
 
 				/**
-				 * [Processo_Silver_1_tS3Connection_1 end ] start
+				 * [processos_1_tS3Connection_1 process_data_end ] start
 				 */
 
-				s(currentComponent = "Processo_Silver_1_tS3Connection_1");
+				s(currentComponent = "processos_1_tS3Connection_1");
+
+				/**
+				 * [processos_1_tS3Connection_1 process_data_end ] stop
+				 */
+
+				/**
+				 * [processos_1_tS3Connection_1 end ] start
+				 */
+
+				s(currentComponent = "processos_1_tS3Connection_1");
 
 				if (log.isDebugEnabled())
-					log.debug("Processo_Silver_1_tS3Connection_1 - " + ("Done."));
+					log.debug("processos_1_tS3Connection_1 - " + ("Done."));
 
-				ok_Hash.put("Processo_Silver_1_tS3Connection_1", true);
-				end_Hash.put("Processo_Silver_1_tS3Connection_1", System.currentTimeMillis());
-
-				if (execStat) {
-					runStat.updateStatOnConnection("Processo_Silver_1_OnComponentOk4", 0, "ok");
-				}
-				Processo_Silver_1_tS3List_1Process(globalMap);
+				ok_Hash.put("processos_1_tS3Connection_1", true);
+				end_Hash.put("processos_1_tS3Connection_1", System.currentTimeMillis());
 
 				/**
-				 * [Processo_Silver_1_tS3Connection_1 end ] stop
+				 * [processos_1_tS3Connection_1 end ] stop
 				 */
 
 			} // end the resume
+
+			if (resumeEntryMethodName == null || globalResumeTicket) {
+				resumeUtil.addLog("CHECKPOINT", "CONNECTION:SUBJOB_OK:processos_1_tS3Connection_1:OnSubjobOk1", "",
+						Thread.currentThread().getId() + "", "", "", "", "", "");
+			}
+
+			if (execStat) {
+				runStat.updateStatOnConnection("processos_1_OnSubjobOk1", 0, "ok");
+			}
+
+			processos_1_tS3Get_1Process(globalMap);
 
 		} catch (java.lang.Exception e) {
 
@@ -992,13 +900,13 @@ public class TRF5 implements TalendJob {
 			try {
 
 				/**
-				 * [Processo_Silver_1_tS3Connection_1 finally ] start
+				 * [processos_1_tS3Connection_1 finally ] start
 				 */
 
-				s(currentComponent = "Processo_Silver_1_tS3Connection_1");
+				s(currentComponent = "processos_1_tS3Connection_1");
 
 				/**
-				 * [Processo_Silver_1_tS3Connection_1 finally ] stop
+				 * [processos_1_tS3Connection_1 finally ] stop
 				 */
 
 			} catch (java.lang.Exception e) {
@@ -1009,16 +917,15 @@ public class TRF5 implements TalendJob {
 			resourceMap = null;
 		}
 
-		globalMap.put("Processo_Silver_1_tS3Connection_1_SUBPROCESS_STATE", 1);
+		globalMap.put("processos_1_tS3Connection_1_SUBPROCESS_STATE", 1);
 	}
 
-	public void Processo_Silver_1_tS3List_1Process(final java.util.Map<String, Object> globalMap)
-			throws TalendException {
-		globalMap.put("Processo_Silver_1_tS3List_1_SUBPROCESS_STATE", 0);
+	public void processos_1_tS3Get_1Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+		globalMap.put("processos_1_tS3Get_1_SUBPROCESS_STATE", 0);
 
 		final boolean execStat = this.execStat;
 
-		mdc("Processo_Silver_1_tS3List_1", "DjJsE5_");
+		mdc("processos_1_tS3Get_1", "RLF7UK_");
 
 		String iterateId = "";
 
@@ -1038,51 +945,52 @@ public class TRF5 implements TalendJob {
 				globalResumeTicket = true;
 
 				/**
-				 * [Processo_Silver_1_tS3List_1 begin ] start
+				 * [processos_1_tS3Get_1 begin ] start
 				 */
 
-				int NB_ITERATE_Processo_Silver_1_tS3Get_1 = 0; // for statistics
+				sh("processos_1_tS3Get_1");
 
-				sh("Processo_Silver_1_tS3List_1");
+				s(currentComponent = "processos_1_tS3Get_1");
 
-				s(currentComponent = "Processo_Silver_1_tS3List_1");
-
-				int tos_count_Processo_Silver_1_tS3List_1 = 0;
+				int tos_count_processos_1_tS3Get_1 = 0;
 
 				if (log.isDebugEnabled())
-					log.debug("Processo_Silver_1_tS3List_1 - " + ("Start to work."));
+					log.debug("processos_1_tS3Get_1 - " + ("Start to work."));
 				if (log.isDebugEnabled()) {
-					class BytesLimit65535_Processo_Silver_1_tS3List_1 {
+					class BytesLimit65535_processos_1_tS3Get_1 {
 						public void limitLog4jByte() throws Exception {
-							StringBuilder log4jParamters_Processo_Silver_1_tS3List_1 = new StringBuilder();
-							log4jParamters_Processo_Silver_1_tS3List_1.append("Parameters:");
-							log4jParamters_Processo_Silver_1_tS3List_1.append("configuration.listAll" + " = " + "true");
-							log4jParamters_Processo_Silver_1_tS3List_1.append(" | ");
-							log4jParamters_Processo_Silver_1_tS3List_1
-									.append("configuration.keyPrefix" + " = " + "\"bronze\"");
-							log4jParamters_Processo_Silver_1_tS3List_1.append(" | ");
-							log4jParamters_Processo_Silver_1_tS3List_1
-									.append("configuration.dieOnError" + " = " + "false");
-							log4jParamters_Processo_Silver_1_tS3List_1.append(" | ");
-							log4jParamters_Processo_Silver_1_tS3List_1
-									.append("configuration.getOwner" + " = " + "false");
-							log4jParamters_Processo_Silver_1_tS3List_1.append(" | ");
-							log4jParamters_Processo_Silver_1_tS3List_1
-									.append("USE_EXISTING_CONNECTION" + " = " + "true");
-							log4jParamters_Processo_Silver_1_tS3List_1.append(" | ");
-							log4jParamters_Processo_Silver_1_tS3List_1
-									.append("CONNECTION" + " = " + "Processo_Silver_1_tS3Connection_1");
-							log4jParamters_Processo_Silver_1_tS3List_1.append(" | ");
+							StringBuilder log4jParamters_processos_1_tS3Get_1 = new StringBuilder();
+							log4jParamters_processos_1_tS3Get_1.append("Parameters:");
+							log4jParamters_processos_1_tS3Get_1
+									.append("configuration.bucket" + " = " + "\"peta-demo-qlik\"");
+							log4jParamters_processos_1_tS3Get_1.append(" | ");
+							log4jParamters_processos_1_tS3Get_1
+									.append("configuration.key" + " = " + "\"bronze/processo_bronze.parquet\"");
+							log4jParamters_processos_1_tS3Get_1.append(" | ");
+							log4jParamters_processos_1_tS3Get_1.append("configuration.file" + " = "
+									+ "\"C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/processo_bronze_temp.parquet\"");
+							log4jParamters_processos_1_tS3Get_1.append(" | ");
+							log4jParamters_processos_1_tS3Get_1.append("configuration.dieOnError" + " = " + "false");
+							log4jParamters_processos_1_tS3Get_1.append(" | ");
+							log4jParamters_processos_1_tS3Get_1.append("configuration.useSelect" + " = " + "false");
+							log4jParamters_processos_1_tS3Get_1.append(" | ");
+							log4jParamters_processos_1_tS3Get_1
+									.append("configuration.useTempFilesForParallelDownload" + " = " + "false");
+							log4jParamters_processos_1_tS3Get_1.append(" | ");
+							log4jParamters_processos_1_tS3Get_1.append("USE_EXISTING_CONNECTION" + " = " + "true");
+							log4jParamters_processos_1_tS3Get_1.append(" | ");
+							log4jParamters_processos_1_tS3Get_1
+									.append("CONNECTION" + " = " + "processos_1_tS3Connection_1");
+							log4jParamters_processos_1_tS3Get_1.append(" | ");
 							if (log.isDebugEnabled())
-								log.debug("Processo_Silver_1_tS3List_1 - "
-										+ (log4jParamters_Processo_Silver_1_tS3List_1));
+								log.debug("processos_1_tS3Get_1 - " + (log4jParamters_processos_1_tS3Get_1));
 						}
 					}
-					new BytesLimit65535_Processo_Silver_1_tS3List_1().limitLog4jByte();
+					new BytesLimit65535_processos_1_tS3Get_1().limitLog4jByte();
 				}
 				// QTUP-3575
 				if (enableLineage) {
-					class ParameterUtil_Processo_Silver_1_tS3List_1 {
+					class ParameterUtil_processos_1_tS3Get_1 {
 
 						private void a(java.util.List<java.util.Map<String, String>> schema, String... values) {
 							java.util.Map<String, String> field = new java.util.HashMap<>();
@@ -1096,18 +1004,22 @@ public class TRF5 implements TalendJob {
 
 							try {
 
-								component_parameters.put("configuration.listAll", "true");
+								component_parameters.put("configuration.bucket", "peta-demo-qlik");
 
-								component_parameters.put("configuration.keyPrefix", "bronze");
+								component_parameters.put("configuration.key", "bronze/processo_bronze.parquet");
+
+								component_parameters.put("configuration.file",
+										"C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/processo_bronze_temp.parquet");
 
 								component_parameters.put("configuration.dieOnError", "false");
 
-								component_parameters.put("configuration.getOwner", "false");
-								component_parameters.put("USE_EXISTING_CONNECTION", String.valueOf("true"));
-								component_parameters.put("CONNECTION",
-										String.valueOf("Processo_Silver_1_tS3Connection_1"));
+								component_parameters.put("configuration.useSelect", "false");
 
-							} catch (java.lang.Exception e_Processo_Silver_1_tS3List_1) {
+								component_parameters.put("configuration.useTempFilesForParallelDownload", "false");
+								component_parameters.put("USE_EXISTING_CONNECTION", String.valueOf("true"));
+								component_parameters.put("CONNECTION", String.valueOf("processos_1_tS3Connection_1"));
+
+							} catch (java.lang.Exception e_processos_1_tS3Get_1) {
 								// do nothing
 							}
 
@@ -1115,32 +1027,30 @@ public class TRF5 implements TalendJob {
 						}
 					}
 
-					talendJobLog.addComponentParameterMessage("Processo_Silver_1_tS3List_1", "S3List",
-							new ParameterUtil_Processo_Silver_1_tS3List_1().getParameter());
+					talendJobLog.addComponentParameterMessage("processos_1_tS3Get_1", "S3Get",
+							new ParameterUtil_processos_1_tS3Get_1().getParameter());
 					talendJobLogProcess(globalMap);
 					s(currentComponent);
 				}
 				// QTUP-3575
 
 				if (enableLogStash) {
-					talendJobLog.addCM("Processo_Silver_1_tS3List_1", "tS3List_1", "S3List");
+					talendJobLog.addCM("processos_1_tS3Get_1", "tS3Get_1", "S3Get");
 					talendJobLogProcess(globalMap);
 					s(currentComponent);
 				}
 
-				final org.talend.sdk.component.runtime.manager.ComponentManager mgr_Processo_Silver_1_tS3List_1 = org.talend.sdk.component.runtime.manager.ComponentManager
+				final org.talend.sdk.component.runtime.manager.ComponentManager mgr_processos_1_tS3Get_1 = org.talend.sdk.component.runtime.manager.ComponentManager
 						.instance();
-				mgr_Processo_Silver_1_tS3List_1.autoDiscoverPluginsIfEmpty(false, true);
+				mgr_processos_1_tS3Get_1.autoDiscoverPluginsIfEmpty(false, true);
 
-				final org.talend.sdk.component.runtime.record.RecordConverters.MappingMetaRegistry registry_Processo_Silver_1_tS3List_1 = new org.talend.sdk.component.runtime.record.RecordConverters.MappingMetaRegistry();
+				final java.util.Map<String, String> configuration_processos_1_tS3Get_1 = new java.util.HashMap<>();
+				final java.util.Map<String, String> registry_metadata_processos_1_tS3Get_1 = new java.util.HashMap<>();
 
-				final java.util.Map<String, String> configuration_Processo_Silver_1_tS3List_1 = new java.util.HashMap<>();
-				final java.util.Map<String, String> registry_metadata_Processo_Silver_1_tS3List_1 = new java.util.HashMap<>();
-
-				final class SettingHelper_Processo_Silver_1_tS3List_1 {
+				final class SettingHelper_processos_1_tS3Get_1 {
 					final java.util.Map<String, String> configuration;
 
-					SettingHelper_Processo_Silver_1_tS3List_1(final java.util.Map<String, String> configuration) {
+					SettingHelper_processos_1_tS3Get_1(final java.util.Map<String, String> configuration) {
 						this.configuration = configuration;
 					}
 
@@ -1151,565 +1061,185 @@ public class TRF5 implements TalendJob {
 					}
 				}
 
-				final SettingHelper_Processo_Silver_1_tS3List_1 s_Processo_Silver_1_tS3List_1 = new SettingHelper_Processo_Silver_1_tS3List_1(
-						configuration_Processo_Silver_1_tS3List_1);
-				Object dv_Processo_Silver_1_tS3List_1;
-				java.net.URL mappings_url_Processo_Silver_1_tS3List_1 = this.getClass().getResource("/xmlMappings");
-				globalMap.put("Processo_Silver_1_tS3List_1_MAPPINGS_URL", mappings_url_Processo_Silver_1_tS3List_1);
+				final SettingHelper_processos_1_tS3Get_1 s_processos_1_tS3Get_1 = new SettingHelper_processos_1_tS3Get_1(
+						configuration_processos_1_tS3Get_1);
+				Object dv_processos_1_tS3Get_1;
+				java.net.URL mappings_url_processos_1_tS3Get_1 = this.getClass().getResource("/xmlMappings");
+				globalMap.put("processos_1_tS3Get_1_MAPPINGS_URL", mappings_url_processos_1_tS3Get_1);
 				globalMap.putIfAbsent("TALEND_PRODUCT_VERSION", "8.0");
 				globalMap.putIfAbsent("TALEND_AWS_TRACKER", "APN/1.0 Talend/8.0 Studio/8.0 (Qlik Talend Cloud)");
-				final class SchemaSettingHelper_Processo_Silver_1_tS3List_1_1 {
+
+				s_processos_1_tS3Get_1.put("configuration.bucket", "peta-demo-qlik");
+
+				s_processos_1_tS3Get_1.put("configuration.key", "bronze/processo_bronze.parquet");
+
+				s_processos_1_tS3Get_1.put("configuration.file",
+						"C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/processo_bronze_temp.parquet");
+
+				s_processos_1_tS3Get_1.put("configuration.dieOnError", "false");
+
+				s_processos_1_tS3Get_1.put("configuration.useSelect", "false");
+
+				s_processos_1_tS3Get_1.put("configuration.useTempFilesForParallelDownload", "false");
+
+				s_processos_1_tS3Get_1.put("configuration.dataset.__version", "-1");
+
+				s_processos_1_tS3Get_1.put("configuration.dataset.datastore.__version", "-1");
+				final class SchemaSettingHelper_processos_1_tS3Get_1_1 {
 
 					public void set(final java.util.Map<String, String> configuration) throws java.lang.Exception {
-						set_0(configuration);
-					}
-
-					public void set_0(final java.util.Map<String, String> configuration) throws java.lang.Exception {
-						configuration.put("configuration.schema[0]", "id_assunto");
-						configuration.put("configuration.schema[1]", "cod_assunto_cnj");
-						configuration.put("configuration.schema[2]", "descricao_assunto");
-						configuration.put("configuration.schema[3]", "ramo_direito");
 					}
 				}
-				new SchemaSettingHelper_Processo_Silver_1_tS3List_1_1().set(configuration_Processo_Silver_1_tS3List_1);
+				new SchemaSettingHelper_processos_1_tS3Get_1_1().set(configuration_processos_1_tS3Get_1);
+				final class SchemaSettingHelper_processos_1_tS3Get_1_2 {
 
-				s_Processo_Silver_1_tS3List_1.put("configuration.listAll", "true");
-
-				s_Processo_Silver_1_tS3List_1.put("configuration.keyPrefix", "bronze");
-
-				s_Processo_Silver_1_tS3List_1.put("configuration.dieOnError", "false");
-
-				s_Processo_Silver_1_tS3List_1.put("configuration.getOwner", "false");
-
-				s_Processo_Silver_1_tS3List_1.put("configuration.dataset.__version", "-1");
-
-				s_Processo_Silver_1_tS3List_1.put("configuration.dataset.datastore.__version", "-1");
-				final java.util.Map<String, String> config_from_connection_Processo_Silver_1_tS3List_1 = (java.util.Map<String, String>) globalMap
-						.get("configuration_Processo_Silver_1_tS3Connection_1");
-				final String conn_param_prefix_Processo_Silver_1_tS3List_1 = "configuration.dataset.datastore";
-				if (config_from_connection_Processo_Silver_1_tS3List_1 != null
-						&& conn_param_prefix_Processo_Silver_1_tS3List_1 != null) {
-					final String prefix_Processo_Silver_1_tS3List_1 = config_from_connection_Processo_Silver_1_tS3List_1
-							.keySet().stream()
-							.filter(key_Processo_Silver_1_tS3List_1 -> key_Processo_Silver_1_tS3List_1
-									.endsWith(".__version"))
-							.findFirst().map(key_Processo_Silver_1_tS3List_1 -> key_Processo_Silver_1_tS3List_1
-									.substring(0, key_Processo_Silver_1_tS3List_1.lastIndexOf(".__version")))
+					public void set(final java.util.Map<String, String> configuration) throws java.lang.Exception {
+					}
+				}
+				new SchemaSettingHelper_processos_1_tS3Get_1_2().set(configuration_processos_1_tS3Get_1);
+				final java.util.Map<String, String> config_from_connection_processos_1_tS3Get_1 = (java.util.Map<String, String>) globalMap
+						.get("configuration_processos_1_tS3Connection_1");
+				final String conn_param_prefix_processos_1_tS3Get_1 = "configuration.dataset.datastore";
+				if (config_from_connection_processos_1_tS3Get_1 != null
+						&& conn_param_prefix_processos_1_tS3Get_1 != null) {
+					final String prefix_processos_1_tS3Get_1 = config_from_connection_processos_1_tS3Get_1.keySet()
+							.stream()
+							.filter(key_processos_1_tS3Get_1 -> key_processos_1_tS3Get_1.endsWith(".__version"))
+							.findFirst().map(key_processos_1_tS3Get_1 -> key_processos_1_tS3Get_1.substring(0,
+									key_processos_1_tS3Get_1.lastIndexOf(".__version")))
 							.orElse(null);
 
-					if (prefix_Processo_Silver_1_tS3List_1 != null) {
-						config_from_connection_Processo_Silver_1_tS3List_1.entrySet().stream()
-								.filter(entry_Processo_Silver_1_tS3List_1 -> entry_Processo_Silver_1_tS3List_1.getKey()
-										.startsWith(prefix_Processo_Silver_1_tS3List_1))
-								.forEach(entry_Processo_Silver_1_tS3List_1 -> {
-									configuration_Processo_Silver_1_tS3List_1.put(
-											entry_Processo_Silver_1_tS3List_1.getKey().replaceFirst(
-													prefix_Processo_Silver_1_tS3List_1,
-													conn_param_prefix_Processo_Silver_1_tS3List_1),
-											entry_Processo_Silver_1_tS3List_1.getValue());
+					if (prefix_processos_1_tS3Get_1 != null) {
+						config_from_connection_processos_1_tS3Get_1.entrySet().stream()
+								.filter(entry_processos_1_tS3Get_1 -> entry_processos_1_tS3Get_1.getKey()
+										.startsWith(prefix_processos_1_tS3Get_1))
+								.forEach(entry_processos_1_tS3Get_1 -> {
+									configuration_processos_1_tS3Get_1.put(
+											entry_processos_1_tS3Get_1.getKey().replaceFirst(
+													prefix_processos_1_tS3Get_1,
+													conn_param_prefix_processos_1_tS3Get_1),
+											entry_processos_1_tS3Get_1.getValue());
 								});
 					}
 				}
 
-				final org.talend.sdk.component.runtime.input.Mapper tempMapper_Processo_Silver_1_tS3List_1 = mgr_Processo_Silver_1_tS3List_1
-						.findMapper("S3", "List", 1, configuration_Processo_Silver_1_tS3List_1)
-						.orElseThrow(() -> new IllegalArgumentException("Can't find S3#List"));
+				final org.talend.sdk.component.runtime.standalone.DriverRunner standalone_processos_1_tS3Get_1 = mgr_processos_1_tS3Get_1
+						.findDriverRunner("S3", "Get", 1, configuration_processos_1_tS3Get_1)
+						.orElseThrow(() -> new IllegalArgumentException("Can't find S3#Get"));
 
 				org.talend.sdk.component.runtime.di.studio.RuntimeContextInjector.injectLifecycle(
-						tempMapper_Processo_Silver_1_tS3List_1,
-						new org.talend.sdk.component.api.context.RuntimeContextHolder("Processo_Silver_1_tS3List_1",
-								globalMap));
-
-				final org.talend.sdk.component.runtime.di.studio.ParameterSetter changer_Processo_Silver_1_tS3List_1 = new org.talend.sdk.component.runtime.di.studio.ParameterSetter(
-						tempMapper_Processo_Silver_1_tS3List_1);
-
-				final java.util.Map<String, Object> afterVariablesMap_Processo_Silver_1_tS3List_1 = org.talend.sdk.component.runtime.di.studio.AfterVariableExtracter
-						.extractAfterVariables(tempMapper_Processo_Silver_1_tS3List_1);
+						standalone_processos_1_tS3Get_1, new org.talend.sdk.component.api.context.RuntimeContextHolder(
+								"processos_1_tS3Get_1", globalMap));
 
 				try {
-					Object v_Processo_Silver_1_tS3List_1 = ((org.talend.sdk.component.runtime.base.Delegated) tempMapper_Processo_Silver_1_tS3List_1)
-							.getDelegate();
-					Object con_Processo_Silver_1_tS3List_1 = globalMap.get("conn_Processo_Silver_1_tS3Connection_1");
-					if (con_Processo_Silver_1_tS3List_1 == null) {
+					java.lang.reflect.Field field_processos_1_tS3Get_1 = standalone_processos_1_tS3Get_1.getClass()
+							.getSuperclass().getDeclaredField("delegate");
+					if (!field_processos_1_tS3Get_1.isAccessible()) {
+						field_processos_1_tS3Get_1.setAccessible(true);
+					}
+					Object v_processos_1_tS3Get_1 = field_processos_1_tS3Get_1.get(standalone_processos_1_tS3Get_1);
+					Object con_processos_1_tS3Get_1 = globalMap.get("conn_processos_1_tS3Connection_1");
+					if (con_processos_1_tS3Get_1 == null) {
 						throw new RuntimeException("can't find the connection object");
 					}
 
-					Class<?> current_Processo_Silver_1_tS3List_1 = v_Processo_Silver_1_tS3List_1.getClass();
-					while (current_Processo_Silver_1_tS3List_1 != null
-							&& current_Processo_Silver_1_tS3List_1 != Object.class) {
-						java.util.stream.Stream.of(current_Processo_Silver_1_tS3List_1.getDeclaredFields()).filter(
-								f_Processo_Silver_1_tS3List_1 -> f_Processo_Silver_1_tS3List_1.isAnnotationPresent(
+					Class<?> current_processos_1_tS3Get_1 = v_processos_1_tS3Get_1.getClass();
+					while (current_processos_1_tS3Get_1 != null && current_processos_1_tS3Get_1 != Object.class) {
+						java.util.stream.Stream.of(current_processos_1_tS3Get_1.getDeclaredFields())
+								.filter(f_processos_1_tS3Get_1 -> f_processos_1_tS3Get_1.isAnnotationPresent(
 										org.talend.sdk.component.api.service.connection.Connection.class))
-								.forEach(f_Processo_Silver_1_tS3List_1 -> {
-									if (!f_Processo_Silver_1_tS3List_1.isAccessible()) {
-										f_Processo_Silver_1_tS3List_1.setAccessible(true);
+								.forEach(f_processos_1_tS3Get_1 -> {
+									if (!f_processos_1_tS3Get_1.isAccessible()) {
+										f_processos_1_tS3Get_1.setAccessible(true);
 									}
 									try {
-										f_Processo_Silver_1_tS3List_1.set(v_Processo_Silver_1_tS3List_1,
-												con_Processo_Silver_1_tS3List_1);
-									} catch (final IllegalAccessException e_Processo_Silver_1_tS3List_1) {
-										throw new IllegalStateException(e_Processo_Silver_1_tS3List_1);
+										f_processos_1_tS3Get_1.set(v_processos_1_tS3Get_1, con_processos_1_tS3Get_1);
+									} catch (final IllegalAccessException e_processos_1_tS3Get_1) {
+										throw new IllegalStateException(e_processos_1_tS3Get_1);
 									}
 								});
-						current_Processo_Silver_1_tS3List_1 = current_Processo_Silver_1_tS3List_1.getSuperclass();
+						current_processos_1_tS3Get_1 = current_processos_1_tS3Get_1.getSuperclass();
 					}
-				} catch (Exception e_Processo_Silver_1_tS3List_1) {
-					throw e_Processo_Silver_1_tS3List_1;
+				} catch (Exception e_processos_1_tS3Get_1) {
+					throw e_processos_1_tS3Get_1;
 				}
 
-				int nbLineInput_Processo_Silver_1_tS3List_1 = 0;
-				globalMap.put("Processo_Silver_1_tS3List_1_NB_LINE", nbLineInput_Processo_Silver_1_tS3List_1);
+				standalone_processos_1_tS3Get_1.start();
+				globalMap.put("standalone_processos_1_tS3Get_1", standalone_processos_1_tS3Get_1);
 
-				org.talend.sdk.component.runtime.di.JobStateAware.init(tempMapper_Processo_Silver_1_tS3List_1,
-						globalMap);
-				tempMapper_Processo_Silver_1_tS3List_1.start();
-				final org.talend.sdk.component.runtime.manager.chain.ChainedMapper mapper_Processo_Silver_1_tS3List_1;
-				try {
-					final java.util.List<org.talend.sdk.component.runtime.input.Mapper> splitMappers_Processo_Silver_1_tS3List_1 = tempMapper_Processo_Silver_1_tS3List_1
-							.split(tempMapper_Processo_Silver_1_tS3List_1.assess());
-					mapper_Processo_Silver_1_tS3List_1 = new org.talend.sdk.component.runtime.manager.chain.ChainedMapper(
-							tempMapper_Processo_Silver_1_tS3List_1,
-							splitMappers_Processo_Silver_1_tS3List_1.iterator());
-					mapper_Processo_Silver_1_tS3List_1.start();
-					globalMap.put("mapper_Processo_Silver_1_tS3List_1", mapper_Processo_Silver_1_tS3List_1);
-				} finally {
-					try {
-						tempMapper_Processo_Silver_1_tS3List_1.stop();
-					} catch (final RuntimeException re) {
-						re.printStackTrace();
-					}
-				}
-
-				final org.talend.sdk.component.runtime.input.Input input_Processo_Silver_1_tS3List_1 = mapper_Processo_Silver_1_tS3List_1
-						.create();
-				input_Processo_Silver_1_tS3List_1.start();
-				globalMap.put("input_Processo_Silver_1_tS3List_1", input_Processo_Silver_1_tS3List_1);
-
-				final javax.json.bind.Jsonb jsonb_Processo_Silver_1_tS3List_1 = (javax.json.bind.Jsonb) mgr_Processo_Silver_1_tS3List_1
-						.findPlugin(mapper_Processo_Silver_1_tS3List_1.plugin()).get()
-						.get(org.talend.sdk.component.runtime.manager.ComponentManager.AllServices.class).getServices()
-						.get(javax.json.bind.Jsonb.class);
-
-				final java.util.Map<Class<?>, Object> servicesMapper_Processo_Silver_1_tS3List_1 = mgr_Processo_Silver_1_tS3List_1
-						.findPlugin(mapper_Processo_Silver_1_tS3List_1.plugin()).get()
-						.get(org.talend.sdk.component.runtime.manager.ComponentManager.AllServices.class).getServices();
-				final javax.json.spi.JsonProvider jsonProvider_Processo_Silver_1_tS3List_1 = javax.json.spi.JsonProvider.class
-						.cast(servicesMapper_Processo_Silver_1_tS3List_1.get(javax.json.spi.JsonProvider.class));
-				final javax.json.JsonBuilderFactory jsonBuilderFactory_Processo_Silver_1_tS3List_1 = javax.json.JsonBuilderFactory.class
-						.cast(servicesMapper_Processo_Silver_1_tS3List_1.get(javax.json.JsonBuilderFactory.class));
-				final org.talend.sdk.component.api.service.record.RecordBuilderFactory recordBuilderMapper_Processo_Silver_1_tS3List_1 = org.talend.sdk.component.api.service.record.RecordBuilderFactory.class
-						.cast(servicesMapper_Processo_Silver_1_tS3List_1
-								.get(org.talend.sdk.component.api.service.record.RecordBuilderFactory.class));
-				final org.talend.sdk.component.runtime.record.RecordConverters converters_Processo_Silver_1_tS3List_1 = new org.talend.sdk.component.runtime.record.RecordConverters();
-
-				Object data_Processo_Silver_1_tS3List_1;
-				while ((data_Processo_Silver_1_tS3List_1 = input_Processo_Silver_1_tS3List_1.next()) != null) {
-					nbLineInput_Processo_Silver_1_tS3List_1++;
-					globalMap.put("Processo_Silver_1_tS3List_1_NB_LINE", nbLineInput_Processo_Silver_1_tS3List_1);
-
-					/**
-					 * [Processo_Silver_1_tS3List_1 begin ] stop
-					 */
-
-					/**
-					 * [Processo_Silver_1_tS3List_1 main ] start
-					 */
-
-					s(currentComponent = "Processo_Silver_1_tS3List_1");
-
-					tos_count_Processo_Silver_1_tS3List_1++;
-
-					/**
-					 * [Processo_Silver_1_tS3List_1 main ] stop
-					 */
-
-					/**
-					 * [Processo_Silver_1_tS3List_1 process_data_begin ] start
-					 */
-
-					s(currentComponent = "Processo_Silver_1_tS3List_1");
-
-					/**
-					 * [Processo_Silver_1_tS3List_1 process_data_begin ] stop
-					 */
-
-					NB_ITERATE_Processo_Silver_1_tS3Get_1++;
-
-					if (execStat) {
-						runStat.updateStatOnConnection("Processo_Silver_1_iterate2", 1,
-								"exec" + NB_ITERATE_Processo_Silver_1_tS3Get_1);
-						// Thread.sleep(1000);
-					}
-
-					/**
-					 * [Processo_Silver_1_tS3Get_1 begin ] start
-					 */
-
-					sh("Processo_Silver_1_tS3Get_1");
-
-					s(currentComponent = "Processo_Silver_1_tS3Get_1");
-
-					int tos_count_Processo_Silver_1_tS3Get_1 = 0;
-
-					if (log.isDebugEnabled())
-						log.debug("Processo_Silver_1_tS3Get_1 - " + ("Start to work."));
-					if (log.isDebugEnabled()) {
-						class BytesLimit65535_Processo_Silver_1_tS3Get_1 {
-							public void limitLog4jByte() throws Exception {
-								StringBuilder log4jParamters_Processo_Silver_1_tS3Get_1 = new StringBuilder();
-								log4jParamters_Processo_Silver_1_tS3Get_1.append("Parameters:");
-								log4jParamters_Processo_Silver_1_tS3Get_1
-										.append("configuration.bucket" + " = " + "\"peta-demo-qlik\"");
-								log4jParamters_Processo_Silver_1_tS3Get_1.append(" | ");
-								log4jParamters_Processo_Silver_1_tS3Get_1.append("configuration.key" + " = "
-										+ "((String)globalMap.get(\"Processo_Silver_1_tS3List_1_CURRENT_KEY\"))");
-								log4jParamters_Processo_Silver_1_tS3Get_1.append(" | ");
-								log4jParamters_Processo_Silver_1_tS3Get_1.append("configuration.file" + " = "
-										+ "\"C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/assunto_bronze\"");
-								log4jParamters_Processo_Silver_1_tS3Get_1.append(" | ");
-								log4jParamters_Processo_Silver_1_tS3Get_1
-										.append("configuration.dieOnError" + " = " + "false");
-								log4jParamters_Processo_Silver_1_tS3Get_1.append(" | ");
-								log4jParamters_Processo_Silver_1_tS3Get_1
-										.append("configuration.useSelect" + " = " + "false");
-								log4jParamters_Processo_Silver_1_tS3Get_1.append(" | ");
-								log4jParamters_Processo_Silver_1_tS3Get_1
-										.append("configuration.useTempFilesForParallelDownload" + " = " + "false");
-								log4jParamters_Processo_Silver_1_tS3Get_1.append(" | ");
-								log4jParamters_Processo_Silver_1_tS3Get_1
-										.append("USE_EXISTING_CONNECTION" + " = " + "true");
-								log4jParamters_Processo_Silver_1_tS3Get_1.append(" | ");
-								log4jParamters_Processo_Silver_1_tS3Get_1
-										.append("CONNECTION" + " = " + "Processo_Silver_1_tS3Connection_1");
-								log4jParamters_Processo_Silver_1_tS3Get_1.append(" | ");
-								if (log.isDebugEnabled())
-									log.debug("Processo_Silver_1_tS3Get_1 - "
-											+ (log4jParamters_Processo_Silver_1_tS3Get_1));
-							}
-						}
-						new BytesLimit65535_Processo_Silver_1_tS3Get_1().limitLog4jByte();
-					}
-					// QTUP-3575
-					if (enableLineage) {
-						class ParameterUtil_Processo_Silver_1_tS3Get_1 {
-
-							private void a(java.util.List<java.util.Map<String, String>> schema, String... values) {
-								java.util.Map<String, String> field = new java.util.HashMap<>();
-								field.put("name", values[0]);
-								field.put("talend_type", values[1]);
-								schema.add(field);
-							}
-
-							public java.util.Map<String, String> getParameter() throws Exception {
-								java.util.Map<String, String> component_parameters = new java.util.HashMap<>();
-
-								try {
-
-									component_parameters.put("configuration.bucket", "peta-demo-qlik");
-
-									component_parameters.put("configuration.key", String.valueOf(
-											((String) globalMap.get("Processo_Silver_1_tS3List_1_CURRENT_KEY"))));
-
-									component_parameters.put("configuration.file",
-											"C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/assunto_bronze");
-
-									component_parameters.put("configuration.dieOnError", "false");
-
-									component_parameters.put("configuration.useSelect", "false");
-
-									component_parameters.put("configuration.useTempFilesForParallelDownload", "false");
-									component_parameters.put("USE_EXISTING_CONNECTION", String.valueOf("true"));
-									component_parameters.put("CONNECTION",
-											String.valueOf("Processo_Silver_1_tS3Connection_1"));
-
-								} catch (java.lang.Exception e_Processo_Silver_1_tS3Get_1) {
-									// do nothing
-								}
-
-								return component_parameters;
-							}
-						}
-
-						talendJobLog.addComponentParameterMessage("Processo_Silver_1_tS3Get_1", "S3Get",
-								new ParameterUtil_Processo_Silver_1_tS3Get_1().getParameter());
-						talendJobLogProcess(globalMap);
-						s(currentComponent);
-					}
-					// QTUP-3575
-
-					if (enableLogStash) {
-						talendJobLog.addCM("Processo_Silver_1_tS3Get_1", "tS3Get_1", "S3Get");
-						talendJobLogProcess(globalMap);
-						s(currentComponent);
-					}
-
-					final org.talend.sdk.component.runtime.manager.ComponentManager mgr_Processo_Silver_1_tS3Get_1 = org.talend.sdk.component.runtime.manager.ComponentManager
-							.instance();
-					mgr_Processo_Silver_1_tS3Get_1.autoDiscoverPluginsIfEmpty(false, true);
-
-					final java.util.Map<String, String> configuration_Processo_Silver_1_tS3Get_1 = new java.util.HashMap<>();
-					final java.util.Map<String, String> registry_metadata_Processo_Silver_1_tS3Get_1 = new java.util.HashMap<>();
-
-					final class SettingHelper_Processo_Silver_1_tS3Get_1 {
-						final java.util.Map<String, String> configuration;
-
-						SettingHelper_Processo_Silver_1_tS3Get_1(final java.util.Map<String, String> configuration) {
-							this.configuration = configuration;
-						}
-
-						void put(String key, String value) {
-							if (value != null) {
-								configuration.put(key, value);
-							}
-						}
-					}
-
-					final SettingHelper_Processo_Silver_1_tS3Get_1 s_Processo_Silver_1_tS3Get_1 = new SettingHelper_Processo_Silver_1_tS3Get_1(
-							configuration_Processo_Silver_1_tS3Get_1);
-					Object dv_Processo_Silver_1_tS3Get_1;
-					java.net.URL mappings_url_Processo_Silver_1_tS3Get_1 = this.getClass().getResource("/xmlMappings");
-					globalMap.put("Processo_Silver_1_tS3Get_1_MAPPINGS_URL", mappings_url_Processo_Silver_1_tS3Get_1);
-					globalMap.putIfAbsent("TALEND_PRODUCT_VERSION", "8.0");
-					globalMap.putIfAbsent("TALEND_AWS_TRACKER", "APN/1.0 Talend/8.0 Studio/8.0 (Qlik Talend Cloud)");
-
-					s_Processo_Silver_1_tS3Get_1.put("configuration.bucket", "peta-demo-qlik");
-
-					dv_Processo_Silver_1_tS3Get_1 = ((String) globalMap.get("Processo_Silver_1_tS3List_1_CURRENT_KEY"));
-					if (dv_Processo_Silver_1_tS3Get_1 instanceof java.io.InputStream) {
-						s_Processo_Silver_1_tS3Get_1.put("configuration.key",
-								"((String)globalMap.get(\"Processo_Silver_1_tS3List_1_CURRENT_KEY\"))");
-					} else {
-						s_Processo_Silver_1_tS3Get_1.put("configuration.key",
-								String.valueOf(((String) globalMap.get("Processo_Silver_1_tS3List_1_CURRENT_KEY"))));
-					}
-
-					s_Processo_Silver_1_tS3Get_1.put("configuration.file",
-							"C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/assunto_bronze");
-
-					s_Processo_Silver_1_tS3Get_1.put("configuration.dieOnError", "false");
-
-					s_Processo_Silver_1_tS3Get_1.put("configuration.useSelect", "false");
-
-					s_Processo_Silver_1_tS3Get_1.put("configuration.useTempFilesForParallelDownload", "false");
-
-					s_Processo_Silver_1_tS3Get_1.put("configuration.dataset.__version", "-1");
-
-					s_Processo_Silver_1_tS3Get_1.put("configuration.dataset.datastore.__version", "-1");
-					final class SchemaSettingHelper_Processo_Silver_1_tS3Get_1_1 {
-
-						public void set(final java.util.Map<String, String> configuration) throws java.lang.Exception {
-						}
-					}
-					new SchemaSettingHelper_Processo_Silver_1_tS3Get_1_1()
-							.set(configuration_Processo_Silver_1_tS3Get_1);
-					final class SchemaSettingHelper_Processo_Silver_1_tS3Get_1_2 {
-
-						public void set(final java.util.Map<String, String> configuration) throws java.lang.Exception {
-						}
-					}
-					new SchemaSettingHelper_Processo_Silver_1_tS3Get_1_2()
-							.set(configuration_Processo_Silver_1_tS3Get_1);
-					final java.util.Map<String, String> config_from_connection_Processo_Silver_1_tS3Get_1 = (java.util.Map<String, String>) globalMap
-							.get("configuration_Processo_Silver_1_tS3Connection_1");
-					final String conn_param_prefix_Processo_Silver_1_tS3Get_1 = "configuration.dataset.datastore";
-					if (config_from_connection_Processo_Silver_1_tS3Get_1 != null
-							&& conn_param_prefix_Processo_Silver_1_tS3Get_1 != null) {
-						final String prefix_Processo_Silver_1_tS3Get_1 = config_from_connection_Processo_Silver_1_tS3Get_1
-								.keySet().stream()
-								.filter(key_Processo_Silver_1_tS3Get_1 -> key_Processo_Silver_1_tS3Get_1
-										.endsWith(".__version"))
-								.findFirst().map(key_Processo_Silver_1_tS3Get_1 -> key_Processo_Silver_1_tS3Get_1
-										.substring(0, key_Processo_Silver_1_tS3Get_1.lastIndexOf(".__version")))
-								.orElse(null);
-
-						if (prefix_Processo_Silver_1_tS3Get_1 != null) {
-							config_from_connection_Processo_Silver_1_tS3Get_1.entrySet().stream()
-									.filter(entry_Processo_Silver_1_tS3Get_1 -> entry_Processo_Silver_1_tS3Get_1
-											.getKey().startsWith(prefix_Processo_Silver_1_tS3Get_1))
-									.forEach(entry_Processo_Silver_1_tS3Get_1 -> {
-										configuration_Processo_Silver_1_tS3Get_1.put(
-												entry_Processo_Silver_1_tS3Get_1.getKey().replaceFirst(
-														prefix_Processo_Silver_1_tS3Get_1,
-														conn_param_prefix_Processo_Silver_1_tS3Get_1),
-												entry_Processo_Silver_1_tS3Get_1.getValue());
-									});
-						}
-					}
-
-					final org.talend.sdk.component.runtime.standalone.DriverRunner standalone_Processo_Silver_1_tS3Get_1 = mgr_Processo_Silver_1_tS3Get_1
-							.findDriverRunner("S3", "Get", 1, configuration_Processo_Silver_1_tS3Get_1)
-							.orElseThrow(() -> new IllegalArgumentException("Can't find S3#Get"));
-
-					org.talend.sdk.component.runtime.di.studio.RuntimeContextInjector.injectLifecycle(
-							standalone_Processo_Silver_1_tS3Get_1,
-							new org.talend.sdk.component.api.context.RuntimeContextHolder("Processo_Silver_1_tS3Get_1",
-									globalMap));
-
-					try {
-						java.lang.reflect.Field field_Processo_Silver_1_tS3Get_1 = standalone_Processo_Silver_1_tS3Get_1
-								.getClass().getSuperclass().getDeclaredField("delegate");
-						if (!field_Processo_Silver_1_tS3Get_1.isAccessible()) {
-							field_Processo_Silver_1_tS3Get_1.setAccessible(true);
-						}
-						Object v_Processo_Silver_1_tS3Get_1 = field_Processo_Silver_1_tS3Get_1
-								.get(standalone_Processo_Silver_1_tS3Get_1);
-						Object con_Processo_Silver_1_tS3Get_1 = globalMap.get("conn_Processo_Silver_1_tS3Connection_1");
-						if (con_Processo_Silver_1_tS3Get_1 == null) {
-							throw new RuntimeException("can't find the connection object");
-						}
-
-						Class<?> current_Processo_Silver_1_tS3Get_1 = v_Processo_Silver_1_tS3Get_1.getClass();
-						while (current_Processo_Silver_1_tS3Get_1 != null
-								&& current_Processo_Silver_1_tS3Get_1 != Object.class) {
-							java.util.stream.Stream.of(current_Processo_Silver_1_tS3Get_1.getDeclaredFields()).filter(
-									f_Processo_Silver_1_tS3Get_1 -> f_Processo_Silver_1_tS3Get_1.isAnnotationPresent(
-											org.talend.sdk.component.api.service.connection.Connection.class))
-									.forEach(f_Processo_Silver_1_tS3Get_1 -> {
-										if (!f_Processo_Silver_1_tS3Get_1.isAccessible()) {
-											f_Processo_Silver_1_tS3Get_1.setAccessible(true);
-										}
-										try {
-											f_Processo_Silver_1_tS3Get_1.set(v_Processo_Silver_1_tS3Get_1,
-													con_Processo_Silver_1_tS3Get_1);
-										} catch (final IllegalAccessException e_Processo_Silver_1_tS3Get_1) {
-											throw new IllegalStateException(e_Processo_Silver_1_tS3Get_1);
-										}
-									});
-							current_Processo_Silver_1_tS3Get_1 = current_Processo_Silver_1_tS3Get_1.getSuperclass();
-						}
-					} catch (Exception e_Processo_Silver_1_tS3Get_1) {
-						throw e_Processo_Silver_1_tS3Get_1;
-					}
-
-					standalone_Processo_Silver_1_tS3Get_1.start();
-					globalMap.put("standalone_Processo_Silver_1_tS3Get_1", standalone_Processo_Silver_1_tS3Get_1);
-
-					standalone_Processo_Silver_1_tS3Get_1.runAtDriver();
+				standalone_processos_1_tS3Get_1.runAtDriver();
 //Standalone begin stub
 
-					/**
-					 * [Processo_Silver_1_tS3Get_1 begin ] stop
-					 */
-
-					/**
-					 * [Processo_Silver_1_tS3Get_1 main ] start
-					 */
-
-					s(currentComponent = "Processo_Silver_1_tS3Get_1");
-
-					tos_count_Processo_Silver_1_tS3Get_1++;
-
-					/**
-					 * [Processo_Silver_1_tS3Get_1 main ] stop
-					 */
-
-					/**
-					 * [Processo_Silver_1_tS3Get_1 process_data_begin ] start
-					 */
-
-					s(currentComponent = "Processo_Silver_1_tS3Get_1");
-
-					/**
-					 * [Processo_Silver_1_tS3Get_1 process_data_begin ] stop
-					 */
-
-					/**
-					 * [Processo_Silver_1_tS3Get_1 process_data_end ] start
-					 */
-
-					s(currentComponent = "Processo_Silver_1_tS3Get_1");
-
-					/**
-					 * [Processo_Silver_1_tS3Get_1 process_data_end ] stop
-					 */
-
-					/**
-					 * [Processo_Silver_1_tS3Get_1 end ] start
-					 */
-
-					s(currentComponent = "Processo_Silver_1_tS3Get_1");
-
-					if (standalone_Processo_Silver_1_tS3Get_1 != null) {
-						standalone_Processo_Silver_1_tS3Get_1.stop();
-					}
-
-					globalMap.remove("standalone_Processo_Silver_1_tS3Get_1");
-
-					if (log.isDebugEnabled())
-						log.debug("Processo_Silver_1_tS3Get_1 - " + ("Done."));
-
-					ok_Hash.put("Processo_Silver_1_tS3Get_1", true);
-					end_Hash.put("Processo_Silver_1_tS3Get_1", System.currentTimeMillis());
-
-					/**
-					 * [Processo_Silver_1_tS3Get_1 end ] stop
-					 */
-
-					if (execStat) {
-						runStat.updateStatOnConnection("Processo_Silver_1_iterate2", 2,
-								"exec" + NB_ITERATE_Processo_Silver_1_tS3Get_1);
-					}
-
-					/**
-					 * [Processo_Silver_1_tS3List_1 process_data_end ] start
-					 */
-
-					s(currentComponent = "Processo_Silver_1_tS3List_1");
-
-					/**
-					 * [Processo_Silver_1_tS3List_1 process_data_end ] stop
-					 */
-
-					/**
-					 * [Processo_Silver_1_tS3List_1 end ] start
-					 */
-
-					s(currentComponent = "Processo_Silver_1_tS3List_1");
-
-				} // while
-
-				// extract after variables from the processor map and put to after variables map
-				// of job
-				for (java.util.Map.Entry<String, Object> entry_Processo_Silver_1_tS3List_1 : afterVariablesMap_Processo_Silver_1_tS3List_1
-						.entrySet()) {
-					globalMap.put("Processo_Silver_1_tS3List_1_" + entry_Processo_Silver_1_tS3List_1.getKey(),
-							entry_Processo_Silver_1_tS3List_1.getValue());
-				}
-
-				boolean swallowNextException_Processo_Silver_1_tS3List_1 = false;
-				try {
-					if (input_Processo_Silver_1_tS3List_1 != null) {
-						input_Processo_Silver_1_tS3List_1.stop();
-					}
-				} catch (final RuntimeException re) {
-					swallowNextException_Processo_Silver_1_tS3List_1 = true;
-					throw re;
-				} finally {
-					try {
-						if (mapper_Processo_Silver_1_tS3List_1 != null) {
-							mapper_Processo_Silver_1_tS3List_1.stop();
-						}
-					} catch (final RuntimeException re) {
-						if (!swallowNextException_Processo_Silver_1_tS3List_1) {
-							throw re;
-						}
-					}
-				}
-				globalMap.put("Processo_Silver_1_tS3List_1_NB_LINE", nbLineInput_Processo_Silver_1_tS3List_1);
-				globalMap.remove("mapper_Processo_Silver_1_tS3List_1");
-				globalMap.remove("input_Processo_Silver_1_tS3List_1");
-
-				if (log.isDebugEnabled())
-					log.debug("Processo_Silver_1_tS3List_1 - " + ("Done."));
-
-				ok_Hash.put("Processo_Silver_1_tS3List_1", true);
-				end_Hash.put("Processo_Silver_1_tS3List_1", System.currentTimeMillis());
+				/**
+				 * [processos_1_tS3Get_1 begin ] stop
+				 */
 
 				/**
-				 * [Processo_Silver_1_tS3List_1 end ] stop
+				 * [processos_1_tS3Get_1 main ] start
+				 */
+
+				s(currentComponent = "processos_1_tS3Get_1");
+
+				tos_count_processos_1_tS3Get_1++;
+
+				/**
+				 * [processos_1_tS3Get_1 main ] stop
+				 */
+
+				/**
+				 * [processos_1_tS3Get_1 process_data_begin ] start
+				 */
+
+				s(currentComponent = "processos_1_tS3Get_1");
+
+				/**
+				 * [processos_1_tS3Get_1 process_data_begin ] stop
+				 */
+
+				/**
+				 * [processos_1_tS3Get_1 process_data_end ] start
+				 */
+
+				s(currentComponent = "processos_1_tS3Get_1");
+
+				/**
+				 * [processos_1_tS3Get_1 process_data_end ] stop
+				 */
+
+				/**
+				 * [processos_1_tS3Get_1 end ] start
+				 */
+
+				s(currentComponent = "processos_1_tS3Get_1");
+
+				if (standalone_processos_1_tS3Get_1 != null) {
+					standalone_processos_1_tS3Get_1.stop();
+				}
+
+				globalMap.remove("standalone_processos_1_tS3Get_1");
+
+				if (log.isDebugEnabled())
+					log.debug("processos_1_tS3Get_1 - " + ("Done."));
+
+				ok_Hash.put("processos_1_tS3Get_1", true);
+				end_Hash.put("processos_1_tS3Get_1", System.currentTimeMillis());
+
+				/**
+				 * [processos_1_tS3Get_1 end ] stop
 				 */
 
 			} // end the resume
+
+			if (resumeEntryMethodName == null || globalResumeTicket) {
+				resumeUtil.addLog("CHECKPOINT", "CONNECTION:SUBJOB_OK:processos_1_tS3Get_1:OnSubjobOk", "",
+						Thread.currentThread().getId() + "", "", "", "", "", "");
+			}
+
+			if (execStat) {
+				runStat.updateStatOnConnection("processos_1_OnSubjobOk2", 0, "ok");
+			}
+
+			processos_1_tFileInputParquet_2Process(globalMap);
 
 		} catch (java.lang.Exception e) {
 
@@ -1730,58 +1260,23 @@ public class TRF5 implements TalendJob {
 			try {
 
 				/**
-				 * [Processo_Silver_1_tS3List_1 finally ] start
+				 * [processos_1_tS3Get_1 finally ] start
 				 */
 
-				s(currentComponent = "Processo_Silver_1_tS3List_1");
+				s(currentComponent = "processos_1_tS3Get_1");
 
-				final org.talend.sdk.component.runtime.input.Mapper mapper_Processo_Silver_1_tS3List_1 = org.talend.sdk.component.runtime.input.Mapper.class
-						.cast(globalMap.remove("mapper_Processo_Silver_1_tS3List_1"));
-				final org.talend.sdk.component.runtime.input.Input input_Processo_Silver_1_tS3List_1 = org.talend.sdk.component.runtime.input.Input.class
-						.cast(globalMap.remove("input_Processo_Silver_1_tS3List_1"));
-
-				boolean swallowNextException_Processo_Silver_1_tS3List_1 = false;
+				final org.talend.sdk.component.runtime.standalone.DriverRunner standalone_processos_1_tS3Get_1 = org.talend.sdk.component.runtime.standalone.DriverRunner.class
+						.cast(globalMap.remove("standalone_processos_1_tS3Get_1"));
 				try {
-					if (input_Processo_Silver_1_tS3List_1 != null) {
-						input_Processo_Silver_1_tS3List_1.stop();
-					}
-				} catch (final RuntimeException re) {
-					swallowNextException_Processo_Silver_1_tS3List_1 = true;
-					throw new TalendException(re, currentComponent, cLabel, globalMap);
-				} finally {
-					try {
-						if (mapper_Processo_Silver_1_tS3List_1 != null) {
-							mapper_Processo_Silver_1_tS3List_1.stop();
-						}
-					} catch (final RuntimeException re) {
-						if (!swallowNextException_Processo_Silver_1_tS3List_1) {
-							throw new TalendException(re, currentComponent, cLabel, globalMap);
-						}
-					}
-				}
-
-				/**
-				 * [Processo_Silver_1_tS3List_1 finally ] stop
-				 */
-
-				/**
-				 * [Processo_Silver_1_tS3Get_1 finally ] start
-				 */
-
-				s(currentComponent = "Processo_Silver_1_tS3Get_1");
-
-				final org.talend.sdk.component.runtime.standalone.DriverRunner standalone_Processo_Silver_1_tS3Get_1 = org.talend.sdk.component.runtime.standalone.DriverRunner.class
-						.cast(globalMap.remove("standalone_Processo_Silver_1_tS3Get_1"));
-				try {
-					if (standalone_Processo_Silver_1_tS3Get_1 != null) {
-						standalone_Processo_Silver_1_tS3Get_1.stop();
+					if (standalone_processos_1_tS3Get_1 != null) {
+						standalone_processos_1_tS3Get_1.stop();
 					}
 				} catch (final RuntimeException re) {
 					throw new TalendException(re, currentComponent, cLabel, globalMap);
 				}
 
 				/**
-				 * [Processo_Silver_1_tS3Get_1 finally ] stop
+				 * [processos_1_tS3Get_1 finally ] stop
 				 */
 
 			} catch (java.lang.Exception e) {
@@ -1792,11 +1287,11 @@ public class TRF5 implements TalendJob {
 			resourceMap = null;
 		}
 
-		globalMap.put("Processo_Silver_1_tS3List_1_SUBPROCESS_STATE", 1);
+		globalMap.put("processos_1_tS3Get_1_SUBPROCESS_STATE", 1);
 	}
 
-	public static class Processos_Ingestao_Bronze_1_row1Struct
-			implements routines.system.IPersistableRow<Processos_Ingestao_Bronze_1_row1Struct> {
+	public static class processos_1_transformacaoStruct
+			implements routines.system.IPersistableRow<processos_1_transformacaoStruct> {
 		final static byte[] commonByteArrayLock_DEMOTRF5_TRF5 = new byte[0];
 		static byte[] commonByteArray_DEMOTRF5_TRF5 = new byte[0];
 		protected static final int DEFAULT_HASHCODE = 1;
@@ -1830,7 +1325,7 @@ public class TRF5 implements TalendJob {
 
 		public String id_processoDefault() {
 
-			return "nextval('processos_judiciais_id_processo_seq'::regclass)";
+			return "";
 
 		}
 
@@ -1852,187 +1347,371 @@ public class TRF5 implements TalendJob {
 
 		}
 
-		public String num_processo;
+		public String numero_processo;
 
-		public String getNum_processo() {
-			return this.num_processo;
+		public String getNumero_processo() {
+			return this.numero_processo;
 		}
 
-		public Boolean num_processoIsNullable() {
+		public Boolean numero_processoIsNullable() {
 			return false;
 		}
 
-		public Boolean num_processoIsKey() {
+		public Boolean numero_processoIsKey() {
 			return false;
 		}
 
-		public Integer num_processoLength() {
+		public Integer numero_processoLength() {
 			return 25;
 		}
 
-		public Integer num_processoPrecision() {
+		public Integer numero_processoPrecision() {
 			return 0;
 		}
 
-		public String num_processoDefault() {
+		public String numero_processoDefault() {
 
 			return null;
 
 		}
 
-		public String num_processoComment() {
+		public String numero_processoComment() {
 
 			return "";
 
 		}
 
-		public String num_processoPattern() {
+		public String numero_processoPattern() {
 
 			return "";
 
 		}
 
-		public String num_processoOriginalDbColumnName() {
+		public String numero_processoOriginalDbColumnName() {
 
-			return "num_processo";
+			return "numero_processo";
 
 		}
 
-		public java.util.Date data_abertura;
+		public String id_tribunal;
 
-		public java.util.Date getData_abertura() {
-			return this.data_abertura;
+		public String getId_tribunal() {
+			return this.id_tribunal;
 		}
 
-		public Boolean data_aberturaIsNullable() {
+		public Boolean id_tribunalIsNullable() {
 			return false;
 		}
 
-		public Boolean data_aberturaIsKey() {
+		public Boolean id_tribunalIsKey() {
 			return false;
 		}
 
-		public Integer data_aberturaLength() {
+		public Integer id_tribunalLength() {
+			return 10;
+		}
+
+		public Integer id_tribunalPrecision() {
+			return 0;
+		}
+
+		public String id_tribunalDefault() {
+
+			return null;
+
+		}
+
+		public String id_tribunalComment() {
+
+			return "";
+
+		}
+
+		public String id_tribunalPattern() {
+
+			return "";
+
+		}
+
+		public String id_tribunalOriginalDbColumnName() {
+
+			return "id_tribunal";
+
+		}
+
+		public String id_classe;
+
+		public String getId_classe() {
+			return this.id_classe;
+		}
+
+		public Boolean id_classeIsNullable() {
+			return false;
+		}
+
+		public Boolean id_classeIsKey() {
+			return false;
+		}
+
+		public Integer id_classeLength() {
+			return 100;
+		}
+
+		public Integer id_classePrecision() {
+			return 0;
+		}
+
+		public String id_classeDefault() {
+
+			return null;
+
+		}
+
+		public String id_classeComment() {
+
+			return "";
+
+		}
+
+		public String id_classePattern() {
+
+			return "";
+
+		}
+
+		public String id_classeOriginalDbColumnName() {
+
+			return "id_classe";
+
+		}
+
+		public String id_assunto;
+
+		public String getId_assunto() {
+			return this.id_assunto;
+		}
+
+		public Boolean id_assuntoIsNullable() {
+			return false;
+		}
+
+		public Boolean id_assuntoIsKey() {
+			return false;
+		}
+
+		public Integer id_assuntoLength() {
+			return null;
+		}
+
+		public Integer id_assuntoPrecision() {
+			return null;
+		}
+
+		public String id_assuntoDefault() {
+
+			return null;
+
+		}
+
+		public String id_assuntoComment() {
+
+			return "";
+
+		}
+
+		public String id_assuntoPattern() {
+
+			return "";
+
+		}
+
+		public String id_assuntoOriginalDbColumnName() {
+
+			return "id_assunto";
+
+		}
+
+		public String id_magistrado;
+
+		public String getId_magistrado() {
+			return this.id_magistrado;
+		}
+
+		public Boolean id_magistradoIsNullable() {
+			return false;
+		}
+
+		public Boolean id_magistradoIsKey() {
+			return false;
+		}
+
+		public Integer id_magistradoLength() {
+			return null;
+		}
+
+		public Integer id_magistradoPrecision() {
+			return null;
+		}
+
+		public String id_magistradoDefault() {
+
+			return null;
+
+		}
+
+		public String id_magistradoComment() {
+
+			return "";
+
+		}
+
+		public String id_magistradoPattern() {
+
+			return "";
+
+		}
+
+		public String id_magistradoOriginalDbColumnName() {
+
+			return "id_magistrado";
+
+		}
+
+		public java.util.Date data_ajuizamento;
+
+		public java.util.Date getData_ajuizamento() {
+			return this.data_ajuizamento;
+		}
+
+		public Boolean data_ajuizamentoIsNullable() {
+			return false;
+		}
+
+		public Boolean data_ajuizamentoIsKey() {
+			return false;
+		}
+
+		public Integer data_ajuizamentoLength() {
 			return 13;
 		}
 
-		public Integer data_aberturaPrecision() {
+		public Integer data_ajuizamentoPrecision() {
 			return 0;
 		}
 
-		public String data_aberturaDefault() {
+		public String data_ajuizamentoDefault() {
 
 			return null;
 
 		}
 
-		public String data_aberturaComment() {
+		public String data_ajuizamentoComment() {
 
 			return "";
 
 		}
 
-		public String data_aberturaPattern() {
+		public String data_ajuizamentoPattern() {
 
 			return "dd-MM-yyyy";
 
 		}
 
-		public String data_aberturaOriginalDbColumnName() {
+		public String data_ajuizamentoOriginalDbColumnName() {
 
-			return "data_abertura";
+			return "data_ajuizamento";
 
 		}
 
-		public String classe;
+		public String tempo_processo_dias;
 
-		public String getClasse() {
-			return this.classe;
+		public String getTempo_processo_dias() {
+			return this.tempo_processo_dias;
 		}
 
-		public Boolean classeIsNullable() {
-			return true;
-		}
-
-		public Boolean classeIsKey() {
+		public Boolean tempo_processo_diasIsNullable() {
 			return false;
 		}
 
-		public Integer classeLength() {
-			return 100;
+		public Boolean tempo_processo_diasIsKey() {
+			return false;
 		}
 
-		public Integer classePrecision() {
-			return 0;
+		public Integer tempo_processo_diasLength() {
+			return null;
 		}
 
-		public String classeDefault() {
+		public Integer tempo_processo_diasPrecision() {
+			return null;
+		}
+
+		public String tempo_processo_diasDefault() {
 
 			return null;
 
 		}
 
-		public String classeComment() {
+		public String tempo_processo_diasComment() {
 
 			return "";
 
 		}
 
-		public String classePattern() {
+		public String tempo_processo_diasPattern() {
 
 			return "";
 
 		}
 
-		public String classeOriginalDbColumnName() {
+		public String tempo_processo_diasOriginalDbColumnName() {
 
-			return "classe";
+			return "tempo_processo_dias";
 
 		}
 
-		public String tribunal;
+		public BigDecimal valor_causa;
 
-		public String getTribunal() {
-			return this.tribunal;
+		public BigDecimal getValor_causa() {
+			return this.valor_causa;
 		}
 
-		public Boolean tribunalIsNullable() {
-			return true;
-		}
-
-		public Boolean tribunalIsKey() {
+		public Boolean valor_causaIsNullable() {
 			return false;
 		}
 
-		public Integer tribunalLength() {
-			return 10;
+		public Boolean valor_causaIsKey() {
+			return false;
 		}
 
-		public Integer tribunalPrecision() {
-			return 0;
+		public Integer valor_causaLength() {
+			return null;
 		}
 
-		public String tribunalDefault() {
+		public Integer valor_causaPrecision() {
+			return null;
+		}
 
-			return "'TRF5'::character varying'";
+		public String valor_causaDefault() {
+
+			return null;
 
 		}
 
-		public String tribunalComment() {
+		public String valor_causaComment() {
 
 			return "";
 
 		}
 
-		public String tribunalPattern() {
+		public String valor_causaPattern() {
 
 			return "";
 
 		}
 
-		public String tribunalOriginalDbColumnName() {
+		public String valor_causaOriginalDbColumnName() {
 
-			return "tribunal";
+			return "valor_causa";
 
 		}
 
@@ -2058,7 +1737,7 @@ public class TRF5 implements TalendJob {
 				return false;
 			if (getClass() != obj.getClass())
 				return false;
-			final Processos_Ingestao_Bronze_1_row1Struct other = (Processos_Ingestao_Bronze_1_row1Struct) obj;
+			final processos_1_transformacaoStruct other = (processos_1_transformacaoStruct) obj;
 
 			if (this.id_processo != other.id_processo)
 				return false;
@@ -2066,17 +1745,21 @@ public class TRF5 implements TalendJob {
 			return true;
 		}
 
-		public void copyDataTo(Processos_Ingestao_Bronze_1_row1Struct other) {
+		public void copyDataTo(processos_1_transformacaoStruct other) {
 
 			other.id_processo = this.id_processo;
-			other.num_processo = this.num_processo;
-			other.data_abertura = this.data_abertura;
-			other.classe = this.classe;
-			other.tribunal = this.tribunal;
+			other.numero_processo = this.numero_processo;
+			other.id_tribunal = this.id_tribunal;
+			other.id_classe = this.id_classe;
+			other.id_assunto = this.id_assunto;
+			other.id_magistrado = this.id_magistrado;
+			other.data_ajuizamento = this.data_ajuizamento;
+			other.tempo_processo_dias = this.tempo_processo_dias;
+			other.valor_causa = this.valor_causa;
 
 		}
 
-		public void copyKeysDataTo(Processos_Ingestao_Bronze_1_row1Struct other) {
+		public void copyKeysDataTo(processos_1_transformacaoStruct other) {
 
 			other.id_processo = this.id_processo;
 
@@ -2194,16 +1877,27 @@ public class TRF5 implements TalendJob {
 
 					this.id_processo = dis.readInt();
 
-					this.num_processo = readString(dis);
+					this.numero_processo = readString(dis);
 
-					this.data_abertura = readDate(dis);
+					this.id_tribunal = readString(dis);
 
-					this.classe = readString(dis);
+					this.id_classe = readString(dis);
 
-					this.tribunal = readString(dis);
+					this.id_assunto = readString(dis);
+
+					this.id_magistrado = readString(dis);
+
+					this.data_ajuizamento = readDate(dis);
+
+					this.tempo_processo_dias = readString(dis);
+
+					this.valor_causa = (BigDecimal) dis.readObject();
 
 				} catch (IOException e) {
 					throw new RuntimeException(e);
+
+				} catch (ClassNotFoundException eCNFE) {
+					throw new RuntimeException(eCNFE);
 
 				}
 
@@ -2221,16 +1915,27 @@ public class TRF5 implements TalendJob {
 
 					this.id_processo = dis.readInt();
 
-					this.num_processo = readString(dis);
+					this.numero_processo = readString(dis);
 
-					this.data_abertura = readDate(dis);
+					this.id_tribunal = readString(dis);
 
-					this.classe = readString(dis);
+					this.id_classe = readString(dis);
 
-					this.tribunal = readString(dis);
+					this.id_assunto = readString(dis);
+
+					this.id_magistrado = readString(dis);
+
+					this.data_ajuizamento = readDate(dis);
+
+					this.tempo_processo_dias = readString(dis);
+
+					this.valor_causa = (BigDecimal) dis.readObject();
 
 				} catch (IOException e) {
 					throw new RuntimeException(e);
+
+				} catch (ClassNotFoundException eCNFE) {
+					throw new RuntimeException(eCNFE);
 
 				}
 
@@ -2247,19 +1952,35 @@ public class TRF5 implements TalendJob {
 
 				// String
 
-				writeString(this.num_processo, dos);
+				writeString(this.numero_processo, dos);
+
+				// String
+
+				writeString(this.id_tribunal, dos);
+
+				// String
+
+				writeString(this.id_classe, dos);
+
+				// String
+
+				writeString(this.id_assunto, dos);
+
+				// String
+
+				writeString(this.id_magistrado, dos);
 
 				// java.util.Date
 
-				writeDate(this.data_abertura, dos);
+				writeDate(this.data_ajuizamento, dos);
 
 				// String
 
-				writeString(this.classe, dos);
+				writeString(this.tempo_processo_dias, dos);
 
-				// String
+				// BigDecimal
 
-				writeString(this.tribunal, dos);
+				dos.writeObject(this.valor_causa);
 
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -2276,19 +1997,36 @@ public class TRF5 implements TalendJob {
 
 				// String
 
-				writeString(this.num_processo, dos);
+				writeString(this.numero_processo, dos);
+
+				// String
+
+				writeString(this.id_tribunal, dos);
+
+				// String
+
+				writeString(this.id_classe, dos);
+
+				// String
+
+				writeString(this.id_assunto, dos);
+
+				// String
+
+				writeString(this.id_magistrado, dos);
 
 				// java.util.Date
 
-				writeDate(this.data_abertura, dos);
+				writeDate(this.data_ajuizamento, dos);
 
 				// String
 
-				writeString(this.classe, dos);
+				writeString(this.tempo_processo_dias, dos);
 
-				// String
+				// BigDecimal
 
-				writeString(this.tribunal, dos);
+				dos.clearInstanceCache();
+				dos.writeObject(this.valor_causa);
 
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -2302,10 +2040,14 @@ public class TRF5 implements TalendJob {
 			sb.append(super.toString());
 			sb.append("[");
 			sb.append("id_processo=" + String.valueOf(id_processo));
-			sb.append(",num_processo=" + num_processo);
-			sb.append(",data_abertura=" + String.valueOf(data_abertura));
-			sb.append(",classe=" + classe);
-			sb.append(",tribunal=" + tribunal);
+			sb.append(",numero_processo=" + numero_processo);
+			sb.append(",id_tribunal=" + id_tribunal);
+			sb.append(",id_classe=" + id_classe);
+			sb.append(",id_assunto=" + id_assunto);
+			sb.append(",id_magistrado=" + id_magistrado);
+			sb.append(",data_ajuizamento=" + String.valueOf(data_ajuizamento));
+			sb.append(",tempo_processo_dias=" + tempo_processo_dias);
+			sb.append(",valor_causa=" + String.valueOf(valor_causa));
 			sb.append("]");
 
 			return sb.toString();
@@ -2318,34 +2060,66 @@ public class TRF5 implements TalendJob {
 
 			sb.append("|");
 
-			if (num_processo == null) {
+			if (numero_processo == null) {
 				sb.append("<null>");
 			} else {
-				sb.append(num_processo);
+				sb.append(numero_processo);
 			}
 
 			sb.append("|");
 
-			if (data_abertura == null) {
+			if (id_tribunal == null) {
 				sb.append("<null>");
 			} else {
-				sb.append(data_abertura);
+				sb.append(id_tribunal);
 			}
 
 			sb.append("|");
 
-			if (classe == null) {
+			if (id_classe == null) {
 				sb.append("<null>");
 			} else {
-				sb.append(classe);
+				sb.append(id_classe);
 			}
 
 			sb.append("|");
 
-			if (tribunal == null) {
+			if (id_assunto == null) {
 				sb.append("<null>");
 			} else {
-				sb.append(tribunal);
+				sb.append(id_assunto);
+			}
+
+			sb.append("|");
+
+			if (id_magistrado == null) {
+				sb.append("<null>");
+			} else {
+				sb.append(id_magistrado);
+			}
+
+			sb.append("|");
+
+			if (data_ajuizamento == null) {
+				sb.append("<null>");
+			} else {
+				sb.append(data_ajuizamento);
+			}
+
+			sb.append("|");
+
+			if (tempo_processo_dias == null) {
+				sb.append("<null>");
+			} else {
+				sb.append(tempo_processo_dias);
+			}
+
+			sb.append("|");
+
+			if (valor_causa == null) {
+				sb.append("<null>");
+			} else {
+				sb.append(valor_causa);
 			}
 
 			sb.append("|");
@@ -2356,7 +2130,7 @@ public class TRF5 implements TalendJob {
 		/**
 		 * Compare keys
 		 */
-		public int compareTo(Processos_Ingestao_Bronze_1_row1Struct other) {
+		public int compareTo(processos_1_transformacaoStruct other) {
 
 			int returnValue = -1;
 
@@ -2391,825 +2165,105 @@ public class TRF5 implements TalendJob {
 
 	}
 
-	public void Processos_Ingestao_Bronze_1_tDBInput_1Process(final java.util.Map<String, Object> globalMap)
-			throws TalendException {
-		globalMap.put("Processos_Ingestao_Bronze_1_tDBInput_1_SUBPROCESS_STATE", 0);
-
-		final boolean execStat = this.execStat;
-
-		mdc("Processos_Ingestao_Bronze_1_tDBInput_1", "zPneM4_");
-
-		String iterateId = "";
-
-		String currentComponent = "";
-		s("none");
-		String cLabel = null;
-		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
-
-		try {
-			// TDI-39566 avoid throwing an useless Exception
-			boolean resumeIt = true;
-			if (globalResumeTicket == false && resumeEntryMethodName != null) {
-				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
-				resumeIt = resumeEntryMethodName.equals(currentMethodName);
-			}
-			if (resumeIt || globalResumeTicket) { // start the resume
-				globalResumeTicket = true;
-
-				Processos_Ingestao_Bronze_1_row1Struct Processos_Ingestao_Bronze_1_row1 = new Processos_Ingestao_Bronze_1_row1Struct();
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_1 begin ] start
-				 */
-
-				sh("Processos_Ingestao_Bronze_1_tFileOutputParquet_1");
-
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_1");
-
-				runStat.updateStatAndLog(execStat, enableLogStash, resourceMap, iterateId, 0, 0,
-						"Processos_Ingestao_Bronze_1_row1");
-
-				int tos_count_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 = 0;
-
-				if (log.isDebugEnabled())
-					log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_1 - " + ("Start to work."));
-				if (log.isDebugEnabled()) {
-					class BytesLimit65535_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 {
-						public void limitLog4jByte() throws Exception {
-							StringBuilder log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 = new StringBuilder();
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_1.append("Parameters:");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_1.append("FILENAME" + " = "
-									+ "\"C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/processo_bronze\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_1
-									.append("FILE_ACTION" + " = " + "OVERWRITE");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_1
-									.append("COMPRESSION" + " = " + "\"UNCOMPRESSED\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_1
-									.append("USE_EXTERNAL_HADOOP_DEPS" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_1
-									.append("ROW_GROUP_SIZE" + " = " + "134217728");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_1
-									.append("PAGE_SIZE" + " = " + "1048576");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_1.append(" | ");
-							if (log.isDebugEnabled())
-								log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_1 - "
-										+ (log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_1));
-						}
-					}
-					new BytesLimit65535_Processos_Ingestao_Bronze_1_tFileOutputParquet_1().limitLog4jByte();
-				}
-				// QTUP-3575
-				if (enableLineage) {
-					class ParameterUtil_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 {
-
-						private void a(java.util.List<java.util.Map<String, String>> schema, String... values) {
-							java.util.Map<String, String> field = new java.util.HashMap<>();
-							field.put("name", values[0]);
-							field.put("talend_type", values[1]);
-							schema.add(field);
-						}
-
-						public java.util.Map<String, String> getParameter(
-								final Processos_Ingestao_Bronze_1_row1Struct Processos_Ingestao_Bronze_1_row1)
-								throws Exception {
-							java.util.Map<String, String> component_parameters = new java.util.HashMap<>();
-
-							try {
-
-								component_parameters.put("FILENAME", String.valueOf(
-										"C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/processo_bronze"));
-								component_parameters.put("FILE_ACTION", String.valueOf("OVERWRITE"));
-								component_parameters.put("COMPRESSION", String.valueOf("UNCOMPRESSED"));
-								component_parameters.put("USE_EXTERNAL_HADOOP_DEPS", String.valueOf("false"));
-								component_parameters.put("ROW_GROUP_SIZE", String.valueOf("134217728"));
-								component_parameters.put("PAGE_SIZE", String.valueOf("1048576"));
-
-							} catch (java.lang.Exception e_Processos_Ingestao_Bronze_1_tFileOutputParquet_1) {
-								// do nothing
-							}
-
-							return component_parameters;
-						}
-					}
-
-					talendJobLog.addComponentParameterMessage("Processos_Ingestao_Bronze_1_tFileOutputParquet_1",
-							"tFileOutputParquet", new ParameterUtil_Processos_Ingestao_Bronze_1_tFileOutputParquet_1()
-									.getParameter(Processos_Ingestao_Bronze_1_row1));
-					talendJobLogProcess(globalMap);
-					s(currentComponent);
-				}
-				// QTUP-3575
-
-				if (enableLogStash) {
-					talendJobLog.addCM("Processos_Ingestao_Bronze_1_tFileOutputParquet_1", "tFileOutputParquet_1",
-							"tFileOutputParquet");
-					talendJobLogProcess(globalMap);
-					s(currentComponent);
-				}
-
-				int nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 = 0;
-				org.apache.parquet.schema.Types.MessageTypeBuilder schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 = org.apache.parquet.schema.Types
-						.buildMessage();
-				org.apache.parquet.schema.MessageType messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 = null;
-				org.talend.parquet.data.simple.SimpleGroupFactory factory_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 = null;
-				org.apache.parquet.hadoop.ParquetWriter<org.talend.parquet.data.Group> writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 = null;
-
-				String filePath_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 = "C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/processo_bronze";
-				globalMap.put("Processos_Ingestao_Bronze_1_tFileOutputParquet_1_FILE_PATH",
-						filePath_Processos_Ingestao_Bronze_1_tFileOutputParquet_1);
-				org.apache.hadoop.conf.Configuration config_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 = new org.apache.hadoop.conf.Configuration();
-				config_Processos_Ingestao_Bronze_1_tFileOutputParquet_1.set("fs.file.impl",
-						org.apache.hadoop.fs.LocalFileSystem.class.getName());
-				org.apache.hadoop.fs.Path path_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 = new org.apache.hadoop.fs.Path(
-						filePath_Processos_Ingestao_Bronze_1_tFileOutputParquet_1);
-				// CRC file path
-				String crcName_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 = "."
-						+ path_Processos_Ingestao_Bronze_1_tFileOutputParquet_1.getName() + ".crc";
-				org.apache.hadoop.fs.Path crcPath_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 = new org.apache.hadoop.fs.Path(
-						path_Processos_Ingestao_Bronze_1_tFileOutputParquet_1.getParent(),
-						crcName_Processos_Ingestao_Bronze_1_tFileOutputParquet_1);
-				String compressName_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 = "UNCOMPRESSED";
-				int rowGroupSize_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 = 134217728;
-				int pageSize_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 = 1048576;
-				java.util.Map<String, org.talend.parquet.data.simple.SimpleGroupFactory> cachedFactory_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 = new java.util.HashMap<>();
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_1
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("id_processo", false,
-								"INT32", "INT_32"));
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_1
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("num_processo", false,
-								"BINARY", "UTF8"));
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_1
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("data_abertura",
-								false, "INT64", "TIMESTAMP_MILLIS"));
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_1
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("classe", true,
-								"BINARY", "UTF8"));
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_1
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("tribunal", true,
-								"BINARY", "UTF8"));
-				messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 = schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_1
-						.named("Schema");
-
-				org.talend.parquet.hadoop.TalendGroupWriteSupport.setSchema(
-						messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_1,
-						config_Processos_Ingestao_Bronze_1_tFileOutputParquet_1);
-				factory_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 = new org.talend.parquet.data.simple.SimpleGroupFactory(
-						messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_1);
-				org.apache.parquet.hadoop.ParquetWriter.Builder<org.talend.parquet.data.Group, org.talend.parquet.hadoop.TalendParquetWriter.Builder> builder_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 = org.talend.parquet.hadoop.TalendParquetWriter
-						.builder(org.apache.parquet.hadoop.util.HadoopOutputFile.fromPath(
-								path_Processos_Ingestao_Bronze_1_tFileOutputParquet_1,
-								config_Processos_Ingestao_Bronze_1_tFileOutputParquet_1));
-				builder_Processos_Ingestao_Bronze_1_tFileOutputParquet_1
-						.withWriteMode(org.apache.parquet.hadoop.ParquetFileWriter.Mode.OVERWRITE)
-						.withCompressionCodec(org.apache.parquet.hadoop.metadata.CompressionCodecName
-								.fromConf(compressName_Processos_Ingestao_Bronze_1_tFileOutputParquet_1))
-						.withRowGroupSize(rowGroupSize_Processos_Ingestao_Bronze_1_tFileOutputParquet_1)
-						.withPageSize(pageSize_Processos_Ingestao_Bronze_1_tFileOutputParquet_1)
-						.withConf(config_Processos_Ingestao_Bronze_1_tFileOutputParquet_1);
-
-				writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 = builder_Processos_Ingestao_Bronze_1_tFileOutputParquet_1
-						.build();
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_1 begin ] stop
-				 */
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tDBInput_1 begin ] start
-				 */
-
-				sh("Processos_Ingestao_Bronze_1_tDBInput_1");
-
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_1");
-
-				int tos_count_Processos_Ingestao_Bronze_1_tDBInput_1 = 0;
-
-				if (log.isDebugEnabled())
-					log.debug("Processos_Ingestao_Bronze_1_tDBInput_1 - " + ("Start to work."));
-				if (log.isDebugEnabled()) {
-					class BytesLimit65535_Processos_Ingestao_Bronze_1_tDBInput_1 {
-						public void limitLog4jByte() throws Exception {
-							StringBuilder log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1 = new StringBuilder();
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append("Parameters:");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1
-									.append("USE_EXISTING_CONNECTION" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append("DB_VERSION" + " = " + "V9_X");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append("HOST" + " = "
-									+ "\"peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append("PORT" + " = " + "\"5432\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1
-									.append("DBNAME" + " = " + "\"qlik_demo\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1
-									.append("SCHEMA_DB" + " = " + "\"public\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1
-									.append("USER" + " = " + "\"peta_qlik\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append("PASS" + " = "
-									+ String.valueOf(
-											"enc:routine.encryption.key.v1:9wlRW7GPPwV2r0lkpb5hYGw4Hdx2+Yj7gFzG+0HH6+DU/wVugA==")
-											.substring(0, 4)
-									+ "...");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append("QUERYSTORE" + " = " + "\"\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append("QUERY" + " = "
-									+ "\"SELECT    \\\"public\\\".\\\"processos\\\".\\\"id_processo\\\",    \\\"public\\\".\\\"processos\\\".\\\"numero_processo\\\",    \\\"public\\\".\\\"processos\\\".\\\"data_ajuizamento\\\",    \\\"public\\\".\\\"processos\\\".\\\"id_classe\\\",     \\\"public\\\".\\\"processos\\\".\\\"id_assunto\\\",     \\\"public\\\".\\\"processos\\\".\\\"id_magistrado\\\",     \\\"public\\\".\\\"processos\\\".\\\"valor_causa\\\",    \\\"public\\\".\\\"processos\\\".\\\"tempo_processo_dias\\\",    \\\"public\\\".\\\"processos\\\".\\\"id_tribunal\\\"  FROM \\\"public\\\".\\\"processos\\\"\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1
-									.append("SPECIFY_DATASOURCE_ALIAS" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1
-									.append("PROPERTIES" + " = " + "\"processos_judiciais\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1
-									.append("USE_CURSOR" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1
-									.append("TRIM_ALL_COLUMN" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append(
-									"TRIM_COLUMN" + " = " + "[{TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("id_processo")
-											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("num_processo")
-											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("data_abertura")
-											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("classe") + "}, {TRIM="
-											+ ("false") + ", SCHEMA_COLUMN=" + ("tribunal") + "}]");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1
-									.append("UNIFIED_COMPONENTS" + " = " + "tPostgresqlInput");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1.append(" | ");
-							if (log.isDebugEnabled())
-								log.debug("Processos_Ingestao_Bronze_1_tDBInput_1 - "
-										+ (log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_1));
-						}
-					}
-					new BytesLimit65535_Processos_Ingestao_Bronze_1_tDBInput_1().limitLog4jByte();
-				}
-				boolean init_Processos_Ingestao_Bronze_1_tDBInput_1_0 = true;
-				// QTUP-3575
-				if (enableLineage) {
-					class ParameterUtil_Processos_Ingestao_Bronze_1_tDBInput_1 {
-
-						private void a(java.util.List<java.util.Map<String, String>> schema, String... values) {
-							java.util.Map<String, String> field = new java.util.HashMap<>();
-							field.put("name", values[0]);
-							field.put("talend_type", values[1]);
-							schema.add(field);
-						}
-
-						public java.util.Map<String, String> getParameter() throws Exception {
-							java.util.Map<String, String> component_parameters = new java.util.HashMap<>();
-
-							try {
-
-								component_parameters.put("USE_EXISTING_CONNECTION", String.valueOf("false"));
-								component_parameters.put("DB_VERSION", String.valueOf("V9_X"));
-								component_parameters.put("HOST", String
-										.valueOf("peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com"));
-								component_parameters.put("PORT", String.valueOf("5432"));
-								component_parameters.put("DBNAME", String.valueOf("qlik_demo"));
-								component_parameters.put("SCHEMA_DB", String.valueOf("public"));
-								component_parameters.put("USER", String.valueOf("peta_qlik"));
-								component_parameters.put("QUERYSTORE", String.valueOf(""));
-								component_parameters.put("QUERY", String.valueOf(new StringBuilder().append(
-										"SELECT \n  \"public\".\"processos\".\"id_processo\", \n  \"public\".\"processos\".\"numero_processo\", \n  \"public\".\"pr"
-												+ "ocessos\".\"data_ajuizamento\", \n  \"public\".\"processos\".\"id_classe\", \n  \"public\".\"processos\".\"id_assunto\", "
-												+ "\n  \"public\".\"processos\".\"id_magistrado\", \n  \"public\".\"processos\".\"valor_causa\", \n \"public\".\"processos"
-												+ "\".\"tempo_processo_dias\", \n  \"public\".\"processos\".\"id_tribunal\"\n FROM \"public\".\"processos\"")
-										.toString()));
-								component_parameters.put("SPECIFY_DATASOURCE_ALIAS", String.valueOf("false"));
-								component_parameters.put("PROPERTIES", String.valueOf("processos_judiciais"));
-								component_parameters.put("USE_CURSOR", String.valueOf("false"));
-								component_parameters.put("TRIM_ALL_COLUMN", String.valueOf("false"));
-								component_parameters.put("TRIM_COLUMN",
-										String.valueOf(new StringBuilder().append("[{TRIM=").append("false")
-												.append(", SCHEMA_COLUMN=").append("id_processo").append("}, {TRIM=")
-												.append("false").append(", SCHEMA_COLUMN=").append("num_processo")
-												.append("}, {TRIM=").append("false").append(", SCHEMA_COLUMN=")
-												.append("data_abertura").append("}, {TRIM=").append("false")
-												.append(", SCHEMA_COLUMN=").append("classe").append("}, {TRIM=")
-												.append("false").append(", SCHEMA_COLUMN=").append("tribunal")
-												.append("}]").toString()));
-								component_parameters.put("UNIFIED_COMPONENTS", String.valueOf("tPostgresqlInput"));
-
-							} catch (java.lang.Exception e_Processos_Ingestao_Bronze_1_tDBInput_1) {
-								// do nothing
-							}
-
-							return component_parameters;
-						}
-					}
-
-					talendJobLog.addComponentParameterMessage("Processos_Ingestao_Bronze_1_tDBInput_1",
-							"tPostgresqlInput",
-							new ParameterUtil_Processos_Ingestao_Bronze_1_tDBInput_1().getParameter());
-					talendJobLogProcess(globalMap);
-					s(currentComponent);
-				}
-				// QTUP-3575
-
-				if (enableLogStash) {
-					talendJobLog.addCM("Processos_Ingestao_Bronze_1_tDBInput_1", "tDBInput_1", "tPostgresqlInput");
-					talendJobLogProcess(globalMap);
-					s(currentComponent);
-				}
-
-				int nb_line_Processos_Ingestao_Bronze_1_tDBInput_1 = 0;
-				java.sql.Connection conn_Processos_Ingestao_Bronze_1_tDBInput_1 = null;
-				String driverClass_Processos_Ingestao_Bronze_1_tDBInput_1 = "org.postgresql.Driver";
-				java.lang.Class jdbcclazz_Processos_Ingestao_Bronze_1_tDBInput_1 = java.lang.Class
-						.forName(driverClass_Processos_Ingestao_Bronze_1_tDBInput_1);
-				String dbUser_Processos_Ingestao_Bronze_1_tDBInput_1 = "peta_qlik";
-
-				final String decryptedPassword_Processos_Ingestao_Bronze_1_tDBInput_1 = java.util.Optional
-						.ofNullable(routines.system.PasswordEncryptUtil.decryptPassword(
-								"enc:routine.encryption.key.v1:km7/MGCqAHpaqjlOxG/RjAMebBimeYymiIeS9aD1rbpUYcf6QQ=="))
-						.orElse("");
-
-				String dbPwd_Processos_Ingestao_Bronze_1_tDBInput_1 = decryptedPassword_Processos_Ingestao_Bronze_1_tDBInput_1;
-
-				String url_Processos_Ingestao_Bronze_1_tDBInput_1 = "jdbc:postgresql://"
-						+ "peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com" + ":" + "5432" + "/"
-						+ "qlik_demo" + "?" + "processos_judiciais";
-
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_1 - Driver ClassName: "
-						+ driverClass_Processos_Ingestao_Bronze_1_tDBInput_1 + ".");
-
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_1 - Connection attempt to '"
-						+ url_Processos_Ingestao_Bronze_1_tDBInput_1.replaceAll("(?<=trustStorePassword=)[^;]*",
-								"********")
-						+ "' with the username '" + dbUser_Processos_Ingestao_Bronze_1_tDBInput_1 + "'.");
-
-				conn_Processos_Ingestao_Bronze_1_tDBInput_1 = java.sql.DriverManager.getConnection(
-						url_Processos_Ingestao_Bronze_1_tDBInput_1, dbUser_Processos_Ingestao_Bronze_1_tDBInput_1,
-						dbPwd_Processos_Ingestao_Bronze_1_tDBInput_1);
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_1 - Connection to '"
-						+ url_Processos_Ingestao_Bronze_1_tDBInput_1.replaceAll("(?<=trustStorePassword=)[^;]*",
-								"********")
-						+ "' has succeeded.");
-
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_1 - Connection is set auto commit to 'false'.");
-
-				conn_Processos_Ingestao_Bronze_1_tDBInput_1.setAutoCommit(false);
-
-				java.sql.Statement stmt_Processos_Ingestao_Bronze_1_tDBInput_1 = conn_Processos_Ingestao_Bronze_1_tDBInput_1
-						.createStatement();
-
-				String dbquery_Processos_Ingestao_Bronze_1_tDBInput_1 = new StringBuilder().append(
-						"SELECT \n  \"public\".\"processos\".\"id_processo\", \n  \"public\".\"processos\".\"numero_processo\", \n  \"public\".\"pr"
-								+ "ocessos\".\"data_ajuizamento\", \n  \"public\".\"processos\".\"id_classe\", \n  \"public\".\"processos\".\"id_assunto\", "
-								+ "\n  \"public\".\"processos\".\"id_magistrado\", \n  \"public\".\"processos\".\"valor_causa\", \n \"public\".\"processos"
-								+ "\".\"tempo_processo_dias\", \n  \"public\".\"processos\".\"id_tribunal\"\n FROM \"public\".\"processos\"")
-						.toString();
-
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_1 - Executing the query: '"
-						+ dbquery_Processos_Ingestao_Bronze_1_tDBInput_1 + "'.");
-
-				globalMap.put("Processos_Ingestao_Bronze_1_tDBInput_1_QUERY",
-						dbquery_Processos_Ingestao_Bronze_1_tDBInput_1);
-
-				java.sql.ResultSet rs_Processos_Ingestao_Bronze_1_tDBInput_1 = null;
-
-				try {
-					rs_Processos_Ingestao_Bronze_1_tDBInput_1 = stmt_Processos_Ingestao_Bronze_1_tDBInput_1
-							.executeQuery(dbquery_Processos_Ingestao_Bronze_1_tDBInput_1);
-					java.sql.ResultSetMetaData rsmd_Processos_Ingestao_Bronze_1_tDBInput_1 = rs_Processos_Ingestao_Bronze_1_tDBInput_1
-							.getMetaData();
-					int colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_1 = rsmd_Processos_Ingestao_Bronze_1_tDBInput_1
-							.getColumnCount();
-
-					String tmpContent_Processos_Ingestao_Bronze_1_tDBInput_1 = null;
-
-					log.debug("Processos_Ingestao_Bronze_1_tDBInput_1 - Retrieving records from the database.");
-
-					while (rs_Processos_Ingestao_Bronze_1_tDBInput_1.next()) {
-						nb_line_Processos_Ingestao_Bronze_1_tDBInput_1++;
-
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_1 < 1) {
-							Processos_Ingestao_Bronze_1_row1.id_processo = 0;
-						} else {
-
-							Processos_Ingestao_Bronze_1_row1.id_processo = rs_Processos_Ingestao_Bronze_1_tDBInput_1
-									.getInt(1);
-							if (rs_Processos_Ingestao_Bronze_1_tDBInput_1.wasNull()) {
-								throw new RuntimeException("Null value in non-Nullable column");
-							}
-						}
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_1 < 2) {
-							Processos_Ingestao_Bronze_1_row1.num_processo = null;
-						} else {
-
-							Processos_Ingestao_Bronze_1_row1.num_processo = routines.system.JDBCUtil
-									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_1, 2, false);
-						}
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_1 < 3) {
-							Processos_Ingestao_Bronze_1_row1.data_abertura = null;
-						} else {
-
-							Processos_Ingestao_Bronze_1_row1.data_abertura = routines.system.JDBCUtil
-									.getDate(rs_Processos_Ingestao_Bronze_1_tDBInput_1, 3);
-						}
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_1 < 4) {
-							Processos_Ingestao_Bronze_1_row1.classe = null;
-						} else {
-
-							Processos_Ingestao_Bronze_1_row1.classe = routines.system.JDBCUtil
-									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_1, 4, false);
-						}
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_1 < 5) {
-							Processos_Ingestao_Bronze_1_row1.tribunal = null;
-						} else {
-
-							Processos_Ingestao_Bronze_1_row1.tribunal = routines.system.JDBCUtil
-									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_1, 5, false);
-						}
-
-						log.debug("Processos_Ingestao_Bronze_1_tDBInput_1 - Retrieving the record "
-								+ nb_line_Processos_Ingestao_Bronze_1_tDBInput_1 + ".");
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_1 begin ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_1 main ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_1");
-
-						// QTUP-3575
-						if (enableLineage && init_Processos_Ingestao_Bronze_1_tDBInput_1_0) {
-							class SchemaUtil_Processos_Ingestao_Bronze_1_row1 {
-
-								private void a(java.util.List<java.util.Map<String, String>> schema, String... values) {
-									java.util.Map<String, String> field = new java.util.HashMap<>();
-									field.put("name", values[0]);
-									field.put("origin_name", values[1]);
-									field.put("iskey", values[2]);
-									field.put("talend_type", values[3]);
-									field.put("type", values[4]);
-									field.put("nullable", values[5]);
-									field.put("pattern", values[6]);
-									field.put("length", values[7]);
-									field.put("precision", values[8]);
-									schema.add(field);
-								}
-
-								public java.util.List<java.util.Map<String, String>> getSchema(
-										final Processos_Ingestao_Bronze_1_row1Struct Processos_Ingestao_Bronze_1_row1) {
-									java.util.List<java.util.Map<String, String>> s = new java.util.ArrayList<>();
-									if (Processos_Ingestao_Bronze_1_row1 == null) {
-										return s;
-									}
-									a(s, "id_processo", "id_processo", "true", "id_Integer", "SERIAL", "false", "",
-											"10", "0");
-									a(s, "num_processo", "num_processo", "false", "id_String", "VARCHAR", "false", "",
-											"25", "0");
-									a(s, "data_abertura", "data_abertura", "false", "id_Date", "DATE", "false",
-											"dd-MM-yyyy", "13", "0");
-									a(s, "classe", "classe", "false", "id_String", "VARCHAR", "true", "", "100", "0");
-									a(s, "tribunal", "tribunal", "false", "id_String", "VARCHAR", "true", "", "10",
-											"0");
-									return s;
-								}
-
-							}
-
-							if (Processos_Ingestao_Bronze_1_row1 != null) {
-								talendJobLog.addConnectionSchemaMessage("Processos_Ingestao_Bronze_1_tDBInput_1",
-										"tPostgresqlInput", "Processos_Ingestao_Bronze_1_tFileOutputParquet_1",
-										"tFileOutputParquet", "Processos_Ingestao_Bronze_1_row1" + iterateId,
-										new SchemaUtil_Processos_Ingestao_Bronze_1_row1()
-												.getSchema(Processos_Ingestao_Bronze_1_row1));
-								talendJobLogProcess(globalMap);
-								init_Processos_Ingestao_Bronze_1_tDBInput_1_0 = false;
-							}
-
-						}
-						// QTUP-3575
-
-						tos_count_Processos_Ingestao_Bronze_1_tDBInput_1++;
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_1 main ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_1 process_data_begin ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_1");
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_1 process_data_begin ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_1 main ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_1");
-
-						if (runStat.update(execStat, enableLogStash, iterateId, 1, 1
-
-								, "Processos_Ingestao_Bronze_1_row1", "Processos_Ingestao_Bronze_1_tDBInput_1",
-								"tDBInput_1", "tPostgresqlInput", "Processos_Ingestao_Bronze_1_tFileOutputParquet_1",
-								"tFileOutputParquet_1", "tFileOutputParquet"
-
-						)) {
-							talendJobLogProcess(globalMap);
-						}
-
-						if (log.isTraceEnabled()) {
-							log.trace("Processos_Ingestao_Bronze_1_row1 - "
-									+ (Processos_Ingestao_Bronze_1_row1 == null ? ""
-											: Processos_Ingestao_Bronze_1_row1.toLogString()));
-						}
-
-						org.talend.parquet.data.Group group_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 = factory_Processos_Ingestao_Bronze_1_tFileOutputParquet_1
-								.newGroup();
-
-						group_Processos_Ingestao_Bronze_1_tFileOutputParquet_1.append("id_processo",
-								Processos_Ingestao_Bronze_1_row1.id_processo);
-						if (Processos_Ingestao_Bronze_1_row1.num_processo != null) {
-
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_1.append("num_processo",
-									String.valueOf(Processos_Ingestao_Bronze_1_row1.num_processo));
-						}
-
-						if (Processos_Ingestao_Bronze_1_row1.data_abertura != null) {
-
-							if (messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_1.getType("data_abertura")
-									.isPrimitive()
-									&& org.apache.parquet.schema.PrimitiveType.PrimitiveTypeName.INT64 == messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_1
-											.getType("data_abertura").asPrimitiveType().getPrimitiveTypeName()) {
-								group_Processos_Ingestao_Bronze_1_tFileOutputParquet_1.append("data_abertura",
-										Processos_Ingestao_Bronze_1_row1.data_abertura.getTime());
-							} else {
-								group_Processos_Ingestao_Bronze_1_tFileOutputParquet_1.append("data_abertura",
-										FormatterUtils.format_Date(Processos_Ingestao_Bronze_1_row1.data_abertura,
-												"dd-MM-yyyy"));
-							}
-						}
-
-						if (Processos_Ingestao_Bronze_1_row1.classe != null) {
-
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_1.append("classe",
-									String.valueOf(Processos_Ingestao_Bronze_1_row1.classe));
-						}
-
-						if (Processos_Ingestao_Bronze_1_row1.tribunal != null) {
-
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_1.append("tribunal",
-									String.valueOf(Processos_Ingestao_Bronze_1_row1.tribunal));
-						}
-
-						writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_1
-								.write(group_Processos_Ingestao_Bronze_1_tFileOutputParquet_1);
-						nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_1++;
-						log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_1 - Writing the record "
-								+ nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 + " to the file.");
-
-						tos_count_Processos_Ingestao_Bronze_1_tFileOutputParquet_1++;
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_1 main ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_1 process_data_begin ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_1");
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_1 process_data_begin ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_1 process_data_end ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_1");
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_1 process_data_end ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_1 process_data_end ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_1");
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_1 process_data_end ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_1 end ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_1");
-
-					}
-				} finally {
-					if (rs_Processos_Ingestao_Bronze_1_tDBInput_1 != null) {
-						rs_Processos_Ingestao_Bronze_1_tDBInput_1.close();
-					}
-					if (stmt_Processos_Ingestao_Bronze_1_tDBInput_1 != null) {
-						stmt_Processos_Ingestao_Bronze_1_tDBInput_1.close();
-					}
-					if (conn_Processos_Ingestao_Bronze_1_tDBInput_1 != null
-							&& !conn_Processos_Ingestao_Bronze_1_tDBInput_1.isClosed()) {
-
-						log.debug("Processos_Ingestao_Bronze_1_tDBInput_1 - Closing the connection to the database.");
-
-						conn_Processos_Ingestao_Bronze_1_tDBInput_1.close();
-
-						if ("com.mysql.cj.jdbc.Driver".equals((String) globalMap.get("driverClass_"))
-								&& routines.system.BundleUtils.inOSGi()) {
-							Class.forName("com.mysql.cj.jdbc.AbandonedConnectionCleanupThread")
-									.getMethod("checkedShutdown").invoke(null, (Object[]) null);
-						}
-
-						log.debug("Processos_Ingestao_Bronze_1_tDBInput_1 - Connection to the database closed.");
-
-					}
-
-				}
-				globalMap.put("Processos_Ingestao_Bronze_1_tDBInput_1_NB_LINE",
-						nb_line_Processos_Ingestao_Bronze_1_tDBInput_1);
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_1 - Retrieved records count: "
-						+ nb_line_Processos_Ingestao_Bronze_1_tDBInput_1 + " .");
-
-				if (log.isDebugEnabled())
-					log.debug("Processos_Ingestao_Bronze_1_tDBInput_1 - " + ("Done."));
-
-				ok_Hash.put("Processos_Ingestao_Bronze_1_tDBInput_1", true);
-				end_Hash.put("Processos_Ingestao_Bronze_1_tDBInput_1", System.currentTimeMillis());
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tDBInput_1 end ] stop
-				 */
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_1 end ] start
-				 */
-
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_1");
-
-				globalMap.put("Processos_Ingestao_Bronze_1_tFileOutputParquet_1_NB_LINE",
-						nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_1);
-
-				log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_1 - Written records count: "
-						+ nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 + " .");
-
-				if (writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 != null) {
-					writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_1.close();
-				}
-				org.apache.hadoop.fs.FileSystem fs_Processos_Ingestao_Bronze_1_tFileOutputParquet_1 = crcPath_Processos_Ingestao_Bronze_1_tFileOutputParquet_1
-						.getFileSystem(config_Processos_Ingestao_Bronze_1_tFileOutputParquet_1);
-				if (fs_Processos_Ingestao_Bronze_1_tFileOutputParquet_1
-						.exists(crcPath_Processos_Ingestao_Bronze_1_tFileOutputParquet_1)) {
-					fs_Processos_Ingestao_Bronze_1_tFileOutputParquet_1
-							.delete(crcPath_Processos_Ingestao_Bronze_1_tFileOutputParquet_1, false);
-				}
-
-				if (runStat.updateStatAndLog(execStat, enableLogStash, resourceMap, iterateId,
-						"Processos_Ingestao_Bronze_1_row1", 2, 0, "Processos_Ingestao_Bronze_1_tDBInput_1",
-						"tDBInput_1", "tPostgresqlInput", "Processos_Ingestao_Bronze_1_tFileOutputParquet_1",
-						"tFileOutputParquet_1", "tFileOutputParquet", "output")) {
-					talendJobLogProcess(globalMap);
-				}
-
-				if (log.isDebugEnabled())
-					log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_1 - " + ("Done."));
-
-				ok_Hash.put("Processos_Ingestao_Bronze_1_tFileOutputParquet_1", true);
-				end_Hash.put("Processos_Ingestao_Bronze_1_tFileOutputParquet_1", System.currentTimeMillis());
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_1 end ] stop
-				 */
-
-			} // end the resume
-
-			if (resumeEntryMethodName == null || globalResumeTicket) {
-				resumeUtil.addLog("CHECKPOINT",
-						"CONNECTION:SUBJOB_OK:Processos_Ingestao_Bronze_1_tDBInput_1:OnSubjobOk1", "",
-						Thread.currentThread().getId() + "", "", "", "", "", "");
-			}
-
-			if (execStat) {
-				runStat.updateStatOnConnection("Processos_Ingestao_Bronze_1_OnSubjobOk1", 0, "ok");
-			}
-
-			Processos_Ingestao_Bronze_1_tDBInput_2Process(globalMap);
-
-			if (resumeEntryMethodName == null || globalResumeTicket) {
-				resumeUtil.addLog("CHECKPOINT",
-						"CONNECTION:SUBJOB_OK:Processos_Ingestao_Bronze_1_tDBInput_1:OnSubjobOk2", "",
-						Thread.currentThread().getId() + "", "", "", "", "", "");
-			}
-
-			if (execStat) {
-				runStat.updateStatOnConnection("Processos_Ingestao_Bronze_1_OnSubjobOk3", 0, "ok");
-			}
-
-			Processos_Ingestao_Bronze_1_tDBInput_3Process(globalMap);
-
-			if (resumeEntryMethodName == null || globalResumeTicket) {
-				resumeUtil.addLog("CHECKPOINT",
-						"CONNECTION:SUBJOB_OK:Processos_Ingestao_Bronze_1_tDBInput_1:OnSubjobOk3", "",
-						Thread.currentThread().getId() + "", "", "", "", "", "");
-			}
-
-			if (execStat) {
-				runStat.updateStatOnConnection("Processos_Ingestao_Bronze_1_OnSubjobOk4", 0, "ok");
-			}
-
-			Processos_Ingestao_Bronze_1_tDBInput_4Process(globalMap);
-
-			if (resumeEntryMethodName == null || globalResumeTicket) {
-				resumeUtil.addLog("CHECKPOINT",
-						"CONNECTION:SUBJOB_OK:Processos_Ingestao_Bronze_1_tDBInput_1:OnSubjobOk4", "",
-						Thread.currentThread().getId() + "", "", "", "", "", "");
-			}
-
-			if (execStat) {
-				runStat.updateStatOnConnection("Processos_Ingestao_Bronze_1_OnSubjobOk5", 0, "ok");
-			}
-
-			Processos_Ingestao_Bronze_1_tDBInput_5Process(globalMap);
-
-		} catch (java.lang.Exception e) {
-
-			if (!(e instanceof TalendException) && !(e instanceof TDieException)) {
-				log.fatal(currentComponent + " " + e.getMessage(), e);
-			}
-
-			TalendException te = new TalendException(e, currentComponent, cLabel, globalMap);
-
-			throw te;
-		} catch (java.lang.Error error) {
-
-			runStat.stopThreadStat();
-
-			throw error;
-		} finally {
-
-			try {
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tDBInput_1 finally ] start
-				 */
-
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_1");
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tDBInput_1 finally ] stop
-				 */
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_1 finally ] start
-				 */
-
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_1");
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_1 finally ] stop
-				 */
-
-			} catch (java.lang.Exception e) {
-				// ignore
-			} catch (java.lang.Error error) {
-				// ignore
-			}
-			resourceMap = null;
-		}
-
-		globalMap.put("Processos_Ingestao_Bronze_1_tDBInput_1_SUBPROCESS_STATE", 1);
-	}
-
-	public static class Processos_Ingestao_Bronze_1_row2Struct
-			implements routines.system.IPersistableRow<Processos_Ingestao_Bronze_1_row2Struct> {
+	public static class processos_1_row1Struct implements routines.system.IPersistableRow<processos_1_row1Struct> {
 		final static byte[] commonByteArrayLock_DEMOTRF5_TRF5 = new byte[0];
 		static byte[] commonByteArray_DEMOTRF5_TRF5 = new byte[0];
 
-		public int id_tribunal;
+		public int id_processo;
 
-		public int getId_tribunal() {
+		public int getId_processo() {
+			return this.id_processo;
+		}
+
+		public Boolean id_processoIsNullable() {
+			return false;
+		}
+
+		public Boolean id_processoIsKey() {
+			return true;
+		}
+
+		public Integer id_processoLength() {
+			return 10;
+		}
+
+		public Integer id_processoPrecision() {
+			return 0;
+		}
+
+		public String id_processoDefault() {
+
+			return "nextval('processos_judiciais_id_processo_seq'::regclass)";
+
+		}
+
+		public String id_processoComment() {
+
+			return "";
+
+		}
+
+		public String id_processoPattern() {
+
+			return "";
+
+		}
+
+		public String id_processoOriginalDbColumnName() {
+
+			return "id_processo";
+
+		}
+
+		public String numero_processo;
+
+		public String getNumero_processo() {
+			return this.numero_processo;
+		}
+
+		public Boolean numero_processoIsNullable() {
+			return false;
+		}
+
+		public Boolean numero_processoIsKey() {
+			return false;
+		}
+
+		public Integer numero_processoLength() {
+			return 25;
+		}
+
+		public Integer numero_processoPrecision() {
+			return 0;
+		}
+
+		public String numero_processoDefault() {
+
+			return null;
+
+		}
+
+		public String numero_processoComment() {
+
+			return "";
+
+		}
+
+		public String numero_processoPattern() {
+
+			return "";
+
+		}
+
+		public String numero_processoOriginalDbColumnName() {
+
+			return "numero_processo";
+
+		}
+
+		public String id_tribunal;
+
+		public String getId_tribunal() {
 			return this.id_tribunal;
 		}
 
@@ -3231,7 +2285,7 @@ public class TRF5 implements TalendJob {
 
 		public String id_tribunalDefault() {
 
-			return "";
+			return "'TRF5'::character varying'";
 
 		}
 
@@ -3253,1947 +2307,9 @@ public class TRF5 implements TalendJob {
 
 		}
 
-		public String nome_tribunal;
+		public String id_classe;
 
-		public String getNome_tribunal() {
-			return this.nome_tribunal;
-		}
-
-		public Boolean nome_tribunalIsNullable() {
-			return true;
-		}
-
-		public Boolean nome_tribunalIsKey() {
-			return false;
-		}
-
-		public Integer nome_tribunalLength() {
-			return 255;
-		}
-
-		public Integer nome_tribunalPrecision() {
-			return 0;
-		}
-
-		public String nome_tribunalDefault() {
-
-			return null;
-
-		}
-
-		public String nome_tribunalComment() {
-
-			return "";
-
-		}
-
-		public String nome_tribunalPattern() {
-
-			return "";
-
-		}
-
-		public String nome_tribunalOriginalDbColumnName() {
-
-			return "nome_tribunal";
-
-		}
-
-		public String sigla;
-
-		public String getSigla() {
-			return this.sigla;
-		}
-
-		public Boolean siglaIsNullable() {
-			return true;
-		}
-
-		public Boolean siglaIsKey() {
-			return false;
-		}
-
-		public Integer siglaLength() {
-			return 20;
-		}
-
-		public Integer siglaPrecision() {
-			return 0;
-		}
-
-		public String siglaDefault() {
-
-			return null;
-
-		}
-
-		public String siglaComment() {
-
-			return "";
-
-		}
-
-		public String siglaPattern() {
-
-			return "";
-
-		}
-
-		public String siglaOriginalDbColumnName() {
-
-			return "sigla";
-
-		}
-
-		public String regiao;
-
-		public String getRegiao() {
-			return this.regiao;
-		}
-
-		public Boolean regiaoIsNullable() {
-			return true;
-		}
-
-		public Boolean regiaoIsKey() {
-			return false;
-		}
-
-		public Integer regiaoLength() {
-			return 50;
-		}
-
-		public Integer regiaoPrecision() {
-			return 0;
-		}
-
-		public String regiaoDefault() {
-
-			return null;
-
-		}
-
-		public String regiaoComment() {
-
-			return "";
-
-		}
-
-		public String regiaoPattern() {
-
-			return "";
-
-		}
-
-		public String regiaoOriginalDbColumnName() {
-
-			return "regiao";
-
-		}
-
-		public String porte_tribunal;
-
-		public String getPorte_tribunal() {
-			return this.porte_tribunal;
-		}
-
-		public Boolean porte_tribunalIsNullable() {
-			return true;
-		}
-
-		public Boolean porte_tribunalIsKey() {
-			return false;
-		}
-
-		public Integer porte_tribunalLength() {
-			return 50;
-		}
-
-		public Integer porte_tribunalPrecision() {
-			return 0;
-		}
-
-		public String porte_tribunalDefault() {
-
-			return null;
-
-		}
-
-		public String porte_tribunalComment() {
-
-			return "";
-
-		}
-
-		public String porte_tribunalPattern() {
-
-			return "";
-
-		}
-
-		public String porte_tribunalOriginalDbColumnName() {
-
-			return "porte_tribunal";
-
-		}
-
-		private String readString(ObjectInputStream dis) throws IOException {
-			String strReturn = null;
-			int length = 0;
-			length = dis.readInt();
-			if (length == -1) {
-				strReturn = null;
-			} else {
-				if (length > commonByteArray_DEMOTRF5_TRF5.length) {
-					if (length < 1024 && commonByteArray_DEMOTRF5_TRF5.length == 0) {
-						commonByteArray_DEMOTRF5_TRF5 = new byte[1024];
-					} else {
-						commonByteArray_DEMOTRF5_TRF5 = new byte[2 * length];
-					}
-				}
-				dis.readFully(commonByteArray_DEMOTRF5_TRF5, 0, length);
-				strReturn = new String(commonByteArray_DEMOTRF5_TRF5, 0, length, utf8Charset);
-			}
-			return strReturn;
-		}
-
-		private String readString(org.jboss.marshalling.Unmarshaller unmarshaller) throws IOException {
-			String strReturn = null;
-			int length = 0;
-			length = unmarshaller.readInt();
-			if (length == -1) {
-				strReturn = null;
-			} else {
-				if (length > commonByteArray_DEMOTRF5_TRF5.length) {
-					if (length < 1024 && commonByteArray_DEMOTRF5_TRF5.length == 0) {
-						commonByteArray_DEMOTRF5_TRF5 = new byte[1024];
-					} else {
-						commonByteArray_DEMOTRF5_TRF5 = new byte[2 * length];
-					}
-				}
-				unmarshaller.readFully(commonByteArray_DEMOTRF5_TRF5, 0, length);
-				strReturn = new String(commonByteArray_DEMOTRF5_TRF5, 0, length, utf8Charset);
-			}
-			return strReturn;
-		}
-
-		private void writeString(String str, ObjectOutputStream dos) throws IOException {
-			if (str == null) {
-				dos.writeInt(-1);
-			} else {
-				byte[] byteArray = str.getBytes(utf8Charset);
-				dos.writeInt(byteArray.length);
-				dos.write(byteArray);
-			}
-		}
-
-		private void writeString(String str, org.jboss.marshalling.Marshaller marshaller) throws IOException {
-			if (str == null) {
-				marshaller.writeInt(-1);
-			} else {
-				byte[] byteArray = str.getBytes(utf8Charset);
-				marshaller.writeInt(byteArray.length);
-				marshaller.write(byteArray);
-			}
-		}
-
-		public void readData(ObjectInputStream dis) {
-
-			synchronized (commonByteArrayLock_DEMOTRF5_TRF5) {
-
-				try {
-
-					int length = 0;
-
-					this.id_tribunal = dis.readInt();
-
-					this.nome_tribunal = readString(dis);
-
-					this.sigla = readString(dis);
-
-					this.regiao = readString(dis);
-
-					this.porte_tribunal = readString(dis);
-
-				} catch (IOException e) {
-					throw new RuntimeException(e);
-
-				}
-
-			}
-
-		}
-
-		public void readData(org.jboss.marshalling.Unmarshaller dis) {
-
-			synchronized (commonByteArrayLock_DEMOTRF5_TRF5) {
-
-				try {
-
-					int length = 0;
-
-					this.id_tribunal = dis.readInt();
-
-					this.nome_tribunal = readString(dis);
-
-					this.sigla = readString(dis);
-
-					this.regiao = readString(dis);
-
-					this.porte_tribunal = readString(dis);
-
-				} catch (IOException e) {
-					throw new RuntimeException(e);
-
-				}
-
-			}
-
-		}
-
-		public void writeData(ObjectOutputStream dos) {
-			try {
-
-				// int
-
-				dos.writeInt(this.id_tribunal);
-
-				// String
-
-				writeString(this.nome_tribunal, dos);
-
-				// String
-
-				writeString(this.sigla, dos);
-
-				// String
-
-				writeString(this.regiao, dos);
-
-				// String
-
-				writeString(this.porte_tribunal, dos);
-
-			} catch (IOException e) {
-				throw new RuntimeException(e);
-			}
-
-		}
-
-		public void writeData(org.jboss.marshalling.Marshaller dos) {
-			try {
-
-				// int
-
-				dos.writeInt(this.id_tribunal);
-
-				// String
-
-				writeString(this.nome_tribunal, dos);
-
-				// String
-
-				writeString(this.sigla, dos);
-
-				// String
-
-				writeString(this.regiao, dos);
-
-				// String
-
-				writeString(this.porte_tribunal, dos);
-
-			} catch (IOException e) {
-				throw new RuntimeException(e);
-			}
-
-		}
-
-		public String toString() {
-
-			StringBuilder sb = new StringBuilder();
-			sb.append(super.toString());
-			sb.append("[");
-			sb.append("id_tribunal=" + String.valueOf(id_tribunal));
-			sb.append(",nome_tribunal=" + nome_tribunal);
-			sb.append(",sigla=" + sigla);
-			sb.append(",regiao=" + regiao);
-			sb.append(",porte_tribunal=" + porte_tribunal);
-			sb.append("]");
-
-			return sb.toString();
-		}
-
-		public String toLogString() {
-			StringBuilder sb = new StringBuilder();
-
-			sb.append(id_tribunal);
-
-			sb.append("|");
-
-			if (nome_tribunal == null) {
-				sb.append("<null>");
-			} else {
-				sb.append(nome_tribunal);
-			}
-
-			sb.append("|");
-
-			if (sigla == null) {
-				sb.append("<null>");
-			} else {
-				sb.append(sigla);
-			}
-
-			sb.append("|");
-
-			if (regiao == null) {
-				sb.append("<null>");
-			} else {
-				sb.append(regiao);
-			}
-
-			sb.append("|");
-
-			if (porte_tribunal == null) {
-				sb.append("<null>");
-			} else {
-				sb.append(porte_tribunal);
-			}
-
-			sb.append("|");
-
-			return sb.toString();
-		}
-
-		/**
-		 * Compare keys
-		 */
-		public int compareTo(Processos_Ingestao_Bronze_1_row2Struct other) {
-
-			int returnValue = -1;
-
-			return returnValue;
-		}
-
-		private int checkNullsAndCompare(Object object1, Object object2) {
-			int returnValue = 0;
-			if (object1 instanceof Comparable && object2 instanceof Comparable) {
-				returnValue = ((Comparable) object1).compareTo(object2);
-			} else if (object1 != null && object2 != null) {
-				returnValue = compareStrings(object1.toString(), object2.toString());
-			} else if (object1 == null && object2 != null) {
-				returnValue = 1;
-			} else if (object1 != null && object2 == null) {
-				returnValue = -1;
-			} else {
-				returnValue = 0;
-			}
-
-			return returnValue;
-		}
-
-		private int compareStrings(String string1, String string2) {
-			return string1.compareTo(string2);
-		}
-
-	}
-
-	public void Processos_Ingestao_Bronze_1_tDBInput_2Process(final java.util.Map<String, Object> globalMap)
-			throws TalendException {
-		globalMap.put("Processos_Ingestao_Bronze_1_tDBInput_2_SUBPROCESS_STATE", 0);
-
-		final boolean execStat = this.execStat;
-
-		mdc("Processos_Ingestao_Bronze_1_tDBInput_2", "rqXTUE_");
-
-		String iterateId = "";
-
-		String currentComponent = "";
-		s("none");
-		String cLabel = null;
-		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
-
-		try {
-			// TDI-39566 avoid throwing an useless Exception
-			boolean resumeIt = true;
-			if (globalResumeTicket == false && resumeEntryMethodName != null) {
-				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
-				resumeIt = resumeEntryMethodName.equals(currentMethodName);
-			}
-			if (resumeIt || globalResumeTicket) { // start the resume
-				globalResumeTicket = true;
-
-				Processos_Ingestao_Bronze_1_row2Struct Processos_Ingestao_Bronze_1_row2 = new Processos_Ingestao_Bronze_1_row2Struct();
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_2 begin ] start
-				 */
-
-				sh("Processos_Ingestao_Bronze_1_tFileOutputParquet_2");
-
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_2");
-
-				runStat.updateStatAndLog(execStat, enableLogStash, resourceMap, iterateId, 0, 0,
-						"Processos_Ingestao_Bronze_1_row2");
-
-				int tos_count_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = 0;
-
-				if (log.isDebugEnabled())
-					log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_2 - " + ("Start to work."));
-				if (log.isDebugEnabled()) {
-					class BytesLimit65535_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 {
-						public void limitLog4jByte() throws Exception {
-							StringBuilder log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = new StringBuilder();
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.append("Parameters:");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.append("FILENAME" + " = "
-									+ "\"C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/tribunal_bronze\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
-									.append("FILE_ACTION" + " = " + "OVERWRITE");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
-									.append("COMPRESSION" + " = " + "\"UNCOMPRESSED\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
-									.append("USE_EXTERNAL_HADOOP_DEPS" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
-									.append("ROW_GROUP_SIZE" + " = " + "134217728");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
-									.append("PAGE_SIZE" + " = " + "1048576");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.append(" | ");
-							if (log.isDebugEnabled())
-								log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_2 - "
-										+ (log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_2));
-						}
-					}
-					new BytesLimit65535_Processos_Ingestao_Bronze_1_tFileOutputParquet_2().limitLog4jByte();
-				}
-				// QTUP-3575
-				if (enableLineage) {
-					class ParameterUtil_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 {
-
-						private void a(java.util.List<java.util.Map<String, String>> schema, String... values) {
-							java.util.Map<String, String> field = new java.util.HashMap<>();
-							field.put("name", values[0]);
-							field.put("talend_type", values[1]);
-							schema.add(field);
-						}
-
-						public java.util.Map<String, String> getParameter(
-								final Processos_Ingestao_Bronze_1_row2Struct Processos_Ingestao_Bronze_1_row2)
-								throws Exception {
-							java.util.Map<String, String> component_parameters = new java.util.HashMap<>();
-
-							try {
-
-								component_parameters.put("FILENAME", String.valueOf(
-										"C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/tribunal_bronze"));
-								component_parameters.put("FILE_ACTION", String.valueOf("OVERWRITE"));
-								component_parameters.put("COMPRESSION", String.valueOf("UNCOMPRESSED"));
-								component_parameters.put("USE_EXTERNAL_HADOOP_DEPS", String.valueOf("false"));
-								component_parameters.put("ROW_GROUP_SIZE", String.valueOf("134217728"));
-								component_parameters.put("PAGE_SIZE", String.valueOf("1048576"));
-
-							} catch (java.lang.Exception e_Processos_Ingestao_Bronze_1_tFileOutputParquet_2) {
-								// do nothing
-							}
-
-							return component_parameters;
-						}
-					}
-
-					talendJobLog.addComponentParameterMessage("Processos_Ingestao_Bronze_1_tFileOutputParquet_2",
-							"tFileOutputParquet", new ParameterUtil_Processos_Ingestao_Bronze_1_tFileOutputParquet_2()
-									.getParameter(Processos_Ingestao_Bronze_1_row2));
-					talendJobLogProcess(globalMap);
-					s(currentComponent);
-				}
-				// QTUP-3575
-
-				if (enableLogStash) {
-					talendJobLog.addCM("Processos_Ingestao_Bronze_1_tFileOutputParquet_2", "tFileOutputParquet_2",
-							"tFileOutputParquet");
-					talendJobLogProcess(globalMap);
-					s(currentComponent);
-				}
-
-				int nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = 0;
-				org.apache.parquet.schema.Types.MessageTypeBuilder schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = org.apache.parquet.schema.Types
-						.buildMessage();
-				org.apache.parquet.schema.MessageType messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = null;
-				org.talend.parquet.data.simple.SimpleGroupFactory factory_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = null;
-				org.apache.parquet.hadoop.ParquetWriter<org.talend.parquet.data.Group> writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = null;
-
-				String filePath_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = "C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/tribunal_bronze";
-				globalMap.put("Processos_Ingestao_Bronze_1_tFileOutputParquet_2_FILE_PATH",
-						filePath_Processos_Ingestao_Bronze_1_tFileOutputParquet_2);
-				org.apache.hadoop.conf.Configuration config_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = new org.apache.hadoop.conf.Configuration();
-				config_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.set("fs.file.impl",
-						org.apache.hadoop.fs.LocalFileSystem.class.getName());
-				org.apache.hadoop.fs.Path path_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = new org.apache.hadoop.fs.Path(
-						filePath_Processos_Ingestao_Bronze_1_tFileOutputParquet_2);
-				// CRC file path
-				String crcName_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = "."
-						+ path_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.getName() + ".crc";
-				org.apache.hadoop.fs.Path crcPath_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = new org.apache.hadoop.fs.Path(
-						path_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.getParent(),
-						crcName_Processos_Ingestao_Bronze_1_tFileOutputParquet_2);
-				String compressName_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = "UNCOMPRESSED";
-				int rowGroupSize_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = 134217728;
-				int pageSize_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = 1048576;
-				java.util.Map<String, org.talend.parquet.data.simple.SimpleGroupFactory> cachedFactory_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = new java.util.HashMap<>();
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("id_tribunal", false,
-								"INT32", "INT_32"));
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("nome_tribunal", true,
-								"BINARY", "UTF8"));
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("sigla", true,
-								"BINARY", "UTF8"));
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("regiao", true,
-								"BINARY", "UTF8"));
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("porte_tribunal",
-								true, "BINARY", "UTF8"));
-				messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
-						.named("Schema");
-
-				org.talend.parquet.hadoop.TalendGroupWriteSupport.setSchema(
-						messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_2,
-						config_Processos_Ingestao_Bronze_1_tFileOutputParquet_2);
-				factory_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = new org.talend.parquet.data.simple.SimpleGroupFactory(
-						messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_2);
-				org.apache.parquet.hadoop.ParquetWriter.Builder<org.talend.parquet.data.Group, org.talend.parquet.hadoop.TalendParquetWriter.Builder> builder_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = org.talend.parquet.hadoop.TalendParquetWriter
-						.builder(org.apache.parquet.hadoop.util.HadoopOutputFile.fromPath(
-								path_Processos_Ingestao_Bronze_1_tFileOutputParquet_2,
-								config_Processos_Ingestao_Bronze_1_tFileOutputParquet_2));
-				builder_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
-						.withWriteMode(org.apache.parquet.hadoop.ParquetFileWriter.Mode.OVERWRITE)
-						.withCompressionCodec(org.apache.parquet.hadoop.metadata.CompressionCodecName
-								.fromConf(compressName_Processos_Ingestao_Bronze_1_tFileOutputParquet_2))
-						.withRowGroupSize(rowGroupSize_Processos_Ingestao_Bronze_1_tFileOutputParquet_2)
-						.withPageSize(pageSize_Processos_Ingestao_Bronze_1_tFileOutputParquet_2)
-						.withConf(config_Processos_Ingestao_Bronze_1_tFileOutputParquet_2);
-
-				writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = builder_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
-						.build();
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_2 begin ] stop
-				 */
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tDBInput_2 begin ] start
-				 */
-
-				sh("Processos_Ingestao_Bronze_1_tDBInput_2");
-
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_2");
-
-				int tos_count_Processos_Ingestao_Bronze_1_tDBInput_2 = 0;
-
-				if (log.isDebugEnabled())
-					log.debug("Processos_Ingestao_Bronze_1_tDBInput_2 - " + ("Start to work."));
-				if (log.isDebugEnabled()) {
-					class BytesLimit65535_Processos_Ingestao_Bronze_1_tDBInput_2 {
-						public void limitLog4jByte() throws Exception {
-							StringBuilder log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2 = new StringBuilder();
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append("Parameters:");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2
-									.append("USE_EXISTING_CONNECTION" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append("DB_VERSION" + " = " + "V9_X");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append("HOST" + " = "
-									+ "\"peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append("PORT" + " = " + "\"5432\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2
-									.append("DBNAME" + " = " + "\"qlik_demo\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2
-									.append("SCHEMA_DB" + " = " + "\"public\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2
-									.append("USER" + " = " + "\"peta_qlik\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append("PASS" + " = "
-									+ String.valueOf(
-											"enc:routine.encryption.key.v1:8PhX+A16sI9TLV6hXw4ZBcyjVjD9Nbnj4U3CcJHD1NWRWlDl0w==")
-											.substring(0, 4)
-									+ "...");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append("QUERYSTORE" + " = " + "\"\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append("QUERY" + " = "
-									+ "\"SELECT    \\\"public\\\".\\\"tribunal\\\".\\\"id_tribunal\\\",    \\\"public\\\".\\\"tribunal\\\".\\\"nome_tribunal\\\",    \\\"public\\\".\\\"tribunal\\\".\\\"sigla\\\",    \\\"public\\\".\\\"tribunal\\\".\\\"regiao\\\",    \\\"public\\\".\\\"tribunal\\\".\\\"porte_tribunal\\\"  FROM \\\"public\\\".\\\"tribunal\\\"\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2
-									.append("SPECIFY_DATASOURCE_ALIAS" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2
-									.append("PROPERTIES" + " = " + "\"processos_judiciais\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2
-									.append("USE_CURSOR" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2
-									.append("TRIM_ALL_COLUMN" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2
-									.append("TRIM_COLUMN" + " = " + "[{TRIM=" + ("false") + ", SCHEMA_COLUMN="
-											+ ("id_tribunal") + "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN="
-											+ ("nome_tribunal") + "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN="
-											+ ("sigla") + "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("regiao")
-											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("porte_tribunal") + "}]");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2
-									.append("UNIFIED_COMPONENTS" + " = " + "tPostgresqlInput");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2.append(" | ");
-							if (log.isDebugEnabled())
-								log.debug("Processos_Ingestao_Bronze_1_tDBInput_2 - "
-										+ (log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_2));
-						}
-					}
-					new BytesLimit65535_Processos_Ingestao_Bronze_1_tDBInput_2().limitLog4jByte();
-				}
-				boolean init_Processos_Ingestao_Bronze_1_tDBInput_2_0 = true;
-				// QTUP-3575
-				if (enableLineage) {
-					class ParameterUtil_Processos_Ingestao_Bronze_1_tDBInput_2 {
-
-						private void a(java.util.List<java.util.Map<String, String>> schema, String... values) {
-							java.util.Map<String, String> field = new java.util.HashMap<>();
-							field.put("name", values[0]);
-							field.put("talend_type", values[1]);
-							schema.add(field);
-						}
-
-						public java.util.Map<String, String> getParameter() throws Exception {
-							java.util.Map<String, String> component_parameters = new java.util.HashMap<>();
-
-							try {
-
-								component_parameters.put("USE_EXISTING_CONNECTION", String.valueOf("false"));
-								component_parameters.put("DB_VERSION", String.valueOf("V9_X"));
-								component_parameters.put("HOST", String
-										.valueOf("peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com"));
-								component_parameters.put("PORT", String.valueOf("5432"));
-								component_parameters.put("DBNAME", String.valueOf("qlik_demo"));
-								component_parameters.put("SCHEMA_DB", String.valueOf("public"));
-								component_parameters.put("USER", String.valueOf("peta_qlik"));
-								component_parameters.put("QUERYSTORE", String.valueOf(""));
-								component_parameters.put("QUERY", String.valueOf(new StringBuilder().append(
-										"SELECT \n  \"public\".\"tribunal\".\"id_tribunal\", \n  \"public\".\"tribunal\".\"nome_tribunal\", \n  \"public\".\"tribun"
-												+ "al\".\"sigla\", \n  \"public\".\"tribunal\".\"regiao\", \n  \"public\".\"tribunal\".\"porte_tribunal\"\n FROM \"public\".\""
-												+ "tribunal\"")
-										.toString()));
-								component_parameters.put("SPECIFY_DATASOURCE_ALIAS", String.valueOf("false"));
-								component_parameters.put("PROPERTIES", String.valueOf("processos_judiciais"));
-								component_parameters.put("USE_CURSOR", String.valueOf("false"));
-								component_parameters.put("TRIM_ALL_COLUMN", String.valueOf("false"));
-								component_parameters.put("TRIM_COLUMN",
-										String.valueOf(new StringBuilder().append("[{TRIM=").append("false")
-												.append(", SCHEMA_COLUMN=").append("id_tribunal").append("}, {TRIM=")
-												.append("false").append(", SCHEMA_COLUMN=").append("nome_tribunal")
-												.append("}, {TRIM=").append("false").append(", SCHEMA_COLUMN=")
-												.append("sigla").append("}, {TRIM=").append("false")
-												.append(", SCHEMA_COLUMN=").append("regiao").append("}, {TRIM=")
-												.append("false").append(", SCHEMA_COLUMN=").append("porte_tribunal")
-												.append("}]").toString()));
-								component_parameters.put("UNIFIED_COMPONENTS", String.valueOf("tPostgresqlInput"));
-
-							} catch (java.lang.Exception e_Processos_Ingestao_Bronze_1_tDBInput_2) {
-								// do nothing
-							}
-
-							return component_parameters;
-						}
-					}
-
-					talendJobLog.addComponentParameterMessage("Processos_Ingestao_Bronze_1_tDBInput_2",
-							"tPostgresqlInput",
-							new ParameterUtil_Processos_Ingestao_Bronze_1_tDBInput_2().getParameter());
-					talendJobLogProcess(globalMap);
-					s(currentComponent);
-				}
-				// QTUP-3575
-
-				if (enableLogStash) {
-					talendJobLog.addCM("Processos_Ingestao_Bronze_1_tDBInput_2", "tDBInput_2", "tPostgresqlInput");
-					talendJobLogProcess(globalMap);
-					s(currentComponent);
-				}
-
-				int nb_line_Processos_Ingestao_Bronze_1_tDBInput_2 = 0;
-				java.sql.Connection conn_Processos_Ingestao_Bronze_1_tDBInput_2 = null;
-				String driverClass_Processos_Ingestao_Bronze_1_tDBInput_2 = "org.postgresql.Driver";
-				java.lang.Class jdbcclazz_Processos_Ingestao_Bronze_1_tDBInput_2 = java.lang.Class
-						.forName(driverClass_Processos_Ingestao_Bronze_1_tDBInput_2);
-				String dbUser_Processos_Ingestao_Bronze_1_tDBInput_2 = "peta_qlik";
-
-				final String decryptedPassword_Processos_Ingestao_Bronze_1_tDBInput_2 = java.util.Optional
-						.ofNullable(routines.system.PasswordEncryptUtil.decryptPassword(
-								"enc:routine.encryption.key.v1:XbJaLDZKAY0hF+IaNnXUr/elg+rYc4eWXYOB0BBML959wsRvmw=="))
-						.orElse("");
-
-				String dbPwd_Processos_Ingestao_Bronze_1_tDBInput_2 = decryptedPassword_Processos_Ingestao_Bronze_1_tDBInput_2;
-
-				String url_Processos_Ingestao_Bronze_1_tDBInput_2 = "jdbc:postgresql://"
-						+ "peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com" + ":" + "5432" + "/"
-						+ "qlik_demo" + "?" + "processos_judiciais";
-
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_2 - Driver ClassName: "
-						+ driverClass_Processos_Ingestao_Bronze_1_tDBInput_2 + ".");
-
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_2 - Connection attempt to '"
-						+ url_Processos_Ingestao_Bronze_1_tDBInput_2.replaceAll("(?<=trustStorePassword=)[^;]*",
-								"********")
-						+ "' with the username '" + dbUser_Processos_Ingestao_Bronze_1_tDBInput_2 + "'.");
-
-				conn_Processos_Ingestao_Bronze_1_tDBInput_2 = java.sql.DriverManager.getConnection(
-						url_Processos_Ingestao_Bronze_1_tDBInput_2, dbUser_Processos_Ingestao_Bronze_1_tDBInput_2,
-						dbPwd_Processos_Ingestao_Bronze_1_tDBInput_2);
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_2 - Connection to '"
-						+ url_Processos_Ingestao_Bronze_1_tDBInput_2.replaceAll("(?<=trustStorePassword=)[^;]*",
-								"********")
-						+ "' has succeeded.");
-
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_2 - Connection is set auto commit to 'false'.");
-
-				conn_Processos_Ingestao_Bronze_1_tDBInput_2.setAutoCommit(false);
-
-				java.sql.Statement stmt_Processos_Ingestao_Bronze_1_tDBInput_2 = conn_Processos_Ingestao_Bronze_1_tDBInput_2
-						.createStatement();
-
-				String dbquery_Processos_Ingestao_Bronze_1_tDBInput_2 = new StringBuilder().append(
-						"SELECT \n  \"public\".\"tribunal\".\"id_tribunal\", \n  \"public\".\"tribunal\".\"nome_tribunal\", \n  \"public\".\"tribun"
-								+ "al\".\"sigla\", \n  \"public\".\"tribunal\".\"regiao\", \n  \"public\".\"tribunal\".\"porte_tribunal\"\n FROM \"public\".\""
-								+ "tribunal\"")
-						.toString();
-
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_2 - Executing the query: '"
-						+ dbquery_Processos_Ingestao_Bronze_1_tDBInput_2 + "'.");
-
-				globalMap.put("Processos_Ingestao_Bronze_1_tDBInput_2_QUERY",
-						dbquery_Processos_Ingestao_Bronze_1_tDBInput_2);
-
-				java.sql.ResultSet rs_Processos_Ingestao_Bronze_1_tDBInput_2 = null;
-
-				try {
-					rs_Processos_Ingestao_Bronze_1_tDBInput_2 = stmt_Processos_Ingestao_Bronze_1_tDBInput_2
-							.executeQuery(dbquery_Processos_Ingestao_Bronze_1_tDBInput_2);
-					java.sql.ResultSetMetaData rsmd_Processos_Ingestao_Bronze_1_tDBInput_2 = rs_Processos_Ingestao_Bronze_1_tDBInput_2
-							.getMetaData();
-					int colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_2 = rsmd_Processos_Ingestao_Bronze_1_tDBInput_2
-							.getColumnCount();
-
-					String tmpContent_Processos_Ingestao_Bronze_1_tDBInput_2 = null;
-
-					log.debug("Processos_Ingestao_Bronze_1_tDBInput_2 - Retrieving records from the database.");
-
-					while (rs_Processos_Ingestao_Bronze_1_tDBInput_2.next()) {
-						nb_line_Processos_Ingestao_Bronze_1_tDBInput_2++;
-
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_2 < 1) {
-							Processos_Ingestao_Bronze_1_row2.id_tribunal = 0;
-						} else {
-
-							Processos_Ingestao_Bronze_1_row2.id_tribunal = rs_Processos_Ingestao_Bronze_1_tDBInput_2
-									.getInt(1);
-							if (rs_Processos_Ingestao_Bronze_1_tDBInput_2.wasNull()) {
-								throw new RuntimeException("Null value in non-Nullable column");
-							}
-						}
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_2 < 2) {
-							Processos_Ingestao_Bronze_1_row2.nome_tribunal = null;
-						} else {
-
-							Processos_Ingestao_Bronze_1_row2.nome_tribunal = routines.system.JDBCUtil
-									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_2, 2, false);
-						}
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_2 < 3) {
-							Processos_Ingestao_Bronze_1_row2.sigla = null;
-						} else {
-
-							Processos_Ingestao_Bronze_1_row2.sigla = routines.system.JDBCUtil
-									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_2, 3, false);
-						}
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_2 < 4) {
-							Processos_Ingestao_Bronze_1_row2.regiao = null;
-						} else {
-
-							Processos_Ingestao_Bronze_1_row2.regiao = routines.system.JDBCUtil
-									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_2, 4, false);
-						}
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_2 < 5) {
-							Processos_Ingestao_Bronze_1_row2.porte_tribunal = null;
-						} else {
-
-							Processos_Ingestao_Bronze_1_row2.porte_tribunal = routines.system.JDBCUtil
-									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_2, 5, false);
-						}
-
-						log.debug("Processos_Ingestao_Bronze_1_tDBInput_2 - Retrieving the record "
-								+ nb_line_Processos_Ingestao_Bronze_1_tDBInput_2 + ".");
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_2 begin ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_2 main ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_2");
-
-						// QTUP-3575
-						if (enableLineage && init_Processos_Ingestao_Bronze_1_tDBInput_2_0) {
-							class SchemaUtil_Processos_Ingestao_Bronze_1_row2 {
-
-								private void a(java.util.List<java.util.Map<String, String>> schema, String... values) {
-									java.util.Map<String, String> field = new java.util.HashMap<>();
-									field.put("name", values[0]);
-									field.put("origin_name", values[1]);
-									field.put("iskey", values[2]);
-									field.put("talend_type", values[3]);
-									field.put("type", values[4]);
-									field.put("nullable", values[5]);
-									field.put("pattern", values[6]);
-									field.put("length", values[7]);
-									field.put("precision", values[8]);
-									schema.add(field);
-								}
-
-								public java.util.List<java.util.Map<String, String>> getSchema(
-										final Processos_Ingestao_Bronze_1_row2Struct Processos_Ingestao_Bronze_1_row2) {
-									java.util.List<java.util.Map<String, String>> s = new java.util.ArrayList<>();
-									if (Processos_Ingestao_Bronze_1_row2 == null) {
-										return s;
-									}
-									a(s, "id_tribunal", "id_tribunal", "false", "id_Integer", "SERIAL", "false", "",
-											"10", "0");
-									a(s, "nome_tribunal", "nome_tribunal", "false", "id_String", "VARCHAR", "true", "",
-											"255", "0");
-									a(s, "sigla", "sigla", "false", "id_String", "VARCHAR", "true", "", "20", "0");
-									a(s, "regiao", "regiao", "false", "id_String", "VARCHAR", "true", "", "50", "0");
-									a(s, "porte_tribunal", "porte_tribunal", "false", "id_String", "VARCHAR", "true",
-											"", "50", "0");
-									return s;
-								}
-
-							}
-
-							if (Processos_Ingestao_Bronze_1_row2 != null) {
-								talendJobLog.addConnectionSchemaMessage("Processos_Ingestao_Bronze_1_tDBInput_2",
-										"tPostgresqlInput", "Processos_Ingestao_Bronze_1_tFileOutputParquet_2",
-										"tFileOutputParquet", "Processos_Ingestao_Bronze_1_row2" + iterateId,
-										new SchemaUtil_Processos_Ingestao_Bronze_1_row2()
-												.getSchema(Processos_Ingestao_Bronze_1_row2));
-								talendJobLogProcess(globalMap);
-								init_Processos_Ingestao_Bronze_1_tDBInput_2_0 = false;
-							}
-
-						}
-						// QTUP-3575
-
-						tos_count_Processos_Ingestao_Bronze_1_tDBInput_2++;
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_2 main ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_2 process_data_begin ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_2");
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_2 process_data_begin ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_2 main ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_2");
-
-						if (runStat.update(execStat, enableLogStash, iterateId, 1, 1
-
-								, "Processos_Ingestao_Bronze_1_row2", "Processos_Ingestao_Bronze_1_tDBInput_2",
-								"tDBInput_2", "tPostgresqlInput", "Processos_Ingestao_Bronze_1_tFileOutputParquet_2",
-								"tFileOutputParquet_2", "tFileOutputParquet"
-
-						)) {
-							talendJobLogProcess(globalMap);
-						}
-
-						if (log.isTraceEnabled()) {
-							log.trace("Processos_Ingestao_Bronze_1_row2 - "
-									+ (Processos_Ingestao_Bronze_1_row2 == null ? ""
-											: Processos_Ingestao_Bronze_1_row2.toLogString()));
-						}
-
-						org.talend.parquet.data.Group group_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = factory_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
-								.newGroup();
-
-						group_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.append("id_tribunal",
-								Processos_Ingestao_Bronze_1_row2.id_tribunal);
-						if (Processos_Ingestao_Bronze_1_row2.nome_tribunal != null) {
-
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.append("nome_tribunal",
-									String.valueOf(Processos_Ingestao_Bronze_1_row2.nome_tribunal));
-						}
-
-						if (Processos_Ingestao_Bronze_1_row2.sigla != null) {
-
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.append("sigla",
-									String.valueOf(Processos_Ingestao_Bronze_1_row2.sigla));
-						}
-
-						if (Processos_Ingestao_Bronze_1_row2.regiao != null) {
-
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.append("regiao",
-									String.valueOf(Processos_Ingestao_Bronze_1_row2.regiao));
-						}
-
-						if (Processos_Ingestao_Bronze_1_row2.porte_tribunal != null) {
-
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.append("porte_tribunal",
-									String.valueOf(Processos_Ingestao_Bronze_1_row2.porte_tribunal));
-						}
-
-						writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
-								.write(group_Processos_Ingestao_Bronze_1_tFileOutputParquet_2);
-						nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_2++;
-						log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_2 - Writing the record "
-								+ nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 + " to the file.");
-
-						tos_count_Processos_Ingestao_Bronze_1_tFileOutputParquet_2++;
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_2 main ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_2 process_data_begin ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_2");
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_2 process_data_begin ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_2 process_data_end ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_2");
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_2 process_data_end ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_2 process_data_end ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_2");
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_2 process_data_end ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_2 end ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_2");
-
-					}
-				} finally {
-					if (rs_Processos_Ingestao_Bronze_1_tDBInput_2 != null) {
-						rs_Processos_Ingestao_Bronze_1_tDBInput_2.close();
-					}
-					if (stmt_Processos_Ingestao_Bronze_1_tDBInput_2 != null) {
-						stmt_Processos_Ingestao_Bronze_1_tDBInput_2.close();
-					}
-					if (conn_Processos_Ingestao_Bronze_1_tDBInput_2 != null
-							&& !conn_Processos_Ingestao_Bronze_1_tDBInput_2.isClosed()) {
-
-						log.debug("Processos_Ingestao_Bronze_1_tDBInput_2 - Closing the connection to the database.");
-
-						conn_Processos_Ingestao_Bronze_1_tDBInput_2.close();
-
-						if ("com.mysql.cj.jdbc.Driver".equals((String) globalMap.get("driverClass_"))
-								&& routines.system.BundleUtils.inOSGi()) {
-							Class.forName("com.mysql.cj.jdbc.AbandonedConnectionCleanupThread")
-									.getMethod("checkedShutdown").invoke(null, (Object[]) null);
-						}
-
-						log.debug("Processos_Ingestao_Bronze_1_tDBInput_2 - Connection to the database closed.");
-
-					}
-
-				}
-				globalMap.put("Processos_Ingestao_Bronze_1_tDBInput_2_NB_LINE",
-						nb_line_Processos_Ingestao_Bronze_1_tDBInput_2);
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_2 - Retrieved records count: "
-						+ nb_line_Processos_Ingestao_Bronze_1_tDBInput_2 + " .");
-
-				if (log.isDebugEnabled())
-					log.debug("Processos_Ingestao_Bronze_1_tDBInput_2 - " + ("Done."));
-
-				ok_Hash.put("Processos_Ingestao_Bronze_1_tDBInput_2", true);
-				end_Hash.put("Processos_Ingestao_Bronze_1_tDBInput_2", System.currentTimeMillis());
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tDBInput_2 end ] stop
-				 */
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_2 end ] start
-				 */
-
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_2");
-
-				globalMap.put("Processos_Ingestao_Bronze_1_tFileOutputParquet_2_NB_LINE",
-						nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_2);
-
-				log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_2 - Written records count: "
-						+ nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 + " .");
-
-				if (writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 != null) {
-					writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_2.close();
-				}
-				org.apache.hadoop.fs.FileSystem fs_Processos_Ingestao_Bronze_1_tFileOutputParquet_2 = crcPath_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
-						.getFileSystem(config_Processos_Ingestao_Bronze_1_tFileOutputParquet_2);
-				if (fs_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
-						.exists(crcPath_Processos_Ingestao_Bronze_1_tFileOutputParquet_2)) {
-					fs_Processos_Ingestao_Bronze_1_tFileOutputParquet_2
-							.delete(crcPath_Processos_Ingestao_Bronze_1_tFileOutputParquet_2, false);
-				}
-
-				if (runStat.updateStatAndLog(execStat, enableLogStash, resourceMap, iterateId,
-						"Processos_Ingestao_Bronze_1_row2", 2, 0, "Processos_Ingestao_Bronze_1_tDBInput_2",
-						"tDBInput_2", "tPostgresqlInput", "Processos_Ingestao_Bronze_1_tFileOutputParquet_2",
-						"tFileOutputParquet_2", "tFileOutputParquet", "output")) {
-					talendJobLogProcess(globalMap);
-				}
-
-				if (log.isDebugEnabled())
-					log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_2 - " + ("Done."));
-
-				ok_Hash.put("Processos_Ingestao_Bronze_1_tFileOutputParquet_2", true);
-				end_Hash.put("Processos_Ingestao_Bronze_1_tFileOutputParquet_2", System.currentTimeMillis());
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_2 end ] stop
-				 */
-
-			} // end the resume
-
-			if (resumeEntryMethodName == null || globalResumeTicket) {
-				resumeUtil.addLog("CHECKPOINT",
-						"CONNECTION:SUBJOB_OK:Processos_Ingestao_Bronze_1_tDBInput_2:OnSubjobOk", "",
-						Thread.currentThread().getId() + "", "", "", "", "", "");
-			}
-
-			if (execStat) {
-				runStat.updateStatOnConnection("Processos_Ingestao_Bronze_1_OnSubjobOk2", 0, "ok");
-			}
-
-			Processos_Ingestao_Bronze_1_tFileList_1Process(globalMap);
-
-		} catch (java.lang.Exception e) {
-
-			if (!(e instanceof TalendException) && !(e instanceof TDieException)) {
-				log.fatal(currentComponent + " " + e.getMessage(), e);
-			}
-
-			TalendException te = new TalendException(e, currentComponent, cLabel, globalMap);
-
-			throw te;
-		} catch (java.lang.Error error) {
-
-			runStat.stopThreadStat();
-
-			throw error;
-		} finally {
-
-			try {
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tDBInput_2 finally ] start
-				 */
-
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_2");
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tDBInput_2 finally ] stop
-				 */
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_2 finally ] start
-				 */
-
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_2");
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_2 finally ] stop
-				 */
-
-			} catch (java.lang.Exception e) {
-				// ignore
-			} catch (java.lang.Error error) {
-				// ignore
-			}
-			resourceMap = null;
-		}
-
-		globalMap.put("Processos_Ingestao_Bronze_1_tDBInput_2_SUBPROCESS_STATE", 1);
-	}
-
-	public void Processos_Ingestao_Bronze_1_tFileList_1Process(final java.util.Map<String, Object> globalMap)
-			throws TalendException {
-		globalMap.put("Processos_Ingestao_Bronze_1_tFileList_1_SUBPROCESS_STATE", 0);
-
-		final boolean execStat = this.execStat;
-
-		mdc("Processos_Ingestao_Bronze_1_tFileList_1", "Z0g5xE_");
-
-		String iterateId = "";
-
-		String currentComponent = "";
-		s("none");
-		String cLabel = null;
-		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
-
-		try {
-			// TDI-39566 avoid throwing an useless Exception
-			boolean resumeIt = true;
-			if (globalResumeTicket == false && resumeEntryMethodName != null) {
-				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
-				resumeIt = resumeEntryMethodName.equals(currentMethodName);
-			}
-			if (resumeIt || globalResumeTicket) { // start the resume
-				globalResumeTicket = true;
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tFileList_1 begin ] start
-				 */
-
-				int NB_ITERATE_Processos_Ingestao_Bronze_1_tS3Put_1 = 0; // for statistics
-
-				sh("Processos_Ingestao_Bronze_1_tFileList_1");
-
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tFileList_1");
-
-				int tos_count_Processos_Ingestao_Bronze_1_tFileList_1 = 0;
-
-				if (log.isDebugEnabled())
-					log.debug("Processos_Ingestao_Bronze_1_tFileList_1 - " + ("Start to work."));
-				if (log.isDebugEnabled()) {
-					class BytesLimit65535_Processos_Ingestao_Bronze_1_tFileList_1 {
-						public void limitLog4jByte() throws Exception {
-							StringBuilder log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1 = new StringBuilder();
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1.append("Parameters:");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1.append(
-									"DIRECTORY" + " = " + "\"C:/Program Files (x86)/Talend-Studio/studio/workspace\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1
-									.append("LIST_MODE" + " = " + "FILES");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1
-									.append("INCLUDSUBDIR" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1
-									.append("CASE_SENSITIVE" + " = " + "YES");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1.append("ERROR" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1
-									.append("GLOBEXPRESSIONS" + " = " + "true");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1.append("FILES" + " = " + "[]");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1
-									.append("ORDER_BY_NOTHING" + " = " + "true");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1
-									.append("ORDER_BY_FILENAME" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1
-									.append("ORDER_BY_FILESIZE" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1
-									.append("ORDER_BY_MODIFIEDDATE" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1
-									.append("ORDER_ACTION_ASC" + " = " + "true");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1
-									.append("ORDER_ACTION_DESC" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1
-									.append("IFEXCLUDE" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1
-									.append("FORMAT_FILEPATH_TO_SLASH" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1.append(" | ");
-							if (log.isDebugEnabled())
-								log.debug("Processos_Ingestao_Bronze_1_tFileList_1 - "
-										+ (log4jParamters_Processos_Ingestao_Bronze_1_tFileList_1));
-						}
-					}
-					new BytesLimit65535_Processos_Ingestao_Bronze_1_tFileList_1().limitLog4jByte();
-				}
-				// QTUP-3575
-				if (enableLineage) {
-					class ParameterUtil_Processos_Ingestao_Bronze_1_tFileList_1 {
-
-						private void a(java.util.List<java.util.Map<String, String>> schema, String... values) {
-							java.util.Map<String, String> field = new java.util.HashMap<>();
-							field.put("name", values[0]);
-							field.put("talend_type", values[1]);
-							schema.add(field);
-						}
-
-						public java.util.Map<String, String> getParameter() throws Exception {
-							java.util.Map<String, String> component_parameters = new java.util.HashMap<>();
-
-							try {
-
-								component_parameters.put("DIRECTORY",
-										String.valueOf("C:/Program Files (x86)/Talend-Studio/studio/workspace"));
-								component_parameters.put("LIST_MODE", String.valueOf("FILES"));
-								component_parameters.put("INCLUDSUBDIR", String.valueOf("false"));
-								component_parameters.put("CASE_SENSITIVE", String.valueOf("YES"));
-								component_parameters.put("ERROR", String.valueOf("false"));
-								component_parameters.put("GLOBEXPRESSIONS", String.valueOf("true"));
-								component_parameters.put("FILES", String.valueOf("[]"));
-								component_parameters.put("ORDER_BY_NOTHING", String.valueOf("true"));
-								component_parameters.put("ORDER_BY_FILENAME", String.valueOf("false"));
-								component_parameters.put("ORDER_BY_FILESIZE", String.valueOf("false"));
-								component_parameters.put("ORDER_BY_MODIFIEDDATE", String.valueOf("false"));
-								component_parameters.put("ORDER_ACTION_ASC", String.valueOf("true"));
-								component_parameters.put("ORDER_ACTION_DESC", String.valueOf("false"));
-								component_parameters.put("IFEXCLUDE", String.valueOf("false"));
-								component_parameters.put("FORMAT_FILEPATH_TO_SLASH", String.valueOf("false"));
-
-							} catch (java.lang.Exception e_Processos_Ingestao_Bronze_1_tFileList_1) {
-								// do nothing
-							}
-
-							return component_parameters;
-						}
-					}
-
-					talendJobLog.addComponentParameterMessage("Processos_Ingestao_Bronze_1_tFileList_1", "tFileList",
-							new ParameterUtil_Processos_Ingestao_Bronze_1_tFileList_1().getParameter());
-					talendJobLogProcess(globalMap);
-					s(currentComponent);
-				}
-				// QTUP-3575
-
-				if (enableLogStash) {
-					talendJobLog.addCM("Processos_Ingestao_Bronze_1_tFileList_1", "tFileList_1", "tFileList");
-					talendJobLogProcess(globalMap);
-					s(currentComponent);
-				}
-
-				final StringBuffer log4jSb_Processos_Ingestao_Bronze_1_tFileList_1 = new StringBuffer();
-
-				String directory_Processos_Ingestao_Bronze_1_tFileList_1 = "C:/Program Files (x86)/Talend-Studio/studio/workspace";
-				final java.util.List<String> maskList_Processos_Ingestao_Bronze_1_tFileList_1 = new java.util.ArrayList<String>();
-				final java.util.List<java.util.regex.Pattern> patternList_Processos_Ingestao_Bronze_1_tFileList_1 = new java.util.ArrayList<java.util.regex.Pattern>();
-				maskList_Processos_Ingestao_Bronze_1_tFileList_1.add("*");
-				for (final String filemask_Processos_Ingestao_Bronze_1_tFileList_1 : maskList_Processos_Ingestao_Bronze_1_tFileList_1) {
-					String filemask_compile_Processos_Ingestao_Bronze_1_tFileList_1 = filemask_Processos_Ingestao_Bronze_1_tFileList_1;
-
-					filemask_compile_Processos_Ingestao_Bronze_1_tFileList_1 = org.talend.components.lib.StringUtils
-							.globToRegex(filemask_Processos_Ingestao_Bronze_1_tFileList_1);
-
-					java.util.regex.Pattern fileNamePattern_Processos_Ingestao_Bronze_1_tFileList_1 = java.util.regex.Pattern
-							.compile(filemask_compile_Processos_Ingestao_Bronze_1_tFileList_1);
-					patternList_Processos_Ingestao_Bronze_1_tFileList_1
-							.add(fileNamePattern_Processos_Ingestao_Bronze_1_tFileList_1);
-				}
-				int NB_FILEProcessos_Ingestao_Bronze_1_tFileList_1 = 0;
-
-				final boolean case_sensitive_Processos_Ingestao_Bronze_1_tFileList_1 = true;
-
-				log.info("Processos_Ingestao_Bronze_1_tFileList_1 - Starting to search for matching entries.");
-
-				final java.util.List<java.io.File> list_Processos_Ingestao_Bronze_1_tFileList_1 = new java.util.ArrayList<java.io.File>();
-				final java.util.Set<String> filePath_Processos_Ingestao_Bronze_1_tFileList_1 = new java.util.HashSet<String>();
-				java.io.File file_Processos_Ingestao_Bronze_1_tFileList_1 = new java.io.File(
-						directory_Processos_Ingestao_Bronze_1_tFileList_1);
-
-				file_Processos_Ingestao_Bronze_1_tFileList_1.listFiles(new java.io.FilenameFilter() {
-					public boolean accept(java.io.File dir, String name) {
-						java.io.File file = new java.io.File(dir, name);
-						if (!file.isDirectory()) {
-
-							String fileName_Processos_Ingestao_Bronze_1_tFileList_1 = file.getName();
-							for (final java.util.regex.Pattern fileNamePattern_Processos_Ingestao_Bronze_1_tFileList_1 : patternList_Processos_Ingestao_Bronze_1_tFileList_1) {
-								if (fileNamePattern_Processos_Ingestao_Bronze_1_tFileList_1
-										.matcher(fileName_Processos_Ingestao_Bronze_1_tFileList_1).matches()) {
-									if (!filePath_Processos_Ingestao_Bronze_1_tFileList_1
-											.contains(file.getAbsolutePath())) {
-										list_Processos_Ingestao_Bronze_1_tFileList_1.add(file);
-										filePath_Processos_Ingestao_Bronze_1_tFileList_1.add(file.getAbsolutePath());
-									}
-								}
-							}
-						}
-						return true;
-					}
-				});
-				java.util.Collections.sort(list_Processos_Ingestao_Bronze_1_tFileList_1);
-
-				log.info("Processos_Ingestao_Bronze_1_tFileList_1 - Start to list files.");
-
-				for (int i_Processos_Ingestao_Bronze_1_tFileList_1 = 0; i_Processos_Ingestao_Bronze_1_tFileList_1 < list_Processos_Ingestao_Bronze_1_tFileList_1
-						.size(); i_Processos_Ingestao_Bronze_1_tFileList_1++) {
-					java.io.File files_Processos_Ingestao_Bronze_1_tFileList_1 = list_Processos_Ingestao_Bronze_1_tFileList_1
-							.get(i_Processos_Ingestao_Bronze_1_tFileList_1);
-					String fileName_Processos_Ingestao_Bronze_1_tFileList_1 = files_Processos_Ingestao_Bronze_1_tFileList_1
-							.getName();
-
-					String currentFileName_Processos_Ingestao_Bronze_1_tFileList_1 = files_Processos_Ingestao_Bronze_1_tFileList_1
-							.getName();
-					String currentFilePath_Processos_Ingestao_Bronze_1_tFileList_1 = files_Processos_Ingestao_Bronze_1_tFileList_1
-							.getAbsolutePath();
-					String currentFileDirectory_Processos_Ingestao_Bronze_1_tFileList_1 = files_Processos_Ingestao_Bronze_1_tFileList_1
-							.getParent();
-					String currentFileExtension_Processos_Ingestao_Bronze_1_tFileList_1 = null;
-
-					if (files_Processos_Ingestao_Bronze_1_tFileList_1.getName().contains(".")
-							&& files_Processos_Ingestao_Bronze_1_tFileList_1.isFile()) {
-						currentFileExtension_Processos_Ingestao_Bronze_1_tFileList_1 = files_Processos_Ingestao_Bronze_1_tFileList_1
-								.getName().substring(
-										files_Processos_Ingestao_Bronze_1_tFileList_1.getName().lastIndexOf(".") + 1);
-					} else {
-						currentFileExtension_Processos_Ingestao_Bronze_1_tFileList_1 = "";
-					}
-
-					NB_FILEProcessos_Ingestao_Bronze_1_tFileList_1++;
-					globalMap.put("Processos_Ingestao_Bronze_1_tFileList_1_CURRENT_FILE",
-							currentFileName_Processos_Ingestao_Bronze_1_tFileList_1);
-					globalMap.put("Processos_Ingestao_Bronze_1_tFileList_1_CURRENT_FILEPATH",
-							currentFilePath_Processos_Ingestao_Bronze_1_tFileList_1);
-					globalMap.put("Processos_Ingestao_Bronze_1_tFileList_1_CURRENT_FILEDIRECTORY",
-							currentFileDirectory_Processos_Ingestao_Bronze_1_tFileList_1);
-					globalMap.put("Processos_Ingestao_Bronze_1_tFileList_1_CURRENT_FILEEXTENSION",
-							currentFileExtension_Processos_Ingestao_Bronze_1_tFileList_1);
-					globalMap.put("Processos_Ingestao_Bronze_1_tFileList_1_NB_FILE",
-							NB_FILEProcessos_Ingestao_Bronze_1_tFileList_1);
-
-					log.info("Processos_Ingestao_Bronze_1_tFileList_1 - Current file or directory path : "
-							+ currentFilePath_Processos_Ingestao_Bronze_1_tFileList_1);
-
-					/**
-					 * [Processos_Ingestao_Bronze_1_tFileList_1 begin ] stop
-					 */
-
-					/**
-					 * [Processos_Ingestao_Bronze_1_tFileList_1 main ] start
-					 */
-
-					s(currentComponent = "Processos_Ingestao_Bronze_1_tFileList_1");
-
-					tos_count_Processos_Ingestao_Bronze_1_tFileList_1++;
-
-					/**
-					 * [Processos_Ingestao_Bronze_1_tFileList_1 main ] stop
-					 */
-
-					/**
-					 * [Processos_Ingestao_Bronze_1_tFileList_1 process_data_begin ] start
-					 */
-
-					s(currentComponent = "Processos_Ingestao_Bronze_1_tFileList_1");
-
-					/**
-					 * [Processos_Ingestao_Bronze_1_tFileList_1 process_data_begin ] stop
-					 */
-
-					NB_ITERATE_Processos_Ingestao_Bronze_1_tS3Put_1++;
-
-					if (execStat) {
-						runStat.updateStatOnConnection("Processos_Ingestao_Bronze_1_iterate1", 1,
-								"exec" + NB_ITERATE_Processos_Ingestao_Bronze_1_tS3Put_1);
-						// Thread.sleep(1000);
-					}
-
-					/**
-					 * [Processos_Ingestao_Bronze_1_tS3Put_1 begin ] start
-					 */
-
-					sh("Processos_Ingestao_Bronze_1_tS3Put_1");
-
-					s(currentComponent = "Processos_Ingestao_Bronze_1_tS3Put_1");
-
-					int tos_count_Processos_Ingestao_Bronze_1_tS3Put_1 = 0;
-
-					if (log.isDebugEnabled())
-						log.debug("Processos_Ingestao_Bronze_1_tS3Put_1 - " + ("Start to work."));
-					if (log.isDebugEnabled()) {
-						class BytesLimit65535_Processos_Ingestao_Bronze_1_tS3Put_1 {
-							public void limitLog4jByte() throws Exception {
-								StringBuilder log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1 = new StringBuilder();
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1.append("Parameters:");
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1
-										.append("configuration.bucket" + " = " + "peta-demo-qlik");
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1.append(" | ");
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1.append("configuration.key" + " = "
-										+ "\"bronze/\" + ((String)globalMap.get(\"Processos_Ingestao_Bronze_1_tFileList_1_CURRENT_FILE\"))");
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1.append(" | ");
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1.append("configuration.file" + " = "
-										+ "((String)globalMap.get(\"Processos_Ingestao_Bronze_1_tFileList_1_CURRENT_FILEPATH\"))");
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1.append(" | ");
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1
-										.append("configuration.enableServerSideEncryption" + " = " + "false");
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1.append(" | ");
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1
-										.append("configuration.dieOnError" + " = " + "false");
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1.append(" | ");
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1
-										.append("configuration.multipartThreshold" + " = " + "5");
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1.append(" | ");
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1
-										.append("configuration.partSize" + " = " + "5");
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1.append(" | ");
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1
-										.append("configuration.cannedAccessControlList" + " = " + "NONE");
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1.append(" | ");
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1
-										.append("configuration.enableObjectLock" + " = " + "false");
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1.append(" | ");
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1
-										.append("configuration.setObjectTags" + " = " + "false");
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1.append(" | ");
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1
-										.append("USE_EXISTING_CONNECTION" + " = " + "true");
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1.append(" | ");
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1
-										.append("CONNECTION" + " = " + "Processos_Ingestao_Bronze_1_tS3Connection_2");
-								log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1.append(" | ");
-								if (log.isDebugEnabled())
-									log.debug("Processos_Ingestao_Bronze_1_tS3Put_1 - "
-											+ (log4jParamters_Processos_Ingestao_Bronze_1_tS3Put_1));
-							}
-						}
-						new BytesLimit65535_Processos_Ingestao_Bronze_1_tS3Put_1().limitLog4jByte();
-					}
-					// QTUP-3575
-					if (enableLineage) {
-						class ParameterUtil_Processos_Ingestao_Bronze_1_tS3Put_1 {
-
-							private void a(java.util.List<java.util.Map<String, String>> schema, String... values) {
-								java.util.Map<String, String> field = new java.util.HashMap<>();
-								field.put("name", values[0]);
-								field.put("talend_type", values[1]);
-								schema.add(field);
-							}
-
-							public java.util.Map<String, String> getParameter() throws Exception {
-								java.util.Map<String, String> component_parameters = new java.util.HashMap<>();
-
-								try {
-
-									component_parameters.put("configuration.bucket", "peta-demo-qlik");
-
-									component_parameters.put("configuration.key",
-											String.valueOf("bronze/" + ((String) globalMap
-													.get("Processos_Ingestao_Bronze_1_tFileList_1_CURRENT_FILE"))));
-
-									component_parameters.put("configuration.file", String.valueOf(((String) globalMap
-											.get("Processos_Ingestao_Bronze_1_tFileList_1_CURRENT_FILEPATH"))));
-
-									component_parameters.put("configuration.enableServerSideEncryption", "false");
-
-									component_parameters.put("configuration.dieOnError", "false");
-
-									component_parameters.put("configuration.multipartThreshold", "5");
-
-									component_parameters.put("configuration.partSize", "5");
-
-									component_parameters.put("configuration.cannedAccessControlList", "NONE");
-
-									component_parameters.put("configuration.enableObjectLock", "false");
-
-									component_parameters.put("configuration.setObjectTags", "false");
-									component_parameters.put("USE_EXISTING_CONNECTION", String.valueOf("true"));
-									component_parameters.put("CONNECTION",
-											String.valueOf("Processos_Ingestao_Bronze_1_tS3Connection_2"));
-
-								} catch (java.lang.Exception e_Processos_Ingestao_Bronze_1_tS3Put_1) {
-									// do nothing
-								}
-
-								return component_parameters;
-							}
-						}
-
-						talendJobLog.addComponentParameterMessage("Processos_Ingestao_Bronze_1_tS3Put_1", "S3Put",
-								new ParameterUtil_Processos_Ingestao_Bronze_1_tS3Put_1().getParameter());
-						talendJobLogProcess(globalMap);
-						s(currentComponent);
-					}
-					// QTUP-3575
-
-					if (enableLogStash) {
-						talendJobLog.addCM("Processos_Ingestao_Bronze_1_tS3Put_1", "tS3Put_1", "S3Put");
-						talendJobLogProcess(globalMap);
-						s(currentComponent);
-					}
-
-					final org.talend.sdk.component.runtime.manager.ComponentManager mgr_Processos_Ingestao_Bronze_1_tS3Put_1 = org.talend.sdk.component.runtime.manager.ComponentManager
-							.instance();
-					mgr_Processos_Ingestao_Bronze_1_tS3Put_1.autoDiscoverPluginsIfEmpty(false, true);
-
-					final java.util.Map<String, String> configuration_Processos_Ingestao_Bronze_1_tS3Put_1 = new java.util.HashMap<>();
-					final java.util.Map<String, String> registry_metadata_Processos_Ingestao_Bronze_1_tS3Put_1 = new java.util.HashMap<>();
-
-					final class SettingHelper_Processos_Ingestao_Bronze_1_tS3Put_1 {
-						final java.util.Map<String, String> configuration;
-
-						SettingHelper_Processos_Ingestao_Bronze_1_tS3Put_1(
-								final java.util.Map<String, String> configuration) {
-							this.configuration = configuration;
-						}
-
-						void put(String key, String value) {
-							if (value != null) {
-								configuration.put(key, value);
-							}
-						}
-					}
-
-					final SettingHelper_Processos_Ingestao_Bronze_1_tS3Put_1 s_Processos_Ingestao_Bronze_1_tS3Put_1 = new SettingHelper_Processos_Ingestao_Bronze_1_tS3Put_1(
-							configuration_Processos_Ingestao_Bronze_1_tS3Put_1);
-					Object dv_Processos_Ingestao_Bronze_1_tS3Put_1;
-					java.net.URL mappings_url_Processos_Ingestao_Bronze_1_tS3Put_1 = this.getClass()
-							.getResource("/xmlMappings");
-					globalMap.put("Processos_Ingestao_Bronze_1_tS3Put_1_MAPPINGS_URL",
-							mappings_url_Processos_Ingestao_Bronze_1_tS3Put_1);
-					globalMap.putIfAbsent("TALEND_PRODUCT_VERSION", "8.0");
-					globalMap.putIfAbsent("TALEND_AWS_TRACKER", "APN/1.0 Talend/8.0 Studio/8.0 (Qlik Talend Cloud)");
-
-					s_Processos_Ingestao_Bronze_1_tS3Put_1.put("configuration.bucket", "peta-demo-qlik");
-
-					dv_Processos_Ingestao_Bronze_1_tS3Put_1 = "bronze/"
-							+ ((String) globalMap.get("Processos_Ingestao_Bronze_1_tFileList_1_CURRENT_FILE"));
-					if (dv_Processos_Ingestao_Bronze_1_tS3Put_1 instanceof java.io.InputStream) {
-						s_Processos_Ingestao_Bronze_1_tS3Put_1.put("configuration.key",
-								"\"bronze/\" + ((String)globalMap.get(\"Processos_Ingestao_Bronze_1_tFileList_1_CURRENT_FILE\"))");
-					} else {
-						s_Processos_Ingestao_Bronze_1_tS3Put_1.put("configuration.key", String.valueOf("bronze/"
-								+ ((String) globalMap.get("Processos_Ingestao_Bronze_1_tFileList_1_CURRENT_FILE"))));
-					}
-
-					dv_Processos_Ingestao_Bronze_1_tS3Put_1 = ((String) globalMap
-							.get("Processos_Ingestao_Bronze_1_tFileList_1_CURRENT_FILEPATH"));
-					if (dv_Processos_Ingestao_Bronze_1_tS3Put_1 instanceof java.io.InputStream) {
-						s_Processos_Ingestao_Bronze_1_tS3Put_1.put("configuration.file",
-								"((String)globalMap.get(\"Processos_Ingestao_Bronze_1_tFileList_1_CURRENT_FILEPATH\"))");
-					} else {
-						s_Processos_Ingestao_Bronze_1_tS3Put_1.put("configuration.file", String.valueOf(
-								((String) globalMap.get("Processos_Ingestao_Bronze_1_tFileList_1_CURRENT_FILEPATH"))));
-					}
-
-					s_Processos_Ingestao_Bronze_1_tS3Put_1.put("configuration.enableServerSideEncryption", "false");
-
-					s_Processos_Ingestao_Bronze_1_tS3Put_1.put("configuration.dieOnError", "false");
-
-					s_Processos_Ingestao_Bronze_1_tS3Put_1.put("configuration.multipartThreshold", "5");
-
-					s_Processos_Ingestao_Bronze_1_tS3Put_1.put("configuration.partSize", "5");
-
-					s_Processos_Ingestao_Bronze_1_tS3Put_1.put("configuration.cannedAccessControlList", "NONE");
-
-					s_Processos_Ingestao_Bronze_1_tS3Put_1.put("configuration.enableObjectLock", "false");
-
-					s_Processos_Ingestao_Bronze_1_tS3Put_1.put("configuration.setObjectTags", "false");
-
-					s_Processos_Ingestao_Bronze_1_tS3Put_1.put("configuration.dataset.__version", "-1");
-
-					s_Processos_Ingestao_Bronze_1_tS3Put_1.put("configuration.dataset.datastore.__version", "-1");
-					final class SchemaSettingHelper_Processos_Ingestao_Bronze_1_tS3Put_1_1 {
-
-						public void set(final java.util.Map<String, String> configuration) throws java.lang.Exception {
-						}
-					}
-					new SchemaSettingHelper_Processos_Ingestao_Bronze_1_tS3Put_1_1()
-							.set(configuration_Processos_Ingestao_Bronze_1_tS3Put_1);
-					final class SchemaSettingHelper_Processos_Ingestao_Bronze_1_tS3Put_1_2 {
-
-						public void set(final java.util.Map<String, String> configuration) throws java.lang.Exception {
-						}
-					}
-					new SchemaSettingHelper_Processos_Ingestao_Bronze_1_tS3Put_1_2()
-							.set(configuration_Processos_Ingestao_Bronze_1_tS3Put_1);
-					final java.util.Map<String, String> config_from_connection_Processos_Ingestao_Bronze_1_tS3Put_1 = (java.util.Map<String, String>) globalMap
-							.get("configuration_Processos_Ingestao_Bronze_1_tS3Connection_2");
-					final String conn_param_prefix_Processos_Ingestao_Bronze_1_tS3Put_1 = "configuration.dataset.datastore";
-					if (config_from_connection_Processos_Ingestao_Bronze_1_tS3Put_1 != null
-							&& conn_param_prefix_Processos_Ingestao_Bronze_1_tS3Put_1 != null) {
-						final String prefix_Processos_Ingestao_Bronze_1_tS3Put_1 = config_from_connection_Processos_Ingestao_Bronze_1_tS3Put_1
-								.keySet().stream()
-								.filter(key_Processos_Ingestao_Bronze_1_tS3Put_1 -> key_Processos_Ingestao_Bronze_1_tS3Put_1
-										.endsWith(".__version"))
-								.findFirst()
-								.map(key_Processos_Ingestao_Bronze_1_tS3Put_1 -> key_Processos_Ingestao_Bronze_1_tS3Put_1
-										.substring(0,
-												key_Processos_Ingestao_Bronze_1_tS3Put_1.lastIndexOf(".__version")))
-								.orElse(null);
-
-						if (prefix_Processos_Ingestao_Bronze_1_tS3Put_1 != null) {
-							config_from_connection_Processos_Ingestao_Bronze_1_tS3Put_1.entrySet().stream().filter(
-									entry_Processos_Ingestao_Bronze_1_tS3Put_1 -> entry_Processos_Ingestao_Bronze_1_tS3Put_1
-											.getKey().startsWith(prefix_Processos_Ingestao_Bronze_1_tS3Put_1))
-									.forEach(entry_Processos_Ingestao_Bronze_1_tS3Put_1 -> {
-										configuration_Processos_Ingestao_Bronze_1_tS3Put_1.put(
-												entry_Processos_Ingestao_Bronze_1_tS3Put_1.getKey().replaceFirst(
-														prefix_Processos_Ingestao_Bronze_1_tS3Put_1,
-														conn_param_prefix_Processos_Ingestao_Bronze_1_tS3Put_1),
-												entry_Processos_Ingestao_Bronze_1_tS3Put_1.getValue());
-									});
-						}
-					}
-
-					final org.talend.sdk.component.runtime.standalone.DriverRunner standalone_Processos_Ingestao_Bronze_1_tS3Put_1 = mgr_Processos_Ingestao_Bronze_1_tS3Put_1
-							.findDriverRunner("S3", "Put", 1, configuration_Processos_Ingestao_Bronze_1_tS3Put_1)
-							.orElseThrow(() -> new IllegalArgumentException("Can't find S3#Put"));
-
-					org.talend.sdk.component.runtime.di.studio.RuntimeContextInjector.injectLifecycle(
-							standalone_Processos_Ingestao_Bronze_1_tS3Put_1,
-							new org.talend.sdk.component.api.context.RuntimeContextHolder(
-									"Processos_Ingestao_Bronze_1_tS3Put_1", globalMap));
-
-					try {
-						java.lang.reflect.Field field_Processos_Ingestao_Bronze_1_tS3Put_1 = standalone_Processos_Ingestao_Bronze_1_tS3Put_1
-								.getClass().getSuperclass().getDeclaredField("delegate");
-						if (!field_Processos_Ingestao_Bronze_1_tS3Put_1.isAccessible()) {
-							field_Processos_Ingestao_Bronze_1_tS3Put_1.setAccessible(true);
-						}
-						Object v_Processos_Ingestao_Bronze_1_tS3Put_1 = field_Processos_Ingestao_Bronze_1_tS3Put_1
-								.get(standalone_Processos_Ingestao_Bronze_1_tS3Put_1);
-						Object con_Processos_Ingestao_Bronze_1_tS3Put_1 = globalMap
-								.get("conn_Processos_Ingestao_Bronze_1_tS3Connection_2");
-						if (con_Processos_Ingestao_Bronze_1_tS3Put_1 == null) {
-							throw new RuntimeException("can't find the connection object");
-						}
-
-						Class<?> current_Processos_Ingestao_Bronze_1_tS3Put_1 = v_Processos_Ingestao_Bronze_1_tS3Put_1
-								.getClass();
-						while (current_Processos_Ingestao_Bronze_1_tS3Put_1 != null
-								&& current_Processos_Ingestao_Bronze_1_tS3Put_1 != Object.class) {
-							java.util.stream.Stream.of(current_Processos_Ingestao_Bronze_1_tS3Put_1.getDeclaredFields())
-									.filter(f_Processos_Ingestao_Bronze_1_tS3Put_1 -> f_Processos_Ingestao_Bronze_1_tS3Put_1
-											.isAnnotationPresent(
-													org.talend.sdk.component.api.service.connection.Connection.class))
-									.forEach(f_Processos_Ingestao_Bronze_1_tS3Put_1 -> {
-										if (!f_Processos_Ingestao_Bronze_1_tS3Put_1.isAccessible()) {
-											f_Processos_Ingestao_Bronze_1_tS3Put_1.setAccessible(true);
-										}
-										try {
-											f_Processos_Ingestao_Bronze_1_tS3Put_1.set(
-													v_Processos_Ingestao_Bronze_1_tS3Put_1,
-													con_Processos_Ingestao_Bronze_1_tS3Put_1);
-										} catch (final IllegalAccessException e_Processos_Ingestao_Bronze_1_tS3Put_1) {
-											throw new IllegalStateException(e_Processos_Ingestao_Bronze_1_tS3Put_1);
-										}
-									});
-							current_Processos_Ingestao_Bronze_1_tS3Put_1 = current_Processos_Ingestao_Bronze_1_tS3Put_1
-									.getSuperclass();
-						}
-					} catch (Exception e_Processos_Ingestao_Bronze_1_tS3Put_1) {
-						throw e_Processos_Ingestao_Bronze_1_tS3Put_1;
-					}
-
-					standalone_Processos_Ingestao_Bronze_1_tS3Put_1.start();
-					globalMap.put("standalone_Processos_Ingestao_Bronze_1_tS3Put_1",
-							standalone_Processos_Ingestao_Bronze_1_tS3Put_1);
-
-					standalone_Processos_Ingestao_Bronze_1_tS3Put_1.runAtDriver();
-//Standalone begin stub
-
-					/**
-					 * [Processos_Ingestao_Bronze_1_tS3Put_1 begin ] stop
-					 */
-
-					/**
-					 * [Processos_Ingestao_Bronze_1_tS3Put_1 main ] start
-					 */
-
-					s(currentComponent = "Processos_Ingestao_Bronze_1_tS3Put_1");
-
-					tos_count_Processos_Ingestao_Bronze_1_tS3Put_1++;
-
-					/**
-					 * [Processos_Ingestao_Bronze_1_tS3Put_1 main ] stop
-					 */
-
-					/**
-					 * [Processos_Ingestao_Bronze_1_tS3Put_1 process_data_begin ] start
-					 */
-
-					s(currentComponent = "Processos_Ingestao_Bronze_1_tS3Put_1");
-
-					/**
-					 * [Processos_Ingestao_Bronze_1_tS3Put_1 process_data_begin ] stop
-					 */
-
-					/**
-					 * [Processos_Ingestao_Bronze_1_tS3Put_1 process_data_end ] start
-					 */
-
-					s(currentComponent = "Processos_Ingestao_Bronze_1_tS3Put_1");
-
-					/**
-					 * [Processos_Ingestao_Bronze_1_tS3Put_1 process_data_end ] stop
-					 */
-
-					/**
-					 * [Processos_Ingestao_Bronze_1_tS3Put_1 end ] start
-					 */
-
-					s(currentComponent = "Processos_Ingestao_Bronze_1_tS3Put_1");
-
-					if (standalone_Processos_Ingestao_Bronze_1_tS3Put_1 != null) {
-						standalone_Processos_Ingestao_Bronze_1_tS3Put_1.stop();
-					}
-
-					globalMap.remove("standalone_Processos_Ingestao_Bronze_1_tS3Put_1");
-
-					if (log.isDebugEnabled())
-						log.debug("Processos_Ingestao_Bronze_1_tS3Put_1 - " + ("Done."));
-
-					ok_Hash.put("Processos_Ingestao_Bronze_1_tS3Put_1", true);
-					end_Hash.put("Processos_Ingestao_Bronze_1_tS3Put_1", System.currentTimeMillis());
-
-					/**
-					 * [Processos_Ingestao_Bronze_1_tS3Put_1 end ] stop
-					 */
-
-					if (execStat) {
-						runStat.updateStatOnConnection("Processos_Ingestao_Bronze_1_iterate1", 2,
-								"exec" + NB_ITERATE_Processos_Ingestao_Bronze_1_tS3Put_1);
-					}
-
-					/**
-					 * [Processos_Ingestao_Bronze_1_tFileList_1 process_data_end ] start
-					 */
-
-					s(currentComponent = "Processos_Ingestao_Bronze_1_tFileList_1");
-
-					/**
-					 * [Processos_Ingestao_Bronze_1_tFileList_1 process_data_end ] stop
-					 */
-
-					/**
-					 * [Processos_Ingestao_Bronze_1_tFileList_1 end ] start
-					 */
-
-					s(currentComponent = "Processos_Ingestao_Bronze_1_tFileList_1");
-
-				}
-				globalMap.put("Processos_Ingestao_Bronze_1_tFileList_1_NB_FILE",
-						NB_FILEProcessos_Ingestao_Bronze_1_tFileList_1);
-
-				log.info("Processos_Ingestao_Bronze_1_tFileList_1 - File or directory count : "
-						+ NB_FILEProcessos_Ingestao_Bronze_1_tFileList_1);
-
-				if (log.isDebugEnabled())
-					log.debug("Processos_Ingestao_Bronze_1_tFileList_1 - " + ("Done."));
-
-				ok_Hash.put("Processos_Ingestao_Bronze_1_tFileList_1", true);
-				end_Hash.put("Processos_Ingestao_Bronze_1_tFileList_1", System.currentTimeMillis());
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tFileList_1 end ] stop
-				 */
-
-			} // end the resume
-
-		} catch (java.lang.Exception e) {
-
-			if (!(e instanceof TalendException) && !(e instanceof TDieException)) {
-				log.fatal(currentComponent + " " + e.getMessage(), e);
-			}
-
-			TalendException te = new TalendException(e, currentComponent, cLabel, globalMap);
-
-			throw te;
-		} catch (java.lang.Error error) {
-
-			runStat.stopThreadStat();
-
-			throw error;
-		} finally {
-
-			try {
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tFileList_1 finally ] start
-				 */
-
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tFileList_1");
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tFileList_1 finally ] stop
-				 */
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tS3Put_1 finally ] start
-				 */
-
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tS3Put_1");
-
-				final org.talend.sdk.component.runtime.standalone.DriverRunner standalone_Processos_Ingestao_Bronze_1_tS3Put_1 = org.talend.sdk.component.runtime.standalone.DriverRunner.class
-						.cast(globalMap.remove("standalone_Processos_Ingestao_Bronze_1_tS3Put_1"));
-				try {
-					if (standalone_Processos_Ingestao_Bronze_1_tS3Put_1 != null) {
-						standalone_Processos_Ingestao_Bronze_1_tS3Put_1.stop();
-					}
-				} catch (final RuntimeException re) {
-					throw new TalendException(re, currentComponent, cLabel, globalMap);
-				}
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tS3Put_1 finally ] stop
-				 */
-
-			} catch (java.lang.Exception e) {
-				// ignore
-			} catch (java.lang.Error error) {
-				// ignore
-			}
-			resourceMap = null;
-		}
-
-		globalMap.put("Processos_Ingestao_Bronze_1_tFileList_1_SUBPROCESS_STATE", 1);
-	}
-
-	public static class Processos_Ingestao_Bronze_1_row3Struct
-			implements routines.system.IPersistableRow<Processos_Ingestao_Bronze_1_row3Struct> {
-		final static byte[] commonByteArrayLock_DEMOTRF5_TRF5 = new byte[0];
-		static byte[] commonByteArray_DEMOTRF5_TRF5 = new byte[0];
-
-		public int id_classe;
-
-		public int getId_classe() {
+		public String getId_classe() {
 			return this.id_classe;
 		}
 
@@ -5206,7 +2322,7 @@ public class TRF5 implements TalendJob {
 		}
 
 		public Integer id_classeLength() {
-			return 10;
+			return 100;
 		}
 
 		public Integer id_classePrecision() {
@@ -5215,7 +2331,7 @@ public class TRF5 implements TalendJob {
 
 		public String id_classeDefault() {
 
-			return "";
+			return null;
 
 		}
 
@@ -5237,141 +2353,233 @@ public class TRF5 implements TalendJob {
 
 		}
 
-		public String cod_cnj;
+		public String id_assunto;
 
-		public String getCod_cnj() {
-			return this.cod_cnj;
+		public String getId_assunto() {
+			return this.id_assunto;
 		}
 
-		public Boolean cod_cnjIsNullable() {
-			return true;
-		}
-
-		public Boolean cod_cnjIsKey() {
+		public Boolean id_assuntoIsNullable() {
 			return false;
 		}
 
-		public Integer cod_cnjLength() {
-			return 20;
+		public Boolean id_assuntoIsKey() {
+			return false;
 		}
 
-		public Integer cod_cnjPrecision() {
-			return 0;
+		public Integer id_assuntoLength() {
+			return null;
 		}
 
-		public String cod_cnjDefault() {
+		public Integer id_assuntoPrecision() {
+			return null;
+		}
+
+		public String id_assuntoDefault() {
 
 			return null;
 
 		}
 
-		public String cod_cnjComment() {
+		public String id_assuntoComment() {
 
 			return "";
 
 		}
 
-		public String cod_cnjPattern() {
+		public String id_assuntoPattern() {
 
 			return "";
 
 		}
 
-		public String cod_cnjOriginalDbColumnName() {
+		public String id_assuntoOriginalDbColumnName() {
 
-			return "cod_cnj";
+			return "id_assunto";
 
 		}
 
-		public String nome_classe;
+		public String id_magistrado;
 
-		public String getNome_classe() {
-			return this.nome_classe;
+		public String getId_magistrado() {
+			return this.id_magistrado;
 		}
 
-		public Boolean nome_classeIsNullable() {
-			return true;
-		}
-
-		public Boolean nome_classeIsKey() {
+		public Boolean id_magistradoIsNullable() {
 			return false;
 		}
 
-		public Integer nome_classeLength() {
-			return 255;
+		public Boolean id_magistradoIsKey() {
+			return false;
 		}
 
-		public Integer nome_classePrecision() {
-			return 0;
+		public Integer id_magistradoLength() {
+			return null;
 		}
 
-		public String nome_classeDefault() {
+		public Integer id_magistradoPrecision() {
+			return null;
+		}
+
+		public String id_magistradoDefault() {
 
 			return null;
 
 		}
 
-		public String nome_classeComment() {
+		public String id_magistradoComment() {
 
 			return "";
 
 		}
 
-		public String nome_classePattern() {
+		public String id_magistradoPattern() {
 
 			return "";
 
 		}
 
-		public String nome_classeOriginalDbColumnName() {
+		public String id_magistradoOriginalDbColumnName() {
 
-			return "nome_classe";
+			return "id_magistrado";
 
 		}
 
-		public String tipo_procedimento;
+		public java.util.Date data_ajuizamento;
 
-		public String getTipo_procedimento() {
-			return this.tipo_procedimento;
+		public java.util.Date getData_ajuizamento() {
+			return this.data_ajuizamento;
 		}
 
-		public Boolean tipo_procedimentoIsNullable() {
-			return true;
-		}
-
-		public Boolean tipo_procedimentoIsKey() {
+		public Boolean data_ajuizamentoIsNullable() {
 			return false;
 		}
 
-		public Integer tipo_procedimentoLength() {
-			return 50;
+		public Boolean data_ajuizamentoIsKey() {
+			return false;
 		}
 
-		public Integer tipo_procedimentoPrecision() {
+		public Integer data_ajuizamentoLength() {
+			return 13;
+		}
+
+		public Integer data_ajuizamentoPrecision() {
 			return 0;
 		}
 
-		public String tipo_procedimentoDefault() {
+		public String data_ajuizamentoDefault() {
 
 			return null;
 
 		}
 
-		public String tipo_procedimentoComment() {
+		public String data_ajuizamentoComment() {
 
 			return "";
 
 		}
 
-		public String tipo_procedimentoPattern() {
+		public String data_ajuizamentoPattern() {
+
+			return "dd-MM-yyyy";
+
+		}
+
+		public String data_ajuizamentoOriginalDbColumnName() {
+
+			return "data_ajuizamento";
+
+		}
+
+		public String tempo_processo_dias;
+
+		public String getTempo_processo_dias() {
+			return this.tempo_processo_dias;
+		}
+
+		public Boolean tempo_processo_diasIsNullable() {
+			return false;
+		}
+
+		public Boolean tempo_processo_diasIsKey() {
+			return false;
+		}
+
+		public Integer tempo_processo_diasLength() {
+			return null;
+		}
+
+		public Integer tempo_processo_diasPrecision() {
+			return null;
+		}
+
+		public String tempo_processo_diasDefault() {
+
+			return null;
+
+		}
+
+		public String tempo_processo_diasComment() {
 
 			return "";
 
 		}
 
-		public String tipo_procedimentoOriginalDbColumnName() {
+		public String tempo_processo_diasPattern() {
 
-			return "tipo_procedimento";
+			return "";
+
+		}
+
+		public String tempo_processo_diasOriginalDbColumnName() {
+
+			return "tempo_processo_dias";
+
+		}
+
+		public String valor_causa;
+
+		public String getValor_causa() {
+			return this.valor_causa;
+		}
+
+		public Boolean valor_causaIsNullable() {
+			return false;
+		}
+
+		public Boolean valor_causaIsKey() {
+			return false;
+		}
+
+		public Integer valor_causaLength() {
+			return null;
+		}
+
+		public Integer valor_causaPrecision() {
+			return null;
+		}
+
+		public String valor_causaDefault() {
+
+			return null;
+
+		}
+
+		public String valor_causaComment() {
+
+			return "";
+
+		}
+
+		public String valor_causaPattern() {
+
+			return "";
+
+		}
+
+		public String valor_causaOriginalDbColumnName() {
+
+			return "valor_causa";
 
 		}
 
@@ -5435,6 +2643,48 @@ public class TRF5 implements TalendJob {
 			}
 		}
 
+		private java.util.Date readDate(ObjectInputStream dis) throws IOException {
+			java.util.Date dateReturn = null;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				dateReturn = null;
+			} else {
+				dateReturn = new Date(dis.readLong());
+			}
+			return dateReturn;
+		}
+
+		private java.util.Date readDate(org.jboss.marshalling.Unmarshaller unmarshaller) throws IOException {
+			java.util.Date dateReturn = null;
+			int length = 0;
+			length = unmarshaller.readByte();
+			if (length == -1) {
+				dateReturn = null;
+			} else {
+				dateReturn = new Date(unmarshaller.readLong());
+			}
+			return dateReturn;
+		}
+
+		private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException {
+			if (date1 == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeLong(date1.getTime());
+			}
+		}
+
+		private void writeDate(java.util.Date date1, org.jboss.marshalling.Marshaller marshaller) throws IOException {
+			if (date1 == null) {
+				marshaller.writeByte(-1);
+			} else {
+				marshaller.writeByte(0);
+				marshaller.writeLong(date1.getTime());
+			}
+		}
+
 		public void readData(ObjectInputStream dis) {
 
 			synchronized (commonByteArrayLock_DEMOTRF5_TRF5) {
@@ -5443,13 +2693,23 @@ public class TRF5 implements TalendJob {
 
 					int length = 0;
 
-					this.id_classe = dis.readInt();
+					this.id_processo = dis.readInt();
 
-					this.cod_cnj = readString(dis);
+					this.numero_processo = readString(dis);
 
-					this.nome_classe = readString(dis);
+					this.id_tribunal = readString(dis);
 
-					this.tipo_procedimento = readString(dis);
+					this.id_classe = readString(dis);
+
+					this.id_assunto = readString(dis);
+
+					this.id_magistrado = readString(dis);
+
+					this.data_ajuizamento = readDate(dis);
+
+					this.tempo_processo_dias = readString(dis);
+
+					this.valor_causa = readString(dis);
 
 				} catch (IOException e) {
 					throw new RuntimeException(e);
@@ -5468,13 +2728,23 @@ public class TRF5 implements TalendJob {
 
 					int length = 0;
 
-					this.id_classe = dis.readInt();
+					this.id_processo = dis.readInt();
 
-					this.cod_cnj = readString(dis);
+					this.numero_processo = readString(dis);
 
-					this.nome_classe = readString(dis);
+					this.id_tribunal = readString(dis);
 
-					this.tipo_procedimento = readString(dis);
+					this.id_classe = readString(dis);
+
+					this.id_assunto = readString(dis);
+
+					this.id_magistrado = readString(dis);
+
+					this.data_ajuizamento = readDate(dis);
+
+					this.tempo_processo_dias = readString(dis);
+
+					this.valor_causa = readString(dis);
 
 				} catch (IOException e) {
 					throw new RuntimeException(e);
@@ -5490,19 +2760,39 @@ public class TRF5 implements TalendJob {
 
 				// int
 
-				dos.writeInt(this.id_classe);
+				dos.writeInt(this.id_processo);
 
 				// String
 
-				writeString(this.cod_cnj, dos);
+				writeString(this.numero_processo, dos);
 
 				// String
 
-				writeString(this.nome_classe, dos);
+				writeString(this.id_tribunal, dos);
 
 				// String
 
-				writeString(this.tipo_procedimento, dos);
+				writeString(this.id_classe, dos);
+
+				// String
+
+				writeString(this.id_assunto, dos);
+
+				// String
+
+				writeString(this.id_magistrado, dos);
+
+				// java.util.Date
+
+				writeDate(this.data_ajuizamento, dos);
+
+				// String
+
+				writeString(this.tempo_processo_dias, dos);
+
+				// String
+
+				writeString(this.valor_causa, dos);
 
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -5515,19 +2805,39 @@ public class TRF5 implements TalendJob {
 
 				// int
 
-				dos.writeInt(this.id_classe);
+				dos.writeInt(this.id_processo);
 
 				// String
 
-				writeString(this.cod_cnj, dos);
+				writeString(this.numero_processo, dos);
 
 				// String
 
-				writeString(this.nome_classe, dos);
+				writeString(this.id_tribunal, dos);
 
 				// String
 
-				writeString(this.tipo_procedimento, dos);
+				writeString(this.id_classe, dos);
+
+				// String
+
+				writeString(this.id_assunto, dos);
+
+				// String
+
+				writeString(this.id_magistrado, dos);
+
+				// java.util.Date
+
+				writeDate(this.data_ajuizamento, dos);
+
+				// String
+
+				writeString(this.tempo_processo_dias, dos);
+
+				// String
+
+				writeString(this.valor_causa, dos);
 
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -5540,10 +2850,15 @@ public class TRF5 implements TalendJob {
 			StringBuilder sb = new StringBuilder();
 			sb.append(super.toString());
 			sb.append("[");
-			sb.append("id_classe=" + String.valueOf(id_classe));
-			sb.append(",cod_cnj=" + cod_cnj);
-			sb.append(",nome_classe=" + nome_classe);
-			sb.append(",tipo_procedimento=" + tipo_procedimento);
+			sb.append("id_processo=" + String.valueOf(id_processo));
+			sb.append(",numero_processo=" + numero_processo);
+			sb.append(",id_tribunal=" + id_tribunal);
+			sb.append(",id_classe=" + id_classe);
+			sb.append(",id_assunto=" + id_assunto);
+			sb.append(",id_magistrado=" + id_magistrado);
+			sb.append(",data_ajuizamento=" + String.valueOf(data_ajuizamento));
+			sb.append(",tempo_processo_dias=" + tempo_processo_dias);
+			sb.append(",valor_causa=" + valor_causa);
 			sb.append("]");
 
 			return sb.toString();
@@ -5552,30 +2867,70 @@ public class TRF5 implements TalendJob {
 		public String toLogString() {
 			StringBuilder sb = new StringBuilder();
 
-			sb.append(id_classe);
+			sb.append(id_processo);
 
 			sb.append("|");
 
-			if (cod_cnj == null) {
+			if (numero_processo == null) {
 				sb.append("<null>");
 			} else {
-				sb.append(cod_cnj);
+				sb.append(numero_processo);
 			}
 
 			sb.append("|");
 
-			if (nome_classe == null) {
+			if (id_tribunal == null) {
 				sb.append("<null>");
 			} else {
-				sb.append(nome_classe);
+				sb.append(id_tribunal);
 			}
 
 			sb.append("|");
 
-			if (tipo_procedimento == null) {
+			if (id_classe == null) {
 				sb.append("<null>");
 			} else {
-				sb.append(tipo_procedimento);
+				sb.append(id_classe);
+			}
+
+			sb.append("|");
+
+			if (id_assunto == null) {
+				sb.append("<null>");
+			} else {
+				sb.append(id_assunto);
+			}
+
+			sb.append("|");
+
+			if (id_magistrado == null) {
+				sb.append("<null>");
+			} else {
+				sb.append(id_magistrado);
+			}
+
+			sb.append("|");
+
+			if (data_ajuizamento == null) {
+				sb.append("<null>");
+			} else {
+				sb.append(data_ajuizamento);
+			}
+
+			sb.append("|");
+
+			if (tempo_processo_dias == null) {
+				sb.append("<null>");
+			} else {
+				sb.append(tempo_processo_dias);
+			}
+
+			sb.append("|");
+
+			if (valor_causa == null) {
+				sb.append("<null>");
+			} else {
+				sb.append(valor_causa);
 			}
 
 			sb.append("|");
@@ -5586,7 +2941,7 @@ public class TRF5 implements TalendJob {
 		/**
 		 * Compare keys
 		 */
-		public int compareTo(Processos_Ingestao_Bronze_1_row3Struct other) {
+		public int compareTo(processos_1_row1Struct other) {
 
 			int returnValue = -1;
 
@@ -5616,13 +2971,13 @@ public class TRF5 implements TalendJob {
 
 	}
 
-	public void Processos_Ingestao_Bronze_1_tDBInput_3Process(final java.util.Map<String, Object> globalMap)
+	public void processos_1_tFileInputParquet_2Process(final java.util.Map<String, Object> globalMap)
 			throws TalendException {
-		globalMap.put("Processos_Ingestao_Bronze_1_tDBInput_3_SUBPROCESS_STATE", 0);
+		globalMap.put("processos_1_tFileInputParquet_2_SUBPROCESS_STATE", 0);
 
 		final boolean execStat = this.execStat;
 
-		mdc("Processos_Ingestao_Bronze_1_tDBInput_3", "wkb6BJ_");
+		mdc("processos_1_tFileInputParquet_2", "IAUwgQ_");
 
 		String iterateId = "";
 
@@ -5641,56 +2996,92 @@ public class TRF5 implements TalendJob {
 			if (resumeIt || globalResumeTicket) { // start the resume
 				globalResumeTicket = true;
 
-				Processos_Ingestao_Bronze_1_row3Struct Processos_Ingestao_Bronze_1_row3 = new Processos_Ingestao_Bronze_1_row3Struct();
+				processos_1_row1Struct processos_1_row1 = new processos_1_row1Struct();
+				processos_1_transformacaoStruct processos_1_transformacao = new processos_1_transformacaoStruct();
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_3 begin ] start
+				 * [processos_1_tDBOutput_1 begin ] start
 				 */
 
-				sh("Processos_Ingestao_Bronze_1_tFileOutputParquet_3");
+				sh("processos_1_tDBOutput_1");
 
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_3");
+				s(currentComponent = "processos_1_tDBOutput_1");
 
 				runStat.updateStatAndLog(execStat, enableLogStash, resourceMap, iterateId, 0, 0,
-						"Processos_Ingestao_Bronze_1_row3");
+						"processos_1_transformacao");
 
-				int tos_count_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = 0;
+				int tos_count_processos_1_tDBOutput_1 = 0;
 
 				if (log.isDebugEnabled())
-					log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_3 - " + ("Start to work."));
+					log.debug("processos_1_tDBOutput_1 - " + ("Start to work."));
 				if (log.isDebugEnabled()) {
-					class BytesLimit65535_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 {
+					class BytesLimit65535_processos_1_tDBOutput_1 {
 						public void limitLog4jByte() throws Exception {
-							StringBuilder log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = new StringBuilder();
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.append("Parameters:");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.append("FILENAME" + " = "
-									+ "\"C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/classes_processuais_bronze\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
-									.append("FILE_ACTION" + " = " + "OVERWRITE");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
-									.append("COMPRESSION" + " = " + "\"UNCOMPRESSED\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
-									.append("USE_EXTERNAL_HADOOP_DEPS" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
-									.append("ROW_GROUP_SIZE" + " = " + "134217728");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
-									.append("PAGE_SIZE" + " = " + "1048576");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.append(" | ");
+							StringBuilder log4jParamters_processos_1_tDBOutput_1 = new StringBuilder();
+							log4jParamters_processos_1_tDBOutput_1.append("Parameters:");
+							log4jParamters_processos_1_tDBOutput_1.append("USE_EXISTING_CONNECTION" + " = " + "false");
+							log4jParamters_processos_1_tDBOutput_1.append(" | ");
+							log4jParamters_processos_1_tDBOutput_1.append("DB_VERSION" + " = " + "V9_X");
+							log4jParamters_processos_1_tDBOutput_1.append(" | ");
+							log4jParamters_processos_1_tDBOutput_1.append("HOST" + " = "
+									+ "\"peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com\"");
+							log4jParamters_processos_1_tDBOutput_1.append(" | ");
+							log4jParamters_processos_1_tDBOutput_1.append("PORT" + " = " + "\"5432\"");
+							log4jParamters_processos_1_tDBOutput_1.append(" | ");
+							log4jParamters_processos_1_tDBOutput_1.append("DBNAME" + " = " + "\"qlik_demo\"");
+							log4jParamters_processos_1_tDBOutput_1.append(" | ");
+							log4jParamters_processos_1_tDBOutput_1.append("SCHEMA_DB" + " = " + "\"public\"");
+							log4jParamters_processos_1_tDBOutput_1.append(" | ");
+							log4jParamters_processos_1_tDBOutput_1.append("USER" + " = " + "\"peta_qlik\"");
+							log4jParamters_processos_1_tDBOutput_1.append(" | ");
+							log4jParamters_processos_1_tDBOutput_1.append("PASS" + " = " + String.valueOf(
+									"enc:routine.encryption.key.v1:evJAVGlCmedcTX/V+qxyXX7Wi60AgVtkksN0CEnw2tuuFziZ9A==")
+									.substring(0, 4) + "...");
+							log4jParamters_processos_1_tDBOutput_1.append(" | ");
+							log4jParamters_processos_1_tDBOutput_1.append("TABLE" + " = " + "\"stg_processos\"");
+							log4jParamters_processos_1_tDBOutput_1.append(" | ");
+							log4jParamters_processos_1_tDBOutput_1
+									.append("TABLE_ACTION" + " = " + "CREATE_IF_NOT_EXISTS");
+							log4jParamters_processos_1_tDBOutput_1.append(" | ");
+							log4jParamters_processos_1_tDBOutput_1.append("DATA_ACTION" + " = " + "INSERT");
+							log4jParamters_processos_1_tDBOutput_1.append(" | ");
+							log4jParamters_processos_1_tDBOutput_1.append("USE_SPATIAL_OPTIONS" + " = " + "false");
+							log4jParamters_processos_1_tDBOutput_1.append(" | ");
+							log4jParamters_processos_1_tDBOutput_1.append("SPECIFY_DATASOURCE_ALIAS" + " = " + "false");
+							log4jParamters_processos_1_tDBOutput_1.append(" | ");
+							log4jParamters_processos_1_tDBOutput_1.append("DIE_ON_ERROR" + " = " + "false");
+							log4jParamters_processos_1_tDBOutput_1.append(" | ");
+							log4jParamters_processos_1_tDBOutput_1.append("PROPERTIES" + " = " + "\"\"");
+							log4jParamters_processos_1_tDBOutput_1.append(" | ");
+							log4jParamters_processos_1_tDBOutput_1.append("COMMIT_EVERY" + " = " + "10000");
+							log4jParamters_processos_1_tDBOutput_1.append(" | ");
+							log4jParamters_processos_1_tDBOutput_1.append("ADD_COLS" + " = " + "[]");
+							log4jParamters_processos_1_tDBOutput_1.append(" | ");
+							log4jParamters_processos_1_tDBOutput_1.append("USE_FIELD_OPTIONS" + " = " + "false");
+							log4jParamters_processos_1_tDBOutput_1.append(" | ");
+							log4jParamters_processos_1_tDBOutput_1.append("ENABLE_DEBUG_MODE" + " = " + "false");
+							log4jParamters_processos_1_tDBOutput_1.append(" | ");
+							log4jParamters_processos_1_tDBOutput_1.append("SUPPORT_NULL_WHERE" + " = " + "false");
+							log4jParamters_processos_1_tDBOutput_1.append(" | ");
+							log4jParamters_processos_1_tDBOutput_1
+									.append("CONVERT_COLUMN_TABLE_TO_LOWERCASE" + " = " + "false");
+							log4jParamters_processos_1_tDBOutput_1.append(" | ");
+							log4jParamters_processos_1_tDBOutput_1.append("USE_BATCH_SIZE" + " = " + "true");
+							log4jParamters_processos_1_tDBOutput_1.append(" | ");
+							log4jParamters_processos_1_tDBOutput_1.append("BATCH_SIZE" + " = " + "10000");
+							log4jParamters_processos_1_tDBOutput_1.append(" | ");
+							log4jParamters_processos_1_tDBOutput_1
+									.append("UNIFIED_COMPONENTS" + " = " + "tPostgresqlOutput");
+							log4jParamters_processos_1_tDBOutput_1.append(" | ");
 							if (log.isDebugEnabled())
-								log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_3 - "
-										+ (log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_3));
+								log.debug("processos_1_tDBOutput_1 - " + (log4jParamters_processos_1_tDBOutput_1));
 						}
 					}
-					new BytesLimit65535_Processos_Ingestao_Bronze_1_tFileOutputParquet_3().limitLog4jByte();
+					new BytesLimit65535_processos_1_tDBOutput_1().limitLog4jByte();
 				}
 				// QTUP-3575
 				if (enableLineage) {
-					class ParameterUtil_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 {
+					class ParameterUtil_processos_1_tDBOutput_1 {
 
 						private void a(java.util.List<java.util.Map<String, String>> schema, String... values) {
 							java.util.Map<String, String> field = new java.util.HashMap<>();
@@ -5700,21 +3091,37 @@ public class TRF5 implements TalendJob {
 						}
 
 						public java.util.Map<String, String> getParameter(
-								final Processos_Ingestao_Bronze_1_row3Struct Processos_Ingestao_Bronze_1_row3)
-								throws Exception {
+								final processos_1_transformacaoStruct processos_1_transformacao) throws Exception {
 							java.util.Map<String, String> component_parameters = new java.util.HashMap<>();
 
 							try {
 
-								component_parameters.put("FILENAME", String.valueOf(
-										"C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/classes_processuais_bronze"));
-								component_parameters.put("FILE_ACTION", String.valueOf("OVERWRITE"));
-								component_parameters.put("COMPRESSION", String.valueOf("UNCOMPRESSED"));
-								component_parameters.put("USE_EXTERNAL_HADOOP_DEPS", String.valueOf("false"));
-								component_parameters.put("ROW_GROUP_SIZE", String.valueOf("134217728"));
-								component_parameters.put("PAGE_SIZE", String.valueOf("1048576"));
+								component_parameters.put("USE_EXISTING_CONNECTION", String.valueOf("false"));
+								component_parameters.put("DB_VERSION", String.valueOf("V9_X"));
+								component_parameters.put("HOST", String
+										.valueOf("peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com"));
+								component_parameters.put("PORT", String.valueOf("5432"));
+								component_parameters.put("DBNAME", String.valueOf("qlik_demo"));
+								component_parameters.put("SCHEMA_DB", String.valueOf("public"));
+								component_parameters.put("USER", String.valueOf("peta_qlik"));
+								component_parameters.put("TABLE", String.valueOf("stg_processos"));
+								component_parameters.put("TABLE_ACTION", String.valueOf("CREATE_IF_NOT_EXISTS"));
+								component_parameters.put("DATA_ACTION", String.valueOf("INSERT"));
+								component_parameters.put("USE_SPATIAL_OPTIONS", String.valueOf("false"));
+								component_parameters.put("SPECIFY_DATASOURCE_ALIAS", String.valueOf("false"));
+								component_parameters.put("DIE_ON_ERROR", String.valueOf("false"));
+								component_parameters.put("PROPERTIES", String.valueOf(""));
+								component_parameters.put("COMMIT_EVERY", String.valueOf("10000"));
+								component_parameters.put("ADD_COLS", String.valueOf("[]"));
+								component_parameters.put("USE_FIELD_OPTIONS", String.valueOf("false"));
+								component_parameters.put("ENABLE_DEBUG_MODE", String.valueOf("false"));
+								component_parameters.put("SUPPORT_NULL_WHERE", String.valueOf("false"));
+								component_parameters.put("CONVERT_COLUMN_TABLE_TO_LOWERCASE", String.valueOf("false"));
+								component_parameters.put("USE_BATCH_SIZE", String.valueOf("true"));
+								component_parameters.put("BATCH_SIZE", String.valueOf("10000"));
+								component_parameters.put("UNIFIED_COMPONENTS", String.valueOf("tPostgresqlOutput"));
 
-							} catch (java.lang.Exception e_Processos_Ingestao_Bronze_1_tFileOutputParquet_3) {
+							} catch (java.lang.Exception e_processos_1_tDBOutput_1) {
 								// do nothing
 							}
 
@@ -5722,164 +3129,284 @@ public class TRF5 implements TalendJob {
 						}
 					}
 
-					talendJobLog.addComponentParameterMessage("Processos_Ingestao_Bronze_1_tFileOutputParquet_3",
-							"tFileOutputParquet", new ParameterUtil_Processos_Ingestao_Bronze_1_tFileOutputParquet_3()
-									.getParameter(Processos_Ingestao_Bronze_1_row3));
+					talendJobLog.addComponentParameterMessage("processos_1_tDBOutput_1", "tPostgresqlOutput",
+							new ParameterUtil_processos_1_tDBOutput_1().getParameter(processos_1_transformacao));
 					talendJobLogProcess(globalMap);
 					s(currentComponent);
 				}
 				// QTUP-3575
 
 				if (enableLogStash) {
-					talendJobLog.addCM("Processos_Ingestao_Bronze_1_tFileOutputParquet_3", "tFileOutputParquet_3",
-							"tFileOutputParquet");
+					talendJobLog.addCM("processos_1_tDBOutput_1", "tDBOutput_1", "tPostgresqlOutput");
 					talendJobLogProcess(globalMap);
 					s(currentComponent);
 				}
 
-				int nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = 0;
-				org.apache.parquet.schema.Types.MessageTypeBuilder schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = org.apache.parquet.schema.Types
-						.buildMessage();
-				org.apache.parquet.schema.MessageType messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = null;
-				org.talend.parquet.data.simple.SimpleGroupFactory factory_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = null;
-				org.apache.parquet.hadoop.ParquetWriter<org.talend.parquet.data.Group> writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = null;
+				String dbschema_processos_1_tDBOutput_1 = null;
+				dbschema_processos_1_tDBOutput_1 = "public";
 
-				String filePath_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = "C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/classes_processuais_bronze";
-				globalMap.put("Processos_Ingestao_Bronze_1_tFileOutputParquet_3_FILE_PATH",
-						filePath_Processos_Ingestao_Bronze_1_tFileOutputParquet_3);
-				org.apache.hadoop.conf.Configuration config_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = new org.apache.hadoop.conf.Configuration();
-				config_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.set("fs.file.impl",
-						org.apache.hadoop.fs.LocalFileSystem.class.getName());
-				org.apache.hadoop.fs.Path path_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = new org.apache.hadoop.fs.Path(
-						filePath_Processos_Ingestao_Bronze_1_tFileOutputParquet_3);
-				// CRC file path
-				String crcName_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = "."
-						+ path_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.getName() + ".crc";
-				org.apache.hadoop.fs.Path crcPath_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = new org.apache.hadoop.fs.Path(
-						path_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.getParent(),
-						crcName_Processos_Ingestao_Bronze_1_tFileOutputParquet_3);
-				String compressName_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = "UNCOMPRESSED";
-				int rowGroupSize_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = 134217728;
-				int pageSize_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = 1048576;
-				java.util.Map<String, org.talend.parquet.data.simple.SimpleGroupFactory> cachedFactory_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = new java.util.HashMap<>();
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("id_classe", false,
-								"INT32", "INT_32"));
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("cod_cnj", true,
-								"BINARY", "UTF8"));
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("nome_classe", true,
-								"BINARY", "UTF8"));
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("tipo_procedimento",
-								true, "BINARY", "UTF8"));
-				messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
-						.named("Schema");
+				String tableName_processos_1_tDBOutput_1 = null;
+				if (dbschema_processos_1_tDBOutput_1 == null || dbschema_processos_1_tDBOutput_1.trim().length() == 0) {
+					tableName_processos_1_tDBOutput_1 = ("stg_processos");
+				} else {
+					tableName_processos_1_tDBOutput_1 = dbschema_processos_1_tDBOutput_1 + "\".\"" + ("stg_processos");
+				}
 
-				org.talend.parquet.hadoop.TalendGroupWriteSupport.setSchema(
-						messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_3,
-						config_Processos_Ingestao_Bronze_1_tFileOutputParquet_3);
-				factory_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = new org.talend.parquet.data.simple.SimpleGroupFactory(
-						messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_3);
-				org.apache.parquet.hadoop.ParquetWriter.Builder<org.talend.parquet.data.Group, org.talend.parquet.hadoop.TalendParquetWriter.Builder> builder_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = org.talend.parquet.hadoop.TalendParquetWriter
-						.builder(org.apache.parquet.hadoop.util.HadoopOutputFile.fromPath(
-								path_Processos_Ingestao_Bronze_1_tFileOutputParquet_3,
-								config_Processos_Ingestao_Bronze_1_tFileOutputParquet_3));
-				builder_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
-						.withWriteMode(org.apache.parquet.hadoop.ParquetFileWriter.Mode.OVERWRITE)
-						.withCompressionCodec(org.apache.parquet.hadoop.metadata.CompressionCodecName
-								.fromConf(compressName_Processos_Ingestao_Bronze_1_tFileOutputParquet_3))
-						.withRowGroupSize(rowGroupSize_Processos_Ingestao_Bronze_1_tFileOutputParquet_3)
-						.withPageSize(pageSize_Processos_Ingestao_Bronze_1_tFileOutputParquet_3)
-						.withConf(config_Processos_Ingestao_Bronze_1_tFileOutputParquet_3);
+				int nb_line_processos_1_tDBOutput_1 = 0;
+				int nb_line_update_processos_1_tDBOutput_1 = 0;
+				int nb_line_inserted_processos_1_tDBOutput_1 = 0;
+				int nb_line_deleted_processos_1_tDBOutput_1 = 0;
+				int nb_line_rejected_processos_1_tDBOutput_1 = 0;
 
-				writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = builder_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
-						.build();
+				int deletedCount_processos_1_tDBOutput_1 = 0;
+				int updatedCount_processos_1_tDBOutput_1 = 0;
+				int insertedCount_processos_1_tDBOutput_1 = 0;
+				int rowsToCommitCount_processos_1_tDBOutput_1 = 0;
+				int rejectedCount_processos_1_tDBOutput_1 = 0;
 
-				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_3 begin ] stop
-				 */
+				boolean whetherReject_processos_1_tDBOutput_1 = false;
 
-				/**
-				 * [Processos_Ingestao_Bronze_1_tDBInput_3 begin ] start
-				 */
-
-				sh("Processos_Ingestao_Bronze_1_tDBInput_3");
-
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_3");
-
-				int tos_count_Processos_Ingestao_Bronze_1_tDBInput_3 = 0;
+				java.sql.Connection conn_processos_1_tDBOutput_1 = null;
+				String dbUser_processos_1_tDBOutput_1 = null;
 
 				if (log.isDebugEnabled())
-					log.debug("Processos_Ingestao_Bronze_1_tDBInput_3 - " + ("Start to work."));
-				if (log.isDebugEnabled()) {
-					class BytesLimit65535_Processos_Ingestao_Bronze_1_tDBInput_3 {
-						public void limitLog4jByte() throws Exception {
-							StringBuilder log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3 = new StringBuilder();
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append("Parameters:");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3
-									.append("USE_EXISTING_CONNECTION" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append("DB_VERSION" + " = " + "V9_X");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append("HOST" + " = "
-									+ "\"peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append("PORT" + " = " + "\"5432\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3
-									.append("DBNAME" + " = " + "\"qlik_demo\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3
-									.append("SCHEMA_DB" + " = " + "\"public\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3
-									.append("USER" + " = " + "\"peta_qlik\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append("PASS" + " = "
-									+ String.valueOf(
-											"enc:routine.encryption.key.v1:dgPLOHwJp73Lz4+izJzvaa5i5fizFODh2s0bEa0k1nG3E/iUKA==")
-											.substring(0, 4)
-									+ "...");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append("QUERYSTORE" + " = " + "\"\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append("QUERY" + " = "
-									+ "\"SELECT    \\\"public\\\".\\\"classes_processuais\\\".\\\"id_classe\\\",    \\\"public\\\".\\\"classes_processuais\\\".\\\"cod_cnj\\\",    \\\"public\\\".\\\"classes_processuais\\\".\\\"nome_classe\\\",    \\\"public\\\".\\\"classes_processuais\\\".\\\"tipo_procedimento\\\"  FROM \\\"public\\\".\\\"classes_processuais\\\"\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3
-									.append("SPECIFY_DATASOURCE_ALIAS" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3
-									.append("PROPERTIES" + " = " + "\"classe\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3
-									.append("USE_CURSOR" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3
-									.append("TRIM_ALL_COLUMN" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append(
-									"TRIM_COLUMN" + " = " + "[{TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("id_classe")
-											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("cod_cnj") + "}, {TRIM="
-											+ ("false") + ", SCHEMA_COLUMN=" + ("nome_classe") + "}, {TRIM=" + ("false")
-											+ ", SCHEMA_COLUMN=" + ("tipo_procedimento") + "}]");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3
-									.append("UNIFIED_COMPONENTS" + " = " + "tPostgresqlInput");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3.append(" | ");
-							if (log.isDebugEnabled())
-								log.debug("Processos_Ingestao_Bronze_1_tDBInput_3 - "
-										+ (log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_3));
+					log.debug(
+							"processos_1_tDBOutput_1 - " + ("Driver ClassName: ") + ("org.postgresql.Driver") + ("."));
+				java.lang.Class.forName("org.postgresql.Driver");
+
+				String url_processos_1_tDBOutput_1 = "jdbc:postgresql://"
+						+ "peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com" + ":" + "5432" + "/"
+						+ "qlik_demo";
+				dbUser_processos_1_tDBOutput_1 = "peta_qlik";
+
+				final String decryptedPassword_processos_1_tDBOutput_1 = java.util.Optional
+						.ofNullable(routines.system.PasswordEncryptUtil.decryptPassword(
+								"enc:routine.encryption.key.v1:7NacHlqcQ8xrLyQqMTOgS5wrKfJCeiqex8VU+7FNjedAyJk4Fw=="))
+						.orElse("");
+
+				String dbPwd_processos_1_tDBOutput_1 = decryptedPassword_processos_1_tDBOutput_1;
+
+				if (log.isDebugEnabled())
+					log.debug(
+							"processos_1_tDBOutput_1 - " + ("Connection attempts to '") + (url_processos_1_tDBOutput_1)
+									+ ("' with the username '") + (dbUser_processos_1_tDBOutput_1) + ("'."));
+				conn_processos_1_tDBOutput_1 = java.sql.DriverManager.getConnection(url_processos_1_tDBOutput_1,
+						dbUser_processos_1_tDBOutput_1, dbPwd_processos_1_tDBOutput_1);
+				if (log.isDebugEnabled())
+					log.debug("processos_1_tDBOutput_1 - " + ("Connection to '") + (url_processos_1_tDBOutput_1)
+							+ ("' has succeeded."));
+
+				resourceMap.put("conn_processos_1_tDBOutput_1", conn_processos_1_tDBOutput_1);
+				conn_processos_1_tDBOutput_1.setAutoCommit(false);
+				int commitEvery_processos_1_tDBOutput_1 = 10000;
+				int commitCounter_processos_1_tDBOutput_1 = 0;
+				if (log.isDebugEnabled())
+					log.debug("processos_1_tDBOutput_1 - " + ("Connection is set auto commit to '")
+							+ (conn_processos_1_tDBOutput_1.getAutoCommit()) + ("'."));
+
+				int batchSize_processos_1_tDBOutput_1 = 10000;
+				int batchSizeCounter_processos_1_tDBOutput_1 = 0;
+
+				int count_processos_1_tDBOutput_1 = 0;
+				java.sql.DatabaseMetaData dbMetaData_processos_1_tDBOutput_1 = conn_processos_1_tDBOutput_1
+						.getMetaData();
+				boolean whetherExist_processos_1_tDBOutput_1 = false;
+				try (java.sql.ResultSet rsTable_processos_1_tDBOutput_1 = dbMetaData_processos_1_tDBOutput_1
+						.getTables(null, null, null, new String[] { "TABLE" })) {
+					String defaultSchema_processos_1_tDBOutput_1 = "public";
+					if (dbschema_processos_1_tDBOutput_1 == null
+							|| dbschema_processos_1_tDBOutput_1.trim().length() == 0) {
+						try (java.sql.Statement stmtSchema_processos_1_tDBOutput_1 = conn_processos_1_tDBOutput_1
+								.createStatement();
+								java.sql.ResultSet rsSchema_processos_1_tDBOutput_1 = stmtSchema_processos_1_tDBOutput_1
+										.executeQuery("select current_schema() ")) {
+							while (rsSchema_processos_1_tDBOutput_1.next()) {
+								defaultSchema_processos_1_tDBOutput_1 = rsSchema_processos_1_tDBOutput_1
+										.getString("current_schema");
+							}
 						}
 					}
-					new BytesLimit65535_Processos_Ingestao_Bronze_1_tDBInput_3().limitLog4jByte();
+					while (rsTable_processos_1_tDBOutput_1.next()) {
+						String table_processos_1_tDBOutput_1 = rsTable_processos_1_tDBOutput_1.getString("TABLE_NAME");
+						String schema_processos_1_tDBOutput_1 = rsTable_processos_1_tDBOutput_1
+								.getString("TABLE_SCHEM");
+						if (table_processos_1_tDBOutput_1.equals(("stg_processos"))
+								&& (schema_processos_1_tDBOutput_1.equals(dbschema_processos_1_tDBOutput_1)
+										|| ((dbschema_processos_1_tDBOutput_1 == null
+												|| dbschema_processos_1_tDBOutput_1.trim().length() == 0)
+												&& defaultSchema_processos_1_tDBOutput_1
+														.equals(schema_processos_1_tDBOutput_1)))) {
+							whetherExist_processos_1_tDBOutput_1 = true;
+							break;
+						}
+					}
 				}
-				boolean init_Processos_Ingestao_Bronze_1_tDBInput_3_0 = true;
+				if (!whetherExist_processos_1_tDBOutput_1) {
+					try (java.sql.Statement stmtCreate_processos_1_tDBOutput_1 = conn_processos_1_tDBOutput_1
+							.createStatement()) {
+						if (log.isDebugEnabled())
+							log.debug("processos_1_tDBOutput_1 - " + ("Creating") + (" table '")
+									+ ("\"" + tableName_processos_1_tDBOutput_1 + "\"") + ("'."));
+						stmtCreate_processos_1_tDBOutput_1.execute("CREATE TABLE \"" + tableName_processos_1_tDBOutput_1
+								+ "\"(\"id_processo\" SERIAL  not null ,\"numero_processo\" VARCHAR(25)   not null ,\"id_tribunal\" VARCHAR(10)   not null ,\"id_classe\" VARCHAR(100)   not null ,\"id_assunto\" VARCHAR  not null ,\"id_magistrado\" VARCHAR  not null ,\"data_ajuizamento\" DATE  not null ,\"tempo_processo_dias\" VARCHAR  not null ,\"valor_causa\" NUMERIC  not null ,primary key(\"id_processo\"))");
+						if (log.isDebugEnabled())
+							log.debug("processos_1_tDBOutput_1 - " + ("Create") + (" table '")
+									+ ("\"" + tableName_processos_1_tDBOutput_1 + "\"") + ("' has succeeded."));
+					}
+				}
+				java.lang.StringBuilder sb_processos_1_tDBOutput_1 = new java.lang.StringBuilder();
+				sb_processos_1_tDBOutput_1.append("INSERT INTO \"").append(tableName_processos_1_tDBOutput_1).append(
+						"\" (\"id_processo\",\"numero_processo\",\"id_tribunal\",\"id_classe\",\"id_assunto\",\"id_magistrado\",\"data_ajuizamento\",\"tempo_processo_dias\",\"valor_causa\") VALUES (?,?,?,?,?,?,?,?,?)");
+
+				String insert_processos_1_tDBOutput_1 = sb_processos_1_tDBOutput_1.toString();
+
+				if (log.isDebugEnabled())
+					log.debug(
+							"processos_1_tDBOutput_1 - " + ("Executing '") + (insert_processos_1_tDBOutput_1) + ("'."));
+
+				java.sql.PreparedStatement pstmt_processos_1_tDBOutput_1 = conn_processos_1_tDBOutput_1
+						.prepareStatement(insert_processos_1_tDBOutput_1);
+				resourceMap.put("pstmt_processos_1_tDBOutput_1", pstmt_processos_1_tDBOutput_1);
+
+				/**
+				 * [processos_1_tDBOutput_1 begin ] stop
+				 */
+
+				/**
+				 * [processos_1_tMap_1 begin ] start
+				 */
+
+				sh("processos_1_tMap_1");
+
+				s(currentComponent = "processos_1_tMap_1");
+
+				runStat.updateStatAndLog(execStat, enableLogStash, resourceMap, iterateId, 0, 0, "processos_1_row1");
+
+				int tos_count_processos_1_tMap_1 = 0;
+
+				if (log.isDebugEnabled())
+					log.debug("processos_1_tMap_1 - " + ("Start to work."));
+				if (log.isDebugEnabled()) {
+					class BytesLimit65535_processos_1_tMap_1 {
+						public void limitLog4jByte() throws Exception {
+							StringBuilder log4jParamters_processos_1_tMap_1 = new StringBuilder();
+							log4jParamters_processos_1_tMap_1.append("Parameters:");
+							log4jParamters_processos_1_tMap_1.append("LINK_STYLE" + " = " + "AUTO");
+							log4jParamters_processos_1_tMap_1.append(" | ");
+							log4jParamters_processos_1_tMap_1.append("TEMPORARY_DATA_DIRECTORY" + " = " + "");
+							log4jParamters_processos_1_tMap_1.append(" | ");
+							log4jParamters_processos_1_tMap_1.append("ROWS_BUFFER_SIZE" + " = " + "2000000");
+							log4jParamters_processos_1_tMap_1.append(" | ");
+							log4jParamters_processos_1_tMap_1
+									.append("CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" + " = " + "true");
+							log4jParamters_processos_1_tMap_1.append(" | ");
+							if (log.isDebugEnabled())
+								log.debug("processos_1_tMap_1 - " + (log4jParamters_processos_1_tMap_1));
+						}
+					}
+					new BytesLimit65535_processos_1_tMap_1().limitLog4jByte();
+				}
+				boolean init_processos_1_tMap_1_0 = true;
 				// QTUP-3575
 				if (enableLineage) {
-					class ParameterUtil_Processos_Ingestao_Bronze_1_tDBInput_3 {
+					class ParameterUtil_processos_1_tMap_1 {
+
+						private void a(java.util.List<java.util.Map<String, String>> schema, String... values) {
+							java.util.Map<String, String> field = new java.util.HashMap<>();
+							field.put("name", values[0]);
+							field.put("talend_type", values[1]);
+							schema.add(field);
+						}
+
+						public java.util.Map<String, String> getParameter(final processos_1_row1Struct processos_1_row1)
+								throws Exception {
+							java.util.Map<String, String> component_parameters = new java.util.HashMap<>();
+
+							try {
+
+								component_parameters.put("LINK_STYLE", String.valueOf("AUTO"));
+								component_parameters.put("ROWS_BUFFER_SIZE", String.valueOf("2000000"));
+								component_parameters.put("CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL",
+										String.valueOf("true"));
+								component_parameters.put("mapperData", String.valueOf(
+										"{\"inputTables\":[{\"name\":\"processos_1_row1\",\"metadataTableEntries\":[{\"name\":\"id_processo\",\"expression\":\"\",\"type\":\"id_Integer\",\"nullable\":false},{\"name\":\"numero_processo\",\"expression\":\"\",\"type\":\"id_String\",\"nullable\":false},{\"name\":\"id_tribunal\",\"expression\":\"\",\"type\":\"id_String\",\"nullable\":false},{\"name\":\"id_classe\",\"expression\":\"\",\"type\":\"id_String\",\"nullable\":false},{\"name\":\"id_assunto\",\"expression\":\"\",\"type\":\"id_String\",\"nullable\":false},{\"name\":\"id_magistrado\",\"expression\":\"\",\"type\":\"id_String\",\"nullable\":false},{\"name\":\"data_ajuizamento\",\"expression\":\"\",\"type\":\"id_Date\",\"nullable\":false},{\"name\":\"tempo_processo_dias\",\"expression\":\"\",\"type\":\"id_String\",\"nullable\":false},{\"name\":\"valor_causa\",\"expression\":\"\",\"type\":\"id_String\",\"nullable\":false}]}],\"outputTables\":[{\"name\":\"processos_1_transformacao\",\"metadataTableEntries\":[{\"name\":\"id_processo\",\"expression\":\"processos_1_row1.id_processo\",\"type\":\"id_Integer\",\"nullable\":false},{\"name\":\"numero_processo\",\"expression\":\"processos_1_row1.numero_processo\",\"type\":\"id_String\",\"nullable\":false},{\"name\":\"id_tribunal\",\"expression\":\"processos_1_row1.id_tribunal\",\"type\":\"id_String\",\"nullable\":false},{\"name\":\"id_classe\",\"expression\":\"processos_1_row1.id_classe\",\"type\":\"id_String\",\"nullable\":false},{\"name\":\"id_assunto\",\"expression\":\"processos_1_row1.id_assunto\",\"type\":\"id_String\",\"nullable\":false},{\"name\":\"id_magistrado\",\"expression\":\"processos_1_row1.id_magistrado\",\"type\":\"id_String\",\"nullable\":false},{\"name\":\"data_ajuizamento\",\"expression\":\"processos_1_row1.data_ajuizamento\",\"type\":\"id_Date\",\"nullable\":false},{\"name\":\"tempo_processo_dias\",\"expression\":\"processos_1_row1.tempo_processo_dias\",\"type\":\"id_String\",\"nullable\":false},{\"name\":\"valor_causa\",\"expression\":\"processos_1_row1.valor_causa == null || processos_1_row1.valor_causa.isEmpty() ? null : new BigDecimal(processos_1_row1.valor_causa)\",\"type\":\"id_BigDecimal\",\"nullable\":false}]}],\"varsTables\":[{\"name\":\"Var\",\"metadataTableEntries\":[]}]}"));
+
+							} catch (java.lang.Exception e_processos_1_tMap_1) {
+								// do nothing
+							}
+
+							return component_parameters;
+						}
+					}
+
+					talendJobLog.addComponentParameterMessage("processos_1_tMap_1", "tMap",
+							new ParameterUtil_processos_1_tMap_1().getParameter(processos_1_row1));
+					talendJobLogProcess(globalMap);
+					s(currentComponent);
+				}
+				// QTUP-3575
+
+				if (enableLogStash) {
+					talendJobLog.addCM("processos_1_tMap_1", "tMap_1", "tMap");
+					talendJobLogProcess(globalMap);
+					s(currentComponent);
+				}
+
+// ###############################
+// # Lookup's keys initialization
+				int count_processos_1_row1_processos_1_tMap_1 = 0;
+
+// ###############################        
+
+// ###############################
+// # Vars initialization
+// ###############################
+
+// ###############################
+// # Outputs initialization
+				int count_processos_1_transformacao_processos_1_tMap_1 = 0;
+
+				processos_1_transformacaoStruct processos_1_transformacao_tmp = new processos_1_transformacaoStruct();
+// ###############################
+
+				/**
+				 * [processos_1_tMap_1 begin ] stop
+				 */
+
+				/**
+				 * [processos_1_tFileInputParquet_2 begin ] start
+				 */
+
+				sh("processos_1_tFileInputParquet_2");
+
+				s(currentComponent = "processos_1_tFileInputParquet_2");
+
+				int tos_count_processos_1_tFileInputParquet_2 = 0;
+
+				if (log.isDebugEnabled())
+					log.debug("processos_1_tFileInputParquet_2 - " + ("Start to work."));
+				if (log.isDebugEnabled()) {
+					class BytesLimit65535_processos_1_tFileInputParquet_2 {
+						public void limitLog4jByte() throws Exception {
+							StringBuilder log4jParamters_processos_1_tFileInputParquet_2 = new StringBuilder();
+							log4jParamters_processos_1_tFileInputParquet_2.append("Parameters:");
+							log4jParamters_processos_1_tFileInputParquet_2.append("FILENAME" + " = "
+									+ "\"C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/processo_bronze_temp.parquet\"");
+							log4jParamters_processos_1_tFileInputParquet_2.append(" | ");
+							log4jParamters_processos_1_tFileInputParquet_2
+									.append("USE_EXTERNAL_HADOOP_DEPS" + " = " + "false");
+							log4jParamters_processos_1_tFileInputParquet_2.append(" | ");
+							if (log.isDebugEnabled())
+								log.debug("processos_1_tFileInputParquet_2 - "
+										+ (log4jParamters_processos_1_tFileInputParquet_2));
+						}
+					}
+					new BytesLimit65535_processos_1_tFileInputParquet_2().limitLog4jByte();
+				}
+				boolean init_processos_1_tFileInputParquet_2_0 = true;
+				// QTUP-3575
+				if (enableLineage) {
+					class ParameterUtil_processos_1_tFileInputParquet_2 {
 
 						private void a(java.util.List<java.util.Map<String, String>> schema, String... values) {
 							java.util.Map<String, String> field = new java.util.HashMap<>();
@@ -5893,35 +3420,11 @@ public class TRF5 implements TalendJob {
 
 							try {
 
-								component_parameters.put("USE_EXISTING_CONNECTION", String.valueOf("false"));
-								component_parameters.put("DB_VERSION", String.valueOf("V9_X"));
-								component_parameters.put("HOST", String
-										.valueOf("peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com"));
-								component_parameters.put("PORT", String.valueOf("5432"));
-								component_parameters.put("DBNAME", String.valueOf("qlik_demo"));
-								component_parameters.put("SCHEMA_DB", String.valueOf("public"));
-								component_parameters.put("USER", String.valueOf("peta_qlik"));
-								component_parameters.put("QUERYSTORE", String.valueOf(""));
-								component_parameters.put("QUERY", String.valueOf(new StringBuilder().append(
-										"SELECT \n  \"public\".\"classes_processuais\".\"id_classe\", \n  \"public\".\"classes_processuais\".\"cod_cnj\", \n  \"pub"
-												+ "lic\".\"classes_processuais\".\"nome_classe\", \n  \"public\".\"classes_processuais\".\"tipo_procedimento\"\n FROM \"publi"
-												+ "c\".\"classes_processuais\"")
-										.toString()));
-								component_parameters.put("SPECIFY_DATASOURCE_ALIAS", String.valueOf("false"));
-								component_parameters.put("PROPERTIES", String.valueOf("classe"));
-								component_parameters.put("USE_CURSOR", String.valueOf("false"));
-								component_parameters.put("TRIM_ALL_COLUMN", String.valueOf("false"));
-								component_parameters.put("TRIM_COLUMN",
-										String.valueOf(new StringBuilder().append("[{TRIM=").append("false")
-												.append(", SCHEMA_COLUMN=").append("id_classe").append("}, {TRIM=")
-												.append("false").append(", SCHEMA_COLUMN=").append("cod_cnj")
-												.append("}, {TRIM=").append("false").append(", SCHEMA_COLUMN=")
-												.append("nome_classe").append("}, {TRIM=").append("false")
-												.append(", SCHEMA_COLUMN=").append("tipo_procedimento").append("}]")
-												.toString()));
-								component_parameters.put("UNIFIED_COMPONENTS", String.valueOf("tPostgresqlInput"));
+								component_parameters.put("FILENAME", String.valueOf(
+										"C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/processo_bronze_temp.parquet"));
+								component_parameters.put("USE_EXTERNAL_HADOOP_DEPS", String.valueOf("false"));
 
-							} catch (java.lang.Exception e_Processos_Ingestao_Bronze_1_tDBInput_3) {
+							} catch (java.lang.Exception e_processos_1_tFileInputParquet_2) {
 								// do nothing
 							}
 
@@ -5929,372 +3432,837 @@ public class TRF5 implements TalendJob {
 						}
 					}
 
-					talendJobLog.addComponentParameterMessage("Processos_Ingestao_Bronze_1_tDBInput_3",
-							"tPostgresqlInput",
-							new ParameterUtil_Processos_Ingestao_Bronze_1_tDBInput_3().getParameter());
+					talendJobLog.addComponentParameterMessage("processos_1_tFileInputParquet_2", "tFileInputParquet",
+							new ParameterUtil_processos_1_tFileInputParquet_2().getParameter());
 					talendJobLogProcess(globalMap);
 					s(currentComponent);
 				}
 				// QTUP-3575
 
 				if (enableLogStash) {
-					talendJobLog.addCM("Processos_Ingestao_Bronze_1_tDBInput_3", "tDBInput_3", "tPostgresqlInput");
+					talendJobLog.addCM("processos_1_tFileInputParquet_2", "tFileInputParquet_2", "tFileInputParquet");
 					talendJobLogProcess(globalMap);
 					s(currentComponent);
 				}
 
-				int nb_line_Processos_Ingestao_Bronze_1_tDBInput_3 = 0;
-				java.sql.Connection conn_Processos_Ingestao_Bronze_1_tDBInput_3 = null;
-				String driverClass_Processos_Ingestao_Bronze_1_tDBInput_3 = "org.postgresql.Driver";
-				java.lang.Class jdbcclazz_Processos_Ingestao_Bronze_1_tDBInput_3 = java.lang.Class
-						.forName(driverClass_Processos_Ingestao_Bronze_1_tDBInput_3);
-				String dbUser_Processos_Ingestao_Bronze_1_tDBInput_3 = "peta_qlik";
+				int nb_line_processos_1_tFileInputParquet_2 = 0;
+				String filePath_processos_1_tFileInputParquet_2 = "C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/processo_bronze_temp.parquet";
+				globalMap.put("processos_1_tFileInputParquet_2_FILE_PATH", filePath_processos_1_tFileInputParquet_2);
 
-				final String decryptedPassword_Processos_Ingestao_Bronze_1_tDBInput_3 = java.util.Optional
-						.ofNullable(routines.system.PasswordEncryptUtil.decryptPassword(
-								"enc:routine.encryption.key.v1:aAtIfyUwKPElzvLk8g38NGoVLF1VTtTgsQDmcG1NpW67077+RA=="))
-						.orElse("");
-
-				String dbPwd_Processos_Ingestao_Bronze_1_tDBInput_3 = decryptedPassword_Processos_Ingestao_Bronze_1_tDBInput_3;
-
-				String url_Processos_Ingestao_Bronze_1_tDBInput_3 = "jdbc:postgresql://"
-						+ "peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com" + ":" + "5432" + "/"
-						+ "qlik_demo" + "?" + "classe";
-
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_3 - Driver ClassName: "
-						+ driverClass_Processos_Ingestao_Bronze_1_tDBInput_3 + ".");
-
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_3 - Connection attempt to '"
-						+ url_Processos_Ingestao_Bronze_1_tDBInput_3.replaceAll("(?<=trustStorePassword=)[^;]*",
-								"********")
-						+ "' with the username '" + dbUser_Processos_Ingestao_Bronze_1_tDBInput_3 + "'.");
-
-				conn_Processos_Ingestao_Bronze_1_tDBInput_3 = java.sql.DriverManager.getConnection(
-						url_Processos_Ingestao_Bronze_1_tDBInput_3, dbUser_Processos_Ingestao_Bronze_1_tDBInput_3,
-						dbPwd_Processos_Ingestao_Bronze_1_tDBInput_3);
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_3 - Connection to '"
-						+ url_Processos_Ingestao_Bronze_1_tDBInput_3.replaceAll("(?<=trustStorePassword=)[^;]*",
-								"********")
-						+ "' has succeeded.");
-
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_3 - Connection is set auto commit to 'false'.");
-
-				conn_Processos_Ingestao_Bronze_1_tDBInput_3.setAutoCommit(false);
-
-				java.sql.Statement stmt_Processos_Ingestao_Bronze_1_tDBInput_3 = conn_Processos_Ingestao_Bronze_1_tDBInput_3
-						.createStatement();
-
-				String dbquery_Processos_Ingestao_Bronze_1_tDBInput_3 = new StringBuilder().append(
-						"SELECT \n  \"public\".\"classes_processuais\".\"id_classe\", \n  \"public\".\"classes_processuais\".\"cod_cnj\", \n  \"pub"
-								+ "lic\".\"classes_processuais\".\"nome_classe\", \n  \"public\".\"classes_processuais\".\"tipo_procedimento\"\n FROM \"publi"
-								+ "c\".\"classes_processuais\"")
-						.toString();
-
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_3 - Executing the query: '"
-						+ dbquery_Processos_Ingestao_Bronze_1_tDBInput_3 + "'.");
-
-				globalMap.put("Processos_Ingestao_Bronze_1_tDBInput_3_QUERY",
-						dbquery_Processos_Ingestao_Bronze_1_tDBInput_3);
-
-				java.sql.ResultSet rs_Processos_Ingestao_Bronze_1_tDBInput_3 = null;
-
+				org.apache.parquet.hadoop.ParquetFileReader readFooter_processos_1_tFileInputParquet_2 = null;
+				org.apache.hadoop.conf.Configuration config_processos_1_tFileInputParquet_2 = new org.apache.hadoop.conf.Configuration();
+				config_processos_1_tFileInputParquet_2.set("fs.file.impl",
+						org.apache.hadoop.fs.LocalFileSystem.class.getName());
+				org.apache.hadoop.fs.Path parquetFilePath_processos_1_tFileInputParquet_2 = new org.apache.hadoop.fs.Path(
+						filePath_processos_1_tFileInputParquet_2);
+				readFooter_processos_1_tFileInputParquet_2 = org.apache.parquet.hadoop.ParquetFileReader
+						.open(org.apache.parquet.hadoop.util.HadoopInputFile.fromPath(
+								parquetFilePath_processos_1_tFileInputParquet_2,
+								config_processos_1_tFileInputParquet_2));
+				org.apache.parquet.schema.MessageType schema_processos_1_tFileInputParquet_2 = readFooter_processos_1_tFileInputParquet_2
+						.getFileMetaData().getSchema();
+				org.apache.parquet.column.page.PageReadStore pageReadStore_processos_1_tFileInputParquet_2 = null;
 				try {
-					rs_Processos_Ingestao_Bronze_1_tDBInput_3 = stmt_Processos_Ingestao_Bronze_1_tDBInput_3
-							.executeQuery(dbquery_Processos_Ingestao_Bronze_1_tDBInput_3);
-					java.sql.ResultSetMetaData rsmd_Processos_Ingestao_Bronze_1_tDBInput_3 = rs_Processos_Ingestao_Bronze_1_tDBInput_3
-							.getMetaData();
-					int colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_3 = rsmd_Processos_Ingestao_Bronze_1_tDBInput_3
-							.getColumnCount();
 
-					String tmpContent_Processos_Ingestao_Bronze_1_tDBInput_3 = null;
+					log.debug("processos_1_tFileInputParquet_2 - Retrieving records from the datasource.");
 
-					log.debug("Processos_Ingestao_Bronze_1_tDBInput_3 - Retrieving records from the database.");
+					while (null != (pageReadStore_processos_1_tFileInputParquet_2 = readFooter_processos_1_tFileInputParquet_2
+							.readNextRowGroup())) {
+						final long rows_processos_1_tFileInputParquet_2 = pageReadStore_processos_1_tFileInputParquet_2
+								.getRowCount();
+						final org.apache.parquet.io.MessageColumnIO columnIO_processos_1_tFileInputParquet_2 = new org.apache.parquet.io.ColumnIOFactory()
+								.getColumnIO(schema_processos_1_tFileInputParquet_2);
+						final org.apache.parquet.io.RecordReader<org.talend.parquet.data.Group> recordReader_processos_1_tFileInputParquet_2 = columnIO_processos_1_tFileInputParquet_2
+								.getRecordReader(pageReadStore_processos_1_tFileInputParquet_2,
+										new org.talend.parquet.data.simple.convert.GroupRecordConverter(
+												schema_processos_1_tFileInputParquet_2));
+						for (int i_processos_1_tFileInputParquet_2 = 0; i_processos_1_tFileInputParquet_2 < rows_processos_1_tFileInputParquet_2; i_processos_1_tFileInputParquet_2++) {
+							nb_line_processos_1_tFileInputParquet_2++;
+							processos_1_row1 = new processos_1_row1Struct();
+							log.debug("processos_1_tFileInputParquet_2 - Retrieving the record "
+									+ (nb_line_processos_1_tFileInputParquet_2) + ".");
 
-					while (rs_Processos_Ingestao_Bronze_1_tDBInput_3.next()) {
-						nb_line_Processos_Ingestao_Bronze_1_tDBInput_3++;
-
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_3 < 1) {
-							Processos_Ingestao_Bronze_1_row3.id_classe = 0;
-						} else {
-
-							Processos_Ingestao_Bronze_1_row3.id_classe = rs_Processos_Ingestao_Bronze_1_tDBInput_3
-									.getInt(1);
-							if (rs_Processos_Ingestao_Bronze_1_tDBInput_3.wasNull()) {
-								throw new RuntimeException("Null value in non-Nullable column");
+							final org.talend.parquet.data.Group group_processos_1_tFileInputParquet_2 = recordReader_processos_1_tFileInputParquet_2
+									.read();
+							final org.apache.parquet.schema.GroupType groupType_processos_1_tFileInputParquet_2 = group_processos_1_tFileInputParquet_2
+									.getType();
+							String valueString_processos_1_tFileInputParquet_2 = null;
+							valueString_processos_1_tFileInputParquet_2 = group_processos_1_tFileInputParquet_2
+									.getValueToString(
+											schema_processos_1_tFileInputParquet_2.getFieldIndex("id_processo"), 0);
+							if (valueString_processos_1_tFileInputParquet_2 != null) {
+								processos_1_row1.id_processo = group_processos_1_tFileInputParquet_2
+										.getInteger("id_processo", 0);
 							}
-						}
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_3 < 2) {
-							Processos_Ingestao_Bronze_1_row3.cod_cnj = null;
-						} else {
-
-							Processos_Ingestao_Bronze_1_row3.cod_cnj = routines.system.JDBCUtil
-									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_3, 2, false);
-						}
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_3 < 3) {
-							Processos_Ingestao_Bronze_1_row3.nome_classe = null;
-						} else {
-
-							Processos_Ingestao_Bronze_1_row3.nome_classe = routines.system.JDBCUtil
-									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_3, 3, false);
-						}
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_3 < 4) {
-							Processos_Ingestao_Bronze_1_row3.tipo_procedimento = null;
-						} else {
-
-							Processos_Ingestao_Bronze_1_row3.tipo_procedimento = routines.system.JDBCUtil
-									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_3, 4, false);
-						}
-
-						log.debug("Processos_Ingestao_Bronze_1_tDBInput_3 - Retrieving the record "
-								+ nb_line_Processos_Ingestao_Bronze_1_tDBInput_3 + ".");
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_3 begin ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_3 main ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_3");
-
-						// QTUP-3575
-						if (enableLineage && init_Processos_Ingestao_Bronze_1_tDBInput_3_0) {
-							class SchemaUtil_Processos_Ingestao_Bronze_1_row3 {
-
-								private void a(java.util.List<java.util.Map<String, String>> schema, String... values) {
-									java.util.Map<String, String> field = new java.util.HashMap<>();
-									field.put("name", values[0]);
-									field.put("origin_name", values[1]);
-									field.put("iskey", values[2]);
-									field.put("talend_type", values[3]);
-									field.put("type", values[4]);
-									field.put("nullable", values[5]);
-									field.put("pattern", values[6]);
-									field.put("length", values[7]);
-									field.put("precision", values[8]);
-									schema.add(field);
+							valueString_processos_1_tFileInputParquet_2 = group_processos_1_tFileInputParquet_2
+									.getValueToString(
+											schema_processos_1_tFileInputParquet_2.getFieldIndex("numero_processo"), 0);
+							if (valueString_processos_1_tFileInputParquet_2 != null) {
+								processos_1_row1.numero_processo = valueString_processos_1_tFileInputParquet_2;
+							}
+							valueString_processos_1_tFileInputParquet_2 = group_processos_1_tFileInputParquet_2
+									.getValueToString(
+											schema_processos_1_tFileInputParquet_2.getFieldIndex("id_tribunal"), 0);
+							if (valueString_processos_1_tFileInputParquet_2 != null) {
+								processos_1_row1.id_tribunal = valueString_processos_1_tFileInputParquet_2;
+							}
+							valueString_processos_1_tFileInputParquet_2 = group_processos_1_tFileInputParquet_2
+									.getValueToString(schema_processos_1_tFileInputParquet_2.getFieldIndex("id_classe"),
+											0);
+							if (valueString_processos_1_tFileInputParquet_2 != null) {
+								processos_1_row1.id_classe = valueString_processos_1_tFileInputParquet_2;
+							}
+							valueString_processos_1_tFileInputParquet_2 = group_processos_1_tFileInputParquet_2
+									.getValueToString(
+											schema_processos_1_tFileInputParquet_2.getFieldIndex("id_assunto"), 0);
+							if (valueString_processos_1_tFileInputParquet_2 != null) {
+								processos_1_row1.id_assunto = valueString_processos_1_tFileInputParquet_2;
+							}
+							valueString_processos_1_tFileInputParquet_2 = group_processos_1_tFileInputParquet_2
+									.getValueToString(
+											schema_processos_1_tFileInputParquet_2.getFieldIndex("id_magistrado"), 0);
+							if (valueString_processos_1_tFileInputParquet_2 != null) {
+								processos_1_row1.id_magistrado = valueString_processos_1_tFileInputParquet_2;
+							}
+							valueString_processos_1_tFileInputParquet_2 = group_processos_1_tFileInputParquet_2
+									.getValueToString(
+											schema_processos_1_tFileInputParquet_2.getFieldIndex("data_ajuizamento"),
+											0);
+							if (valueString_processos_1_tFileInputParquet_2 != null) {
+								if (org.apache.parquet.schema.OriginalType.DATE == groupType_processos_1_tFileInputParquet_2
+										.getType("data_ajuizamento").getOriginalType()) {
+									java.util.Calendar c_processos_1_tFileInputParquet_2 = new java.util.GregorianCalendar();
+									c_processos_1_tFileInputParquet_2.setTime(new java.util.Date(0));
+									c_processos_1_tFileInputParquet_2.add(java.util.Calendar.DAY_OF_YEAR,
+											group_processos_1_tFileInputParquet_2.getInteger("data_ajuizamento", 0));
+									processos_1_row1.data_ajuizamento = c_processos_1_tFileInputParquet_2.getTime();
+								} else if (groupType_processos_1_tFileInputParquet_2.getType("data_ajuizamento")
+										.isPrimitive()
+										&& groupType_processos_1_tFileInputParquet_2.getType("data_ajuizamento")
+												.asPrimitiveType()
+												.getPrimitiveTypeName() == org.apache.parquet.schema.PrimitiveType.PrimitiveTypeName.INT96) {
+									org.talend.parquet.data.simple.NanoTime nt_processos_1_tFileInputParquet_2 = org.talend.parquet.data.simple.NanoTime
+											.fromBinary(group_processos_1_tFileInputParquet_2
+													.getInt96("data_ajuizamento", 0));
+									processos_1_row1.data_ajuizamento = org.talend.parquet.utils.NanoTimeUtils
+											.getTimestamp(nt_processos_1_tFileInputParquet_2);
+								} else if (org.apache.parquet.schema.OriginalType.TIMESTAMP_MILLIS == groupType_processos_1_tFileInputParquet_2
+										.getType("data_ajuizamento").getOriginalType()
+										&& groupType_processos_1_tFileInputParquet_2.getType("data_ajuizamento")
+												.isPrimitive()
+										&& groupType_processos_1_tFileInputParquet_2.getType("data_ajuizamento")
+												.asPrimitiveType()
+												.getPrimitiveTypeName() == org.apache.parquet.schema.PrimitiveType.PrimitiveTypeName.INT64) {
+									long ts_processos_1_tFileInputParquet_2 = group_processos_1_tFileInputParquet_2
+											.getLong("data_ajuizamento", 0);
+									processos_1_row1.data_ajuizamento = new java.util.Date(
+											ts_processos_1_tFileInputParquet_2);
+								} else {
+									processos_1_row1.data_ajuizamento = ParserUtils.parseTo_Date(
+											group_processos_1_tFileInputParquet_2.getString("data_ajuizamento", 0),
+											"dd-MM-yyyy");
 								}
+							}
+							valueString_processos_1_tFileInputParquet_2 = group_processos_1_tFileInputParquet_2
+									.getValueToString(
+											schema_processos_1_tFileInputParquet_2.getFieldIndex("tempo_processo_dias"),
+											0);
+							if (valueString_processos_1_tFileInputParquet_2 != null) {
+								processos_1_row1.tempo_processo_dias = valueString_processos_1_tFileInputParquet_2;
+							}
+							valueString_processos_1_tFileInputParquet_2 = group_processos_1_tFileInputParquet_2
+									.getValueToString(
+											schema_processos_1_tFileInputParquet_2.getFieldIndex("valor_causa"), 0);
+							if (valueString_processos_1_tFileInputParquet_2 != null) {
+								processos_1_row1.valor_causa = valueString_processos_1_tFileInputParquet_2;
+							}
 
-								public java.util.List<java.util.Map<String, String>> getSchema(
-										final Processos_Ingestao_Bronze_1_row3Struct Processos_Ingestao_Bronze_1_row3) {
-									java.util.List<java.util.Map<String, String>> s = new java.util.ArrayList<>();
-									if (Processos_Ingestao_Bronze_1_row3 == null) {
+							/**
+							 * [processos_1_tFileInputParquet_2 begin ] stop
+							 */
+
+							/**
+							 * [processos_1_tFileInputParquet_2 main ] start
+							 */
+
+							s(currentComponent = "processos_1_tFileInputParquet_2");
+
+							// QTUP-3575
+							if (enableLineage && init_processos_1_tFileInputParquet_2_0) {
+								class SchemaUtil_processos_1_row1 {
+
+									private void a(java.util.List<java.util.Map<String, String>> schema,
+											String... values) {
+										java.util.Map<String, String> field = new java.util.HashMap<>();
+										field.put("name", values[0]);
+										field.put("origin_name", values[1]);
+										field.put("iskey", values[2]);
+										field.put("talend_type", values[3]);
+										field.put("type", values[4]);
+										field.put("nullable", values[5]);
+										field.put("pattern", values[6]);
+										field.put("length", values[7]);
+										field.put("precision", values[8]);
+										schema.add(field);
+									}
+
+									public java.util.List<java.util.Map<String, String>> getSchema(
+											final processos_1_row1Struct processos_1_row1) {
+										java.util.List<java.util.Map<String, String>> s = new java.util.ArrayList<>();
+										if (processos_1_row1 == null) {
+											return s;
+										}
+										a(s, "id_processo", "id_processo", "true", "id_Integer", "SERIAL", "false", "",
+												"10", "0");
+										a(s, "numero_processo", "numero_processo", "false", "id_String", "VARCHAR",
+												"false", "", "25", "0");
+										a(s, "id_tribunal", "id_tribunal", "false", "id_String", "VARCHAR", "false", "",
+												"10", "0");
+										a(s, "id_classe", "id_classe", "false", "id_String", "VARCHAR", "false", "",
+												"100", "0");
+										a(s, "id_assunto", "id_assunto", "false", "id_String", "VARCHAR", "false", "",
+												"null", "null");
+										a(s, "id_magistrado", "id_magistrado", "false", "id_String", "VARCHAR", "false",
+												"", "null", "null");
+										a(s, "data_ajuizamento", "data_ajuizamento", "false", "id_Date", "DATE",
+												"false", "dd-MM-yyyy", "13", "0");
+										a(s, "tempo_processo_dias", "tempo_processo_dias", "false", "id_String",
+												"VARCHAR", "false", "", "null", "null");
+										a(s, "valor_causa", "valor_causa", "false", "id_String", "", "false", "",
+												"null", "null");
 										return s;
 									}
-									a(s, "id_classe", "id_classe", "false", "id_Integer", "SERIAL", "false", "", "10",
-											"0");
-									a(s, "cod_cnj", "cod_cnj", "false", "id_String", "VARCHAR", "true", "", "20", "0");
-									a(s, "nome_classe", "nome_classe", "false", "id_String", "VARCHAR", "true", "",
-											"255", "0");
-									a(s, "tipo_procedimento", "tipo_procedimento", "false", "id_String", "VARCHAR",
-											"true", "", "50", "0");
-									return s;
+
+								}
+
+								if (processos_1_row1 != null) {
+									talendJobLog.addConnectionSchemaMessage("processos_1_tFileInputParquet_2",
+											"tFileInputParquet", "processos_1_tMap_1", "tMap",
+											"processos_1_row1" + iterateId,
+											new SchemaUtil_processos_1_row1().getSchema(processos_1_row1));
+									talendJobLogProcess(globalMap);
+									init_processos_1_tFileInputParquet_2_0 = false;
 								}
 
 							}
+							// QTUP-3575
 
-							if (Processos_Ingestao_Bronze_1_row3 != null) {
-								talendJobLog.addConnectionSchemaMessage("Processos_Ingestao_Bronze_1_tDBInput_3",
-										"tPostgresqlInput", "Processos_Ingestao_Bronze_1_tFileOutputParquet_3",
-										"tFileOutputParquet", "Processos_Ingestao_Bronze_1_row3" + iterateId,
-										new SchemaUtil_Processos_Ingestao_Bronze_1_row3()
-												.getSchema(Processos_Ingestao_Bronze_1_row3));
-								talendJobLogProcess(globalMap);
-								init_Processos_Ingestao_Bronze_1_tDBInput_3_0 = false;
-							}
+							tos_count_processos_1_tFileInputParquet_2++;
+
+							/**
+							 * [processos_1_tFileInputParquet_2 main ] stop
+							 */
+
+							/**
+							 * [processos_1_tFileInputParquet_2 process_data_begin ] start
+							 */
+
+							s(currentComponent = "processos_1_tFileInputParquet_2");
+
+							/**
+							 * [processos_1_tFileInputParquet_2 process_data_begin ] stop
+							 */
+
+// Start of branch "processos_1_row1"
+							if (processos_1_row1 != null) {
+
+								/**
+								 * [processos_1_tMap_1 main ] start
+								 */
+
+								s(currentComponent = "processos_1_tMap_1");
+
+								if (runStat.update(execStat, enableLogStash, iterateId, 1, 1
+
+										, "processos_1_row1", "processos_1_tFileInputParquet_2", "tFileInputParquet_2",
+										"tFileInputParquet", "processos_1_tMap_1", "tMap_1", "tMap"
+
+								)) {
+									talendJobLogProcess(globalMap);
+								}
+
+								if (log.isTraceEnabled()) {
+									log.trace("processos_1_row1 - "
+											+ (processos_1_row1 == null ? "" : processos_1_row1.toLogString()));
+								}
+
+								boolean hasCasePrimitiveKeyWithNull_processos_1_tMap_1 = false;
+
+								// ###############################
+								// # Input tables (lookups)
+
+								boolean rejectedInnerJoin_processos_1_tMap_1 = false;
+								boolean mainRowRejected_processos_1_tMap_1 = false;
+								// ###############################
+								{ // start of Var scope
+
+									// ###############################
+									// # Vars tables
+									// ###############################
+									// ###############################
+									// # Output tables
+
+									processos_1_transformacao = null;
+
+// # Output table : 'processos_1_transformacao'
+									count_processos_1_transformacao_processos_1_tMap_1++;
+
+									processos_1_transformacao_tmp.id_processo = processos_1_row1.id_processo;
+									processos_1_transformacao_tmp.numero_processo = processos_1_row1.numero_processo;
+									processos_1_transformacao_tmp.id_tribunal = processos_1_row1.id_tribunal;
+									processos_1_transformacao_tmp.id_classe = processos_1_row1.id_classe;
+									processos_1_transformacao_tmp.id_assunto = processos_1_row1.id_assunto;
+									processos_1_transformacao_tmp.id_magistrado = processos_1_row1.id_magistrado;
+									processos_1_transformacao_tmp.data_ajuizamento = processos_1_row1.data_ajuizamento;
+									processos_1_transformacao_tmp.tempo_processo_dias = processos_1_row1.tempo_processo_dias;
+									processos_1_transformacao_tmp.valor_causa = processos_1_row1.valor_causa == null
+											|| processos_1_row1.valor_causa.isEmpty() ? null
+													: new BigDecimal(processos_1_row1.valor_causa);
+									processos_1_transformacao = processos_1_transformacao_tmp;
+									log.debug("processos_1_tMap_1 - Outputting the record "
+											+ count_processos_1_transformacao_processos_1_tMap_1
+											+ " of the output table 'processos_1_transformacao'.");
+
+// ###############################
+
+								} // end of Var scope
+
+								rejectedInnerJoin_processos_1_tMap_1 = false;
+
+								// QTUP-3575
+								if (enableLineage && init_processos_1_tMap_1_0) {
+									class SchemaUtil_processos_1_transformacao {
+
+										private void a(java.util.List<java.util.Map<String, String>> schema,
+												String... values) {
+											java.util.Map<String, String> field = new java.util.HashMap<>();
+											field.put("name", values[0]);
+											field.put("origin_name", values[1]);
+											field.put("iskey", values[2]);
+											field.put("talend_type", values[3]);
+											field.put("type", values[4]);
+											field.put("nullable", values[5]);
+											field.put("pattern", values[6]);
+											field.put("length", values[7]);
+											field.put("precision", values[8]);
+											schema.add(field);
+										}
+
+										public java.util.List<java.util.Map<String, String>> getSchema(
+												final processos_1_transformacaoStruct processos_1_transformacao) {
+											java.util.List<java.util.Map<String, String>> s = new java.util.ArrayList<>();
+											if (processos_1_transformacao == null) {
+												return s;
+											}
+											a(s, "id_processo", "id_processo", "true", "id_Integer", "SERIAL", "false",
+													"", "10", "0");
+											a(s, "numero_processo", "numero_processo", "false", "id_String", "VARCHAR",
+													"false", "", "25", "0");
+											a(s, "id_tribunal", "id_tribunal", "false", "id_String", "VARCHAR", "false",
+													"", "10", "0");
+											a(s, "id_classe", "id_classe", "false", "id_String", "VARCHAR", "false", "",
+													"100", "0");
+											a(s, "id_assunto", "id_assunto", "false", "id_String", "VARCHAR", "false",
+													"", "null", "null");
+											a(s, "id_magistrado", "id_magistrado", "false", "id_String", "VARCHAR",
+													"false", "", "null", "null");
+											a(s, "data_ajuizamento", "data_ajuizamento", "false", "id_Date", "DATE",
+													"false", "dd-MM-yyyy", "13", "0");
+											a(s, "tempo_processo_dias", "tempo_processo_dias", "false", "id_String",
+													"VARCHAR", "false", "", "null", "null");
+											a(s, "valor_causa", "valor_causa", "false", "id_BigDecimal", "", "false",
+													"", "null", "null");
+											return s;
+										}
+
+									}
+
+									if (processos_1_transformacao != null) {
+										talendJobLog.addConnectionSchemaMessage("processos_1_tMap_1", "tMap",
+												"processos_1_tDBOutput_1", "tPostgresqlOutput",
+												"processos_1_transformacao" + iterateId,
+												new SchemaUtil_processos_1_transformacao()
+														.getSchema(processos_1_transformacao));
+										talendJobLogProcess(globalMap);
+										init_processos_1_tMap_1_0 = false;
+									}
+
+								}
+								// QTUP-3575
+
+								tos_count_processos_1_tMap_1++;
+
+								/**
+								 * [processos_1_tMap_1 main ] stop
+								 */
+
+								/**
+								 * [processos_1_tMap_1 process_data_begin ] start
+								 */
+
+								s(currentComponent = "processos_1_tMap_1");
+
+								/**
+								 * [processos_1_tMap_1 process_data_begin ] stop
+								 */
+
+// Start of branch "processos_1_transformacao"
+								if (processos_1_transformacao != null) {
+
+									/**
+									 * [processos_1_tDBOutput_1 main ] start
+									 */
+
+									s(currentComponent = "processos_1_tDBOutput_1");
+
+									if (runStat.update(execStat, enableLogStash, iterateId, 1, 1
+
+											, "processos_1_transformacao", "processos_1_tMap_1", "tMap_1", "tMap",
+											"processos_1_tDBOutput_1", "tDBOutput_1", "tPostgresqlOutput"
+
+									)) {
+										talendJobLogProcess(globalMap);
+									}
+
+									if (log.isTraceEnabled()) {
+										log.trace(
+												"processos_1_transformacao - " + (processos_1_transformacao == null ? ""
+														: processos_1_transformacao.toLogString()));
+									}
+
+									whetherReject_processos_1_tDBOutput_1 = false;
+									pstmt_processos_1_tDBOutput_1.setInt(1, processos_1_transformacao.id_processo);
+
+									if (processos_1_transformacao.numero_processo == null) {
+										pstmt_processos_1_tDBOutput_1.setNull(2, java.sql.Types.VARCHAR);
+									} else {
+										pstmt_processos_1_tDBOutput_1.setString(2,
+												processos_1_transformacao.numero_processo);
+									}
+
+									if (processos_1_transformacao.id_tribunal == null) {
+										pstmt_processos_1_tDBOutput_1.setNull(3, java.sql.Types.VARCHAR);
+									} else {
+										pstmt_processos_1_tDBOutput_1.setString(3,
+												processos_1_transformacao.id_tribunal);
+									}
+
+									if (processos_1_transformacao.id_classe == null) {
+										pstmt_processos_1_tDBOutput_1.setNull(4, java.sql.Types.VARCHAR);
+									} else {
+										pstmt_processos_1_tDBOutput_1.setString(4, processos_1_transformacao.id_classe);
+									}
+
+									if (processos_1_transformacao.id_assunto == null) {
+										pstmt_processos_1_tDBOutput_1.setNull(5, java.sql.Types.VARCHAR);
+									} else {
+										pstmt_processos_1_tDBOutput_1.setString(5,
+												processos_1_transformacao.id_assunto);
+									}
+
+									if (processos_1_transformacao.id_magistrado == null) {
+										pstmt_processos_1_tDBOutput_1.setNull(6, java.sql.Types.VARCHAR);
+									} else {
+										pstmt_processos_1_tDBOutput_1.setString(6,
+												processos_1_transformacao.id_magistrado);
+									}
+
+									if (processos_1_transformacao.data_ajuizamento != null) {
+										pstmt_processos_1_tDBOutput_1.setTimestamp(7, new java.sql.Timestamp(
+												processos_1_transformacao.data_ajuizamento.getTime()));
+									} else {
+										pstmt_processos_1_tDBOutput_1.setNull(7, java.sql.Types.TIMESTAMP);
+									}
+
+									if (processos_1_transformacao.tempo_processo_dias == null) {
+										pstmt_processos_1_tDBOutput_1.setNull(8, java.sql.Types.VARCHAR);
+									} else {
+										pstmt_processos_1_tDBOutput_1.setString(8,
+												processos_1_transformacao.tempo_processo_dias);
+									}
+
+									pstmt_processos_1_tDBOutput_1.setBigDecimal(9,
+											processos_1_transformacao.valor_causa);
+
+									pstmt_processos_1_tDBOutput_1.addBatch();
+									nb_line_processos_1_tDBOutput_1++;
+
+									if (log.isDebugEnabled())
+										log.debug("processos_1_tDBOutput_1 - " + ("Adding the record ")
+												+ (nb_line_processos_1_tDBOutput_1) + (" to the ") + ("INSERT")
+												+ (" batch."));
+									batchSizeCounter_processos_1_tDBOutput_1++;
+
+									if (!whetherReject_processos_1_tDBOutput_1) {
+									}
+									if ((batchSize_processos_1_tDBOutput_1 > 0)
+											&& (batchSize_processos_1_tDBOutput_1 <= batchSizeCounter_processos_1_tDBOutput_1)) {
+										try {
+											int countSum_processos_1_tDBOutput_1 = 0;
+
+											if (log.isDebugEnabled())
+												log.debug("processos_1_tDBOutput_1 - " + ("Executing the ") + ("INSERT")
+														+ (" batch."));
+											for (int countEach_processos_1_tDBOutput_1 : pstmt_processos_1_tDBOutput_1
+													.executeBatch()) {
+												countSum_processos_1_tDBOutput_1 += (countEach_processos_1_tDBOutput_1 < 0
+														? 0
+														: countEach_processos_1_tDBOutput_1);
+											}
+											if (log.isDebugEnabled())
+												log.debug("processos_1_tDBOutput_1 - " + ("The ") + ("INSERT")
+														+ (" batch execution has succeeded."));
+											rowsToCommitCount_processos_1_tDBOutput_1 += countSum_processos_1_tDBOutput_1;
+
+											insertedCount_processos_1_tDBOutput_1 += countSum_processos_1_tDBOutput_1;
+
+											batchSizeCounter_processos_1_tDBOutput_1 = 0;
+										} catch (java.sql.BatchUpdateException e_processos_1_tDBOutput_1) {
+											globalMap.put("processos_1_tDBOutput_1_ERROR_MESSAGE",
+													e_processos_1_tDBOutput_1.getMessage());
+											java.sql.SQLException ne_processos_1_tDBOutput_1 = e_processos_1_tDBOutput_1
+													.getNextException(), sqle_processos_1_tDBOutput_1 = null;
+											String errormessage_processos_1_tDBOutput_1;
+											if (ne_processos_1_tDBOutput_1 != null) {
+												// build new exception to provide the original cause
+												sqle_processos_1_tDBOutput_1 = new java.sql.SQLException(
+														e_processos_1_tDBOutput_1.getMessage() + "\ncaused by: "
+																+ ne_processos_1_tDBOutput_1.getMessage(),
+														ne_processos_1_tDBOutput_1.getSQLState(),
+														ne_processos_1_tDBOutput_1.getErrorCode(),
+														ne_processos_1_tDBOutput_1);
+												errormessage_processos_1_tDBOutput_1 = sqle_processos_1_tDBOutput_1
+														.getMessage();
+											} else {
+												errormessage_processos_1_tDBOutput_1 = e_processos_1_tDBOutput_1
+														.getMessage();
+											}
+
+											int countSum_processos_1_tDBOutput_1 = 0;
+											for (int countEach_processos_1_tDBOutput_1 : e_processos_1_tDBOutput_1
+													.getUpdateCounts()) {
+												countSum_processos_1_tDBOutput_1 += (countEach_processos_1_tDBOutput_1 < 0
+														? 0
+														: countEach_processos_1_tDBOutput_1);
+											}
+											rowsToCommitCount_processos_1_tDBOutput_1 += countSum_processos_1_tDBOutput_1;
+
+											insertedCount_processos_1_tDBOutput_1 += countSum_processos_1_tDBOutput_1;
+
+											log.error("processos_1_tDBOutput_1 - "
+													+ (errormessage_processos_1_tDBOutput_1));
+											System.err.println(errormessage_processos_1_tDBOutput_1);
+
+										}
+									}
+
+									commitCounter_processos_1_tDBOutput_1++;
+									if (commitEvery_processos_1_tDBOutput_1 <= commitCounter_processos_1_tDBOutput_1) {
+										if ((batchSize_processos_1_tDBOutput_1 > 0)
+												&& (batchSizeCounter_processos_1_tDBOutput_1 > 0)) {
+											try {
+												int countSum_processos_1_tDBOutput_1 = 0;
+
+												if (log.isDebugEnabled())
+													log.debug("processos_1_tDBOutput_1 - " + ("Executing the ")
+															+ ("INSERT") + (" batch."));
+												for (int countEach_processos_1_tDBOutput_1 : pstmt_processos_1_tDBOutput_1
+														.executeBatch()) {
+													countSum_processos_1_tDBOutput_1 += (countEach_processos_1_tDBOutput_1 < 0
+															? 0
+															: countEach_processos_1_tDBOutput_1);
+												}
+												if (log.isDebugEnabled())
+													log.debug("processos_1_tDBOutput_1 - " + ("The ") + ("INSERT")
+															+ (" batch execution has succeeded."));
+												rowsToCommitCount_processos_1_tDBOutput_1 += countSum_processos_1_tDBOutput_1;
+
+												insertedCount_processos_1_tDBOutput_1 += countSum_processos_1_tDBOutput_1;
+
+												batchSizeCounter_processos_1_tDBOutput_1 = 0;
+											} catch (java.sql.BatchUpdateException e_processos_1_tDBOutput_1) {
+												globalMap.put("processos_1_tDBOutput_1_ERROR_MESSAGE",
+														e_processos_1_tDBOutput_1.getMessage());
+												java.sql.SQLException ne_processos_1_tDBOutput_1 = e_processos_1_tDBOutput_1
+														.getNextException(), sqle_processos_1_tDBOutput_1 = null;
+												String errormessage_processos_1_tDBOutput_1;
+												if (ne_processos_1_tDBOutput_1 != null) {
+													// build new exception to provide the original cause
+													sqle_processos_1_tDBOutput_1 = new java.sql.SQLException(
+															e_processos_1_tDBOutput_1.getMessage() + "\ncaused by: "
+																	+ ne_processos_1_tDBOutput_1.getMessage(),
+															ne_processos_1_tDBOutput_1.getSQLState(),
+															ne_processos_1_tDBOutput_1.getErrorCode(),
+															ne_processos_1_tDBOutput_1);
+													errormessage_processos_1_tDBOutput_1 = sqle_processos_1_tDBOutput_1
+															.getMessage();
+												} else {
+													errormessage_processos_1_tDBOutput_1 = e_processos_1_tDBOutput_1
+															.getMessage();
+												}
+
+												int countSum_processos_1_tDBOutput_1 = 0;
+												for (int countEach_processos_1_tDBOutput_1 : e_processos_1_tDBOutput_1
+														.getUpdateCounts()) {
+													countSum_processos_1_tDBOutput_1 += (countEach_processos_1_tDBOutput_1 < 0
+															? 0
+															: countEach_processos_1_tDBOutput_1);
+												}
+												rowsToCommitCount_processos_1_tDBOutput_1 += countSum_processos_1_tDBOutput_1;
+
+												insertedCount_processos_1_tDBOutput_1 += countSum_processos_1_tDBOutput_1;
+
+												log.error("processos_1_tDBOutput_1 - "
+														+ (errormessage_processos_1_tDBOutput_1));
+												System.err.println(errormessage_processos_1_tDBOutput_1);
+
+											}
+										}
+										if (rowsToCommitCount_processos_1_tDBOutput_1 != 0) {
+
+											if (log.isDebugEnabled())
+												log.debug("processos_1_tDBOutput_1 - "
+														+ ("Connection starting to commit ")
+														+ (rowsToCommitCount_processos_1_tDBOutput_1)
+														+ (" record(s)."));
+										}
+										conn_processos_1_tDBOutput_1.commit();
+										if (rowsToCommitCount_processos_1_tDBOutput_1 != 0) {
+
+											if (log.isDebugEnabled())
+												log.debug("processos_1_tDBOutput_1 - "
+														+ ("Connection commit has succeeded."));
+											rowsToCommitCount_processos_1_tDBOutput_1 = 0;
+										}
+										commitCounter_processos_1_tDBOutput_1 = 0;
+									}
+
+									tos_count_processos_1_tDBOutput_1++;
+
+									/**
+									 * [processos_1_tDBOutput_1 main ] stop
+									 */
+
+									/**
+									 * [processos_1_tDBOutput_1 process_data_begin ] start
+									 */
+
+									s(currentComponent = "processos_1_tDBOutput_1");
+
+									/**
+									 * [processos_1_tDBOutput_1 process_data_begin ] stop
+									 */
+
+									/**
+									 * [processos_1_tDBOutput_1 process_data_end ] start
+									 */
+
+									s(currentComponent = "processos_1_tDBOutput_1");
+
+									/**
+									 * [processos_1_tDBOutput_1 process_data_end ] stop
+									 */
+
+								} // End of branch "processos_1_transformacao"
+
+								/**
+								 * [processos_1_tMap_1 process_data_end ] start
+								 */
+
+								s(currentComponent = "processos_1_tMap_1");
+
+								/**
+								 * [processos_1_tMap_1 process_data_end ] stop
+								 */
+
+							} // End of branch "processos_1_row1"
+
+							/**
+							 * [processos_1_tFileInputParquet_2 process_data_end ] start
+							 */
+
+							s(currentComponent = "processos_1_tFileInputParquet_2");
+
+							/**
+							 * [processos_1_tFileInputParquet_2 process_data_end ] stop
+							 */
+
+							/**
+							 * [processos_1_tFileInputParquet_2 end ] start
+							 */
+
+							s(currentComponent = "processos_1_tFileInputParquet_2");
 
 						}
-						// QTUP-3575
-
-						tos_count_Processos_Ingestao_Bronze_1_tDBInput_3++;
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_3 main ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_3 process_data_begin ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_3");
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_3 process_data_begin ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_3 main ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_3");
-
-						if (runStat.update(execStat, enableLogStash, iterateId, 1, 1
-
-								, "Processos_Ingestao_Bronze_1_row3", "Processos_Ingestao_Bronze_1_tDBInput_3",
-								"tDBInput_3", "tPostgresqlInput", "Processos_Ingestao_Bronze_1_tFileOutputParquet_3",
-								"tFileOutputParquet_3", "tFileOutputParquet"
-
-						)) {
-							talendJobLogProcess(globalMap);
-						}
-
-						if (log.isTraceEnabled()) {
-							log.trace("Processos_Ingestao_Bronze_1_row3 - "
-									+ (Processos_Ingestao_Bronze_1_row3 == null ? ""
-											: Processos_Ingestao_Bronze_1_row3.toLogString()));
-						}
-
-						org.talend.parquet.data.Group group_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = factory_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
-								.newGroup();
-
-						group_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.append("id_classe",
-								Processos_Ingestao_Bronze_1_row3.id_classe);
-						if (Processos_Ingestao_Bronze_1_row3.cod_cnj != null) {
-
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.append("cod_cnj",
-									String.valueOf(Processos_Ingestao_Bronze_1_row3.cod_cnj));
-						}
-
-						if (Processos_Ingestao_Bronze_1_row3.nome_classe != null) {
-
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.append("nome_classe",
-									String.valueOf(Processos_Ingestao_Bronze_1_row3.nome_classe));
-						}
-
-						if (Processos_Ingestao_Bronze_1_row3.tipo_procedimento != null) {
-
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.append("tipo_procedimento",
-									String.valueOf(Processos_Ingestao_Bronze_1_row3.tipo_procedimento));
-						}
-
-						writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
-								.write(group_Processos_Ingestao_Bronze_1_tFileOutputParquet_3);
-						nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_3++;
-						log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_3 - Writing the record "
-								+ nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 + " to the file.");
-
-						tos_count_Processos_Ingestao_Bronze_1_tFileOutputParquet_3++;
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_3 main ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_3 process_data_begin ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_3");
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_3 process_data_begin ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_3 process_data_end ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_3");
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_3 process_data_end ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_3 process_data_end ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_3");
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_3 process_data_end ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_3 end ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_3");
-
 					}
 				} finally {
-					if (rs_Processos_Ingestao_Bronze_1_tDBInput_3 != null) {
-						rs_Processos_Ingestao_Bronze_1_tDBInput_3.close();
+					if (readFooter_processos_1_tFileInputParquet_2 != null) {
+						readFooter_processos_1_tFileInputParquet_2.close();
 					}
-					if (stmt_Processos_Ingestao_Bronze_1_tDBInput_3 != null) {
-						stmt_Processos_Ingestao_Bronze_1_tDBInput_3.close();
-					}
-					if (conn_Processos_Ingestao_Bronze_1_tDBInput_3 != null
-							&& !conn_Processos_Ingestao_Bronze_1_tDBInput_3.isClosed()) {
-
-						log.debug("Processos_Ingestao_Bronze_1_tDBInput_3 - Closing the connection to the database.");
-
-						conn_Processos_Ingestao_Bronze_1_tDBInput_3.close();
-
-						if ("com.mysql.cj.jdbc.Driver".equals((String) globalMap.get("driverClass_"))
-								&& routines.system.BundleUtils.inOSGi()) {
-							Class.forName("com.mysql.cj.jdbc.AbandonedConnectionCleanupThread")
-									.getMethod("checkedShutdown").invoke(null, (Object[]) null);
-						}
-
-						log.debug("Processos_Ingestao_Bronze_1_tDBInput_3 - Connection to the database closed.");
-
-					}
-
 				}
-				globalMap.put("Processos_Ingestao_Bronze_1_tDBInput_3_NB_LINE",
-						nb_line_Processos_Ingestao_Bronze_1_tDBInput_3);
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_3 - Retrieved records count: "
-						+ nb_line_Processos_Ingestao_Bronze_1_tDBInput_3 + " .");
+				globalMap.put("processos_1_tFileInputParquet_2_NB_LINE", nb_line_processos_1_tFileInputParquet_2);
 
 				if (log.isDebugEnabled())
-					log.debug("Processos_Ingestao_Bronze_1_tDBInput_3 - " + ("Done."));
+					log.debug("processos_1_tFileInputParquet_2 - " + ("Done."));
 
-				ok_Hash.put("Processos_Ingestao_Bronze_1_tDBInput_3", true);
-				end_Hash.put("Processos_Ingestao_Bronze_1_tDBInput_3", System.currentTimeMillis());
+				ok_Hash.put("processos_1_tFileInputParquet_2", true);
+				end_Hash.put("processos_1_tFileInputParquet_2", System.currentTimeMillis());
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tDBInput_3 end ] stop
+				 * [processos_1_tFileInputParquet_2 end ] stop
 				 */
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_3 end ] start
+				 * [processos_1_tMap_1 end ] start
 				 */
 
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_3");
+				s(currentComponent = "processos_1_tMap_1");
 
-				globalMap.put("Processos_Ingestao_Bronze_1_tFileOutputParquet_3_NB_LINE",
-						nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_3);
+// ###############################
+// # Lookup hashes releasing
+// ###############################      
+				log.debug("processos_1_tMap_1 - Written records count in the table 'processos_1_transformacao': "
+						+ count_processos_1_transformacao_processos_1_tMap_1 + ".");
 
-				log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_3 - Written records count: "
-						+ nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 + " .");
-
-				if (writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 != null) {
-					writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_3.close();
-				}
-				org.apache.hadoop.fs.FileSystem fs_Processos_Ingestao_Bronze_1_tFileOutputParquet_3 = crcPath_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
-						.getFileSystem(config_Processos_Ingestao_Bronze_1_tFileOutputParquet_3);
-				if (fs_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
-						.exists(crcPath_Processos_Ingestao_Bronze_1_tFileOutputParquet_3)) {
-					fs_Processos_Ingestao_Bronze_1_tFileOutputParquet_3
-							.delete(crcPath_Processos_Ingestao_Bronze_1_tFileOutputParquet_3, false);
-				}
-
-				if (runStat.updateStatAndLog(execStat, enableLogStash, resourceMap, iterateId,
-						"Processos_Ingestao_Bronze_1_row3", 2, 0, "Processos_Ingestao_Bronze_1_tDBInput_3",
-						"tDBInput_3", "tPostgresqlInput", "Processos_Ingestao_Bronze_1_tFileOutputParquet_3",
-						"tFileOutputParquet_3", "tFileOutputParquet", "output")) {
+				if (runStat.updateStatAndLog(execStat, enableLogStash, resourceMap, iterateId, "processos_1_row1", 2, 0,
+						"processos_1_tFileInputParquet_2", "tFileInputParquet_2", "tFileInputParquet",
+						"processos_1_tMap_1", "tMap_1", "tMap", "output")) {
 					talendJobLogProcess(globalMap);
 				}
 
 				if (log.isDebugEnabled())
-					log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_3 - " + ("Done."));
+					log.debug("processos_1_tMap_1 - " + ("Done."));
 
-				ok_Hash.put("Processos_Ingestao_Bronze_1_tFileOutputParquet_3", true);
-				end_Hash.put("Processos_Ingestao_Bronze_1_tFileOutputParquet_3", System.currentTimeMillis());
+				ok_Hash.put("processos_1_tMap_1", true);
+				end_Hash.put("processos_1_tMap_1", System.currentTimeMillis());
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_3 end ] stop
+				 * [processos_1_tMap_1 end ] stop
+				 */
+
+				/**
+				 * [processos_1_tDBOutput_1 end ] start
+				 */
+
+				s(currentComponent = "processos_1_tDBOutput_1");
+
+				try {
+					int countSum_processos_1_tDBOutput_1 = 0;
+					if (pstmt_processos_1_tDBOutput_1 != null && batchSizeCounter_processos_1_tDBOutput_1 > 0) {
+
+						if (log.isDebugEnabled())
+							log.debug("processos_1_tDBOutput_1 - " + ("Executing the ") + ("INSERT") + (" batch."));
+						for (int countEach_processos_1_tDBOutput_1 : pstmt_processos_1_tDBOutput_1.executeBatch()) {
+							countSum_processos_1_tDBOutput_1 += (countEach_processos_1_tDBOutput_1 < 0 ? 0
+									: countEach_processos_1_tDBOutput_1);
+						}
+						rowsToCommitCount_processos_1_tDBOutput_1 += countSum_processos_1_tDBOutput_1;
+
+						if (log.isDebugEnabled())
+							log.debug("processos_1_tDBOutput_1 - " + ("The ") + ("INSERT")
+									+ (" batch execution has succeeded."));
+					}
+
+					insertedCount_processos_1_tDBOutput_1 += countSum_processos_1_tDBOutput_1;
+
+				} catch (java.sql.BatchUpdateException e_processos_1_tDBOutput_1) {
+					globalMap.put("processos_1_tDBOutput_1_ERROR_MESSAGE", e_processos_1_tDBOutput_1.getMessage());
+					java.sql.SQLException ne_processos_1_tDBOutput_1 = e_processos_1_tDBOutput_1.getNextException(),
+							sqle_processos_1_tDBOutput_1 = null;
+					String errormessage_processos_1_tDBOutput_1;
+					if (ne_processos_1_tDBOutput_1 != null) {
+						// build new exception to provide the original cause
+						sqle_processos_1_tDBOutput_1 = new java.sql.SQLException(
+								e_processos_1_tDBOutput_1.getMessage() + "\ncaused by: "
+										+ ne_processos_1_tDBOutput_1.getMessage(),
+								ne_processos_1_tDBOutput_1.getSQLState(), ne_processos_1_tDBOutput_1.getErrorCode(),
+								ne_processos_1_tDBOutput_1);
+						errormessage_processos_1_tDBOutput_1 = sqle_processos_1_tDBOutput_1.getMessage();
+					} else {
+						errormessage_processos_1_tDBOutput_1 = e_processos_1_tDBOutput_1.getMessage();
+					}
+
+					int countSum_processos_1_tDBOutput_1 = 0;
+					for (int countEach_processos_1_tDBOutput_1 : e_processos_1_tDBOutput_1.getUpdateCounts()) {
+						countSum_processos_1_tDBOutput_1 += (countEach_processos_1_tDBOutput_1 < 0 ? 0
+								: countEach_processos_1_tDBOutput_1);
+					}
+					rowsToCommitCount_processos_1_tDBOutput_1 += countSum_processos_1_tDBOutput_1;
+
+					insertedCount_processos_1_tDBOutput_1 += countSum_processos_1_tDBOutput_1;
+
+					log.error("processos_1_tDBOutput_1 - " + (errormessage_processos_1_tDBOutput_1));
+					System.err.println(errormessage_processos_1_tDBOutput_1);
+
+				}
+
+				if (pstmt_processos_1_tDBOutput_1 != null) {
+
+					pstmt_processos_1_tDBOutput_1.close();
+					resourceMap.remove("pstmt_processos_1_tDBOutput_1");
+				}
+				resourceMap.put("statementClosed_processos_1_tDBOutput_1", true);
+				if (rowsToCommitCount_processos_1_tDBOutput_1 != 0) {
+
+					if (log.isDebugEnabled())
+						log.debug("processos_1_tDBOutput_1 - " + ("Connection starting to commit ")
+								+ (rowsToCommitCount_processos_1_tDBOutput_1) + (" record(s)."));
+				}
+				conn_processos_1_tDBOutput_1.commit();
+				if (rowsToCommitCount_processos_1_tDBOutput_1 != 0) {
+
+					if (log.isDebugEnabled())
+						log.debug("processos_1_tDBOutput_1 - " + ("Connection commit has succeeded."));
+					rowsToCommitCount_processos_1_tDBOutput_1 = 0;
+				}
+				commitCounter_processos_1_tDBOutput_1 = 0;
+
+				if (log.isDebugEnabled())
+					log.debug("processos_1_tDBOutput_1 - " + ("Closing the connection to the database."));
+				conn_processos_1_tDBOutput_1.close();
+
+				if (log.isDebugEnabled())
+					log.debug("processos_1_tDBOutput_1 - " + ("Connection to the database has closed."));
+				resourceMap.put("finish_processos_1_tDBOutput_1", true);
+
+				nb_line_deleted_processos_1_tDBOutput_1 = nb_line_deleted_processos_1_tDBOutput_1
+						+ deletedCount_processos_1_tDBOutput_1;
+				nb_line_update_processos_1_tDBOutput_1 = nb_line_update_processos_1_tDBOutput_1
+						+ updatedCount_processos_1_tDBOutput_1;
+				nb_line_inserted_processos_1_tDBOutput_1 = nb_line_inserted_processos_1_tDBOutput_1
+						+ insertedCount_processos_1_tDBOutput_1;
+				nb_line_rejected_processos_1_tDBOutput_1 = nb_line_rejected_processos_1_tDBOutput_1
+						+ rejectedCount_processos_1_tDBOutput_1;
+
+				globalMap.put("processos_1_tDBOutput_1_NB_LINE", nb_line_processos_1_tDBOutput_1);
+				globalMap.put("processos_1_tDBOutput_1_NB_LINE_UPDATED", nb_line_update_processos_1_tDBOutput_1);
+				globalMap.put("processos_1_tDBOutput_1_NB_LINE_INSERTED", nb_line_inserted_processos_1_tDBOutput_1);
+				globalMap.put("processos_1_tDBOutput_1_NB_LINE_DELETED", nb_line_deleted_processos_1_tDBOutput_1);
+				globalMap.put("processos_1_tDBOutput_1_NB_LINE_REJECTED", nb_line_rejected_processos_1_tDBOutput_1);
+
+				if (log.isDebugEnabled())
+					log.debug("processos_1_tDBOutput_1 - " + ("Has ") + ("inserted") + (" ")
+							+ (nb_line_inserted_processos_1_tDBOutput_1) + (" record(s)."));
+
+				if (runStat.updateStatAndLog(execStat, enableLogStash, resourceMap, iterateId,
+						"processos_1_transformacao", 2, 0, "processos_1_tMap_1", "tMap_1", "tMap",
+						"processos_1_tDBOutput_1", "tDBOutput_1", "tPostgresqlOutput", "output")) {
+					talendJobLogProcess(globalMap);
+				}
+
+				if (log.isDebugEnabled())
+					log.debug("processos_1_tDBOutput_1 - " + ("Done."));
+
+				ok_Hash.put("processos_1_tDBOutput_1", true);
+				end_Hash.put("processos_1_tDBOutput_1", System.currentTimeMillis());
+
+				if (execStat) {
+					runStat.updateStatOnConnection("processos_1_OnComponentOk1", 0, "ok");
+				}
+				processos_1_tDBRow_1Process(globalMap);
+
+				/**
+				 * [processos_1_tDBOutput_1 end ] stop
 				 */
 
 			} // end the resume
@@ -6318,23 +4286,64 @@ public class TRF5 implements TalendJob {
 			try {
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tDBInput_3 finally ] start
+				 * [processos_1_tFileInputParquet_2 finally ] start
 				 */
 
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_3");
+				s(currentComponent = "processos_1_tFileInputParquet_2");
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tDBInput_3 finally ] stop
+				 * [processos_1_tFileInputParquet_2 finally ] stop
 				 */
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_3 finally ] start
+				 * [processos_1_tMap_1 finally ] start
 				 */
 
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_3");
+				s(currentComponent = "processos_1_tMap_1");
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_3 finally ] stop
+				 * [processos_1_tMap_1 finally ] stop
+				 */
+
+				/**
+				 * [processos_1_tDBOutput_1 finally ] start
+				 */
+
+				s(currentComponent = "processos_1_tDBOutput_1");
+
+				try {
+					if (resourceMap.get("statementClosed_processos_1_tDBOutput_1") == null) {
+						java.sql.PreparedStatement pstmtToClose_processos_1_tDBOutput_1 = null;
+						if ((pstmtToClose_processos_1_tDBOutput_1 = (java.sql.PreparedStatement) resourceMap
+								.remove("pstmt_processos_1_tDBOutput_1")) != null) {
+							pstmtToClose_processos_1_tDBOutput_1.close();
+						}
+					}
+				} finally {
+					if (resourceMap.get("finish_processos_1_tDBOutput_1") == null) {
+						java.sql.Connection ctn_processos_1_tDBOutput_1 = null;
+						if ((ctn_processos_1_tDBOutput_1 = (java.sql.Connection) resourceMap
+								.get("conn_processos_1_tDBOutput_1")) != null) {
+							try {
+								if (log.isDebugEnabled())
+									log.debug(
+											"processos_1_tDBOutput_1 - " + ("Closing the connection to the database."));
+								ctn_processos_1_tDBOutput_1.close();
+								if (log.isDebugEnabled())
+									log.debug(
+											"processos_1_tDBOutput_1 - " + ("Connection to the database has closed."));
+							} catch (java.sql.SQLException sqlEx_processos_1_tDBOutput_1) {
+								String errorMessage_processos_1_tDBOutput_1 = "failed to close the connection in processos_1_tDBOutput_1 :"
+										+ sqlEx_processos_1_tDBOutput_1.getMessage();
+								log.error("processos_1_tDBOutput_1 - " + (errorMessage_processos_1_tDBOutput_1));
+								System.err.println(errorMessage_processos_1_tDBOutput_1);
+							}
+						}
+					}
+				}
+
+				/**
+				 * [processos_1_tDBOutput_1 finally ] stop
 				 */
 
 			} catch (java.lang.Exception e) {
@@ -6345,11 +4354,405 @@ public class TRF5 implements TalendJob {
 			resourceMap = null;
 		}
 
-		globalMap.put("Processos_Ingestao_Bronze_1_tDBInput_3_SUBPROCESS_STATE", 1);
+		globalMap.put("processos_1_tFileInputParquet_2_SUBPROCESS_STATE", 1);
 	}
 
-	public static class Processos_Ingestao_Bronze_1_row4Struct
-			implements routines.system.IPersistableRow<Processos_Ingestao_Bronze_1_row4Struct> {
+	public void processos_1_tDBRow_1Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+		globalMap.put("processos_1_tDBRow_1_SUBPROCESS_STATE", 0);
+
+		final boolean execStat = this.execStat;
+
+		mdc("processos_1_tDBRow_1", "Vr7ubR_");
+
+		String iterateId = "";
+
+		String currentComponent = "";
+		s("none");
+		String cLabel = null;
+		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
+
+		try {
+			// TDI-39566 avoid throwing an useless Exception
+			boolean resumeIt = true;
+			if (globalResumeTicket == false && resumeEntryMethodName != null) {
+				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
+				resumeIt = resumeEntryMethodName.equals(currentMethodName);
+			}
+			if (resumeIt || globalResumeTicket) { // start the resume
+				globalResumeTicket = true;
+
+				/**
+				 * [processos_1_tDBRow_1 begin ] start
+				 */
+
+				sh("processos_1_tDBRow_1");
+
+				s(currentComponent = "processos_1_tDBRow_1");
+
+				int tos_count_processos_1_tDBRow_1 = 0;
+
+				if (log.isDebugEnabled())
+					log.debug("processos_1_tDBRow_1 - " + ("Start to work."));
+				if (log.isDebugEnabled()) {
+					class BytesLimit65535_processos_1_tDBRow_1 {
+						public void limitLog4jByte() throws Exception {
+							StringBuilder log4jParamters_processos_1_tDBRow_1 = new StringBuilder();
+							log4jParamters_processos_1_tDBRow_1.append("Parameters:");
+							log4jParamters_processos_1_tDBRow_1.append("USE_EXISTING_CONNECTION" + " = " + "false");
+							log4jParamters_processos_1_tDBRow_1.append(" | ");
+							log4jParamters_processos_1_tDBRow_1.append("DB_VERSION" + " = " + "V9_X");
+							log4jParamters_processos_1_tDBRow_1.append(" | ");
+							log4jParamters_processos_1_tDBRow_1.append("HOST" + " = "
+									+ "\"peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com\"");
+							log4jParamters_processos_1_tDBRow_1.append(" | ");
+							log4jParamters_processos_1_tDBRow_1.append("PORT" + " = " + "\"5432\"");
+							log4jParamters_processos_1_tDBRow_1.append(" | ");
+							log4jParamters_processos_1_tDBRow_1.append("DBNAME" + " = " + "\"qlik_demo\"");
+							log4jParamters_processos_1_tDBRow_1.append(" | ");
+							log4jParamters_processos_1_tDBRow_1.append("SCHEMA_DB" + " = " + "\"public\"");
+							log4jParamters_processos_1_tDBRow_1.append(" | ");
+							log4jParamters_processos_1_tDBRow_1.append("USER" + " = " + "\"peta_qlik\"");
+							log4jParamters_processos_1_tDBRow_1.append(" | ");
+							log4jParamters_processos_1_tDBRow_1.append("PASS" + " = " + String.valueOf(
+									"enc:routine.encryption.key.v1:mNhlItzqvSjOHzQ/mceHp6qF2rHz1erOE/n5BxjVcRfnTIF06Q==")
+									.substring(0, 4) + "...");
+							log4jParamters_processos_1_tDBRow_1.append(" | ");
+							log4jParamters_processos_1_tDBRow_1.append("QUERYSTORE" + " = " + "\"\"");
+							log4jParamters_processos_1_tDBRow_1.append(" | ");
+							log4jParamters_processos_1_tDBRow_1.append("QUERY" + " = "
+									+ "\"DROP TABLE IF EXISTS silver_processos;   CREATE TABLE silver_processos AS   SELECT DISTINCT      f.id_processo,       f.numero_processo,       f.id_tribunal,       f.id_classe,       f.id_assunto,       f.id_magistrado,       f.data_ajuizamento,       CASE           WHEN f.valor_causa < 0 THEN 0           WHEN f.valor_causa > 100000000 THEN 100000000           ELSE f.valor_causa       END AS valor_causa,       COALESCE(f.tempo_processo_dias, '0') AS tempo_processo_dias   FROM stg_processos f   INNER JOIN stg_tribunal t ON CAST(f.id_tribunal AS VARCHAR) = CAST(t.id_tribunal AS VARCHAR)   INNER JOIN stg_magistrado m ON CAST(f.id_magistrado AS VARCHAR) = CAST(m.id_magistrado AS VARCHAR);\"");
+							log4jParamters_processos_1_tDBRow_1.append(" | ");
+							log4jParamters_processos_1_tDBRow_1.append("SPECIFY_DATASOURCE_ALIAS" + " = " + "false");
+							log4jParamters_processos_1_tDBRow_1.append(" | ");
+							log4jParamters_processos_1_tDBRow_1.append("DIE_ON_ERROR" + " = " + "false");
+							log4jParamters_processos_1_tDBRow_1.append(" | ");
+							log4jParamters_processos_1_tDBRow_1.append("PROPERTIES" + " = " + "\"\"");
+							log4jParamters_processos_1_tDBRow_1.append(" | ");
+							log4jParamters_processos_1_tDBRow_1.append("PROPAGATE_RECORD_SET" + " = " + "false");
+							log4jParamters_processos_1_tDBRow_1.append(" | ");
+							log4jParamters_processos_1_tDBRow_1.append("USE_PREPAREDSTATEMENT" + " = " + "false");
+							log4jParamters_processos_1_tDBRow_1.append(" | ");
+							log4jParamters_processos_1_tDBRow_1.append("COMMIT_EVERY" + " = " + "10000");
+							log4jParamters_processos_1_tDBRow_1.append(" | ");
+							log4jParamters_processos_1_tDBRow_1.append("UNIFIED_COMPONENTS" + " = " + "tPostgresqlRow");
+							log4jParamters_processos_1_tDBRow_1.append(" | ");
+							if (log.isDebugEnabled())
+								log.debug("processos_1_tDBRow_1 - " + (log4jParamters_processos_1_tDBRow_1));
+						}
+					}
+					new BytesLimit65535_processos_1_tDBRow_1().limitLog4jByte();
+				}
+				// QTUP-3575
+				if (enableLineage) {
+					class ParameterUtil_processos_1_tDBRow_1 {
+
+						private void a(java.util.List<java.util.Map<String, String>> schema, String... values) {
+							java.util.Map<String, String> field = new java.util.HashMap<>();
+							field.put("name", values[0]);
+							field.put("talend_type", values[1]);
+							schema.add(field);
+						}
+
+						public java.util.Map<String, String> getParameter() throws Exception {
+							java.util.Map<String, String> component_parameters = new java.util.HashMap<>();
+
+							try {
+
+								component_parameters.put("USE_EXISTING_CONNECTION", String.valueOf("false"));
+								component_parameters.put("DB_VERSION", String.valueOf("V9_X"));
+								component_parameters.put("HOST", String
+										.valueOf("peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com"));
+								component_parameters.put("PORT", String.valueOf("5432"));
+								component_parameters.put("DBNAME", String.valueOf("qlik_demo"));
+								component_parameters.put("SCHEMA_DB", String.valueOf("public"));
+								component_parameters.put("USER", String.valueOf("peta_qlik"));
+								component_parameters.put("QUERYSTORE", String.valueOf(""));
+								component_parameters.put("QUERY", String.valueOf(new StringBuilder().append(
+										"DROP TABLE IF EXISTS silver_processos; \nCREATE TABLE silver_processos AS \nSELECT DISTINCT\n    f.id_processo, \n    f"
+												+ ".numero_processo, \n    f.id_tribunal, \n    f.id_classe, \n    f.id_assunto, \n    f.id_magistrado, \n    f.data_ajuiza"
+												+ "mento, \n    CASE \n        WHEN f.valor_causa < 0 THEN 0 \n        WHEN f.valor_causa > 100000000 THEN 100000000 \n    "
+												+ "    ELSE f.valor_causa \n    END AS valor_causa, \n    COALESCE(f.tempo_processo_dias, '0') AS tempo_processo_dias \nFRO"
+												+ "M stg_processos f \nINNER JOIN stg_tribunal t ON CAST(f.id_tribunal AS VARCHAR) = CAST(t.id_tribunal AS VARCHAR) \nINNER"
+												+ " JOIN stg_magistrado m ON CAST(f.id_magistrado AS VARCHAR) = CAST(m.id_magistrado AS VARCHAR);")
+										.toString()));
+								component_parameters.put("SPECIFY_DATASOURCE_ALIAS", String.valueOf("false"));
+								component_parameters.put("DIE_ON_ERROR", String.valueOf("false"));
+								component_parameters.put("PROPERTIES", String.valueOf(""));
+								component_parameters.put("PROPAGATE_RECORD_SET", String.valueOf("false"));
+								component_parameters.put("USE_PREPAREDSTATEMENT", String.valueOf("false"));
+								component_parameters.put("COMMIT_EVERY", String.valueOf("10000"));
+								component_parameters.put("UNIFIED_COMPONENTS", String.valueOf("tPostgresqlRow"));
+
+							} catch (java.lang.Exception e_processos_1_tDBRow_1) {
+								// do nothing
+							}
+
+							return component_parameters;
+						}
+					}
+
+					talendJobLog.addComponentParameterMessage("processos_1_tDBRow_1", "tPostgresqlRow",
+							new ParameterUtil_processos_1_tDBRow_1().getParameter());
+					talendJobLogProcess(globalMap);
+					s(currentComponent);
+				}
+				// QTUP-3575
+
+				if (enableLogStash) {
+					talendJobLog.addCM("processos_1_tDBRow_1", "tDBRow_1", "tPostgresqlRow");
+					talendJobLogProcess(globalMap);
+					s(currentComponent);
+				}
+
+				java.sql.Connection conn_processos_1_tDBRow_1 = null;
+				String query_processos_1_tDBRow_1 = "";
+				boolean whetherReject_processos_1_tDBRow_1 = false;
+				int count_processos_1_tDBRow_1 = 0;
+				String driverClass_processos_1_tDBRow_1 = "org.postgresql.Driver";
+				java.lang.Class jdbcclazz_processos_1_tDBRow_1 = java.lang.Class
+						.forName(driverClass_processos_1_tDBRow_1);
+
+				String url_processos_1_tDBRow_1 = "jdbc:postgresql://"
+						+ "peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com" + ":" + "5432" + "/"
+						+ "qlik_demo";
+
+				log.debug("processos_1_tDBRow_1 - Driver ClassName: " + driverClass_processos_1_tDBRow_1 + ".");
+
+				String dbUser_processos_1_tDBRow_1 = "peta_qlik";
+
+				final String decryptedPassword_processos_1_tDBRow_1 = java.util.Optional
+						.ofNullable(routines.system.PasswordEncryptUtil.decryptPassword(
+								"enc:routine.encryption.key.v1:lll3vxTqV6k7ZeTpH6JNChv3yGUgYjDnPclQ99/YrPWPd4UKSw=="))
+						.orElse("");
+
+				String dbPwd_processos_1_tDBRow_1 = decryptedPassword_processos_1_tDBRow_1;
+
+				log.debug("processos_1_tDBRow_1 - Connection attempt to '"
+						+ url_processos_1_tDBRow_1.replaceAll("(?<=trustStorePassword=)[^;]*", "********")
+						+ "' with the username '" + dbUser_processos_1_tDBRow_1 + "'.");
+
+				conn_processos_1_tDBRow_1 = java.sql.DriverManager.getConnection(url_processos_1_tDBRow_1,
+						dbUser_processos_1_tDBRow_1, dbPwd_processos_1_tDBRow_1);
+
+				log.debug("processos_1_tDBRow_1 - Connection to '"
+						+ url_processos_1_tDBRow_1.replaceAll("(?<=trustStorePassword=)[^;]*", "********")
+						+ "' has succeeded.");
+
+				resourceMap.put("conn_processos_1_tDBRow_1", conn_processos_1_tDBRow_1);
+				if (conn_processos_1_tDBRow_1.getAutoCommit()) {
+
+					log.debug("processos_1_tDBRow_1 - Connection is set auto commit to 'false'.");
+
+					conn_processos_1_tDBRow_1.setAutoCommit(false);
+
+				}
+				int commitEvery_processos_1_tDBRow_1 = 10000;
+				int commitCounter_processos_1_tDBRow_1 = 0;
+
+				java.sql.Statement stmt_processos_1_tDBRow_1 = conn_processos_1_tDBRow_1.createStatement();
+				resourceMap.put("stmt_processos_1_tDBRow_1", stmt_processos_1_tDBRow_1);
+
+				/**
+				 * [processos_1_tDBRow_1 begin ] stop
+				 */
+
+				/**
+				 * [processos_1_tDBRow_1 main ] start
+				 */
+
+				s(currentComponent = "processos_1_tDBRow_1");
+
+				query_processos_1_tDBRow_1 = new StringBuilder().append(
+						"DROP TABLE IF EXISTS silver_processos; \nCREATE TABLE silver_processos AS \nSELECT DISTINCT\n    f.id_processo, \n    f"
+								+ ".numero_processo, \n    f.id_tribunal, \n    f.id_classe, \n    f.id_assunto, \n    f.id_magistrado, \n    f.data_ajuiza"
+								+ "mento, \n    CASE \n        WHEN f.valor_causa < 0 THEN 0 \n        WHEN f.valor_causa > 100000000 THEN 100000000 \n    "
+								+ "    ELSE f.valor_causa \n    END AS valor_causa, \n    COALESCE(f.tempo_processo_dias, '0') AS tempo_processo_dias \nFRO"
+								+ "M stg_processos f \nINNER JOIN stg_tribunal t ON CAST(f.id_tribunal AS VARCHAR) = CAST(t.id_tribunal AS VARCHAR) \nINNER"
+								+ " JOIN stg_magistrado m ON CAST(f.id_magistrado AS VARCHAR) = CAST(m.id_magistrado AS VARCHAR);")
+						.toString();
+				whetherReject_processos_1_tDBRow_1 = false;
+				log.debug("processos_1_tDBRow_1 - Executing the query: '" + query_processos_1_tDBRow_1 + "'.");
+
+				globalMap.put("processos_1_tDBRow_1_QUERY", query_processos_1_tDBRow_1);
+				try {
+					stmt_processos_1_tDBRow_1.execute(query_processos_1_tDBRow_1);
+					log.debug("processos_1_tDBRow_1 - Execute the query: '" + query_processos_1_tDBRow_1
+							+ "' has finished.");
+
+				} catch (java.lang.Exception e) {
+					whetherReject_processos_1_tDBRow_1 = true;
+
+					log.error("processos_1_tDBRow_1 - " + e.getMessage());
+
+					System.err.print(e.getMessage());
+					globalMap.put("processos_1_tDBRow_1_ERROR_MESSAGE", e.getMessage());
+
+				}
+
+				if (!whetherReject_processos_1_tDBRow_1) {
+
+				}
+
+				commitCounter_processos_1_tDBRow_1++;
+				if (commitEvery_processos_1_tDBRow_1 <= commitCounter_processos_1_tDBRow_1) {
+
+					log.debug("processos_1_tDBRow_1 - Connection starting to commit.");
+
+					conn_processos_1_tDBRow_1.commit();
+
+					log.debug("processos_1_tDBRow_1 - Connection commit has succeeded.");
+
+					commitCounter_processos_1_tDBRow_1 = 0;
+				}
+
+				tos_count_processos_1_tDBRow_1++;
+
+				/**
+				 * [processos_1_tDBRow_1 main ] stop
+				 */
+
+				/**
+				 * [processos_1_tDBRow_1 process_data_begin ] start
+				 */
+
+				s(currentComponent = "processos_1_tDBRow_1");
+
+				/**
+				 * [processos_1_tDBRow_1 process_data_begin ] stop
+				 */
+
+				/**
+				 * [processos_1_tDBRow_1 process_data_end ] start
+				 */
+
+				s(currentComponent = "processos_1_tDBRow_1");
+
+				/**
+				 * [processos_1_tDBRow_1 process_data_end ] stop
+				 */
+
+				/**
+				 * [processos_1_tDBRow_1 end ] start
+				 */
+
+				s(currentComponent = "processos_1_tDBRow_1");
+
+				globalMap.put("processos_1_tDBRow_1_NB_LINE", count_processos_1_tDBRow_1);
+				stmt_processos_1_tDBRow_1.close();
+				resourceMap.remove("stmt_processos_1_tDBRow_1");
+				resourceMap.put("statementClosed_processos_1_tDBRow_1", true);
+				if (commitEvery_processos_1_tDBRow_1 > commitCounter_processos_1_tDBRow_1) {
+
+					log.debug("processos_1_tDBRow_1 - Connection starting to commit.");
+
+					conn_processos_1_tDBRow_1.commit();
+
+					log.debug("processos_1_tDBRow_1 - Connection commit has succeeded.");
+
+					commitCounter_processos_1_tDBRow_1 = 0;
+
+				}
+				log.debug("processos_1_tDBRow_1 - Closing the connection to the database.");
+
+				conn_processos_1_tDBRow_1.close();
+
+				if ("com.mysql.cj.jdbc.Driver".equals((String) globalMap.get("driverClass_"))
+						&& routines.system.BundleUtils.inOSGi()) {
+					Class.forName("com.mysql.cj.jdbc.AbandonedConnectionCleanupThread").getMethod("checkedShutdown")
+							.invoke(null, (Object[]) null);
+				}
+
+				log.debug("processos_1_tDBRow_1 - Connection to the database closed.");
+
+				resourceMap.put("finish_processos_1_tDBRow_1", true);
+
+				if (log.isDebugEnabled())
+					log.debug("processos_1_tDBRow_1 - " + ("Done."));
+
+				ok_Hash.put("processos_1_tDBRow_1", true);
+				end_Hash.put("processos_1_tDBRow_1", System.currentTimeMillis());
+
+				if (execStat) {
+					runStat.updateStatOnConnection("processos_1_OnComponentOk2", 0, "ok");
+				}
+				processos_1_tDBInput_1Process(globalMap);
+
+				/**
+				 * [processos_1_tDBRow_1 end ] stop
+				 */
+
+			} // end the resume
+
+		} catch (java.lang.Exception e) {
+
+			if (!(e instanceof TalendException) && !(e instanceof TDieException)) {
+				log.fatal(currentComponent + " " + e.getMessage(), e);
+			}
+
+			TalendException te = new TalendException(e, currentComponent, cLabel, globalMap);
+
+			throw te;
+		} catch (java.lang.Error error) {
+
+			runStat.stopThreadStat();
+
+			throw error;
+		} finally {
+
+			try {
+
+				/**
+				 * [processos_1_tDBRow_1 finally ] start
+				 */
+
+				s(currentComponent = "processos_1_tDBRow_1");
+
+				try {
+					if (resourceMap.get("statementClosed_processos_1_tDBRow_1") == null) {
+						java.sql.Statement stmtToClose_processos_1_tDBRow_1 = null;
+						if ((stmtToClose_processos_1_tDBRow_1 = (java.sql.Statement) resourceMap
+								.remove("stmt_processos_1_tDBRow_1")) != null) {
+							stmtToClose_processos_1_tDBRow_1.close();
+						}
+					}
+				} finally {
+					if (resourceMap.get("finish_processos_1_tDBRow_1") == null) {
+						java.sql.Connection ctn_processos_1_tDBRow_1 = null;
+						if ((ctn_processos_1_tDBRow_1 = (java.sql.Connection) resourceMap
+								.get("conn_processos_1_tDBRow_1")) != null) {
+							try {
+								log.debug("processos_1_tDBRow_1 - Closing the connection to the database.");
+
+								ctn_processos_1_tDBRow_1.close();
+								log.debug("processos_1_tDBRow_1 - Connection to the database closed.");
+
+							} catch (java.sql.SQLException sqlEx_processos_1_tDBRow_1) {
+								String errorMessage_processos_1_tDBRow_1 = "failed to close the connection in processos_1_tDBRow_1 :"
+										+ sqlEx_processos_1_tDBRow_1.getMessage();
+								log.error("processos_1_tDBRow_1 - " + sqlEx_processos_1_tDBRow_1.getMessage());
+
+								System.err.println(errorMessage_processos_1_tDBRow_1);
+							}
+						}
+					}
+				}
+
+				/**
+				 * [processos_1_tDBRow_1 finally ] stop
+				 */
+
+			} catch (java.lang.Exception e) {
+				// ignore
+			} catch (java.lang.Error error) {
+				// ignore
+			}
+			resourceMap = null;
+		}
+
+		globalMap.put("processos_1_tDBRow_1_SUBPROCESS_STATE", 1);
+	}
+
+	public static class processos_1_row2Struct implements routines.system.IPersistableRow<processos_1_row2Struct> {
 		final static byte[] commonByteArrayLock_DEMOTRF5_TRF5 = new byte[0];
 		static byte[] commonByteArray_DEMOTRF5_TRF5 = new byte[0];
 
@@ -6748,7 +5151,7 @@ public class TRF5 implements TalendJob {
 		/**
 		 * Compare keys
 		 */
-		public int compareTo(Processos_Ingestao_Bronze_1_row4Struct other) {
+		public int compareTo(processos_1_row2Struct other) {
 
 			int returnValue = -1;
 
@@ -6778,13 +5181,12 @@ public class TRF5 implements TalendJob {
 
 	}
 
-	public void Processos_Ingestao_Bronze_1_tDBInput_4Process(final java.util.Map<String, Object> globalMap)
-			throws TalendException {
-		globalMap.put("Processos_Ingestao_Bronze_1_tDBInput_4_SUBPROCESS_STATE", 0);
+	public void processos_1_tDBInput_1Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+		globalMap.put("processos_1_tDBInput_1_SUBPROCESS_STATE", 0);
 
 		final boolean execStat = this.execStat;
 
-		mdc("Processos_Ingestao_Bronze_1_tDBInput_4", "jfKRqC_");
+		mdc("processos_1_tDBInput_1", "QieCJH_");
 
 		String iterateId = "";
 
@@ -6803,56 +5205,53 @@ public class TRF5 implements TalendJob {
 			if (resumeIt || globalResumeTicket) { // start the resume
 				globalResumeTicket = true;
 
-				Processos_Ingestao_Bronze_1_row4Struct Processos_Ingestao_Bronze_1_row4 = new Processos_Ingestao_Bronze_1_row4Struct();
+				processos_1_row2Struct processos_1_row2 = new processos_1_row2Struct();
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_4 begin ] start
+				 * [processos_1_tFileOutputParquet_2 begin ] start
 				 */
 
-				sh("Processos_Ingestao_Bronze_1_tFileOutputParquet_4");
+				sh("processos_1_tFileOutputParquet_2");
 
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_4");
+				s(currentComponent = "processos_1_tFileOutputParquet_2");
 
-				runStat.updateStatAndLog(execStat, enableLogStash, resourceMap, iterateId, 0, 0,
-						"Processos_Ingestao_Bronze_1_row4");
+				runStat.updateStatAndLog(execStat, enableLogStash, resourceMap, iterateId, 0, 0, "processos_1_row2");
 
-				int tos_count_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = 0;
+				int tos_count_processos_1_tFileOutputParquet_2 = 0;
 
 				if (log.isDebugEnabled())
-					log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_4 - " + ("Start to work."));
+					log.debug("processos_1_tFileOutputParquet_2 - " + ("Start to work."));
 				if (log.isDebugEnabled()) {
-					class BytesLimit65535_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 {
+					class BytesLimit65535_processos_1_tFileOutputParquet_2 {
 						public void limitLog4jByte() throws Exception {
-							StringBuilder log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = new StringBuilder();
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.append("Parameters:");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.append("FILENAME" + " = "
-									+ "\"C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/assunto_bronze\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
-									.append("FILE_ACTION" + " = " + "OVERWRITE");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
+							StringBuilder log4jParamters_processos_1_tFileOutputParquet_2 = new StringBuilder();
+							log4jParamters_processos_1_tFileOutputParquet_2.append("Parameters:");
+							log4jParamters_processos_1_tFileOutputParquet_2.append("FILENAME" + " = "
+									+ "\"C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/processos_silver.parquet\"");
+							log4jParamters_processos_1_tFileOutputParquet_2.append(" | ");
+							log4jParamters_processos_1_tFileOutputParquet_2.append("FILE_ACTION" + " = " + "OVERWRITE");
+							log4jParamters_processos_1_tFileOutputParquet_2.append(" | ");
+							log4jParamters_processos_1_tFileOutputParquet_2
 									.append("COMPRESSION" + " = " + "\"UNCOMPRESSED\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
+							log4jParamters_processos_1_tFileOutputParquet_2.append(" | ");
+							log4jParamters_processos_1_tFileOutputParquet_2
 									.append("USE_EXTERNAL_HADOOP_DEPS" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
+							log4jParamters_processos_1_tFileOutputParquet_2.append(" | ");
+							log4jParamters_processos_1_tFileOutputParquet_2
 									.append("ROW_GROUP_SIZE" + " = " + "134217728");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
-									.append("PAGE_SIZE" + " = " + "1048576");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.append(" | ");
+							log4jParamters_processos_1_tFileOutputParquet_2.append(" | ");
+							log4jParamters_processos_1_tFileOutputParquet_2.append("PAGE_SIZE" + " = " + "1048576");
+							log4jParamters_processos_1_tFileOutputParquet_2.append(" | ");
 							if (log.isDebugEnabled())
-								log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_4 - "
-										+ (log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_4));
+								log.debug("processos_1_tFileOutputParquet_2 - "
+										+ (log4jParamters_processos_1_tFileOutputParquet_2));
 						}
 					}
-					new BytesLimit65535_Processos_Ingestao_Bronze_1_tFileOutputParquet_4().limitLog4jByte();
+					new BytesLimit65535_processos_1_tFileOutputParquet_2().limitLog4jByte();
 				}
 				// QTUP-3575
 				if (enableLineage) {
-					class ParameterUtil_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 {
+					class ParameterUtil_processos_1_tFileOutputParquet_2 {
 
 						private void a(java.util.List<java.util.Map<String, String>> schema, String... values) {
 							java.util.Map<String, String> field = new java.util.HashMap<>();
@@ -6861,22 +5260,21 @@ public class TRF5 implements TalendJob {
 							schema.add(field);
 						}
 
-						public java.util.Map<String, String> getParameter(
-								final Processos_Ingestao_Bronze_1_row4Struct Processos_Ingestao_Bronze_1_row4)
+						public java.util.Map<String, String> getParameter(final processos_1_row2Struct processos_1_row2)
 								throws Exception {
 							java.util.Map<String, String> component_parameters = new java.util.HashMap<>();
 
 							try {
 
 								component_parameters.put("FILENAME", String.valueOf(
-										"C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/assunto_bronze"));
+										"C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/processos_silver.parquet"));
 								component_parameters.put("FILE_ACTION", String.valueOf("OVERWRITE"));
 								component_parameters.put("COMPRESSION", String.valueOf("UNCOMPRESSED"));
 								component_parameters.put("USE_EXTERNAL_HADOOP_DEPS", String.valueOf("false"));
 								component_parameters.put("ROW_GROUP_SIZE", String.valueOf("134217728"));
 								component_parameters.put("PAGE_SIZE", String.valueOf("1048576"));
 
-							} catch (java.lang.Exception e_Processos_Ingestao_Bronze_1_tFileOutputParquet_4) {
+							} catch (java.lang.Exception e_processos_1_tFileOutputParquet_2) {
 								// do nothing
 							}
 
@@ -6884,164 +5282,143 @@ public class TRF5 implements TalendJob {
 						}
 					}
 
-					talendJobLog.addComponentParameterMessage("Processos_Ingestao_Bronze_1_tFileOutputParquet_4",
-							"tFileOutputParquet", new ParameterUtil_Processos_Ingestao_Bronze_1_tFileOutputParquet_4()
-									.getParameter(Processos_Ingestao_Bronze_1_row4));
+					talendJobLog.addComponentParameterMessage("processos_1_tFileOutputParquet_2", "tFileOutputParquet",
+							new ParameterUtil_processos_1_tFileOutputParquet_2().getParameter(processos_1_row2));
 					talendJobLogProcess(globalMap);
 					s(currentComponent);
 				}
 				// QTUP-3575
 
 				if (enableLogStash) {
-					talendJobLog.addCM("Processos_Ingestao_Bronze_1_tFileOutputParquet_4", "tFileOutputParquet_4",
+					talendJobLog.addCM("processos_1_tFileOutputParquet_2", "tFileOutputParquet_2",
 							"tFileOutputParquet");
 					talendJobLogProcess(globalMap);
 					s(currentComponent);
 				}
 
-				int nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = 0;
-				org.apache.parquet.schema.Types.MessageTypeBuilder schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = org.apache.parquet.schema.Types
+				int nb_line_processos_1_tFileOutputParquet_2 = 0;
+				org.apache.parquet.schema.Types.MessageTypeBuilder schemaBuilder_processos_1_tFileOutputParquet_2 = org.apache.parquet.schema.Types
 						.buildMessage();
-				org.apache.parquet.schema.MessageType messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = null;
-				org.talend.parquet.data.simple.SimpleGroupFactory factory_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = null;
-				org.apache.parquet.hadoop.ParquetWriter<org.talend.parquet.data.Group> writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = null;
+				org.apache.parquet.schema.MessageType messageType_processos_1_tFileOutputParquet_2 = null;
+				org.talend.parquet.data.simple.SimpleGroupFactory factory_processos_1_tFileOutputParquet_2 = null;
+				org.apache.parquet.hadoop.ParquetWriter<org.talend.parquet.data.Group> writer_processos_1_tFileOutputParquet_2 = null;
 
-				String filePath_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = "C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/assunto_bronze";
-				globalMap.put("Processos_Ingestao_Bronze_1_tFileOutputParquet_4_FILE_PATH",
-						filePath_Processos_Ingestao_Bronze_1_tFileOutputParquet_4);
-				org.apache.hadoop.conf.Configuration config_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = new org.apache.hadoop.conf.Configuration();
-				config_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.set("fs.file.impl",
+				String filePath_processos_1_tFileOutputParquet_2 = "C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/processos_silver.parquet";
+				globalMap.put("processos_1_tFileOutputParquet_2_FILE_PATH", filePath_processos_1_tFileOutputParquet_2);
+				org.apache.hadoop.conf.Configuration config_processos_1_tFileOutputParquet_2 = new org.apache.hadoop.conf.Configuration();
+				config_processos_1_tFileOutputParquet_2.set("fs.file.impl",
 						org.apache.hadoop.fs.LocalFileSystem.class.getName());
-				org.apache.hadoop.fs.Path path_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = new org.apache.hadoop.fs.Path(
-						filePath_Processos_Ingestao_Bronze_1_tFileOutputParquet_4);
+				org.apache.hadoop.fs.Path path_processos_1_tFileOutputParquet_2 = new org.apache.hadoop.fs.Path(
+						filePath_processos_1_tFileOutputParquet_2);
 				// CRC file path
-				String crcName_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = "."
-						+ path_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.getName() + ".crc";
-				org.apache.hadoop.fs.Path crcPath_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = new org.apache.hadoop.fs.Path(
-						path_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.getParent(),
-						crcName_Processos_Ingestao_Bronze_1_tFileOutputParquet_4);
-				String compressName_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = "UNCOMPRESSED";
-				int rowGroupSize_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = 134217728;
-				int pageSize_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = 1048576;
-				java.util.Map<String, org.talend.parquet.data.simple.SimpleGroupFactory> cachedFactory_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = new java.util.HashMap<>();
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("id_assunto", false,
-								"INT32", "INT_32"));
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("cod_assunto_cnj",
-								true, "BINARY", "UTF8"));
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("descricao_assunto",
-								true, "BINARY", "UTF8"));
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("ramo_direito", true,
-								"BINARY", "UTF8"));
-				messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
+				String crcName_processos_1_tFileOutputParquet_2 = "." + path_processos_1_tFileOutputParquet_2.getName()
+						+ ".crc";
+				org.apache.hadoop.fs.Path crcPath_processos_1_tFileOutputParquet_2 = new org.apache.hadoop.fs.Path(
+						path_processos_1_tFileOutputParquet_2.getParent(), crcName_processos_1_tFileOutputParquet_2);
+				String compressName_processos_1_tFileOutputParquet_2 = "UNCOMPRESSED";
+				int rowGroupSize_processos_1_tFileOutputParquet_2 = 134217728;
+				int pageSize_processos_1_tFileOutputParquet_2 = 1048576;
+				java.util.Map<String, org.talend.parquet.data.simple.SimpleGroupFactory> cachedFactory_processos_1_tFileOutputParquet_2 = new java.util.HashMap<>();
+				schemaBuilder_processos_1_tFileOutputParquet_2.addField(org.talend.parquet.utils.TalendParquetUtils
+						.createPrimitiveType("id_assunto", false, "INT32", "INT_32"));
+				schemaBuilder_processos_1_tFileOutputParquet_2.addField(org.talend.parquet.utils.TalendParquetUtils
+						.createPrimitiveType("cod_assunto_cnj", true, "BINARY", "UTF8"));
+				schemaBuilder_processos_1_tFileOutputParquet_2.addField(org.talend.parquet.utils.TalendParquetUtils
+						.createPrimitiveType("descricao_assunto", true, "BINARY", "UTF8"));
+				schemaBuilder_processos_1_tFileOutputParquet_2.addField(org.talend.parquet.utils.TalendParquetUtils
+						.createPrimitiveType("ramo_direito", true, "BINARY", "UTF8"));
+				messageType_processos_1_tFileOutputParquet_2 = schemaBuilder_processos_1_tFileOutputParquet_2
 						.named("Schema");
 
 				org.talend.parquet.hadoop.TalendGroupWriteSupport.setSchema(
-						messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_4,
-						config_Processos_Ingestao_Bronze_1_tFileOutputParquet_4);
-				factory_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = new org.talend.parquet.data.simple.SimpleGroupFactory(
-						messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_4);
-				org.apache.parquet.hadoop.ParquetWriter.Builder<org.talend.parquet.data.Group, org.talend.parquet.hadoop.TalendParquetWriter.Builder> builder_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = org.talend.parquet.hadoop.TalendParquetWriter
+						messageType_processos_1_tFileOutputParquet_2, config_processos_1_tFileOutputParquet_2);
+				factory_processos_1_tFileOutputParquet_2 = new org.talend.parquet.data.simple.SimpleGroupFactory(
+						messageType_processos_1_tFileOutputParquet_2);
+				org.apache.parquet.hadoop.ParquetWriter.Builder<org.talend.parquet.data.Group, org.talend.parquet.hadoop.TalendParquetWriter.Builder> builder_processos_1_tFileOutputParquet_2 = org.talend.parquet.hadoop.TalendParquetWriter
 						.builder(org.apache.parquet.hadoop.util.HadoopOutputFile.fromPath(
-								path_Processos_Ingestao_Bronze_1_tFileOutputParquet_4,
-								config_Processos_Ingestao_Bronze_1_tFileOutputParquet_4));
-				builder_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
+								path_processos_1_tFileOutputParquet_2, config_processos_1_tFileOutputParquet_2));
+				builder_processos_1_tFileOutputParquet_2
 						.withWriteMode(org.apache.parquet.hadoop.ParquetFileWriter.Mode.OVERWRITE)
 						.withCompressionCodec(org.apache.parquet.hadoop.metadata.CompressionCodecName
-								.fromConf(compressName_Processos_Ingestao_Bronze_1_tFileOutputParquet_4))
-						.withRowGroupSize(rowGroupSize_Processos_Ingestao_Bronze_1_tFileOutputParquet_4)
-						.withPageSize(pageSize_Processos_Ingestao_Bronze_1_tFileOutputParquet_4)
-						.withConf(config_Processos_Ingestao_Bronze_1_tFileOutputParquet_4);
+								.fromConf(compressName_processos_1_tFileOutputParquet_2))
+						.withRowGroupSize(rowGroupSize_processos_1_tFileOutputParquet_2)
+						.withPageSize(pageSize_processos_1_tFileOutputParquet_2)
+						.withConf(config_processos_1_tFileOutputParquet_2);
 
-				writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = builder_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
-						.build();
+				writer_processos_1_tFileOutputParquet_2 = builder_processos_1_tFileOutputParquet_2.build();
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_4 begin ] stop
+				 * [processos_1_tFileOutputParquet_2 begin ] stop
 				 */
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tDBInput_4 begin ] start
+				 * [processos_1_tDBInput_1 begin ] start
 				 */
 
-				sh("Processos_Ingestao_Bronze_1_tDBInput_4");
+				sh("processos_1_tDBInput_1");
 
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_4");
+				s(currentComponent = "processos_1_tDBInput_1");
 
-				int tos_count_Processos_Ingestao_Bronze_1_tDBInput_4 = 0;
+				int tos_count_processos_1_tDBInput_1 = 0;
 
 				if (log.isDebugEnabled())
-					log.debug("Processos_Ingestao_Bronze_1_tDBInput_4 - " + ("Start to work."));
+					log.debug("processos_1_tDBInput_1 - " + ("Start to work."));
 				if (log.isDebugEnabled()) {
-					class BytesLimit65535_Processos_Ingestao_Bronze_1_tDBInput_4 {
+					class BytesLimit65535_processos_1_tDBInput_1 {
 						public void limitLog4jByte() throws Exception {
-							StringBuilder log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4 = new StringBuilder();
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append("Parameters:");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4
-									.append("USE_EXISTING_CONNECTION" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append("DB_VERSION" + " = " + "V9_X");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append("HOST" + " = "
+							StringBuilder log4jParamters_processos_1_tDBInput_1 = new StringBuilder();
+							log4jParamters_processos_1_tDBInput_1.append("Parameters:");
+							log4jParamters_processos_1_tDBInput_1.append("USE_EXISTING_CONNECTION" + " = " + "false");
+							log4jParamters_processos_1_tDBInput_1.append(" | ");
+							log4jParamters_processos_1_tDBInput_1.append("DB_VERSION" + " = " + "V9_X");
+							log4jParamters_processos_1_tDBInput_1.append(" | ");
+							log4jParamters_processos_1_tDBInput_1.append("HOST" + " = "
 									+ "\"peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append("PORT" + " = " + "\"5432\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4
-									.append("DBNAME" + " = " + "\"qlik_demo\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4
-									.append("SCHEMA_DB" + " = " + "\"public\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4
-									.append("USER" + " = " + "\"peta_qlik\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append("PASS" + " = "
-									+ String.valueOf(
-											"enc:routine.encryption.key.v1:E+pISB50rHhQdZpkUgu8DyabLY/VvO4XVFXK6ct7f3EHXYlkZA==")
-											.substring(0, 4)
-									+ "...");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append("QUERYSTORE" + " = " + "\"\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append("QUERY" + " = "
-									+ "\"SELECT    \\\"public\\\".\\\"assunto\\\".\\\"id_assunto\\\",    \\\"public\\\".\\\"assunto\\\".\\\"cod_assunto_cnj\\\",    \\\"public\\\".\\\"assunto\\\".\\\"descricao_assunto\\\",    \\\"public\\\".\\\"assunto\\\".\\\"ramo_direito\\\"   FROM \\\"public\\\".\\\"assunto\\\"\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4
-									.append("SPECIFY_DATASOURCE_ALIAS" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4
-									.append("PROPERTIES" + " = " + "\"classe\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4
-									.append("USE_CURSOR" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4
-									.append("TRIM_ALL_COLUMN" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append(
+							log4jParamters_processos_1_tDBInput_1.append(" | ");
+							log4jParamters_processos_1_tDBInput_1.append("PORT" + " = " + "\"5432\"");
+							log4jParamters_processos_1_tDBInput_1.append(" | ");
+							log4jParamters_processos_1_tDBInput_1.append("DBNAME" + " = " + "\"qlik_demo\"");
+							log4jParamters_processos_1_tDBInput_1.append(" | ");
+							log4jParamters_processos_1_tDBInput_1.append("SCHEMA_DB" + " = " + "\"public\"");
+							log4jParamters_processos_1_tDBInput_1.append(" | ");
+							log4jParamters_processos_1_tDBInput_1.append("USER" + " = " + "\"peta_qlik\"");
+							log4jParamters_processos_1_tDBInput_1.append(" | ");
+							log4jParamters_processos_1_tDBInput_1.append("PASS" + " = " + String.valueOf(
+									"enc:routine.encryption.key.v1:zQPAcpzoIVXf2PQYmc8i6YvTieZHt6ercmSPq+DEzdvsLK85pg==")
+									.substring(0, 4) + "...");
+							log4jParamters_processos_1_tDBInput_1.append(" | ");
+							log4jParamters_processos_1_tDBInput_1.append("QUERYSTORE" + " = " + "\"\"");
+							log4jParamters_processos_1_tDBInput_1.append(" | ");
+							log4jParamters_processos_1_tDBInput_1
+									.append("QUERY" + " = " + "\"SELECT *  FROM silver_processos;\"");
+							log4jParamters_processos_1_tDBInput_1.append(" | ");
+							log4jParamters_processos_1_tDBInput_1.append("SPECIFY_DATASOURCE_ALIAS" + " = " + "false");
+							log4jParamters_processos_1_tDBInput_1.append(" | ");
+							log4jParamters_processos_1_tDBInput_1.append("PROPERTIES" + " = " + "\"\"");
+							log4jParamters_processos_1_tDBInput_1.append(" | ");
+							log4jParamters_processos_1_tDBInput_1.append("USE_CURSOR" + " = " + "false");
+							log4jParamters_processos_1_tDBInput_1.append(" | ");
+							log4jParamters_processos_1_tDBInput_1.append("TRIM_ALL_COLUMN" + " = " + "false");
+							log4jParamters_processos_1_tDBInput_1.append(" | ");
+							log4jParamters_processos_1_tDBInput_1.append(
 									"TRIM_COLUMN" + " = " + "[{TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("id_assunto")
 											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("cod_assunto_cnj")
 											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("descricao_assunto")
 											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("ramo_direito") + "}]");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4
+							log4jParamters_processos_1_tDBInput_1.append(" | ");
+							log4jParamters_processos_1_tDBInput_1
 									.append("UNIFIED_COMPONENTS" + " = " + "tPostgresqlInput");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4.append(" | ");
+							log4jParamters_processos_1_tDBInput_1.append(" | ");
 							if (log.isDebugEnabled())
-								log.debug("Processos_Ingestao_Bronze_1_tDBInput_4 - "
-										+ (log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_4));
+								log.debug("processos_1_tDBInput_1 - " + (log4jParamters_processos_1_tDBInput_1));
 						}
 					}
-					new BytesLimit65535_Processos_Ingestao_Bronze_1_tDBInput_4().limitLog4jByte();
+					new BytesLimit65535_processos_1_tDBInput_1().limitLog4jByte();
 				}
-				boolean init_Processos_Ingestao_Bronze_1_tDBInput_4_0 = true;
+				boolean init_processos_1_tDBInput_1_0 = true;
 				// QTUP-3575
 				if (enableLineage) {
-					class ParameterUtil_Processos_Ingestao_Bronze_1_tDBInput_4 {
+					class ParameterUtil_processos_1_tDBInput_1 {
 
 						private void a(java.util.List<java.util.Map<String, String>> schema, String... values) {
 							java.util.Map<String, String> field = new java.util.HashMap<>();
@@ -7064,12 +5441,9 @@ public class TRF5 implements TalendJob {
 								component_parameters.put("SCHEMA_DB", String.valueOf("public"));
 								component_parameters.put("USER", String.valueOf("peta_qlik"));
 								component_parameters.put("QUERYSTORE", String.valueOf(""));
-								component_parameters.put("QUERY", String.valueOf(new StringBuilder().append(
-										"SELECT \n  \"public\".\"assunto\".\"id_assunto\", \n  \"public\".\"assunto\".\"cod_assunto_cnj\", \n  \"public\".\"assunto"
-												+ "\".\"descricao_assunto\", \n  \"public\".\"assunto\".\"ramo_direito\" \n FROM \"public\".\"assunto\"")
-										.toString()));
+								component_parameters.put("QUERY", String.valueOf("SELECT *\nFROM silver_processos;"));
 								component_parameters.put("SPECIFY_DATASOURCE_ALIAS", String.valueOf("false"));
-								component_parameters.put("PROPERTIES", String.valueOf("classe"));
+								component_parameters.put("PROPERTIES", String.valueOf(""));
 								component_parameters.put("USE_CURSOR", String.valueOf("false"));
 								component_parameters.put("TRIM_ALL_COLUMN", String.valueOf("false"));
 								component_parameters.put("TRIM_COLUMN",
@@ -7082,7 +5456,7 @@ public class TRF5 implements TalendJob {
 												.toString()));
 								component_parameters.put("UNIFIED_COMPONENTS", String.valueOf("tPostgresqlInput"));
 
-							} catch (java.lang.Exception e_Processos_Ingestao_Bronze_1_tDBInput_4) {
+							} catch (java.lang.Exception e_processos_1_tDBInput_1) {
 								// do nothing
 							}
 
@@ -7090,137 +5464,123 @@ public class TRF5 implements TalendJob {
 						}
 					}
 
-					talendJobLog.addComponentParameterMessage("Processos_Ingestao_Bronze_1_tDBInput_4",
-							"tPostgresqlInput",
-							new ParameterUtil_Processos_Ingestao_Bronze_1_tDBInput_4().getParameter());
+					talendJobLog.addComponentParameterMessage("processos_1_tDBInput_1", "tPostgresqlInput",
+							new ParameterUtil_processos_1_tDBInput_1().getParameter());
 					talendJobLogProcess(globalMap);
 					s(currentComponent);
 				}
 				// QTUP-3575
 
 				if (enableLogStash) {
-					talendJobLog.addCM("Processos_Ingestao_Bronze_1_tDBInput_4", "tDBInput_4", "tPostgresqlInput");
+					talendJobLog.addCM("processos_1_tDBInput_1", "tDBInput_1", "tPostgresqlInput");
 					talendJobLogProcess(globalMap);
 					s(currentComponent);
 				}
 
-				int nb_line_Processos_Ingestao_Bronze_1_tDBInput_4 = 0;
-				java.sql.Connection conn_Processos_Ingestao_Bronze_1_tDBInput_4 = null;
-				String driverClass_Processos_Ingestao_Bronze_1_tDBInput_4 = "org.postgresql.Driver";
-				java.lang.Class jdbcclazz_Processos_Ingestao_Bronze_1_tDBInput_4 = java.lang.Class
-						.forName(driverClass_Processos_Ingestao_Bronze_1_tDBInput_4);
-				String dbUser_Processos_Ingestao_Bronze_1_tDBInput_4 = "peta_qlik";
+				int nb_line_processos_1_tDBInput_1 = 0;
+				java.sql.Connection conn_processos_1_tDBInput_1 = null;
+				String driverClass_processos_1_tDBInput_1 = "org.postgresql.Driver";
+				java.lang.Class jdbcclazz_processos_1_tDBInput_1 = java.lang.Class
+						.forName(driverClass_processos_1_tDBInput_1);
+				String dbUser_processos_1_tDBInput_1 = "peta_qlik";
 
-				final String decryptedPassword_Processos_Ingestao_Bronze_1_tDBInput_4 = java.util.Optional
+				final String decryptedPassword_processos_1_tDBInput_1 = java.util.Optional
 						.ofNullable(routines.system.PasswordEncryptUtil.decryptPassword(
-								"enc:routine.encryption.key.v1:/kzW7yr2+XUUhJDDi4ogFW1wovztyIorsyxfwjUEDM2zBaR/wQ=="))
+								"enc:routine.encryption.key.v1:pC/oPc+ESmm2ZNFMEjChoHogMso9yA7Zx7sP4ezdvZCuQc6puQ=="))
 						.orElse("");
 
-				String dbPwd_Processos_Ingestao_Bronze_1_tDBInput_4 = decryptedPassword_Processos_Ingestao_Bronze_1_tDBInput_4;
+				String dbPwd_processos_1_tDBInput_1 = decryptedPassword_processos_1_tDBInput_1;
 
-				String url_Processos_Ingestao_Bronze_1_tDBInput_4 = "jdbc:postgresql://"
+				String url_processos_1_tDBInput_1 = "jdbc:postgresql://"
 						+ "peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com" + ":" + "5432" + "/"
-						+ "qlik_demo" + "?" + "classe";
+						+ "qlik_demo";
 
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_4 - Driver ClassName: "
-						+ driverClass_Processos_Ingestao_Bronze_1_tDBInput_4 + ".");
+				log.debug("processos_1_tDBInput_1 - Driver ClassName: " + driverClass_processos_1_tDBInput_1 + ".");
 
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_4 - Connection attempt to '"
-						+ url_Processos_Ingestao_Bronze_1_tDBInput_4.replaceAll("(?<=trustStorePassword=)[^;]*",
-								"********")
-						+ "' with the username '" + dbUser_Processos_Ingestao_Bronze_1_tDBInput_4 + "'.");
+				log.debug("processos_1_tDBInput_1 - Connection attempt to '"
+						+ url_processos_1_tDBInput_1.replaceAll("(?<=trustStorePassword=)[^;]*", "********")
+						+ "' with the username '" + dbUser_processos_1_tDBInput_1 + "'.");
 
-				conn_Processos_Ingestao_Bronze_1_tDBInput_4 = java.sql.DriverManager.getConnection(
-						url_Processos_Ingestao_Bronze_1_tDBInput_4, dbUser_Processos_Ingestao_Bronze_1_tDBInput_4,
-						dbPwd_Processos_Ingestao_Bronze_1_tDBInput_4);
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_4 - Connection to '"
-						+ url_Processos_Ingestao_Bronze_1_tDBInput_4.replaceAll("(?<=trustStorePassword=)[^;]*",
-								"********")
+				conn_processos_1_tDBInput_1 = java.sql.DriverManager.getConnection(url_processos_1_tDBInput_1,
+						dbUser_processos_1_tDBInput_1, dbPwd_processos_1_tDBInput_1);
+				log.debug("processos_1_tDBInput_1 - Connection to '"
+						+ url_processos_1_tDBInput_1.replaceAll("(?<=trustStorePassword=)[^;]*", "********")
 						+ "' has succeeded.");
 
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_4 - Connection is set auto commit to 'false'.");
+				log.debug("processos_1_tDBInput_1 - Connection is set auto commit to 'false'.");
 
-				conn_Processos_Ingestao_Bronze_1_tDBInput_4.setAutoCommit(false);
+				conn_processos_1_tDBInput_1.setAutoCommit(false);
 
-				java.sql.Statement stmt_Processos_Ingestao_Bronze_1_tDBInput_4 = conn_Processos_Ingestao_Bronze_1_tDBInput_4
-						.createStatement();
+				java.sql.Statement stmt_processos_1_tDBInput_1 = conn_processos_1_tDBInput_1.createStatement();
 
-				String dbquery_Processos_Ingestao_Bronze_1_tDBInput_4 = new StringBuilder().append(
-						"SELECT \n  \"public\".\"assunto\".\"id_assunto\", \n  \"public\".\"assunto\".\"cod_assunto_cnj\", \n  \"public\".\"assunto"
-								+ "\".\"descricao_assunto\", \n  \"public\".\"assunto\".\"ramo_direito\" \n FROM \"public\".\"assunto\"")
-						.toString();
+				String dbquery_processos_1_tDBInput_1 = "SELECT *\nFROM silver_processos;";
 
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_4 - Executing the query: '"
-						+ dbquery_Processos_Ingestao_Bronze_1_tDBInput_4 + "'.");
+				log.debug("processos_1_tDBInput_1 - Executing the query: '" + dbquery_processos_1_tDBInput_1 + "'.");
 
-				globalMap.put("Processos_Ingestao_Bronze_1_tDBInput_4_QUERY",
-						dbquery_Processos_Ingestao_Bronze_1_tDBInput_4);
+				globalMap.put("processos_1_tDBInput_1_QUERY", dbquery_processos_1_tDBInput_1);
 
-				java.sql.ResultSet rs_Processos_Ingestao_Bronze_1_tDBInput_4 = null;
+				java.sql.ResultSet rs_processos_1_tDBInput_1 = null;
 
 				try {
-					rs_Processos_Ingestao_Bronze_1_tDBInput_4 = stmt_Processos_Ingestao_Bronze_1_tDBInput_4
-							.executeQuery(dbquery_Processos_Ingestao_Bronze_1_tDBInput_4);
-					java.sql.ResultSetMetaData rsmd_Processos_Ingestao_Bronze_1_tDBInput_4 = rs_Processos_Ingestao_Bronze_1_tDBInput_4
-							.getMetaData();
-					int colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_4 = rsmd_Processos_Ingestao_Bronze_1_tDBInput_4
-							.getColumnCount();
+					rs_processos_1_tDBInput_1 = stmt_processos_1_tDBInput_1
+							.executeQuery(dbquery_processos_1_tDBInput_1);
+					java.sql.ResultSetMetaData rsmd_processos_1_tDBInput_1 = rs_processos_1_tDBInput_1.getMetaData();
+					int colQtyInRs_processos_1_tDBInput_1 = rsmd_processos_1_tDBInput_1.getColumnCount();
 
-					String tmpContent_Processos_Ingestao_Bronze_1_tDBInput_4 = null;
+					String tmpContent_processos_1_tDBInput_1 = null;
 
-					log.debug("Processos_Ingestao_Bronze_1_tDBInput_4 - Retrieving records from the database.");
+					log.debug("processos_1_tDBInput_1 - Retrieving records from the database.");
 
-					while (rs_Processos_Ingestao_Bronze_1_tDBInput_4.next()) {
-						nb_line_Processos_Ingestao_Bronze_1_tDBInput_4++;
+					while (rs_processos_1_tDBInput_1.next()) {
+						nb_line_processos_1_tDBInput_1++;
 
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_4 < 1) {
-							Processos_Ingestao_Bronze_1_row4.id_assunto = 0;
+						if (colQtyInRs_processos_1_tDBInput_1 < 1) {
+							processos_1_row2.id_assunto = 0;
 						} else {
 
-							Processos_Ingestao_Bronze_1_row4.id_assunto = rs_Processos_Ingestao_Bronze_1_tDBInput_4
-									.getInt(1);
-							if (rs_Processos_Ingestao_Bronze_1_tDBInput_4.wasNull()) {
+							processos_1_row2.id_assunto = rs_processos_1_tDBInput_1.getInt(1);
+							if (rs_processos_1_tDBInput_1.wasNull()) {
 								throw new RuntimeException("Null value in non-Nullable column");
 							}
 						}
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_4 < 2) {
-							Processos_Ingestao_Bronze_1_row4.cod_assunto_cnj = null;
+						if (colQtyInRs_processos_1_tDBInput_1 < 2) {
+							processos_1_row2.cod_assunto_cnj = null;
 						} else {
 
-							Processos_Ingestao_Bronze_1_row4.cod_assunto_cnj = routines.system.JDBCUtil
-									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_4, 2, false);
+							processos_1_row2.cod_assunto_cnj = routines.system.JDBCUtil
+									.getString(rs_processos_1_tDBInput_1, 2, false);
 						}
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_4 < 3) {
-							Processos_Ingestao_Bronze_1_row4.descricao_assunto = null;
+						if (colQtyInRs_processos_1_tDBInput_1 < 3) {
+							processos_1_row2.descricao_assunto = null;
 						} else {
 
-							Processos_Ingestao_Bronze_1_row4.descricao_assunto = routines.system.JDBCUtil
-									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_4, 3, false);
+							processos_1_row2.descricao_assunto = routines.system.JDBCUtil
+									.getString(rs_processos_1_tDBInput_1, 3, false);
 						}
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_4 < 4) {
-							Processos_Ingestao_Bronze_1_row4.ramo_direito = null;
+						if (colQtyInRs_processos_1_tDBInput_1 < 4) {
+							processos_1_row2.ramo_direito = null;
 						} else {
 
-							Processos_Ingestao_Bronze_1_row4.ramo_direito = routines.system.JDBCUtil
-									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_4, 4, false);
+							processos_1_row2.ramo_direito = routines.system.JDBCUtil
+									.getString(rs_processos_1_tDBInput_1, 4, false);
 						}
 
-						log.debug("Processos_Ingestao_Bronze_1_tDBInput_4 - Retrieving the record "
-								+ nb_line_Processos_Ingestao_Bronze_1_tDBInput_4 + ".");
+						log.debug("processos_1_tDBInput_1 - Retrieving the record " + nb_line_processos_1_tDBInput_1
+								+ ".");
 
 						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_4 begin ] stop
+						 * [processos_1_tDBInput_1 begin ] stop
 						 */
 
 						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_4 main ] start
+						 * [processos_1_tDBInput_1 main ] start
 						 */
 
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_4");
+						s(currentComponent = "processos_1_tDBInput_1");
 
 						// QTUP-3575
-						if (enableLineage && init_Processos_Ingestao_Bronze_1_tDBInput_4_0) {
-							class SchemaUtil_Processos_Ingestao_Bronze_1_row4 {
+						if (enableLineage && init_processos_1_tDBInput_1_0) {
+							class SchemaUtil_processos_1_row2 {
 
 								private void a(java.util.List<java.util.Map<String, String>> schema, String... values) {
 									java.util.Map<String, String> field = new java.util.HashMap<>();
@@ -7237,9 +5597,9 @@ public class TRF5 implements TalendJob {
 								}
 
 								public java.util.List<java.util.Map<String, String>> getSchema(
-										final Processos_Ingestao_Bronze_1_row4Struct Processos_Ingestao_Bronze_1_row4) {
+										final processos_1_row2Struct processos_1_row2) {
 									java.util.List<java.util.Map<String, String>> s = new java.util.ArrayList<>();
-									if (Processos_Ingestao_Bronze_1_row4 == null) {
+									if (processos_1_row2 == null) {
 										return s;
 									}
 									a(s, "id_assunto", "id_assunto", "false", "id_Integer", "SERIAL", "false", "", "10",
@@ -7255,142 +5615,136 @@ public class TRF5 implements TalendJob {
 
 							}
 
-							if (Processos_Ingestao_Bronze_1_row4 != null) {
-								talendJobLog.addConnectionSchemaMessage("Processos_Ingestao_Bronze_1_tDBInput_4",
-										"tPostgresqlInput", "Processos_Ingestao_Bronze_1_tFileOutputParquet_4",
-										"tFileOutputParquet", "Processos_Ingestao_Bronze_1_row4" + iterateId,
-										new SchemaUtil_Processos_Ingestao_Bronze_1_row4()
-												.getSchema(Processos_Ingestao_Bronze_1_row4));
+							if (processos_1_row2 != null) {
+								talendJobLog.addConnectionSchemaMessage("processos_1_tDBInput_1", "tPostgresqlInput",
+										"processos_1_tFileOutputParquet_2", "tFileOutputParquet",
+										"processos_1_row2" + iterateId,
+										new SchemaUtil_processos_1_row2().getSchema(processos_1_row2));
 								talendJobLogProcess(globalMap);
-								init_Processos_Ingestao_Bronze_1_tDBInput_4_0 = false;
+								init_processos_1_tDBInput_1_0 = false;
 							}
 
 						}
 						// QTUP-3575
 
-						tos_count_Processos_Ingestao_Bronze_1_tDBInput_4++;
+						tos_count_processos_1_tDBInput_1++;
 
 						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_4 main ] stop
+						 * [processos_1_tDBInput_1 main ] stop
 						 */
 
 						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_4 process_data_begin ] start
+						 * [processos_1_tDBInput_1 process_data_begin ] start
 						 */
 
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_4");
+						s(currentComponent = "processos_1_tDBInput_1");
 
 						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_4 process_data_begin ] stop
+						 * [processos_1_tDBInput_1 process_data_begin ] stop
 						 */
 
 						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_4 main ] start
+						 * [processos_1_tFileOutputParquet_2 main ] start
 						 */
 
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_4");
+						s(currentComponent = "processos_1_tFileOutputParquet_2");
 
 						if (runStat.update(execStat, enableLogStash, iterateId, 1, 1
 
-								, "Processos_Ingestao_Bronze_1_row4", "Processos_Ingestao_Bronze_1_tDBInput_4",
-								"tDBInput_4", "tPostgresqlInput", "Processos_Ingestao_Bronze_1_tFileOutputParquet_4",
-								"tFileOutputParquet_4", "tFileOutputParquet"
+								, "processos_1_row2", "processos_1_tDBInput_1", "tDBInput_1", "tPostgresqlInput",
+								"processos_1_tFileOutputParquet_2", "tFileOutputParquet_2", "tFileOutputParquet"
 
 						)) {
 							talendJobLogProcess(globalMap);
 						}
 
 						if (log.isTraceEnabled()) {
-							log.trace("Processos_Ingestao_Bronze_1_row4 - "
-									+ (Processos_Ingestao_Bronze_1_row4 == null ? ""
-											: Processos_Ingestao_Bronze_1_row4.toLogString()));
+							log.trace("processos_1_row2 - "
+									+ (processos_1_row2 == null ? "" : processos_1_row2.toLogString()));
 						}
 
-						org.talend.parquet.data.Group group_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = factory_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
+						org.talend.parquet.data.Group group_processos_1_tFileOutputParquet_2 = factory_processos_1_tFileOutputParquet_2
 								.newGroup();
 
-						group_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.append("id_assunto",
-								Processos_Ingestao_Bronze_1_row4.id_assunto);
-						if (Processos_Ingestao_Bronze_1_row4.cod_assunto_cnj != null) {
+						group_processos_1_tFileOutputParquet_2.append("id_assunto", processos_1_row2.id_assunto);
+						if (processos_1_row2.cod_assunto_cnj != null) {
 
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.append("cod_assunto_cnj",
-									String.valueOf(Processos_Ingestao_Bronze_1_row4.cod_assunto_cnj));
+							group_processos_1_tFileOutputParquet_2.append("cod_assunto_cnj",
+									String.valueOf(processos_1_row2.cod_assunto_cnj));
 						}
 
-						if (Processos_Ingestao_Bronze_1_row4.descricao_assunto != null) {
+						if (processos_1_row2.descricao_assunto != null) {
 
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.append("descricao_assunto",
-									String.valueOf(Processos_Ingestao_Bronze_1_row4.descricao_assunto));
+							group_processos_1_tFileOutputParquet_2.append("descricao_assunto",
+									String.valueOf(processos_1_row2.descricao_assunto));
 						}
 
-						if (Processos_Ingestao_Bronze_1_row4.ramo_direito != null) {
+						if (processos_1_row2.ramo_direito != null) {
 
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.append("ramo_direito",
-									String.valueOf(Processos_Ingestao_Bronze_1_row4.ramo_direito));
+							group_processos_1_tFileOutputParquet_2.append("ramo_direito",
+									String.valueOf(processos_1_row2.ramo_direito));
 						}
 
-						writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
-								.write(group_Processos_Ingestao_Bronze_1_tFileOutputParquet_4);
-						nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_4++;
-						log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_4 - Writing the record "
-								+ nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 + " to the file.");
+						writer_processos_1_tFileOutputParquet_2.write(group_processos_1_tFileOutputParquet_2);
+						nb_line_processos_1_tFileOutputParquet_2++;
+						log.debug("processos_1_tFileOutputParquet_2 - Writing the record "
+								+ nb_line_processos_1_tFileOutputParquet_2 + " to the file.");
 
-						tos_count_Processos_Ingestao_Bronze_1_tFileOutputParquet_4++;
+						tos_count_processos_1_tFileOutputParquet_2++;
 
 						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_4 main ] stop
+						 * [processos_1_tFileOutputParquet_2 main ] stop
 						 */
 
 						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_4 process_data_begin ] start
+						 * [processos_1_tFileOutputParquet_2 process_data_begin ] start
 						 */
 
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_4");
+						s(currentComponent = "processos_1_tFileOutputParquet_2");
 
 						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_4 process_data_begin ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_4 process_data_end ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_4");
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_4 process_data_end ] stop
+						 * [processos_1_tFileOutputParquet_2 process_data_begin ] stop
 						 */
 
 						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_4 process_data_end ] start
+						 * [processos_1_tFileOutputParquet_2 process_data_end ] start
 						 */
 
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_4");
+						s(currentComponent = "processos_1_tFileOutputParquet_2");
 
 						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_4 process_data_end ] stop
+						 * [processos_1_tFileOutputParquet_2 process_data_end ] stop
 						 */
 
 						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_4 end ] start
+						 * [processos_1_tDBInput_1 process_data_end ] start
 						 */
 
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_4");
+						s(currentComponent = "processos_1_tDBInput_1");
+
+						/**
+						 * [processos_1_tDBInput_1 process_data_end ] stop
+						 */
+
+						/**
+						 * [processos_1_tDBInput_1 end ] start
+						 */
+
+						s(currentComponent = "processos_1_tDBInput_1");
 
 					}
 				} finally {
-					if (rs_Processos_Ingestao_Bronze_1_tDBInput_4 != null) {
-						rs_Processos_Ingestao_Bronze_1_tDBInput_4.close();
+					if (rs_processos_1_tDBInput_1 != null) {
+						rs_processos_1_tDBInput_1.close();
 					}
-					if (stmt_Processos_Ingestao_Bronze_1_tDBInput_4 != null) {
-						stmt_Processos_Ingestao_Bronze_1_tDBInput_4.close();
+					if (stmt_processos_1_tDBInput_1 != null) {
+						stmt_processos_1_tDBInput_1.close();
 					}
-					if (conn_Processos_Ingestao_Bronze_1_tDBInput_4 != null
-							&& !conn_Processos_Ingestao_Bronze_1_tDBInput_4.isClosed()) {
+					if (conn_processos_1_tDBInput_1 != null && !conn_processos_1_tDBInput_1.isClosed()) {
 
-						log.debug("Processos_Ingestao_Bronze_1_tDBInput_4 - Closing the connection to the database.");
+						log.debug("processos_1_tDBInput_1 - Closing the connection to the database.");
 
-						conn_Processos_Ingestao_Bronze_1_tDBInput_4.close();
+						conn_processos_1_tDBInput_1.close();
 
 						if ("com.mysql.cj.jdbc.Driver".equals((String) globalMap.get("driverClass_"))
 								&& routines.system.BundleUtils.inOSGi()) {
@@ -7398,64 +5752,63 @@ public class TRF5 implements TalendJob {
 									.getMethod("checkedShutdown").invoke(null, (Object[]) null);
 						}
 
-						log.debug("Processos_Ingestao_Bronze_1_tDBInput_4 - Connection to the database closed.");
+						log.debug("processos_1_tDBInput_1 - Connection to the database closed.");
 
 					}
 
 				}
-				globalMap.put("Processos_Ingestao_Bronze_1_tDBInput_4_NB_LINE",
-						nb_line_Processos_Ingestao_Bronze_1_tDBInput_4);
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_4 - Retrieved records count: "
-						+ nb_line_Processos_Ingestao_Bronze_1_tDBInput_4 + " .");
+				globalMap.put("processos_1_tDBInput_1_NB_LINE", nb_line_processos_1_tDBInput_1);
+				log.debug("processos_1_tDBInput_1 - Retrieved records count: " + nb_line_processos_1_tDBInput_1 + " .");
 
 				if (log.isDebugEnabled())
-					log.debug("Processos_Ingestao_Bronze_1_tDBInput_4 - " + ("Done."));
+					log.debug("processos_1_tDBInput_1 - " + ("Done."));
 
-				ok_Hash.put("Processos_Ingestao_Bronze_1_tDBInput_4", true);
-				end_Hash.put("Processos_Ingestao_Bronze_1_tDBInput_4", System.currentTimeMillis());
+				ok_Hash.put("processos_1_tDBInput_1", true);
+				end_Hash.put("processos_1_tDBInput_1", System.currentTimeMillis());
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tDBInput_4 end ] stop
+				 * [processos_1_tDBInput_1 end ] stop
 				 */
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_4 end ] start
+				 * [processos_1_tFileOutputParquet_2 end ] start
 				 */
 
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_4");
+				s(currentComponent = "processos_1_tFileOutputParquet_2");
 
-				globalMap.put("Processos_Ingestao_Bronze_1_tFileOutputParquet_4_NB_LINE",
-						nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_4);
+				globalMap.put("processos_1_tFileOutputParquet_2_NB_LINE", nb_line_processos_1_tFileOutputParquet_2);
 
-				log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_4 - Written records count: "
-						+ nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 + " .");
+				log.debug("processos_1_tFileOutputParquet_2 - Written records count: "
+						+ nb_line_processos_1_tFileOutputParquet_2 + " .");
 
-				if (writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 != null) {
-					writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_4.close();
+				if (writer_processos_1_tFileOutputParquet_2 != null) {
+					writer_processos_1_tFileOutputParquet_2.close();
 				}
-				org.apache.hadoop.fs.FileSystem fs_Processos_Ingestao_Bronze_1_tFileOutputParquet_4 = crcPath_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
-						.getFileSystem(config_Processos_Ingestao_Bronze_1_tFileOutputParquet_4);
-				if (fs_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
-						.exists(crcPath_Processos_Ingestao_Bronze_1_tFileOutputParquet_4)) {
-					fs_Processos_Ingestao_Bronze_1_tFileOutputParquet_4
-							.delete(crcPath_Processos_Ingestao_Bronze_1_tFileOutputParquet_4, false);
+				org.apache.hadoop.fs.FileSystem fs_processos_1_tFileOutputParquet_2 = crcPath_processos_1_tFileOutputParquet_2
+						.getFileSystem(config_processos_1_tFileOutputParquet_2);
+				if (fs_processos_1_tFileOutputParquet_2.exists(crcPath_processos_1_tFileOutputParquet_2)) {
+					fs_processos_1_tFileOutputParquet_2.delete(crcPath_processos_1_tFileOutputParquet_2, false);
 				}
 
-				if (runStat.updateStatAndLog(execStat, enableLogStash, resourceMap, iterateId,
-						"Processos_Ingestao_Bronze_1_row4", 2, 0, "Processos_Ingestao_Bronze_1_tDBInput_4",
-						"tDBInput_4", "tPostgresqlInput", "Processos_Ingestao_Bronze_1_tFileOutputParquet_4",
-						"tFileOutputParquet_4", "tFileOutputParquet", "output")) {
+				if (runStat.updateStatAndLog(execStat, enableLogStash, resourceMap, iterateId, "processos_1_row2", 2, 0,
+						"processos_1_tDBInput_1", "tDBInput_1", "tPostgresqlInput", "processos_1_tFileOutputParquet_2",
+						"tFileOutputParquet_2", "tFileOutputParquet", "output")) {
 					talendJobLogProcess(globalMap);
 				}
 
 				if (log.isDebugEnabled())
-					log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_4 - " + ("Done."));
+					log.debug("processos_1_tFileOutputParquet_2 - " + ("Done."));
 
-				ok_Hash.put("Processos_Ingestao_Bronze_1_tFileOutputParquet_4", true);
-				end_Hash.put("Processos_Ingestao_Bronze_1_tFileOutputParquet_4", System.currentTimeMillis());
+				ok_Hash.put("processos_1_tFileOutputParquet_2", true);
+				end_Hash.put("processos_1_tFileOutputParquet_2", System.currentTimeMillis());
+
+				if (execStat) {
+					runStat.updateStatOnConnection("processos_1_OnComponentOk3", 0, "ok");
+				}
+				processos_1_tS3Put_1Process(globalMap);
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_4 end ] stop
+				 * [processos_1_tFileOutputParquet_2 end ] stop
 				 */
 
 			} // end the resume
@@ -7479,23 +5832,23 @@ public class TRF5 implements TalendJob {
 			try {
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tDBInput_4 finally ] start
+				 * [processos_1_tDBInput_1 finally ] start
 				 */
 
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_4");
+				s(currentComponent = "processos_1_tDBInput_1");
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tDBInput_4 finally ] stop
+				 * [processos_1_tDBInput_1 finally ] stop
 				 */
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_4 finally ] start
+				 * [processos_1_tFileOutputParquet_2 finally ] start
 				 */
 
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_4");
+				s(currentComponent = "processos_1_tFileOutputParquet_2");
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_4 finally ] stop
+				 * [processos_1_tFileOutputParquet_2 finally ] stop
 				 */
 
 			} catch (java.lang.Exception e) {
@@ -7506,1265 +5859,15 @@ public class TRF5 implements TalendJob {
 			resourceMap = null;
 		}
 
-		globalMap.put("Processos_Ingestao_Bronze_1_tDBInput_4_SUBPROCESS_STATE", 1);
+		globalMap.put("processos_1_tDBInput_1_SUBPROCESS_STATE", 1);
 	}
 
-	public static class Processos_Ingestao_Bronze_1_row5Struct
-			implements routines.system.IPersistableRow<Processos_Ingestao_Bronze_1_row5Struct> {
-		final static byte[] commonByteArrayLock_DEMOTRF5_TRF5 = new byte[0];
-		static byte[] commonByteArray_DEMOTRF5_TRF5 = new byte[0];
-
-		public int id_magistrado;
-
-		public int getId_magistrado() {
-			return this.id_magistrado;
-		}
-
-		public Boolean id_magistradoIsNullable() {
-			return false;
-		}
-
-		public Boolean id_magistradoIsKey() {
-			return false;
-		}
-
-		public Integer id_magistradoLength() {
-			return 10;
-		}
-
-		public Integer id_magistradoPrecision() {
-			return 0;
-		}
-
-		public String id_magistradoDefault() {
-
-			return "";
-
-		}
-
-		public String id_magistradoComment() {
-
-			return "";
-
-		}
-
-		public String id_magistradoPattern() {
-
-			return "";
-
-		}
-
-		public String id_magistradoOriginalDbColumnName() {
-
-			return "id_magistrado";
-
-		}
-
-		public String nome_completo;
-
-		public String getNome_completo() {
-			return this.nome_completo;
-		}
-
-		public Boolean nome_completoIsNullable() {
-			return true;
-		}
-
-		public Boolean nome_completoIsKey() {
-			return false;
-		}
-
-		public Integer nome_completoLength() {
-			return 255;
-		}
-
-		public Integer nome_completoPrecision() {
-			return 0;
-		}
-
-		public String nome_completoDefault() {
-
-			return null;
-
-		}
-
-		public String nome_completoComment() {
-
-			return "";
-
-		}
-
-		public String nome_completoPattern() {
-
-			return "";
-
-		}
-
-		public String nome_completoOriginalDbColumnName() {
-
-			return "nome_completo";
-
-		}
-
-		public String cargo;
-
-		public String getCargo() {
-			return this.cargo;
-		}
-
-		public Boolean cargoIsNullable() {
-			return true;
-		}
-
-		public Boolean cargoIsKey() {
-			return false;
-		}
-
-		public Integer cargoLength() {
-			return 100;
-		}
-
-		public Integer cargoPrecision() {
-			return 0;
-		}
-
-		public String cargoDefault() {
-
-			return null;
-
-		}
-
-		public String cargoComment() {
-
-			return "";
-
-		}
-
-		public String cargoPattern() {
-
-			return "";
-
-		}
-
-		public String cargoOriginalDbColumnName() {
-
-			return "cargo";
-
-		}
-
-		public String data_posse;
-
-		public String getData_posse() {
-			return this.data_posse;
-		}
-
-		public Boolean data_posseIsNullable() {
-			return true;
-		}
-
-		public Boolean data_posseIsKey() {
-			return false;
-		}
-
-		public Integer data_posseLength() {
-			return 50;
-		}
-
-		public Integer data_possePrecision() {
-			return 0;
-		}
-
-		public String data_posseDefault() {
-
-			return null;
-
-		}
-
-		public String data_posseComment() {
-
-			return "";
-
-		}
-
-		public String data_possePattern() {
-
-			return "";
-
-		}
-
-		public String data_posseOriginalDbColumnName() {
-
-			return "data_posse";
-
-		}
-
-		public String situacao;
-
-		public String getSituacao() {
-			return this.situacao;
-		}
-
-		public Boolean situacaoIsNullable() {
-			return true;
-		}
-
-		public Boolean situacaoIsKey() {
-			return false;
-		}
-
-		public Integer situacaoLength() {
-			return 20;
-		}
-
-		public Integer situacaoPrecision() {
-			return 0;
-		}
-
-		public String situacaoDefault() {
-
-			return null;
-
-		}
-
-		public String situacaoComment() {
-
-			return "";
-
-		}
-
-		public String situacaoPattern() {
-
-			return "";
-
-		}
-
-		public String situacaoOriginalDbColumnName() {
-
-			return "situacao";
-
-		}
-
-		private String readString(ObjectInputStream dis) throws IOException {
-			String strReturn = null;
-			int length = 0;
-			length = dis.readInt();
-			if (length == -1) {
-				strReturn = null;
-			} else {
-				if (length > commonByteArray_DEMOTRF5_TRF5.length) {
-					if (length < 1024 && commonByteArray_DEMOTRF5_TRF5.length == 0) {
-						commonByteArray_DEMOTRF5_TRF5 = new byte[1024];
-					} else {
-						commonByteArray_DEMOTRF5_TRF5 = new byte[2 * length];
-					}
-				}
-				dis.readFully(commonByteArray_DEMOTRF5_TRF5, 0, length);
-				strReturn = new String(commonByteArray_DEMOTRF5_TRF5, 0, length, utf8Charset);
-			}
-			return strReturn;
-		}
-
-		private String readString(org.jboss.marshalling.Unmarshaller unmarshaller) throws IOException {
-			String strReturn = null;
-			int length = 0;
-			length = unmarshaller.readInt();
-			if (length == -1) {
-				strReturn = null;
-			} else {
-				if (length > commonByteArray_DEMOTRF5_TRF5.length) {
-					if (length < 1024 && commonByteArray_DEMOTRF5_TRF5.length == 0) {
-						commonByteArray_DEMOTRF5_TRF5 = new byte[1024];
-					} else {
-						commonByteArray_DEMOTRF5_TRF5 = new byte[2 * length];
-					}
-				}
-				unmarshaller.readFully(commonByteArray_DEMOTRF5_TRF5, 0, length);
-				strReturn = new String(commonByteArray_DEMOTRF5_TRF5, 0, length, utf8Charset);
-			}
-			return strReturn;
-		}
-
-		private void writeString(String str, ObjectOutputStream dos) throws IOException {
-			if (str == null) {
-				dos.writeInt(-1);
-			} else {
-				byte[] byteArray = str.getBytes(utf8Charset);
-				dos.writeInt(byteArray.length);
-				dos.write(byteArray);
-			}
-		}
-
-		private void writeString(String str, org.jboss.marshalling.Marshaller marshaller) throws IOException {
-			if (str == null) {
-				marshaller.writeInt(-1);
-			} else {
-				byte[] byteArray = str.getBytes(utf8Charset);
-				marshaller.writeInt(byteArray.length);
-				marshaller.write(byteArray);
-			}
-		}
-
-		public void readData(ObjectInputStream dis) {
-
-			synchronized (commonByteArrayLock_DEMOTRF5_TRF5) {
-
-				try {
-
-					int length = 0;
-
-					this.id_magistrado = dis.readInt();
-
-					this.nome_completo = readString(dis);
-
-					this.cargo = readString(dis);
-
-					this.data_posse = readString(dis);
-
-					this.situacao = readString(dis);
-
-				} catch (IOException e) {
-					throw new RuntimeException(e);
-
-				}
-
-			}
-
-		}
-
-		public void readData(org.jboss.marshalling.Unmarshaller dis) {
-
-			synchronized (commonByteArrayLock_DEMOTRF5_TRF5) {
-
-				try {
-
-					int length = 0;
-
-					this.id_magistrado = dis.readInt();
-
-					this.nome_completo = readString(dis);
-
-					this.cargo = readString(dis);
-
-					this.data_posse = readString(dis);
-
-					this.situacao = readString(dis);
-
-				} catch (IOException e) {
-					throw new RuntimeException(e);
-
-				}
-
-			}
-
-		}
-
-		public void writeData(ObjectOutputStream dos) {
-			try {
-
-				// int
-
-				dos.writeInt(this.id_magistrado);
-
-				// String
-
-				writeString(this.nome_completo, dos);
-
-				// String
-
-				writeString(this.cargo, dos);
-
-				// String
-
-				writeString(this.data_posse, dos);
-
-				// String
-
-				writeString(this.situacao, dos);
-
-			} catch (IOException e) {
-				throw new RuntimeException(e);
-			}
-
-		}
-
-		public void writeData(org.jboss.marshalling.Marshaller dos) {
-			try {
-
-				// int
-
-				dos.writeInt(this.id_magistrado);
-
-				// String
-
-				writeString(this.nome_completo, dos);
-
-				// String
-
-				writeString(this.cargo, dos);
-
-				// String
-
-				writeString(this.data_posse, dos);
-
-				// String
-
-				writeString(this.situacao, dos);
-
-			} catch (IOException e) {
-				throw new RuntimeException(e);
-			}
-
-		}
-
-		public String toString() {
-
-			StringBuilder sb = new StringBuilder();
-			sb.append(super.toString());
-			sb.append("[");
-			sb.append("id_magistrado=" + String.valueOf(id_magistrado));
-			sb.append(",nome_completo=" + nome_completo);
-			sb.append(",cargo=" + cargo);
-			sb.append(",data_posse=" + data_posse);
-			sb.append(",situacao=" + situacao);
-			sb.append("]");
-
-			return sb.toString();
-		}
-
-		public String toLogString() {
-			StringBuilder sb = new StringBuilder();
-
-			sb.append(id_magistrado);
-
-			sb.append("|");
-
-			if (nome_completo == null) {
-				sb.append("<null>");
-			} else {
-				sb.append(nome_completo);
-			}
-
-			sb.append("|");
-
-			if (cargo == null) {
-				sb.append("<null>");
-			} else {
-				sb.append(cargo);
-			}
-
-			sb.append("|");
-
-			if (data_posse == null) {
-				sb.append("<null>");
-			} else {
-				sb.append(data_posse);
-			}
-
-			sb.append("|");
-
-			if (situacao == null) {
-				sb.append("<null>");
-			} else {
-				sb.append(situacao);
-			}
-
-			sb.append("|");
-
-			return sb.toString();
-		}
-
-		/**
-		 * Compare keys
-		 */
-		public int compareTo(Processos_Ingestao_Bronze_1_row5Struct other) {
-
-			int returnValue = -1;
-
-			return returnValue;
-		}
-
-		private int checkNullsAndCompare(Object object1, Object object2) {
-			int returnValue = 0;
-			if (object1 instanceof Comparable && object2 instanceof Comparable) {
-				returnValue = ((Comparable) object1).compareTo(object2);
-			} else if (object1 != null && object2 != null) {
-				returnValue = compareStrings(object1.toString(), object2.toString());
-			} else if (object1 == null && object2 != null) {
-				returnValue = 1;
-			} else if (object1 != null && object2 == null) {
-				returnValue = -1;
-			} else {
-				returnValue = 0;
-			}
-
-			return returnValue;
-		}
-
-		private int compareStrings(String string1, String string2) {
-			return string1.compareTo(string2);
-		}
-
-	}
-
-	public void Processos_Ingestao_Bronze_1_tDBInput_5Process(final java.util.Map<String, Object> globalMap)
-			throws TalendException {
-		globalMap.put("Processos_Ingestao_Bronze_1_tDBInput_5_SUBPROCESS_STATE", 0);
+	public void processos_1_tS3Put_1Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+		globalMap.put("processos_1_tS3Put_1_SUBPROCESS_STATE", 0);
 
 		final boolean execStat = this.execStat;
 
-		mdc("Processos_Ingestao_Bronze_1_tDBInput_5", "UTYi2L_");
-
-		String iterateId = "";
-
-		String currentComponent = "";
-		s("none");
-		String cLabel = null;
-		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
-
-		try {
-			// TDI-39566 avoid throwing an useless Exception
-			boolean resumeIt = true;
-			if (globalResumeTicket == false && resumeEntryMethodName != null) {
-				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
-				resumeIt = resumeEntryMethodName.equals(currentMethodName);
-			}
-			if (resumeIt || globalResumeTicket) { // start the resume
-				globalResumeTicket = true;
-
-				Processos_Ingestao_Bronze_1_row5Struct Processos_Ingestao_Bronze_1_row5 = new Processos_Ingestao_Bronze_1_row5Struct();
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_5 begin ] start
-				 */
-
-				sh("Processos_Ingestao_Bronze_1_tFileOutputParquet_5");
-
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_5");
-
-				runStat.updateStatAndLog(execStat, enableLogStash, resourceMap, iterateId, 0, 0,
-						"Processos_Ingestao_Bronze_1_row5");
-
-				int tos_count_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = 0;
-
-				if (log.isDebugEnabled())
-					log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_5 - " + ("Start to work."));
-				if (log.isDebugEnabled()) {
-					class BytesLimit65535_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 {
-						public void limitLog4jByte() throws Exception {
-							StringBuilder log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = new StringBuilder();
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.append("Parameters:");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.append("FILENAME" + " = "
-									+ "\"C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/magistrado_bronze\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
-									.append("FILE_ACTION" + " = " + "OVERWRITE");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
-									.append("COMPRESSION" + " = " + "\"UNCOMPRESSED\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
-									.append("USE_EXTERNAL_HADOOP_DEPS" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
-									.append("ROW_GROUP_SIZE" + " = " + "134217728");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
-									.append("PAGE_SIZE" + " = " + "1048576");
-							log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.append(" | ");
-							if (log.isDebugEnabled())
-								log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_5 - "
-										+ (log4jParamters_Processos_Ingestao_Bronze_1_tFileOutputParquet_5));
-						}
-					}
-					new BytesLimit65535_Processos_Ingestao_Bronze_1_tFileOutputParquet_5().limitLog4jByte();
-				}
-				// QTUP-3575
-				if (enableLineage) {
-					class ParameterUtil_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 {
-
-						private void a(java.util.List<java.util.Map<String, String>> schema, String... values) {
-							java.util.Map<String, String> field = new java.util.HashMap<>();
-							field.put("name", values[0]);
-							field.put("talend_type", values[1]);
-							schema.add(field);
-						}
-
-						public java.util.Map<String, String> getParameter(
-								final Processos_Ingestao_Bronze_1_row5Struct Processos_Ingestao_Bronze_1_row5)
-								throws Exception {
-							java.util.Map<String, String> component_parameters = new java.util.HashMap<>();
-
-							try {
-
-								component_parameters.put("FILENAME", String.valueOf(
-										"C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/magistrado_bronze"));
-								component_parameters.put("FILE_ACTION", String.valueOf("OVERWRITE"));
-								component_parameters.put("COMPRESSION", String.valueOf("UNCOMPRESSED"));
-								component_parameters.put("USE_EXTERNAL_HADOOP_DEPS", String.valueOf("false"));
-								component_parameters.put("ROW_GROUP_SIZE", String.valueOf("134217728"));
-								component_parameters.put("PAGE_SIZE", String.valueOf("1048576"));
-
-							} catch (java.lang.Exception e_Processos_Ingestao_Bronze_1_tFileOutputParquet_5) {
-								// do nothing
-							}
-
-							return component_parameters;
-						}
-					}
-
-					talendJobLog.addComponentParameterMessage("Processos_Ingestao_Bronze_1_tFileOutputParquet_5",
-							"tFileOutputParquet", new ParameterUtil_Processos_Ingestao_Bronze_1_tFileOutputParquet_5()
-									.getParameter(Processos_Ingestao_Bronze_1_row5));
-					talendJobLogProcess(globalMap);
-					s(currentComponent);
-				}
-				// QTUP-3575
-
-				if (enableLogStash) {
-					talendJobLog.addCM("Processos_Ingestao_Bronze_1_tFileOutputParquet_5", "tFileOutputParquet_5",
-							"tFileOutputParquet");
-					talendJobLogProcess(globalMap);
-					s(currentComponent);
-				}
-
-				int nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = 0;
-				org.apache.parquet.schema.Types.MessageTypeBuilder schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = org.apache.parquet.schema.Types
-						.buildMessage();
-				org.apache.parquet.schema.MessageType messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = null;
-				org.talend.parquet.data.simple.SimpleGroupFactory factory_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = null;
-				org.apache.parquet.hadoop.ParquetWriter<org.talend.parquet.data.Group> writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = null;
-
-				String filePath_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = "C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/magistrado_bronze";
-				globalMap.put("Processos_Ingestao_Bronze_1_tFileOutputParquet_5_FILE_PATH",
-						filePath_Processos_Ingestao_Bronze_1_tFileOutputParquet_5);
-				org.apache.hadoop.conf.Configuration config_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = new org.apache.hadoop.conf.Configuration();
-				config_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.set("fs.file.impl",
-						org.apache.hadoop.fs.LocalFileSystem.class.getName());
-				org.apache.hadoop.fs.Path path_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = new org.apache.hadoop.fs.Path(
-						filePath_Processos_Ingestao_Bronze_1_tFileOutputParquet_5);
-				// CRC file path
-				String crcName_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = "."
-						+ path_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.getName() + ".crc";
-				org.apache.hadoop.fs.Path crcPath_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = new org.apache.hadoop.fs.Path(
-						path_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.getParent(),
-						crcName_Processos_Ingestao_Bronze_1_tFileOutputParquet_5);
-				String compressName_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = "UNCOMPRESSED";
-				int rowGroupSize_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = 134217728;
-				int pageSize_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = 1048576;
-				java.util.Map<String, org.talend.parquet.data.simple.SimpleGroupFactory> cachedFactory_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = new java.util.HashMap<>();
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("id_magistrado",
-								false, "INT32", "INT_32"));
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("nome_completo", true,
-								"BINARY", "UTF8"));
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("cargo", true,
-								"BINARY", "UTF8"));
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("data_posse", true,
-								"BINARY", "UTF8"));
-				schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
-						.addField(org.talend.parquet.utils.TalendParquetUtils.createPrimitiveType("situacao", true,
-								"BINARY", "UTF8"));
-				messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = schemaBuilder_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
-						.named("Schema");
-
-				org.talend.parquet.hadoop.TalendGroupWriteSupport.setSchema(
-						messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_5,
-						config_Processos_Ingestao_Bronze_1_tFileOutputParquet_5);
-				factory_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = new org.talend.parquet.data.simple.SimpleGroupFactory(
-						messageType_Processos_Ingestao_Bronze_1_tFileOutputParquet_5);
-				org.apache.parquet.hadoop.ParquetWriter.Builder<org.talend.parquet.data.Group, org.talend.parquet.hadoop.TalendParquetWriter.Builder> builder_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = org.talend.parquet.hadoop.TalendParquetWriter
-						.builder(org.apache.parquet.hadoop.util.HadoopOutputFile.fromPath(
-								path_Processos_Ingestao_Bronze_1_tFileOutputParquet_5,
-								config_Processos_Ingestao_Bronze_1_tFileOutputParquet_5));
-				builder_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
-						.withWriteMode(org.apache.parquet.hadoop.ParquetFileWriter.Mode.OVERWRITE)
-						.withCompressionCodec(org.apache.parquet.hadoop.metadata.CompressionCodecName
-								.fromConf(compressName_Processos_Ingestao_Bronze_1_tFileOutputParquet_5))
-						.withRowGroupSize(rowGroupSize_Processos_Ingestao_Bronze_1_tFileOutputParquet_5)
-						.withPageSize(pageSize_Processos_Ingestao_Bronze_1_tFileOutputParquet_5)
-						.withConf(config_Processos_Ingestao_Bronze_1_tFileOutputParquet_5);
-
-				writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = builder_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
-						.build();
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_5 begin ] stop
-				 */
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tDBInput_5 begin ] start
-				 */
-
-				sh("Processos_Ingestao_Bronze_1_tDBInput_5");
-
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_5");
-
-				int tos_count_Processos_Ingestao_Bronze_1_tDBInput_5 = 0;
-
-				if (log.isDebugEnabled())
-					log.debug("Processos_Ingestao_Bronze_1_tDBInput_5 - " + ("Start to work."));
-				if (log.isDebugEnabled()) {
-					class BytesLimit65535_Processos_Ingestao_Bronze_1_tDBInput_5 {
-						public void limitLog4jByte() throws Exception {
-							StringBuilder log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5 = new StringBuilder();
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append("Parameters:");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5
-									.append("USE_EXISTING_CONNECTION" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append("DB_VERSION" + " = " + "V9_X");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append("HOST" + " = "
-									+ "\"peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append("PORT" + " = " + "\"5432\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5
-									.append("DBNAME" + " = " + "\"qlik_demo\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5
-									.append("SCHEMA_DB" + " = " + "\"public\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5
-									.append("USER" + " = " + "\"peta_qlik\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append("PASS" + " = "
-									+ String.valueOf(
-											"enc:routine.encryption.key.v1:ECCp8wzxC5hRz1lwHiGeTbDMIT/bk8kUDUtvvYp99rCr96o0mg==")
-											.substring(0, 4)
-									+ "...");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append("QUERYSTORE" + " = " + "\"\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append("QUERY" + " = "
-									+ "\"SELECT    \\\"public\\\".\\\"magistrado\\\".\\\"id_magistrado\\\",    \\\"public\\\".\\\"magistrado\\\".\\\"nome_completo\\\",    \\\"public\\\".\\\"magistrado\\\".\\\"cargo\\\",    \\\"public\\\".\\\"magistrado\\\".\\\"data_posse\\\",    \\\"public\\\".\\\"magistrado\\\".\\\"situacao\\\"  FROM \\\"public\\\".\\\"magistrado\\\"\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5
-									.append("SPECIFY_DATASOURCE_ALIAS" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5
-									.append("PROPERTIES" + " = " + "\"classe\"");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5
-									.append("USE_CURSOR" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5
-									.append("TRIM_ALL_COLUMN" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5
-									.append("TRIM_COLUMN" + " = " + "[{TRIM=" + ("false") + ", SCHEMA_COLUMN="
-											+ ("id_magistrado") + "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN="
-											+ ("nome_completo") + "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN="
-											+ ("cargo") + "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("data_posse")
-											+ "}, {TRIM=" + ("false") + ", SCHEMA_COLUMN=" + ("situacao") + "}]");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5
-									.append("UNIFIED_COMPONENTS" + " = " + "tPostgresqlInput");
-							log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5.append(" | ");
-							if (log.isDebugEnabled())
-								log.debug("Processos_Ingestao_Bronze_1_tDBInput_5 - "
-										+ (log4jParamters_Processos_Ingestao_Bronze_1_tDBInput_5));
-						}
-					}
-					new BytesLimit65535_Processos_Ingestao_Bronze_1_tDBInput_5().limitLog4jByte();
-				}
-				boolean init_Processos_Ingestao_Bronze_1_tDBInput_5_0 = true;
-				// QTUP-3575
-				if (enableLineage) {
-					class ParameterUtil_Processos_Ingestao_Bronze_1_tDBInput_5 {
-
-						private void a(java.util.List<java.util.Map<String, String>> schema, String... values) {
-							java.util.Map<String, String> field = new java.util.HashMap<>();
-							field.put("name", values[0]);
-							field.put("talend_type", values[1]);
-							schema.add(field);
-						}
-
-						public java.util.Map<String, String> getParameter() throws Exception {
-							java.util.Map<String, String> component_parameters = new java.util.HashMap<>();
-
-							try {
-
-								component_parameters.put("USE_EXISTING_CONNECTION", String.valueOf("false"));
-								component_parameters.put("DB_VERSION", String.valueOf("V9_X"));
-								component_parameters.put("HOST", String
-										.valueOf("peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com"));
-								component_parameters.put("PORT", String.valueOf("5432"));
-								component_parameters.put("DBNAME", String.valueOf("qlik_demo"));
-								component_parameters.put("SCHEMA_DB", String.valueOf("public"));
-								component_parameters.put("USER", String.valueOf("peta_qlik"));
-								component_parameters.put("QUERYSTORE", String.valueOf(""));
-								component_parameters.put("QUERY", String.valueOf(new StringBuilder().append(
-										"SELECT \n  \"public\".\"magistrado\".\"id_magistrado\", \n  \"public\".\"magistrado\".\"nome_completo\", \n  \"public\".\""
-												+ "magistrado\".\"cargo\", \n  \"public\".\"magistrado\".\"data_posse\", \n  \"public\".\"magistrado\".\"situacao\"\n FROM \"p"
-												+ "ublic\".\"magistrado\"")
-										.toString()));
-								component_parameters.put("SPECIFY_DATASOURCE_ALIAS", String.valueOf("false"));
-								component_parameters.put("PROPERTIES", String.valueOf("classe"));
-								component_parameters.put("USE_CURSOR", String.valueOf("false"));
-								component_parameters.put("TRIM_ALL_COLUMN", String.valueOf("false"));
-								component_parameters.put("TRIM_COLUMN",
-										String.valueOf(new StringBuilder().append("[{TRIM=").append("false")
-												.append(", SCHEMA_COLUMN=").append("id_magistrado").append("}, {TRIM=")
-												.append("false").append(", SCHEMA_COLUMN=").append("nome_completo")
-												.append("}, {TRIM=").append("false").append(", SCHEMA_COLUMN=")
-												.append("cargo").append("}, {TRIM=").append("false")
-												.append(", SCHEMA_COLUMN=").append("data_posse").append("}, {TRIM=")
-												.append("false").append(", SCHEMA_COLUMN=").append("situacao")
-												.append("}]").toString()));
-								component_parameters.put("UNIFIED_COMPONENTS", String.valueOf("tPostgresqlInput"));
-
-							} catch (java.lang.Exception e_Processos_Ingestao_Bronze_1_tDBInput_5) {
-								// do nothing
-							}
-
-							return component_parameters;
-						}
-					}
-
-					talendJobLog.addComponentParameterMessage("Processos_Ingestao_Bronze_1_tDBInput_5",
-							"tPostgresqlInput",
-							new ParameterUtil_Processos_Ingestao_Bronze_1_tDBInput_5().getParameter());
-					talendJobLogProcess(globalMap);
-					s(currentComponent);
-				}
-				// QTUP-3575
-
-				if (enableLogStash) {
-					talendJobLog.addCM("Processos_Ingestao_Bronze_1_tDBInput_5", "tDBInput_5", "tPostgresqlInput");
-					talendJobLogProcess(globalMap);
-					s(currentComponent);
-				}
-
-				int nb_line_Processos_Ingestao_Bronze_1_tDBInput_5 = 0;
-				java.sql.Connection conn_Processos_Ingestao_Bronze_1_tDBInput_5 = null;
-				String driverClass_Processos_Ingestao_Bronze_1_tDBInput_5 = "org.postgresql.Driver";
-				java.lang.Class jdbcclazz_Processos_Ingestao_Bronze_1_tDBInput_5 = java.lang.Class
-						.forName(driverClass_Processos_Ingestao_Bronze_1_tDBInput_5);
-				String dbUser_Processos_Ingestao_Bronze_1_tDBInput_5 = "peta_qlik";
-
-				final String decryptedPassword_Processos_Ingestao_Bronze_1_tDBInput_5 = java.util.Optional
-						.ofNullable(routines.system.PasswordEncryptUtil.decryptPassword(
-								"enc:routine.encryption.key.v1:9e8PgGJIXiL8ofuYjkLZjZkMGLJ+i1KYKv0wEKinKi5aLVNOAA=="))
-						.orElse("");
-
-				String dbPwd_Processos_Ingestao_Bronze_1_tDBInput_5 = decryptedPassword_Processos_Ingestao_Bronze_1_tDBInput_5;
-
-				String url_Processos_Ingestao_Bronze_1_tDBInput_5 = "jdbc:postgresql://"
-						+ "peta-demo-qlik-instance-1.cb64q4o4ssoa.us-east-2.rds.amazonaws.com" + ":" + "5432" + "/"
-						+ "qlik_demo" + "?" + "classe";
-
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_5 - Driver ClassName: "
-						+ driverClass_Processos_Ingestao_Bronze_1_tDBInput_5 + ".");
-
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_5 - Connection attempt to '"
-						+ url_Processos_Ingestao_Bronze_1_tDBInput_5.replaceAll("(?<=trustStorePassword=)[^;]*",
-								"********")
-						+ "' with the username '" + dbUser_Processos_Ingestao_Bronze_1_tDBInput_5 + "'.");
-
-				conn_Processos_Ingestao_Bronze_1_tDBInput_5 = java.sql.DriverManager.getConnection(
-						url_Processos_Ingestao_Bronze_1_tDBInput_5, dbUser_Processos_Ingestao_Bronze_1_tDBInput_5,
-						dbPwd_Processos_Ingestao_Bronze_1_tDBInput_5);
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_5 - Connection to '"
-						+ url_Processos_Ingestao_Bronze_1_tDBInput_5.replaceAll("(?<=trustStorePassword=)[^;]*",
-								"********")
-						+ "' has succeeded.");
-
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_5 - Connection is set auto commit to 'false'.");
-
-				conn_Processos_Ingestao_Bronze_1_tDBInput_5.setAutoCommit(false);
-
-				java.sql.Statement stmt_Processos_Ingestao_Bronze_1_tDBInput_5 = conn_Processos_Ingestao_Bronze_1_tDBInput_5
-						.createStatement();
-
-				String dbquery_Processos_Ingestao_Bronze_1_tDBInput_5 = new StringBuilder().append(
-						"SELECT \n  \"public\".\"magistrado\".\"id_magistrado\", \n  \"public\".\"magistrado\".\"nome_completo\", \n  \"public\".\""
-								+ "magistrado\".\"cargo\", \n  \"public\".\"magistrado\".\"data_posse\", \n  \"public\".\"magistrado\".\"situacao\"\n FROM \"p"
-								+ "ublic\".\"magistrado\"")
-						.toString();
-
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_5 - Executing the query: '"
-						+ dbquery_Processos_Ingestao_Bronze_1_tDBInput_5 + "'.");
-
-				globalMap.put("Processos_Ingestao_Bronze_1_tDBInput_5_QUERY",
-						dbquery_Processos_Ingestao_Bronze_1_tDBInput_5);
-
-				java.sql.ResultSet rs_Processos_Ingestao_Bronze_1_tDBInput_5 = null;
-
-				try {
-					rs_Processos_Ingestao_Bronze_1_tDBInput_5 = stmt_Processos_Ingestao_Bronze_1_tDBInput_5
-							.executeQuery(dbquery_Processos_Ingestao_Bronze_1_tDBInput_5);
-					java.sql.ResultSetMetaData rsmd_Processos_Ingestao_Bronze_1_tDBInput_5 = rs_Processos_Ingestao_Bronze_1_tDBInput_5
-							.getMetaData();
-					int colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_5 = rsmd_Processos_Ingestao_Bronze_1_tDBInput_5
-							.getColumnCount();
-
-					String tmpContent_Processos_Ingestao_Bronze_1_tDBInput_5 = null;
-
-					log.debug("Processos_Ingestao_Bronze_1_tDBInput_5 - Retrieving records from the database.");
-
-					while (rs_Processos_Ingestao_Bronze_1_tDBInput_5.next()) {
-						nb_line_Processos_Ingestao_Bronze_1_tDBInput_5++;
-
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_5 < 1) {
-							Processos_Ingestao_Bronze_1_row5.id_magistrado = 0;
-						} else {
-
-							Processos_Ingestao_Bronze_1_row5.id_magistrado = rs_Processos_Ingestao_Bronze_1_tDBInput_5
-									.getInt(1);
-							if (rs_Processos_Ingestao_Bronze_1_tDBInput_5.wasNull()) {
-								throw new RuntimeException("Null value in non-Nullable column");
-							}
-						}
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_5 < 2) {
-							Processos_Ingestao_Bronze_1_row5.nome_completo = null;
-						} else {
-
-							Processos_Ingestao_Bronze_1_row5.nome_completo = routines.system.JDBCUtil
-									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_5, 2, false);
-						}
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_5 < 3) {
-							Processos_Ingestao_Bronze_1_row5.cargo = null;
-						} else {
-
-							Processos_Ingestao_Bronze_1_row5.cargo = routines.system.JDBCUtil
-									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_5, 3, false);
-						}
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_5 < 4) {
-							Processos_Ingestao_Bronze_1_row5.data_posse = null;
-						} else {
-
-							Processos_Ingestao_Bronze_1_row5.data_posse = routines.system.JDBCUtil
-									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_5, 4, false);
-						}
-						if (colQtyInRs_Processos_Ingestao_Bronze_1_tDBInput_5 < 5) {
-							Processos_Ingestao_Bronze_1_row5.situacao = null;
-						} else {
-
-							Processos_Ingestao_Bronze_1_row5.situacao = routines.system.JDBCUtil
-									.getString(rs_Processos_Ingestao_Bronze_1_tDBInput_5, 5, false);
-						}
-
-						log.debug("Processos_Ingestao_Bronze_1_tDBInput_5 - Retrieving the record "
-								+ nb_line_Processos_Ingestao_Bronze_1_tDBInput_5 + ".");
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_5 begin ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_5 main ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_5");
-
-						// QTUP-3575
-						if (enableLineage && init_Processos_Ingestao_Bronze_1_tDBInput_5_0) {
-							class SchemaUtil_Processos_Ingestao_Bronze_1_row5 {
-
-								private void a(java.util.List<java.util.Map<String, String>> schema, String... values) {
-									java.util.Map<String, String> field = new java.util.HashMap<>();
-									field.put("name", values[0]);
-									field.put("origin_name", values[1]);
-									field.put("iskey", values[2]);
-									field.put("talend_type", values[3]);
-									field.put("type", values[4]);
-									field.put("nullable", values[5]);
-									field.put("pattern", values[6]);
-									field.put("length", values[7]);
-									field.put("precision", values[8]);
-									schema.add(field);
-								}
-
-								public java.util.List<java.util.Map<String, String>> getSchema(
-										final Processos_Ingestao_Bronze_1_row5Struct Processos_Ingestao_Bronze_1_row5) {
-									java.util.List<java.util.Map<String, String>> s = new java.util.ArrayList<>();
-									if (Processos_Ingestao_Bronze_1_row5 == null) {
-										return s;
-									}
-									a(s, "id_magistrado", "id_magistrado", "false", "id_Integer", "SERIAL", "false", "",
-											"10", "0");
-									a(s, "nome_completo", "nome_completo", "false", "id_String", "VARCHAR", "true", "",
-											"255", "0");
-									a(s, "cargo", "cargo", "false", "id_String", "VARCHAR", "true", "", "100", "0");
-									a(s, "data_posse", "data_posse", "false", "id_String", "VARCHAR", "true", "", "50",
-											"0");
-									a(s, "situacao", "situacao", "false", "id_String", "VARCHAR", "true", "", "20",
-											"0");
-									return s;
-								}
-
-							}
-
-							if (Processos_Ingestao_Bronze_1_row5 != null) {
-								talendJobLog.addConnectionSchemaMessage("Processos_Ingestao_Bronze_1_tDBInput_5",
-										"tPostgresqlInput", "Processos_Ingestao_Bronze_1_tFileOutputParquet_5",
-										"tFileOutputParquet", "Processos_Ingestao_Bronze_1_row5" + iterateId,
-										new SchemaUtil_Processos_Ingestao_Bronze_1_row5()
-												.getSchema(Processos_Ingestao_Bronze_1_row5));
-								talendJobLogProcess(globalMap);
-								init_Processos_Ingestao_Bronze_1_tDBInput_5_0 = false;
-							}
-
-						}
-						// QTUP-3575
-
-						tos_count_Processos_Ingestao_Bronze_1_tDBInput_5++;
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_5 main ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_5 process_data_begin ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_5");
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_5 process_data_begin ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_5 main ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_5");
-
-						if (runStat.update(execStat, enableLogStash, iterateId, 1, 1
-
-								, "Processos_Ingestao_Bronze_1_row5", "Processos_Ingestao_Bronze_1_tDBInput_5",
-								"tDBInput_5", "tPostgresqlInput", "Processos_Ingestao_Bronze_1_tFileOutputParquet_5",
-								"tFileOutputParquet_5", "tFileOutputParquet"
-
-						)) {
-							talendJobLogProcess(globalMap);
-						}
-
-						if (log.isTraceEnabled()) {
-							log.trace("Processos_Ingestao_Bronze_1_row5 - "
-									+ (Processos_Ingestao_Bronze_1_row5 == null ? ""
-											: Processos_Ingestao_Bronze_1_row5.toLogString()));
-						}
-
-						org.talend.parquet.data.Group group_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = factory_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
-								.newGroup();
-
-						group_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.append("id_magistrado",
-								Processos_Ingestao_Bronze_1_row5.id_magistrado);
-						if (Processos_Ingestao_Bronze_1_row5.nome_completo != null) {
-
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.append("nome_completo",
-									String.valueOf(Processos_Ingestao_Bronze_1_row5.nome_completo));
-						}
-
-						if (Processos_Ingestao_Bronze_1_row5.cargo != null) {
-
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.append("cargo",
-									String.valueOf(Processos_Ingestao_Bronze_1_row5.cargo));
-						}
-
-						if (Processos_Ingestao_Bronze_1_row5.data_posse != null) {
-
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.append("data_posse",
-									String.valueOf(Processos_Ingestao_Bronze_1_row5.data_posse));
-						}
-
-						if (Processos_Ingestao_Bronze_1_row5.situacao != null) {
-
-							group_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.append("situacao",
-									String.valueOf(Processos_Ingestao_Bronze_1_row5.situacao));
-						}
-
-						writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
-								.write(group_Processos_Ingestao_Bronze_1_tFileOutputParquet_5);
-						nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_5++;
-						log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_5 - Writing the record "
-								+ nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 + " to the file.");
-
-						tos_count_Processos_Ingestao_Bronze_1_tFileOutputParquet_5++;
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_5 main ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_5 process_data_begin ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_5");
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_5 process_data_begin ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_5 process_data_end ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_5");
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_5 process_data_end ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_5 process_data_end ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_5");
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_5 process_data_end ] stop
-						 */
-
-						/**
-						 * [Processos_Ingestao_Bronze_1_tDBInput_5 end ] start
-						 */
-
-						s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_5");
-
-					}
-				} finally {
-					if (rs_Processos_Ingestao_Bronze_1_tDBInput_5 != null) {
-						rs_Processos_Ingestao_Bronze_1_tDBInput_5.close();
-					}
-					if (stmt_Processos_Ingestao_Bronze_1_tDBInput_5 != null) {
-						stmt_Processos_Ingestao_Bronze_1_tDBInput_5.close();
-					}
-					if (conn_Processos_Ingestao_Bronze_1_tDBInput_5 != null
-							&& !conn_Processos_Ingestao_Bronze_1_tDBInput_5.isClosed()) {
-
-						log.debug("Processos_Ingestao_Bronze_1_tDBInput_5 - Closing the connection to the database.");
-
-						conn_Processos_Ingestao_Bronze_1_tDBInput_5.close();
-
-						if ("com.mysql.cj.jdbc.Driver".equals((String) globalMap.get("driverClass_"))
-								&& routines.system.BundleUtils.inOSGi()) {
-							Class.forName("com.mysql.cj.jdbc.AbandonedConnectionCleanupThread")
-									.getMethod("checkedShutdown").invoke(null, (Object[]) null);
-						}
-
-						log.debug("Processos_Ingestao_Bronze_1_tDBInput_5 - Connection to the database closed.");
-
-					}
-
-				}
-				globalMap.put("Processos_Ingestao_Bronze_1_tDBInput_5_NB_LINE",
-						nb_line_Processos_Ingestao_Bronze_1_tDBInput_5);
-				log.debug("Processos_Ingestao_Bronze_1_tDBInput_5 - Retrieved records count: "
-						+ nb_line_Processos_Ingestao_Bronze_1_tDBInput_5 + " .");
-
-				if (log.isDebugEnabled())
-					log.debug("Processos_Ingestao_Bronze_1_tDBInput_5 - " + ("Done."));
-
-				ok_Hash.put("Processos_Ingestao_Bronze_1_tDBInput_5", true);
-				end_Hash.put("Processos_Ingestao_Bronze_1_tDBInput_5", System.currentTimeMillis());
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tDBInput_5 end ] stop
-				 */
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_5 end ] start
-				 */
-
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_5");
-
-				globalMap.put("Processos_Ingestao_Bronze_1_tFileOutputParquet_5_NB_LINE",
-						nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_5);
-
-				log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_5 - Written records count: "
-						+ nb_line_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 + " .");
-
-				if (writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 != null) {
-					writer_Processos_Ingestao_Bronze_1_tFileOutputParquet_5.close();
-				}
-				org.apache.hadoop.fs.FileSystem fs_Processos_Ingestao_Bronze_1_tFileOutputParquet_5 = crcPath_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
-						.getFileSystem(config_Processos_Ingestao_Bronze_1_tFileOutputParquet_5);
-				if (fs_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
-						.exists(crcPath_Processos_Ingestao_Bronze_1_tFileOutputParquet_5)) {
-					fs_Processos_Ingestao_Bronze_1_tFileOutputParquet_5
-							.delete(crcPath_Processos_Ingestao_Bronze_1_tFileOutputParquet_5, false);
-				}
-
-				if (runStat.updateStatAndLog(execStat, enableLogStash, resourceMap, iterateId,
-						"Processos_Ingestao_Bronze_1_row5", 2, 0, "Processos_Ingestao_Bronze_1_tDBInput_5",
-						"tDBInput_5", "tPostgresqlInput", "Processos_Ingestao_Bronze_1_tFileOutputParquet_5",
-						"tFileOutputParquet_5", "tFileOutputParquet", "output")) {
-					talendJobLogProcess(globalMap);
-				}
-
-				if (log.isDebugEnabled())
-					log.debug("Processos_Ingestao_Bronze_1_tFileOutputParquet_5 - " + ("Done."));
-
-				ok_Hash.put("Processos_Ingestao_Bronze_1_tFileOutputParquet_5", true);
-				end_Hash.put("Processos_Ingestao_Bronze_1_tFileOutputParquet_5", System.currentTimeMillis());
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_5 end ] stop
-				 */
-
-			} // end the resume
-
-		} catch (java.lang.Exception e) {
-
-			if (!(e instanceof TalendException) && !(e instanceof TDieException)) {
-				log.fatal(currentComponent + " " + e.getMessage(), e);
-			}
-
-			TalendException te = new TalendException(e, currentComponent, cLabel, globalMap);
-
-			throw te;
-		} catch (java.lang.Error error) {
-
-			runStat.stopThreadStat();
-
-			throw error;
-		} finally {
-
-			try {
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tDBInput_5 finally ] start
-				 */
-
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tDBInput_5");
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tDBInput_5 finally ] stop
-				 */
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_5 finally ] start
-				 */
-
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tFileOutputParquet_5");
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tFileOutputParquet_5 finally ] stop
-				 */
-
-			} catch (java.lang.Exception e) {
-				// ignore
-			} catch (java.lang.Error error) {
-				// ignore
-			}
-			resourceMap = null;
-		}
-
-		globalMap.put("Processos_Ingestao_Bronze_1_tDBInput_5_SUBPROCESS_STATE", 1);
-	}
-
-	public void Processos_Ingestao_Bronze_1_tS3Connection_2Process(final java.util.Map<String, Object> globalMap)
-			throws TalendException {
-		globalMap.put("Processos_Ingestao_Bronze_1_tS3Connection_2_SUBPROCESS_STATE", 0);
-
-		final boolean execStat = this.execStat;
-
-		mdc("Processos_Ingestao_Bronze_1_tS3Connection_2", "6qzTGG_");
+		mdc("processos_1_tS3Put_1", "VQEQZ6_");
 
 		String iterateId = "";
 
@@ -8784,68 +5887,63 @@ public class TRF5 implements TalendJob {
 				globalResumeTicket = true;
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tS3Connection_2 begin ] start
+				 * [processos_1_tS3Put_1 begin ] start
 				 */
 
-				sh("Processos_Ingestao_Bronze_1_tS3Connection_2");
+				sh("processos_1_tS3Put_1");
 
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tS3Connection_2");
+				s(currentComponent = "processos_1_tS3Put_1");
 
-				int tos_count_Processos_Ingestao_Bronze_1_tS3Connection_2 = 0;
+				int tos_count_processos_1_tS3Put_1 = 0;
 
 				if (log.isDebugEnabled())
-					log.debug("Processos_Ingestao_Bronze_1_tS3Connection_2 - " + ("Start to work."));
+					log.debug("processos_1_tS3Put_1 - " + ("Start to work."));
 				if (log.isDebugEnabled()) {
-					class BytesLimit65535_Processos_Ingestao_Bronze_1_tS3Connection_2 {
+					class BytesLimit65535_processos_1_tS3Put_1 {
 						public void limitLog4jByte() throws Exception {
-							StringBuilder log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2 = new StringBuilder();
-							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2.append("Parameters:");
-							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2
-									.append("configuration.credentialProvider" + " = " + "STATIC_CREDENTIALS");
-							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2
-									.append("configuration.staticCredentialConfiguration.accessKey" + " = "
-											+ "AKIAUWW4VRZLOLIPY4ZH");
-							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2.append(
-									"configuration.staticCredentialConfiguration.secretKey" + " = " + String.valueOf(
-											"enc:routine.encryption.key.v1:ubUUl1AyE/xl6nAzDyJ4imTLZQMQ2MZWUWmc73kS7LomGO7nfGwqGROXQGedEBbuLJ4NO76j6fU2qEgYxVt1cSfp96w=")
-											.substring(0, 4) + "...");
-							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2
-									.append("configuration.assumeRole" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2
-									.append("configuration.region" + " = " + "DEFAULT");
-							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2
-									.append("configuration.clientSideEncrypt" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2
-									.append("configuration.useRegionEndpoint" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2
-									.append("configuration.configClient" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2
-									.append("configuration.checkAccessibility" + " = " + "true");
-							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2
-									.append("configuration.checkMethod" + " = " + "BY_ACCOUNT_OWNER");
-							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2.append(" | ");
-							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2
-									.append("configuration.enableAccelerate" + " = " + "false");
-							log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2.append(" | ");
+							StringBuilder log4jParamters_processos_1_tS3Put_1 = new StringBuilder();
+							log4jParamters_processos_1_tS3Put_1.append("Parameters:");
+							log4jParamters_processos_1_tS3Put_1
+									.append("configuration.bucket" + " = " + "peta-demo-qlik");
+							log4jParamters_processos_1_tS3Put_1.append(" | ");
+							log4jParamters_processos_1_tS3Put_1.append("configuration.key" + " = "
+									+ "\"silver/\" + ((String)globalMap.get(\"tFileList_1_CURRENT_FILE\"))");
+							log4jParamters_processos_1_tS3Put_1.append(" | ");
+							log4jParamters_processos_1_tS3Put_1.append("configuration.file" + " = "
+									+ "\"C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/processos_silver.parquet\"");
+							log4jParamters_processos_1_tS3Put_1.append(" | ");
+							log4jParamters_processos_1_tS3Put_1
+									.append("configuration.enableServerSideEncryption" + " = " + "false");
+							log4jParamters_processos_1_tS3Put_1.append(" | ");
+							log4jParamters_processos_1_tS3Put_1.append("configuration.dieOnError" + " = " + "false");
+							log4jParamters_processos_1_tS3Put_1.append(" | ");
+							log4jParamters_processos_1_tS3Put_1
+									.append("configuration.multipartThreshold" + " = " + "5");
+							log4jParamters_processos_1_tS3Put_1.append(" | ");
+							log4jParamters_processos_1_tS3Put_1.append("configuration.partSize" + " = " + "5");
+							log4jParamters_processos_1_tS3Put_1.append(" | ");
+							log4jParamters_processos_1_tS3Put_1
+									.append("configuration.cannedAccessControlList" + " = " + "NONE");
+							log4jParamters_processos_1_tS3Put_1.append(" | ");
+							log4jParamters_processos_1_tS3Put_1
+									.append("configuration.enableObjectLock" + " = " + "false");
+							log4jParamters_processos_1_tS3Put_1.append(" | ");
+							log4jParamters_processos_1_tS3Put_1.append("configuration.setObjectTags" + " = " + "false");
+							log4jParamters_processos_1_tS3Put_1.append(" | ");
+							log4jParamters_processos_1_tS3Put_1.append("USE_EXISTING_CONNECTION" + " = " + "true");
+							log4jParamters_processos_1_tS3Put_1.append(" | ");
+							log4jParamters_processos_1_tS3Put_1
+									.append("CONNECTION" + " = " + "processos_1_tS3Connection_1");
+							log4jParamters_processos_1_tS3Put_1.append(" | ");
 							if (log.isDebugEnabled())
-								log.debug("Processos_Ingestao_Bronze_1_tS3Connection_2 - "
-										+ (log4jParamters_Processos_Ingestao_Bronze_1_tS3Connection_2));
+								log.debug("processos_1_tS3Put_1 - " + (log4jParamters_processos_1_tS3Put_1));
 						}
 					}
-					new BytesLimit65535_Processos_Ingestao_Bronze_1_tS3Connection_2().limitLog4jByte();
+					new BytesLimit65535_processos_1_tS3Put_1().limitLog4jByte();
 				}
 				// QTUP-3575
 				if (enableLineage) {
-					class ParameterUtil_Processos_Ingestao_Bronze_1_tS3Connection_2 {
+					class ParameterUtil_processos_1_tS3Put_1 {
 
 						private void a(java.util.List<java.util.Map<String, String>> schema, String... values) {
 							java.util.Map<String, String> field = new java.util.HashMap<>();
@@ -8859,28 +5957,31 @@ public class TRF5 implements TalendJob {
 
 							try {
 
-								component_parameters.put("configuration.credentialProvider", "STATIC_CREDENTIALS");
+								component_parameters.put("configuration.bucket", "peta-demo-qlik");
 
-								component_parameters.put("configuration.staticCredentialConfiguration.accessKey",
-										"AKIAUWW4VRZLOLIPY4ZH");
+								component_parameters.put("configuration.key", String
+										.valueOf("silver/" + ((String) globalMap.get("tFileList_1_CURRENT_FILE"))));
 
-								component_parameters.put("configuration.assumeRole", "false");
+								component_parameters.put("configuration.file",
+										"C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/processos_silver.parquet");
 
-								component_parameters.put("configuration.region", "DEFAULT");
+								component_parameters.put("configuration.enableServerSideEncryption", "false");
 
-								component_parameters.put("configuration.clientSideEncrypt", "false");
+								component_parameters.put("configuration.dieOnError", "false");
 
-								component_parameters.put("configuration.useRegionEndpoint", "false");
+								component_parameters.put("configuration.multipartThreshold", "5");
 
-								component_parameters.put("configuration.configClient", "false");
+								component_parameters.put("configuration.partSize", "5");
 
-								component_parameters.put("configuration.checkAccessibility", "true");
+								component_parameters.put("configuration.cannedAccessControlList", "NONE");
 
-								component_parameters.put("configuration.checkMethod", "BY_ACCOUNT_OWNER");
+								component_parameters.put("configuration.enableObjectLock", "false");
 
-								component_parameters.put("configuration.enableAccelerate", "false");
+								component_parameters.put("configuration.setObjectTags", "false");
+								component_parameters.put("USE_EXISTING_CONNECTION", String.valueOf("true"));
+								component_parameters.put("CONNECTION", String.valueOf("processos_1_tS3Connection_1"));
 
-							} catch (java.lang.Exception e_Processos_Ingestao_Bronze_1_tS3Connection_2) {
+							} catch (java.lang.Exception e_processos_1_tS3Put_1) {
 								// do nothing
 							}
 
@@ -8888,33 +5989,30 @@ public class TRF5 implements TalendJob {
 						}
 					}
 
-					talendJobLog.addComponentParameterMessage("Processos_Ingestao_Bronze_1_tS3Connection_2",
-							"tS3Connection",
-							new ParameterUtil_Processos_Ingestao_Bronze_1_tS3Connection_2().getParameter());
+					talendJobLog.addComponentParameterMessage("processos_1_tS3Put_1", "S3Put",
+							new ParameterUtil_processos_1_tS3Put_1().getParameter());
 					talendJobLogProcess(globalMap);
 					s(currentComponent);
 				}
 				// QTUP-3575
 
 				if (enableLogStash) {
-					talendJobLog.addCM("Processos_Ingestao_Bronze_1_tS3Connection_2", "tS3Connection_2",
-							"tS3Connection");
+					talendJobLog.addCM("processos_1_tS3Put_1", "tS3Put_1", "S3Put");
 					talendJobLogProcess(globalMap);
 					s(currentComponent);
 				}
 
-				final org.talend.sdk.component.runtime.manager.ComponentManager mgr_Processos_Ingestao_Bronze_1_tS3Connection_2 = org.talend.sdk.component.runtime.manager.ComponentManager
+				final org.talend.sdk.component.runtime.manager.ComponentManager mgr_processos_1_tS3Put_1 = org.talend.sdk.component.runtime.manager.ComponentManager
 						.instance();
-				mgr_Processos_Ingestao_Bronze_1_tS3Connection_2.autoDiscoverPluginsIfEmpty(false, true);
+				mgr_processos_1_tS3Put_1.autoDiscoverPluginsIfEmpty(false, true);
 
-				final java.util.Map<String, String> configuration_Processos_Ingestao_Bronze_1_tS3Connection_2 = new java.util.HashMap<>();
-				final java.util.Map<String, String> registry_metadata_Processos_Ingestao_Bronze_1_tS3Connection_2 = new java.util.HashMap<>();
+				final java.util.Map<String, String> configuration_processos_1_tS3Put_1 = new java.util.HashMap<>();
+				final java.util.Map<String, String> registry_metadata_processos_1_tS3Put_1 = new java.util.HashMap<>();
 
-				final class SettingHelper_Processos_Ingestao_Bronze_1_tS3Connection_2 {
+				final class SettingHelper_processos_1_tS3Put_1 {
 					final java.util.Map<String, String> configuration;
 
-					SettingHelper_Processos_Ingestao_Bronze_1_tS3Connection_2(
-							final java.util.Map<String, String> configuration) {
+					SettingHelper_processos_1_tS3Put_1(final java.util.Map<String, String> configuration) {
 						this.configuration = configuration;
 					}
 
@@ -8925,157 +6023,186 @@ public class TRF5 implements TalendJob {
 					}
 				}
 
-				final SettingHelper_Processos_Ingestao_Bronze_1_tS3Connection_2 s_Processos_Ingestao_Bronze_1_tS3Connection_2 = new SettingHelper_Processos_Ingestao_Bronze_1_tS3Connection_2(
-						configuration_Processos_Ingestao_Bronze_1_tS3Connection_2);
-				Object dv_Processos_Ingestao_Bronze_1_tS3Connection_2;
-				java.net.URL mappings_url_Processos_Ingestao_Bronze_1_tS3Connection_2 = this.getClass()
-						.getResource("/xmlMappings");
-				globalMap.put("Processos_Ingestao_Bronze_1_tS3Connection_2_MAPPINGS_URL",
-						mappings_url_Processos_Ingestao_Bronze_1_tS3Connection_2);
+				final SettingHelper_processos_1_tS3Put_1 s_processos_1_tS3Put_1 = new SettingHelper_processos_1_tS3Put_1(
+						configuration_processos_1_tS3Put_1);
+				Object dv_processos_1_tS3Put_1;
+				java.net.URL mappings_url_processos_1_tS3Put_1 = this.getClass().getResource("/xmlMappings");
+				globalMap.put("processos_1_tS3Put_1_MAPPINGS_URL", mappings_url_processos_1_tS3Put_1);
 				globalMap.putIfAbsent("TALEND_PRODUCT_VERSION", "8.0");
 				globalMap.putIfAbsent("TALEND_AWS_TRACKER", "APN/1.0 Talend/8.0 Studio/8.0 (Qlik Talend Cloud)");
 
-				s_Processos_Ingestao_Bronze_1_tS3Connection_2.put("configuration.credentialProvider",
-						"STATIC_CREDENTIALS");
+				s_processos_1_tS3Put_1.put("configuration.bucket", "peta-demo-qlik");
 
-				s_Processos_Ingestao_Bronze_1_tS3Connection_2
-						.put("configuration.staticCredentialConfiguration.accessKey", "AKIAUWW4VRZLOLIPY4ZH");
-				s_Processos_Ingestao_Bronze_1_tS3Connection_2.put(
-						"configuration.staticCredentialConfiguration.secretKey",
-						routines.system.PasswordEncryptUtil.decryptPassword(
-								"enc:routine.encryption.key.v1:GCR2aYEGDUMtX/Y6oFjpmBQBeYcnrCqLQTC65JhJasbzgmNj4fc1aSYRMPCpsZrnR5JZL/r+ACc/FZ2nyi2rcPMU5mg="));
+				dv_processos_1_tS3Put_1 = "silver/" + ((String) globalMap.get("tFileList_1_CURRENT_FILE"));
+				if (dv_processos_1_tS3Put_1 instanceof java.io.InputStream) {
+					s_processos_1_tS3Put_1.put("configuration.key",
+							"\"silver/\" + ((String)globalMap.get(\"tFileList_1_CURRENT_FILE\"))");
+				} else {
+					s_processos_1_tS3Put_1.put("configuration.key",
+							String.valueOf("silver/" + ((String) globalMap.get("tFileList_1_CURRENT_FILE"))));
+				}
 
-				s_Processos_Ingestao_Bronze_1_tS3Connection_2.put("configuration.assumeRole", "false");
+				s_processos_1_tS3Put_1.put("configuration.file",
+						"C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/processos_silver.parquet");
 
-				s_Processos_Ingestao_Bronze_1_tS3Connection_2.put("configuration.region", "DEFAULT");
+				s_processos_1_tS3Put_1.put("configuration.enableServerSideEncryption", "false");
 
-				s_Processos_Ingestao_Bronze_1_tS3Connection_2.put("configuration.clientSideEncrypt", "false");
+				s_processos_1_tS3Put_1.put("configuration.dieOnError", "false");
 
-				s_Processos_Ingestao_Bronze_1_tS3Connection_2.put("configuration.useRegionEndpoint", "false");
+				s_processos_1_tS3Put_1.put("configuration.multipartThreshold", "5");
 
-				s_Processos_Ingestao_Bronze_1_tS3Connection_2.put("configuration.configClient", "false");
+				s_processos_1_tS3Put_1.put("configuration.partSize", "5");
 
-				s_Processos_Ingestao_Bronze_1_tS3Connection_2.put("configuration.checkAccessibility", "true");
+				s_processos_1_tS3Put_1.put("configuration.cannedAccessControlList", "NONE");
 
-				s_Processos_Ingestao_Bronze_1_tS3Connection_2.put("configuration.checkMethod", "BY_ACCOUNT_OWNER");
+				s_processos_1_tS3Put_1.put("configuration.enableObjectLock", "false");
 
-				s_Processos_Ingestao_Bronze_1_tS3Connection_2.put("configuration.enableAccelerate", "false");
+				s_processos_1_tS3Put_1.put("configuration.setObjectTags", "false");
 
-				s_Processos_Ingestao_Bronze_1_tS3Connection_2.put("configuration.__version", "-1");
-				final class SchemaSettingHelper_Processos_Ingestao_Bronze_1_tS3Connection_2_1 {
+				s_processos_1_tS3Put_1.put("configuration.dataset.__version", "-1");
+
+				s_processos_1_tS3Put_1.put("configuration.dataset.datastore.__version", "-1");
+				final class SchemaSettingHelper_processos_1_tS3Put_1_1 {
 
 					public void set(final java.util.Map<String, String> configuration) throws java.lang.Exception {
-						set_0(configuration);
-					}
-
-					public void set_0(final java.util.Map<String, String> configuration) throws java.lang.Exception {
-						configuration.put("SCHEMA_FLOW[0]", "CURRENT_BUCKET");
-						configuration.put("SCHEMA_FLOW[1]", "CURRENT_KEY");
-						configuration.put("SCHEMA_FLOW[2]", "CURRENT_SIZE");
-						configuration.put("SCHEMA_FLOW[3]", "CURRENT_LASTMODIFIED");
-						configuration.put("SCHEMA_FLOW[4]", "CURRENT_OWNER");
-						configuration.put("SCHEMA_FLOW[5]", "CURRENT_OWNER_ID");
-						configuration.put("SCHEMA_FLOW[6]", "CURRENT_ETAG");
-						configuration.put("SCHEMA_FLOW[7]", "CURRENT_STORAGECLASS");
 					}
 				}
-				new SchemaSettingHelper_Processos_Ingestao_Bronze_1_tS3Connection_2_1()
-						.set(configuration_Processos_Ingestao_Bronze_1_tS3Connection_2);
+				new SchemaSettingHelper_processos_1_tS3Put_1_1().set(configuration_processos_1_tS3Put_1);
+				final class SchemaSettingHelper_processos_1_tS3Put_1_2 {
 
-				mgr_Processos_Ingestao_Bronze_1_tS3Connection_2.findPlugin("aws-s3")
-						.orElseThrow(() -> new IllegalStateException("Can't find the plugin : aws-s3"))
-						.get(org.talend.sdk.component.runtime.manager.ContainerComponentRegistry.class).getServices()
-						.stream().forEach(serviceMeta_Processos_Ingestao_Bronze_1_tS3Connection_2 -> {
-							serviceMeta_Processos_Ingestao_Bronze_1_tS3Connection_2.getActions().stream().filter(
-									actionMeta_Processos_Ingestao_Bronze_1_tS3Connection_2 -> "create_connection"
-											.equals(actionMeta_Processos_Ingestao_Bronze_1_tS3Connection_2.getType()))
-									.forEach(actionMeta_Processos_Ingestao_Bronze_1_tS3Connection_2 -> {
-										synchronized (serviceMeta_Processos_Ingestao_Bronze_1_tS3Connection_2
-												.getInstance()) {
-											org.talend.sdk.component.runtime.di.studio.RuntimeContextInjector
-													.injectService(mgr_Processos_Ingestao_Bronze_1_tS3Connection_2,
-															"aws-s3",
-															new org.talend.sdk.component.api.context.RuntimeContextHolder(
-																	"Processos_Ingestao_Bronze_1_tS3Connection_2",
-																	globalMap));
+					public void set(final java.util.Map<String, String> configuration) throws java.lang.Exception {
+					}
+				}
+				new SchemaSettingHelper_processos_1_tS3Put_1_2().set(configuration_processos_1_tS3Put_1);
+				final java.util.Map<String, String> config_from_connection_processos_1_tS3Put_1 = (java.util.Map<String, String>) globalMap
+						.get("configuration_processos_1_tS3Connection_1");
+				final String conn_param_prefix_processos_1_tS3Put_1 = "configuration.dataset.datastore";
+				if (config_from_connection_processos_1_tS3Put_1 != null
+						&& conn_param_prefix_processos_1_tS3Put_1 != null) {
+					final String prefix_processos_1_tS3Put_1 = config_from_connection_processos_1_tS3Put_1.keySet()
+							.stream()
+							.filter(key_processos_1_tS3Put_1 -> key_processos_1_tS3Put_1.endsWith(".__version"))
+							.findFirst().map(key_processos_1_tS3Put_1 -> key_processos_1_tS3Put_1.substring(0,
+									key_processos_1_tS3Put_1.lastIndexOf(".__version")))
+							.orElse(null);
 
-											Object connnection_Processos_Ingestao_Bronze_1_tS3Connection_2 = actionMeta_Processos_Ingestao_Bronze_1_tS3Connection_2
-													.getInvoker()
-													.apply(configuration_Processos_Ingestao_Bronze_1_tS3Connection_2);
+					if (prefix_processos_1_tS3Put_1 != null) {
+						config_from_connection_processos_1_tS3Put_1.entrySet().stream()
+								.filter(entry_processos_1_tS3Put_1 -> entry_processos_1_tS3Put_1.getKey()
+										.startsWith(prefix_processos_1_tS3Put_1))
+								.forEach(entry_processos_1_tS3Put_1 -> {
+									configuration_processos_1_tS3Put_1.put(
+											entry_processos_1_tS3Put_1.getKey().replaceFirst(
+													prefix_processos_1_tS3Put_1,
+													conn_param_prefix_processos_1_tS3Put_1),
+											entry_processos_1_tS3Put_1.getValue());
+								});
+					}
+				}
 
-											globalMap.put("conn_Processos_Ingestao_Bronze_1_tS3Connection_2",
-													connnection_Processos_Ingestao_Bronze_1_tS3Connection_2);
+				final org.talend.sdk.component.runtime.standalone.DriverRunner standalone_processos_1_tS3Put_1 = mgr_processos_1_tS3Put_1
+						.findDriverRunner("S3", "Put", 1, configuration_processos_1_tS3Put_1)
+						.orElseThrow(() -> new IllegalArgumentException("Can't find S3#Put"));
 
-											try {
-												configuration_Processos_Ingestao_Bronze_1_tS3Connection_2.put(
-														"configuration.staticCredentialConfiguration.secretKey",
-														routines.system.PasswordEncryptUtil.encryptPassword(
-																configuration_Processos_Ingestao_Bronze_1_tS3Connection_2
-																		.get("configuration.staticCredentialConfiguration.secretKey")));
-											} catch (Exception e) {
-												e.printStackTrace();
-											}
-											globalMap.put("configuration_Processos_Ingestao_Bronze_1_tS3Connection_2",
-													configuration_Processos_Ingestao_Bronze_1_tS3Connection_2);
-										}
-									});
-						});
+				org.talend.sdk.component.runtime.di.studio.RuntimeContextInjector.injectLifecycle(
+						standalone_processos_1_tS3Put_1, new org.talend.sdk.component.api.context.RuntimeContextHolder(
+								"processos_1_tS3Put_1", globalMap));
+
+				try {
+					java.lang.reflect.Field field_processos_1_tS3Put_1 = standalone_processos_1_tS3Put_1.getClass()
+							.getSuperclass().getDeclaredField("delegate");
+					if (!field_processos_1_tS3Put_1.isAccessible()) {
+						field_processos_1_tS3Put_1.setAccessible(true);
+					}
+					Object v_processos_1_tS3Put_1 = field_processos_1_tS3Put_1.get(standalone_processos_1_tS3Put_1);
+					Object con_processos_1_tS3Put_1 = globalMap.get("conn_processos_1_tS3Connection_1");
+					if (con_processos_1_tS3Put_1 == null) {
+						throw new RuntimeException("can't find the connection object");
+					}
+
+					Class<?> current_processos_1_tS3Put_1 = v_processos_1_tS3Put_1.getClass();
+					while (current_processos_1_tS3Put_1 != null && current_processos_1_tS3Put_1 != Object.class) {
+						java.util.stream.Stream.of(current_processos_1_tS3Put_1.getDeclaredFields())
+								.filter(f_processos_1_tS3Put_1 -> f_processos_1_tS3Put_1.isAnnotationPresent(
+										org.talend.sdk.component.api.service.connection.Connection.class))
+								.forEach(f_processos_1_tS3Put_1 -> {
+									if (!f_processos_1_tS3Put_1.isAccessible()) {
+										f_processos_1_tS3Put_1.setAccessible(true);
+									}
+									try {
+										f_processos_1_tS3Put_1.set(v_processos_1_tS3Put_1, con_processos_1_tS3Put_1);
+									} catch (final IllegalAccessException e_processos_1_tS3Put_1) {
+										throw new IllegalStateException(e_processos_1_tS3Put_1);
+									}
+								});
+						current_processos_1_tS3Put_1 = current_processos_1_tS3Put_1.getSuperclass();
+					}
+				} catch (Exception e_processos_1_tS3Put_1) {
+					throw e_processos_1_tS3Put_1;
+				}
+
+				standalone_processos_1_tS3Put_1.start();
+				globalMap.put("standalone_processos_1_tS3Put_1", standalone_processos_1_tS3Put_1);
+
+				standalone_processos_1_tS3Put_1.runAtDriver();
+//Standalone begin stub
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tS3Connection_2 begin ] stop
+				 * [processos_1_tS3Put_1 begin ] stop
 				 */
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tS3Connection_2 main ] start
+				 * [processos_1_tS3Put_1 main ] start
 				 */
 
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tS3Connection_2");
+				s(currentComponent = "processos_1_tS3Put_1");
 
-				tos_count_Processos_Ingestao_Bronze_1_tS3Connection_2++;
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tS3Connection_2 main ] stop
-				 */
+				tos_count_processos_1_tS3Put_1++;
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tS3Connection_2 process_data_begin ] start
-				 */
-
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tS3Connection_2");
-
-				/**
-				 * [Processos_Ingestao_Bronze_1_tS3Connection_2 process_data_begin ] stop
+				 * [processos_1_tS3Put_1 main ] stop
 				 */
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tS3Connection_2 process_data_end ] start
+				 * [processos_1_tS3Put_1 process_data_begin ] start
 				 */
 
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tS3Connection_2");
+				s(currentComponent = "processos_1_tS3Put_1");
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tS3Connection_2 process_data_end ] stop
+				 * [processos_1_tS3Put_1 process_data_begin ] stop
 				 */
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tS3Connection_2 end ] start
+				 * [processos_1_tS3Put_1 process_data_end ] start
 				 */
 
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tS3Connection_2");
+				s(currentComponent = "processos_1_tS3Put_1");
+
+				/**
+				 * [processos_1_tS3Put_1 process_data_end ] stop
+				 */
+
+				/**
+				 * [processos_1_tS3Put_1 end ] start
+				 */
+
+				s(currentComponent = "processos_1_tS3Put_1");
+
+				if (standalone_processos_1_tS3Put_1 != null) {
+					standalone_processos_1_tS3Put_1.stop();
+				}
+
+				globalMap.remove("standalone_processos_1_tS3Put_1");
 
 				if (log.isDebugEnabled())
-					log.debug("Processos_Ingestao_Bronze_1_tS3Connection_2 - " + ("Done."));
+					log.debug("processos_1_tS3Put_1 - " + ("Done."));
 
-				ok_Hash.put("Processos_Ingestao_Bronze_1_tS3Connection_2", true);
-				end_Hash.put("Processos_Ingestao_Bronze_1_tS3Connection_2", System.currentTimeMillis());
-
-				if (execStat) {
-					runStat.updateStatOnConnection("Processos_Ingestao_Bronze_1_OnComponentOk2", 0, "ok");
-				}
-				Processos_Ingestao_Bronze_1_tDBInput_1Process(globalMap);
+				ok_Hash.put("processos_1_tS3Put_1", true);
+				end_Hash.put("processos_1_tS3Put_1", System.currentTimeMillis());
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tS3Connection_2 end ] stop
+				 * [processos_1_tS3Put_1 end ] stop
 				 */
 
 			} // end the resume
@@ -9099,13 +6226,23 @@ public class TRF5 implements TalendJob {
 			try {
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tS3Connection_2 finally ] start
+				 * [processos_1_tS3Put_1 finally ] start
 				 */
 
-				s(currentComponent = "Processos_Ingestao_Bronze_1_tS3Connection_2");
+				s(currentComponent = "processos_1_tS3Put_1");
+
+				final org.talend.sdk.component.runtime.standalone.DriverRunner standalone_processos_1_tS3Put_1 = org.talend.sdk.component.runtime.standalone.DriverRunner.class
+						.cast(globalMap.remove("standalone_processos_1_tS3Put_1"));
+				try {
+					if (standalone_processos_1_tS3Put_1 != null) {
+						standalone_processos_1_tS3Put_1.stop();
+					}
+				} catch (final RuntimeException re) {
+					throw new TalendException(re, currentComponent, cLabel, globalMap);
+				}
 
 				/**
-				 * [Processos_Ingestao_Bronze_1_tS3Connection_2 finally ] stop
+				 * [processos_1_tS3Put_1 finally ] stop
 				 */
 
 			} catch (java.lang.Exception e) {
@@ -9116,7 +6253,7 @@ public class TRF5 implements TalendJob {
 			resourceMap = null;
 		}
 
-		globalMap.put("Processos_Ingestao_Bronze_1_tS3Connection_2_SUBPROCESS_STATE", 1);
+		globalMap.put("processos_1_tS3Put_1_SUBPROCESS_STATE", 1);
 	}
 
 	public void talendJobLogProcess(final java.util.Map<String, Object> globalMap) throws TalendException {
@@ -9521,7 +6658,7 @@ public class TRF5 implements TalendJob {
 		org.slf4j.MDC.put("_startTimestamp", java.time.ZonedDateTime.now(java.time.ZoneOffset.UTC)
 				.format(java.time.format.DateTimeFormatter.ISO_INSTANT));
 		org.slf4j.MDC.put("_jobRepositoryId", "_mceAMB7SEfG99Y5mkdgJFg");
-		org.slf4j.MDC.put("_compiledAtTimestamp", "2026-03-17T04:47:40.471942800Z");
+		org.slf4j.MDC.put("_compiledAtTimestamp", "2026-03-18T00:21:47.420522900Z");
 
 		java.lang.management.RuntimeMXBean mx = java.lang.management.ManagementFactory.getRuntimeMXBean();
 		String[] mxNameTable = mx.getName().split("@"); //$NON-NLS-1$
@@ -9802,26 +6939,14 @@ public class TRF5 implements TalendJob {
 
 		try {
 			errorCode = null;
-			Processo_Silver_1_tS3Connection_1Process(globalMap);
+			processos_1_tS3Connection_1Process(globalMap);
 			if (!"failure".equals(status)) {
 				status = "end";
 			}
-		} catch (TalendException e_Processo_Silver_1_tS3Connection_1) {
-			globalMap.put("Processo_Silver_1_tS3Connection_1_SUBPROCESS_STATE", -1);
+		} catch (TalendException e_processos_1_tS3Connection_1) {
+			globalMap.put("processos_1_tS3Connection_1_SUBPROCESS_STATE", -1);
 
-			e_Processo_Silver_1_tS3Connection_1.printStackTrace();
-
-		}
-		try {
-			errorCode = null;
-			Processos_Ingestao_Bronze_1_tS3Connection_2Process(globalMap);
-			if (!"failure".equals(status)) {
-				status = "end";
-			}
-		} catch (TalendException e_Processos_Ingestao_Bronze_1_tS3Connection_2) {
-			globalMap.put("Processos_Ingestao_Bronze_1_tS3Connection_2_SUBPROCESS_STATE", -1);
-
-			e_Processos_Ingestao_Bronze_1_tS3Connection_2.printStackTrace();
+			e_processos_1_tS3Connection_1.printStackTrace();
 
 		}
 
@@ -9931,10 +7056,7 @@ public class TRF5 implements TalendJob {
 	private java.util.Map<String, Object> getSharedConnections4REST() {
 		java.util.Map<String, Object> connections = new java.util.HashMap<String, Object>();
 
-		connections.put("conn_Processo_Silver_1_tS3Connection_1",
-				globalMap.get("conn_Processo_Silver_1_tS3Connection_1"));
-		connections.put("conn_Processos_Ingestao_Bronze_1_tS3Connection_2",
-				globalMap.get("conn_Processos_Ingestao_Bronze_1_tS3Connection_2"));
+		connections.put("conn_processos_1_tS3Connection_1", globalMap.get("conn_processos_1_tS3Connection_1"));
 
 		return connections;
 	}
@@ -10073,6 +7195,6 @@ public class TRF5 implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 413333 characters generated by Qlik Talend Cloud Enterprise Edition on the 17
- * de março de 2026 01:47:40 BRT
+ * 270224 characters generated by Qlik Talend Cloud Enterprise Edition on the 17
+ * de março de 2026 21:21:47 BRT
  ************************************************************************************************/

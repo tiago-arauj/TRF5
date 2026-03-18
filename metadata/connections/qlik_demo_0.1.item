@@ -20,7 +20,7 @@
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_XNmfMB5XEfGmnOAGqGGqnw" name="qlik_demo" dataManager="_h9UuEB5TEfGmnOAGqGGqnw">
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_XNmfMR5XEfGmnOAGqGGqnw" name="public">
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_jSu9oB5aEfGmnOAGqGGqnw" name="processos_judiciais" id="_jStvgB5aEfGmnOAGqGGqnw" label="processos_judiciais" tableType="TABLE">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_jSu9oB5aEfGmnOAGqGGqnw" name="processos_judiciais" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_jStvgB5aEfGmnOAGqGGqnw" label="processos_judiciais" tableType="TABLE">
         <feature xsi:type="relational:TdColumn" xmi:id="_jSu9oR5aEfGmnOAGqGGqnw" name="id_processo" label="id_processo" length="10" sourceType="SERIAL" talendType="id_Integer" key="true" nullable="false">
           <taggedValue xmi:id="_jSu9oh5aEfGmnOAGqGGqnw" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_jSu9ox5aEfGmnOAGqGGqnw" body="nextval('processos_judiciais_id_processo_seq'::regclass)" language="COLUMN_DEF"/>
