@@ -8,57 +8,16 @@
     <version>8.0.1</version>
     <relativePath>../../../</relativePath>
   </parent>
-  <groupId>org.example.demotrf5.job</groupId>
-  <artifactId>TRF5</artifactId>
+  <groupId>org.example.demotrf5.joblet</groupId>
+  <artifactId>dim_assunto</artifactId>
   <version>0.1.0</version>
-  <name>DEMOTRF5 TRF5-0.1.0 (0.1,Job Designs)</name>
+  <packaging>pom</packaging>
+  <name>DEMOTRF5 dim_assunto</name>
   <properties>
-    <talend.job.type>Standard</talend.job.type>
-    <talend.job.date>${maven.build.timestamp}</talend.job.date>
-    <talend.pigudf.groupid>org.example.demotrf5.pigudf</talend.pigudf.groupid>
-    <talend.job.folder></talend.job.folder>
-    <talend.job.context>Default</talend.job.context>
-    <talend.job.path>demotrf5</talend.job.path>
-    <talend.job.git.commit.id></talend.job.git.commit.id>
-    <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
-    <talend.job.stat>true</talend.job.stat>
-    <talend.job.git.author></talend.job.git.author>
-    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.https=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED </talend.job.jvmargs>
-    <talend.job.id>_mceAMB7SEfG99Y5mkdgJFg</talend.job.id>
-    <talend.job.version>0.1</talend.job.version>
-    <talend.job.framework></talend.job.framework>
-    <talend.job.parent.id></talend.job.parent.id>
-    <talend.routine.groupid>org.example.demotrf5.code</talend.routine.groupid>
-    <talend.appint.microservice>false</talend.appint.microservice>
-    <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
-    <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.project.name.lowercase>demotrf5</talend.project.name.lowercase>
-    <talend.project.id>0</talend.project.id>
-    <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
-    <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
-    <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
-    <talend.project.branch.name></talend.project.branch.name>
-    <talend.product.version>8.0.1.20260211_0926-patch</talend.product.version>
-    <talend.project.name>DEMOTRF5</talend.project.name>
-    <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
-    <talend.job.git.commit.date></talend.job.git.commit.date>
-    <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
-    <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.name>TRF5</talend.job.name>
-    <talend.job.finalName>trf5_0_1</talend.job.finalName>
+    <talend.joblet.version>0.1</talend.joblet.version>
+    <talend.joblet.id>_3eNnoCK8EfGfXPVm26Ryig</talend.joblet.id>
   </properties>
   <dependencies>
-    <dependency>
-      <groupId>net.minidev</groupId>
-      <artifactId>accessors-smart</artifactId>
-      <version>2.4.11</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
     <dependency>
       <groupId>software.amazon.encryption.s3</groupId>
       <artifactId>amazon-s3-encryption-client-java</artifactId>
@@ -96,50 +55,6 @@
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>arns</artifactId>
       <version>2.35.11</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.ow2.asm</groupId>
-      <artifactId>asm</artifactId>
-      <version>9.5</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.opencypher</groupId>
-      <artifactId>ast-9.0</artifactId>
-      <version>9.0.20210312</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.daikon</groupId>
-      <artifactId>audit-common</artifactId>
-      <version>1.16.1</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.daikon</groupId>
-      <artifactId>audit-log4j2</artifactId>
-      <version>1.16.1</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -269,17 +184,6 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>commons-beanutils</groupId>
-      <artifactId>commons-beanutils</artifactId>
-      <version>1.11.0</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
       <groupId>commons-codec</groupId>
       <artifactId>commons-codec</artifactId>
       <version>1.19.0</version>
@@ -349,17 +253,6 @@
       <groupId>commons-logging</groupId>
       <artifactId>commons-logging</artifactId>
       <version>1.2</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-text</artifactId>
-      <version>1.14.0</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -456,28 +349,6 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.talend.daikon</groupId>
-      <artifactId>crypto-utils</artifactId>
-      <version>7.1.28</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.dom4j</groupId>
-      <artifactId>dom4j</artifactId>
-      <version>2.1.3</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>endpoints-spi</artifactId>
       <version>2.35.11</version>
@@ -492,17 +363,6 @@
       <groupId>software.amazon.eventstream</groupId>
       <artifactId>eventstream</artifactId>
       <version>1.0.1</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.opencypher</groupId>
-      <artifactId>expressions-9.0</artifactId>
-      <version>9.0.20210312</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -808,39 +668,6 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.javassist</groupId>
-      <artifactId>javassist</artifactId>
-      <version>3.30.2-GA</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.jboss.marshalling</groupId>
-      <artifactId>jboss-marshalling</artifactId>
-      <version>2.0.12.Final</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.components.lib</groupId>
-      <artifactId>job-audit</artifactId>
-      <version>1.6</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
       <groupId>org.jodd</groupId>
       <artifactId>jodd-util</artifactId>
       <version>6.0.1</version>
@@ -885,17 +712,6 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>net.minidev</groupId>
-      <artifactId>json-smart</artifactId>
-      <version>2.4.11</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>json-utils</artifactId>
       <version>2.35.11</version>
@@ -907,31 +723,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>com.github.jsqlparser</groupId>
-      <artifactId>jsqlparser</artifactId>
-      <version>5.1</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>kms</artifactId>
       <version>2.35.11</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.studio</groupId>
-      <artifactId>local-lineage-producer</artifactId>
-      <version>0.1.87</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -987,17 +781,6 @@
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-slf4j2-impl</artifactId>
       <version>2.19.0</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.daikon</groupId>
-      <artifactId>logging-event-layout</artifactId>
-      <version>1.16.1</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1138,28 +921,6 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.parboiled</groupId>
-      <artifactId>parboiled-core</artifactId>
-      <version>1.2.0</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.parboiled</groupId>
-      <artifactId>parboiled-scala_2.12</artifactId>
-      <version>1.2.0</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
       <groupId>org.apache.parquet</groupId>
       <artifactId>parquet-column</artifactId>
       <version>1.15.2</version>
@@ -1218,17 +979,6 @@
       <groupId>org.apache.parquet</groupId>
       <artifactId>parquet-jackson</artifactId>
       <version>1.15.2</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.opencypher</groupId>
-      <artifactId>parser-9.0</artifactId>
-      <version>9.0.20210312</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1347,17 +1097,6 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.scala-lang</groupId>
-      <artifactId>scala-library</artifactId>
-      <version>2.12.6</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>sdk-core</artifactId>
       <version>2.35.11</version>
@@ -1424,17 +1163,6 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.talend</groupId>
-      <artifactId>system-routines</artifactId>
-      <version>8.0.1</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
       <groupId>org.talend.components.lib</groupId>
       <artifactId>talend-parquet</artifactId>
       <version>1.5</version>
@@ -1446,64 +1174,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.talend.metrics</groupId>
-      <artifactId>talendCBP</artifactId>
-      <version>1.1.5</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.components</groupId>
-      <artifactId>talend_file_enhanced</artifactId>
-      <version>1.3.1</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.metrics</groupId>
-      <artifactId>talendagent</artifactId>
-      <version>1.0.2</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.metrics</groupId>
-      <artifactId>talendboot</artifactId>
-      <version>1.0.9</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>third-party-jackson-core</artifactId>
       <version>2.35.11</version>
-      <exclusions>
-        <exclusion>
-          <groupId>*</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.opencypher</groupId>
-      <artifactId>util-9.0</artifactId>
-      <version>9.0.20210312</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -1577,336 +1250,17 @@
         </exclusion>
       </exclusions>
     </dependency>
-    <dependency>
-      <groupId>org.example.demotrf5.code</groupId>
-      <artifactId>routines</artifactId>
-      <version>8.0.1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.demotrf5.joblet</groupId>
-      <artifactId>dim_assunto</artifactId>
-      <version>0.1.0</version>
-      <type>pom</type>
-    </dependency>
   </dependencies>
   <build>
-    <finalName>${talend.job.finalName}</finalName>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <configuration>
+            <skip>true</skip>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
   </build>
-  <profiles>
-    <profile>
-      <id>packaging-and-assembly</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <artifactId>maven-resources-plugin</artifactId>
-            <version>3.3.1</version>
-            <executions>
-              <execution>
-                <id>copy-wsdl</id>
-                <phase>process-resources</phase>
-                <goals>
-                  <goal>copy-resources</goal>
-                </goals>
-                <configuration>
-                  <outputDirectory>${project.build.outputDirectory}/${talend.project.name.lowercase}/${talend.job.finalName}/wsdl</outputDirectory>
-                  <overwrite>true</overwrite>
-                  <resources>
-                    <resource>
-                      <directory>${basedir}/src/main/java/${talend.project.name.lowercase}/${talend.job.finalName}/wsdl</directory>
-                      <includes>
-                        <include>*.wsdl</include>
-                      </includes>
-                    </resource>
-                  </resources>
-                </configuration>
-              </execution>
-            </executions>
-            <dependencies>
-              <dependency>
-                <groupId>commons-io</groupId>
-                <artifactId>commons-io</artifactId>
-                <version>2.20.0</version>
-              </dependency>
-              <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-lang3</artifactId>
-                <version>3.18.0</version>
-              </dependency>
-            </dependencies>
-          </plugin>
-          <plugin>
-            <artifactId>maven-assembly-plugin</artifactId>
-            <executions>
-              <execution>
-                <phase>package</phase>
-                <goals>
-                  <goal>single</goal>
-                </goals>
-                <configuration>
-                  <descriptors>
-                    <descriptor>${basedir}/src/main/assemblies/assembly.xml</descriptor>
-                  </descriptors>
-                  <tarLongFileMode>gnu</tarLongFileMode>
-                  <appendAssemblyId>false</appendAssemblyId>
-                  <finalName>${talend.job.finalName}</finalName>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-    <profile>
-      <id>signature</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.talend.ci</groupId>
-            <artifactId>signer-maven-plugin</artifactId>
-            <version>${signer.version}</version>
-            <executions>
-              <execution>
-                <id>sign</id>
-                <phase>package</phase>
-                <goals>
-                  <goal>sign</goal>
-                </goals>
-              </execution>
-            </executions>
-            <dependencies>
-              <dependency>
-                <groupId>commons-codec</groupId>
-                <artifactId>commons-codec</artifactId>
-                <version>1.19.0</version>
-              </dependency>
-            </dependencies>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-    <profile>
-      <id>default-settings</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <properties>
-        <talend.libraries.excludes.set>*:*</talend.libraries.excludes.set>
-        <talend.jobs.excludes.set>*:*</talend.jobs.excludes.set>
-      </properties>
-    </profile>
-    <profile>
-      <id>include-java-sources</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <properties>
-        <resources.dir>${current.resources.dir}/</resources.dir>
-        <sourcecodes.dir>${project.build.sourceDirectory}</sourcecodes.dir>
-      </properties>
-    </profile>
-    <profile>
-      <id>include-maven-resources</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <properties>
-        <routinespom.dir>${parentpom.dir}code/routines/</routinespom.dir>
-        <routinescode.dir>${parentpom.dir}code/routines/src/main/</routinescode.dir>
-        <assemblies.dir>${basedir}/src/main/assemblies/</assemblies.dir>
-        <pigudfpom.dir>${parentpom.dir}code/pigudf/</pigudfpom.dir>
-        <templates.dir>${basedir}/src/main/templates/</templates.dir>
-        <poms.dir>${basedir}</poms.dir>
-        <joblet.dir>${parentpom.dir}jobs/</joblet.dir>
-        <parentpom.dir>${project.parent.relativePath}</parentpom.dir>
-        <pigudfcode.dir>${parentpom.dir}code/pigudf/src/main/</pigudfcode.dir>
-      </properties>
-    </profile>
-    <profile>
-      <id>include-items</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <properties>
-        <items.dir>${basedir}/src/main/items/${project.build.finalName}</items.dir>
-      </properties>
-    </profile>
-    <profile>
-      <id>include-libs</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <properties>
-        <talend.libraries.excludes.set>${talend.libraries.includes.set}</talend.libraries.excludes.set>
-        <current.job.binaries.include>${project.groupId}:${project.artifactId}:${project.version}</current.job.binaries.include>
-        <talend.pigudf.excludes.set>org.talend.pigudf.${talend.project.name.lowercase}:*</talend.pigudf.excludes.set>
-        <talend.jobs.excludes.set>${project.groupId}:*</talend.jobs.excludes.set>
-        <talend.code.excludes.set>org.talend.code.${talend.project.name.lowercase}:*</talend.code.excludes.set>
-        <talend.libraries.includes.set>org.talend.libraries:*</talend.libraries.includes.set>
-      </properties>
-    </profile>
-    <profile>
-      <id>include-binaries</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <properties>
-        <jobs.binaries.includes.set>${project.groupId}:*</jobs.binaries.includes.set>
-        <routines.binaries.includes.set>${talend.routine.groupid}:*</routines.binaries.includes.set>
-      </properties>
-    </profile>
-    <profile>
-      <id>include-xmlMappings</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <properties>
-        <xmlMappings.resources.dir>${current.resources.dir}/xmlMappings/</xmlMappings.resources.dir>
-      </properties>
-    </profile>
-    <profile>
-      <id>include-running-xmlMappings</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <properties>
-        <xmlMappings.running.dir>${current.resources.dir}/xmlMappings/</xmlMappings.running.dir>
-      </properties>
-    </profile>
-    <profile>
-      <id>include-rules</id>
-      <properties>
-        <rules.resources.dir>${current.resources.dir}/rules/</rules.resources.dir>
-      </properties>
-    </profile>
-    <profile>
-      <id>include-log4j</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <properties>
-        <log4j.resources.dir>${current.resources.dir}/</log4j.resources.dir>
-      </properties>
-    </profile>
-    <profile>
-      <id>include-running-log4j</id>
-      <properties>
-        <log4j.running.dir>${current.resources.dir}/</log4j.running.dir>
-      </properties>
-    </profile>
-    <profile>
-      <id>include-contexts</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <properties>
-        <contexts.running.dir>${current.resources.dir}/</contexts.running.dir>
-      </properties>
-    </profile>
-    <profile>
-      <id>include-test-sources</id>
-      <properties>
-        <test.resources.dir>${basedir}/src/test/resources/</test.resources.dir>
-        <test.sourcecodes.dir>${project.build.testSourceDirectory}</test.sourcecodes.dir>
-      </properties>
-    </profile>
-    <profile>
-      <id>include-test-reports</id>
-      <properties>
-        <test.reports.dir>${project.build.directory}/surefire-reports</test.reports.dir>
-      </properties>
-    </profile>
-    <profile>
-      <id>include-pigudfs-binaries</id>
-      <properties>
-        <pigudfs.binaries.includes.set>${talend.pigudf.groupid}:*</pigudfs.binaries.includes.set>
-      </properties>
-    </profile>
-    <profile>
-      <id>include-microservice-configs</id>
-      <properties>
-        <microservice.configs.dir>${current.resources.dir}/</microservice.configs.dir>
-      </properties>
-    </profile>
-    <profile>
-      <id>include-microservice-running-configs</id>
-      <properties>
-        <microservice.running.configs.dir>${current.int-resources.dir}/</microservice.running.configs.dir>
-      </properties>
-    </profile>
-    <profile>
-      <id>include-microservice-em-dependencies</id>
-      <activation>
-        <property>
-          <name>studio.prometheus.metrics</name>
-          <value>true</value>
-        </property>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <artifactId>maven-assembly-plugin</artifactId>
-            <executions>
-              <execution>
-                <phase>package</phase>
-                <goals>
-                  <goal>single</goal>
-                </goals>
-                <configuration>
-                  <descriptors>
-                    <descriptor>${basedir}/src/main/assemblies/assembly.xml</descriptor>
-                  </descriptors>
-                  <tarLongFileMode>gnu</tarLongFileMode>
-                  <appendAssemblyId>false</appendAssemblyId>
-                  <finalName>${talend.job.finalName}</finalName>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-      <properties>
-        <microservice.configs.dir>${current.resources.dir}/</microservice.configs.dir>
-        <contexts.running.dir>${current.resources.dir}/</contexts.running.dir>
-        <microservice.running.configs.dir>${current.int-resources.dir}/</microservice.running.configs.dir>
-      </properties>
-    </profile>
-    <profile>
-      <id>include-microservice-prometheus-dependencies</id>
-      <activation>
-        <property>
-          <name>studio.prometheus.metrics</name>
-          <value>true</value>
-        </property>
-      </activation>
-      <dependencies>
-        <dependency>
-          <groupId>io.micrometer</groupId>
-          <artifactId>micrometer-registry-prometheus</artifactId>
-          <version>1.9.17</version>
-        </dependency>
-        <dependency>
-          <groupId>io.prometheus.jmx</groupId>
-          <artifactId>collector</artifactId>
-          <version>0.16.1</version>
-        </dependency>
-      </dependencies>
-    </profile>
-    <profile>
-      <id>include-test-junit5</id>
-      <build>
-        <plugins>
-          <plugin>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.5.4</version>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
 </project>

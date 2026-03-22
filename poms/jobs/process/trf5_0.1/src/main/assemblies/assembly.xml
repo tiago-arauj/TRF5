@@ -359,7 +359,6 @@
                 <include>software.amazon.awssdk:json-utils:jar:2.35.11</include>
                 <include>software.amazon.awssdk:sdk-core:jar:2.35.11</include>
                 <include>com.fasterxml.jackson.core:jackson-databind:jar:2.16.0</include>
-                <include>org.postgresql:postgresql:jar:42.6.1</include>
                 <include>org.talend.sdk.component:component-api:jar:1.88.0</include>
                 <include>org.opencypher:util-9.0:jar:9.0.20210312</include>
                 <include>software.amazon.eventstream:eventstream:jar:1.0.1</include>

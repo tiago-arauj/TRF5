@@ -365,8 +365,8 @@
       <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.keyType" value="KMS_CMK" show="false"/>
       <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.encoding" value="BASE64" show="false"/>
       <elementParameter field="TEXT" name="configuration.bucket" value="&quot;peta-demo-qlik&quot;"/>
-      <elementParameter field="TEXT" name="configuration.key" value="&quot;silver/processos_silver.parquet&quot;"/>
-      <elementParameter field="FILE" name="configuration.file" value="&quot;C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/fato_processos.parquet&quot;"/>
+      <elementParameter field="TEXT" name="configuration.key" value="&quot;silver/assunto_silver.parquet&quot;"/>
+      <elementParameter field="FILE" name="configuration.file" value="&quot;C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/dim_assunto.parquet&quot;"/>
       <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
       <elementParameter field="CHECK" name="configuration.dataset.datastore.useRegionEndpoint" value="false" show="false"/>
       <elementParameter field="TEXT" name="configuration.dataset.datastore.regionEndpoint" value="s3.us-east-1.amazonaws.com" show="false"/>
@@ -408,34 +408,19 @@
     </node>
     <node componentName="tFileInputParquet" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="680" posY="160">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputParquet_1" show="false"/>
-      <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/processo_bronze_temp.parquet&quot;"/>
+      <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/dim_assunto.parquet&quot;"/>
       <elementParameter field="CHECK" name="USE_EXTERNAL_HADOOP_DEPS" value="false"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tFileInputParquet_1">
-        <column comment="" defaultValue="nextval('processos_judiciais_id_processo_seq'::regclass)" key="true" length="10" name="id_processo" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="25" name="numero_processo" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" defaultValue="'TRF5'::character varying'" key="false" length="10" name="id_tribunal" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="100" name="id_classe" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="-1" name="id_assunto" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="id_magistrado" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column comment="" key="false" length="13" name="data_ajuizamento" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="-1" name="tempo_processo_dias" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="valor_causa" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="10" name="id_assunto" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="cod_assunto_cnj" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="2147483647" name="descricao_assunto" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="ramo_direito" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       </metadata>
     </node>
     <node componentName="tFileOutputParquet" componentVersion="0.101" offsetLabelX="40" offsetLabelY="-2" posX="920" posY="200">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputParquet_1" show="false"/>
-      <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/fato_processos.parquet&quot;"/>
+      <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/dim_assuntos.parquet&quot;"/>
       <elementParameter field="CLOSED_LIST" name="FILE_ACTION" value="OVERWRITE"/>
       <elementParameter field="OPENED_LIST" name="COMPRESSION" value="&quot;UNCOMPRESSED&quot;"/>
       <elementParameter field="CHECK" name="USE_EXTERNAL_HADOOP_DEPS" value="false"/>
@@ -443,25 +428,10 @@
       <elementParameter field="TEXT" name="PAGE_SIZE" value="1048576"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tFileOutputParquet_1">
-        <column comment="" defaultValue="nextval('processos_judiciais_id_processo_seq'::regclass)" key="true" length="10" name="id_processo" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="25" name="numero_processo" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" defaultValue="'TRF5'::character varying'" key="false" length="10" name="id_tribunal" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="100" name="id_classe" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="-1" name="id_assunto" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="id_magistrado" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column comment="" key="false" length="13" name="data_ajuizamento" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="-1" name="tempo_processo_dias" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="valor_causa" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="10" name="id_assunto" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="cod_assunto_cnj" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="2147483647" name="descricao_assunto" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="ramo_direito" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       </metadata>
     </node>
     <node componentName="S3Put" componentVersion="1" offsetLabelX="48" offsetLabelY="0" posX="1160" posY="320">
@@ -479,7 +449,7 @@
       <elementParameter field="CLOSED_LIST" name="configuration.dataset.datastore.encoding" value="BASE64" show="false"/>
       <elementParameter field="TEXT" name="configuration.bucket" value="peta-demo-qlik"/>
       <elementParameter field="TEXT" name="configuration.key" value="&quot;silver/&quot; + ((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))"/>
-      <elementParameter field="FILE" name="configuration.file" value="&quot;C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/fato_processos.parquet&quot;"/>
+      <elementParameter field="FILE" name="configuration.file" value="&quot;C:/Users/arauj/Documents/NEXUDATA/08. PetaCorp/POC's/Dados/TRF5/Data/dim_assuntos.parquet&quot;"/>
       <elementParameter field="CHECK" name="configuration.enableServerSideEncryption" value="false"/>
       <elementParameter field="CHECK" name="configuration.enableKms" value="false" show="false"/>
       <elementParameter field="CHECK" name="configuration.dieOnError" value="false"/>
@@ -507,7 +477,7 @@
       <elementParameter field="CHECK" name="configuration.setObjectTags" value="false"/>
       <elementParameter field="TABLE" name="configuration.objectTags" show="false"/>
       <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tS3Connection_1"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tS3Connection_2"/>
       <elementParameter field="TECHNICAL" name="configuration.dataset.__version" value="-1" show="false"/>
       <elementParameter field="TECHNICAL" name="configuration.dataset.datastore.__version" value="-1" show="false"/>
       <metadata connector="FLOW" name="tS3Put_3"/>
@@ -533,6 +503,17 @@
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
     </connection>
     <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputParquet_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputParquet_1" target="tFileOutputParquet_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="descricao_assunto" id="0"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ramo_direito" id="3"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+        <elementValue elementRef="TRACE_COLUMN" value="cod_assunto_cnj" id="6"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      </elementParameter>
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
     </connection>

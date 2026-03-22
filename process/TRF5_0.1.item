@@ -99,4 +99,156 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
+  <node componentName="TRF5_GOLD" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRF5_GOLD_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="TRF5_GOLD"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="Processos_Ingestao_Bronze" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="200" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Processos_Ingestao_Bronze_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="Processos_Ingestao_Bronze"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="assunto_silver" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="400" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="assunto_silver_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="assunto_silver"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="classes_processuais_silver" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="600" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="classes_processuais_silver_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="classes_processuais_silver"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="magistrado_silver" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="magistrado_silver_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="magistrado_silver"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="processos_silver" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="960" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="processos_silver_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="processos_silver"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="tribunal_silver" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tribunal_silver_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="tribunal_silver"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="dim_assunto" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="360">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="dim_assunto_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="dim_assunto"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRF5_GOLD_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Processos_Ingestao_Bronze_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="assunto_silver_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="classes_processuais_silver_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="magistrado_silver_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="processos_silver_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tribunal_silver_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="dim_assunto_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
 </talendfile:ProcessType>
